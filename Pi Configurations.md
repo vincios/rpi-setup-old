@@ -45,7 +45,7 @@ Add to bottom:
 See [here](https://www.duckdns.org/install.jsp?tab=pi&domain=vncs10). BUT:
 - Change `duck.sh` as follows: (Change domains and token in update URL if necessary)
 
-```sh 
+``` bash 
 timestamp() {
   date +"%Y-%m-%d %H-%M-%S"
 }
@@ -66,6 +66,11 @@ See [here](https://pimylifeup.com/raspberry-pi-plex-server/)
 
 
 ## Bulid TOR
+**NEW** (but not tested yet):
+Build from git. See [here](https://tor.stackexchange.com/questions/75/how-can-i-install-tor-from-the-source-code-in-the-git-repository))
+
+**OLD** (tested):
+
 - `sudo apt install libevent-dev`
 
 - Download tor source tar form [here](https://www.torproject.org/it/download/tor/)
@@ -76,7 +81,8 @@ See [here](https://pimylifeup.com/raspberry-pi-plex-server/)
 
 - `sudo make install`
 
-Now install obfs4proxy:
+
+Now install obfs4proxy (** for both OLD and NEW**):
 
 - `sudo apt install obfs4proxy`
 
@@ -85,11 +91,11 @@ Now install obfs4proxy:
 
 
 ## Run BridTools
-- Copy scripts folder to Pi and cd to that folder
+First install TOR (See [Build Tor](#build-tor))
 
-- `python3 -m venv ./venv`
-
-- In config.ini file add these lines in BASE section:
+**NEW**:
+- Simply copy BridTools folder on Pi and run `./install.sh` inside it.
+- In `config.ini` file add these lines in *BASE* section:
 
 ```
 TOR_DATA_DIR = /usr/local/share/tor
@@ -97,9 +103,23 @@ TOR_DIR = /usr/local/bin
 TOR_PLUG_DIR = /usr/bin
 ```
 
+OLD:
+
+- Copy scripts folder to Pi and cd to that folder
+
+- `python3 -m venv ./venv`
+
 - `source venv/bin/activate`
 
 - `pip install -r requirements.txt`
+
+- In `config.ini` file add these lines in *BASE* section:
+
+```
+TOR_DATA_DIR = /usr/local/share/tor
+TOR_DIR = /usr/local/bin
+TOR_PLUG_DIR = /usr/bin
+```
 
 
 ## Install jDownloader in headless mode
