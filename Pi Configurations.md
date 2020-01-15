@@ -219,3 +219,15 @@ $ sudo apt-get autoremove
 $ curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
 $ sudo apt-get install -y nodejs
 ```
+
+# .bash_aliases
+``` sh
+alias hello='echo ciao'
+alias ll='ls -l'
+alias jd='java -Djava.awt.headless=true -jar /home/pi/JDownloader/JDownloader.jar >/dev/null 2>/dev/null &'
+alias bridtools='cd /home/pi/.BridTools/ && source ./venv/bin/activate'
+alias bridhack='python brid_hack.py'
+alias dlcextractor='python dlc_extractor.py'
+alias linkscraping='python link_scraping.py'
+alias deezloader="node /home/pi/.deezloader/app/app.js > /dev/null 2>&1 &"
+```
