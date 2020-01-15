@@ -22,8 +22,9 @@ Run `raspi-config` and change screen resolution to 1920x1080
 
 - `sudo nano /etc/samba/smb.conf`
 
-- Samba share user folder with some security restrictions (Seer "[homes]" section in smb.conf. So, instead of change this configuration we add a new one. 
-Add to bottom:
+Samba share user folder with some security restrictions (See "[homes]" section in *smb.conf*). So, instead of change this configuration we add a new one. 
+
+- Add to bottom:
 
 ```
 [PiShare]
@@ -38,10 +39,11 @@ Add to bottom:
 ```
 
 - Choose a smb password for pi user
+
 `sudo smbpasswd -a pi`
 
 
-## Duckdns cron configurations
+## Duckdns cron configuration
 See [here](https://www.duckdns.org/install.jsp?tab=pi&domain=vncs10). BUT:
 - Change `duck.sh` as follows: (Change domains and token in update URL if necessary)
 
@@ -199,7 +201,7 @@ mv sevenzipjbinding.jar [JD_install_dir]/libs/sevenzipjbinding1509.jar
 mv sevenzipjbinding-Linux-arm.jar [JD_Install_dir]/libs/sevenzipjbinding1509LinuxArmVersion.jar
 ```
 
-**NB**: If you change branch, rename commands above with correct version numbers. But **DON'T** change destination filenames (sevenzipjbinding1509.jar)
+**NB**: If you change branch, rename commands above with correct version numbers. But **DON'T** change destination filenames (*sevenzipjbinding1509.jar* and *sevenzipjbinding1509LinuxArmVersion.jar*)
 
 
 ## Update Node and npm
