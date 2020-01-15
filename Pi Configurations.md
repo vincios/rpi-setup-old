@@ -68,7 +68,7 @@ See [here](https://pimylifeup.com/raspberry-pi-plex-server/)
 ## Bulid TOR
 **NEW** (but not tested yet):
 
-Build from git. See [here](https://tor.stackexchange.com/questions/75/how-can-i-install-tor-from-the-source-code-in-the-git-repository))
+Build from git. See [here](https://tor.stackexchange.com/questions/75/how-can-i-install-tor-from-the-source-code-in-the-git-repository)
 
 **OLD** (tested):
 
@@ -83,7 +83,7 @@ Build from git. See [here](https://tor.stackexchange.com/questions/75/how-can-i-
 - `sudo make install`
 
 
-Now install obfs4proxy (** for both OLD and NEW**):
+Now install obfs4proxy (**for both OLD and NEW**):
 
 - `sudo apt install obfs4proxy`
 
