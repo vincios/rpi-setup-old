@@ -1,4 +1,4 @@
-# Common configurations for Raspberry Pi with raspbian
+# Common configurations for Raspberry Pi with Raspbian
 
 ## VNC "cannot currently show the desktop" in headless mode
 Run `raspi-config` and change screen resolution to 1920x1080
@@ -62,13 +62,13 @@ echo " | Last run: $(timestamp)" >> /home/pi/duckdns/log.log
 
 
 ## Plex Media Server
-See [here](https://pimylifeup.com/raspberry-pi-plex-server/)
+See [here](https://pimylifeup.com/raspberry-pi-plex-server/).
 
 
-## Bulid TOR
+## Build TOR
 **NEW** (but not tested yet):
 
-Build from git. See [here](https://tor.stackexchange.com/questions/75/how-can-i-install-tor-from-the-source-code-in-the-git-repository)
+Build from git. See [here](https://tor.stackexchange.com/questions/75/how-can-i-install-tor-from-the-source-code-in-the-git-repository).
 
 **OLD** (tested):
 
@@ -88,14 +88,11 @@ Now install obfs4proxy (**for both OLD and NEW**):
 - `sudo apt install obfs4proxy`
 
 
-(To build from git see [here](https://tor.stackexchange.com/questions/75/how-can-i-install-tor-from-the-source-code-in-the-git-repository))
-
-
 ## Run BridTools
-First install TOR (See [Build Tor](#build-tor))
+First install *TOR* (See [Build Tor](#build-tor)) and *obfs4proxy*
 
 **NEW**:
-- Simply copy BridTools folder on Pi and run `./install.sh` inside it.
+- Simply copy BridTools folder on Pi and run `./install.sh` inside it
 - In `config.ini` file add these lines in *BASE* section:
 
 ```
@@ -124,9 +121,11 @@ TOR_PLUG_DIR = /usr/bin
 
 
 ## Install jDownloader in headless mode
-See [here](https://support.jdownloader.org/Knowledgebase/Article/View/52/0/install-jdownloader-on-nas-and-embedded-devices)
+See [here](https://support.jdownloader.org/Knowledgebase/Article/View/52/0/install-jdownloader-on-nas-and-embedded-devices).
 - Run in headless mode with `java -jar JDownloader.jar &` 
+
 OR
+
 - Run in headless mode with `java -Djava.awt.headless=true -jar JDownloader.jar >/dev/null 2>/dev/null &`
 
 To open the GUI:
@@ -153,8 +152,9 @@ Categories=GTK;Utility;
 
 
 ## JDownloader RAR5 support
-You colud download precompiled SevenZipBindings from [here](https://board.jdownloader.org/showpost.php?p=455292&postcount=583) and copiy jar file in [JD_Install_dir]/libs
- OR compile it maually:
+**NB**: You colud download the precompiled SevenZipBindings jar files from [here](https://board.jdownloader.org/showpost.php?p=455292&postcount=583) and copy them in *[JD_Install_dir]/libs*
+ *OR* compile it manually (better):
+
 From [here](https://www.ixsystems.com/community/threads/guide-jdownloader2-in-11-1-release-iocage-with-rar5-working.74073/) (or [here](https://board.jdownloader.org/showpost.php?p=446708&postcount=465)):
 
 - Install cmake and openjdk8-jdk
@@ -177,9 +177,10 @@ cd rar5
 git clone https://github.com/borisbrodski/sevenzipjbinding.git sevenzipbinding
 ```
 
-**NB**: Is preferrable choose one branch between `bind_16.02` and `migrate-to-15.09-try2` but it should work also with `master` branch).
-So first try with `master` then, in case of problems, try `bind_16.02` and, as last chance, `migrate-to-15.09-try2`.
-You can change branch with `git checkout [branch_name]` command.
+**NB**: would be better to choose one branch between `bind_16.02` and `migrate-to-15.09-try2` but it should work also with `master` branch.
+So first try with `master` then, in case of failure, try `bind_16.02` and, as last chance, `migrate-to-15.09-try2`.
+
+You can change branch with the `git checkout [branch_name]` command.
 
 - Run CMake
 
