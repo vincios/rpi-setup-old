@@ -94,7 +94,7 @@ Now install obfs4proxy (**for both OLD and NEW**):
 First install *TOR* (See [Build Tor](#build-tor)) and *obfs4proxy*
 
 **NEW**:
-- Simply copy BridTools folder on Pi and run `./install.sh` inside it
+- Simply copy scripts folder to Pi and run `./install.sh` inside it
 - In `config.ini` file add these lines in *BASE* section:
 
 ```
@@ -103,9 +103,9 @@ TOR_DIR = /usr/local/bin
 TOR_PLUG_DIR = /usr/bin
 ```
 
-OLD:
+**OLD**:
 
-- Copy scripts folder to Pi and cd to that folder
+- Copy scripts folder to Pi and browse this folder
 
 - `python3 -m venv ./venv`
 
