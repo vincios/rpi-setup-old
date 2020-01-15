@@ -91,7 +91,7 @@ Now install obfs4proxy (**for both OLD and NEW**):
 
 
 ## Run BridTools
-First install *TOR* (See [Build Tor](#build-tor)) and *obfs4proxy*
+First install *TOR* and *obfs4proxy* (See [Build Tor](#build-tor)).
 
 **NEW**:
 - Simply copy scripts folder to Pi and run `./install.sh` inside it
