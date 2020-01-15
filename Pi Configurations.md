@@ -47,7 +47,7 @@ Samba share user folder with some security restrictions (See "[homes]" section i
 See [here](https://www.duckdns.org/install.jsp?tab=pi&domain=vncs10). BUT:
 - Change `duck.sh` as follows: (Change domains and token in update URL if necessary)
 
-``` bash 
+``` sh
 timestamp() {
   date +"%Y-%m-%d %H-%M-%S"
 }
@@ -58,7 +58,7 @@ echo " | Last run: $(timestamp)" >> /home/pi/duckdns/log.log
 
 - Change crontab string as follows:
 
-``` bash 
+``` sh 
 */5 * * * * /home/pi/duckdns/duck.sh >/dev/null 2>&1
 ```
 
@@ -123,10 +123,10 @@ TOR_PLUG_DIR = /usr/bin
 
 
 ## Install jDownloader in headless mode
-See [here](https://support.jdownloader.org/Knowledgebase/Article/View/52/0/install-jdownloader-on-nas-and-embedded-devices).
+See [here](https://support.jdownloader.org/Knowledgebase/Article/View/52/0/install-jdownloader-on-nas-and-embedded-devices). Then
 - Run in headless mode with `java -jar JDownloader.jar &` 
 
-OR
+OR, to hide any output from the terminal,
 
 - Run in headless mode with `java -Djava.awt.headless=true -jar JDownloader.jar >/dev/null 2>/dev/null &`
 
@@ -155,28 +155,28 @@ Categories=GTK;Utility;
 
 ## JDownloader RAR5 support
 **NB**: You colud download the precompiled SevenZipBindings jar files from [here](https://board.jdownloader.org/showpost.php?p=455292&postcount=583) and copy them in *[JD_Install_dir]/libs*
- *OR* compile it manually (better):
+ **OR** compile it manually (better):
 
 From [here](https://www.ixsystems.com/community/threads/guide-jdownloader2-in-11-1-release-iocage-with-rar5-working.74073/) (or [here](https://board.jdownloader.org/showpost.php?p=446708&postcount=465)):
 
 - Install cmake and openjdk8-jdk
 
 ``` bash
-sudo apt-get install cmake
-sudo apt-get install openjdk8-jdk
+$ sudo apt-get install cmake
+$ sudo apt-get install openjdk8-jdk
 ```
 
 - Go to JD folder and make folders:
 
 ``` bash
-mkdir rar5
-cd rar5
+$ mkdir rar5
+$ cd rar5
 ```
 
 - Clone repository
 
 ``` bash
-git clone https://github.com/borisbrodski/sevenzipjbinding.git sevenzipbinding
+$ git clone https://github.com/borisbrodski/sevenzipjbinding.git sevenzipbinding
 ```
 
 **NB**: would be better to choose one branch between `bind_16.02` and `migrate-to-15.09-try2` but it should work also with `master` branch.
@@ -187,18 +187,18 @@ You can change branch with the `git checkout [branch_name]` command.
 - Run CMake
 
 ``` bash
-cmake . -DJAVA_JDK=/usr/lib/jvm/java-8-openjdk-armhf`
-make
-make package
+$ cmake . -DJAVA_JDK=/usr/lib/jvm/java-8-openjdk-armhf`
+$ make
+$ make package
 ```
 
 - Move jar library to JD lib folder
 
 ``` bash
-unzip sevenzipjbinding-16.02-2.01beta-Linux-arm.zip
-cd sevenzipjbinding-16.02-2.01beta-Linux-arm/lib/
-mv sevenzipjbinding.jar [JD_install_dir]/libs/sevenzipjbinding1509.jar
-mv sevenzipjbinding-Linux-arm.jar [JD_Install_dir]/libs/sevenzipjbinding1509LinuxArmVersion.jar
+$ unzip sevenzipjbinding-16.02-2.01beta-Linux-arm.zip
+$ cd sevenzipjbinding-16.02-2.01beta-Linux-arm/lib/
+$ mv sevenzipjbinding.jar [JD_install_dir]/libs/sevenzipjbinding1509.jar
+$ mv sevenzipjbinding-Linux-arm.jar [JD_Install_dir]/libs/sevenzipjbinding1509LinuxArmVersion.jar
 ```
 
 **NB**: If you change branch, rename commands above with correct version numbers. But **DON'T** change destination filenames (*sevenzipjbinding1509.jar* and *sevenzipjbinding1509LinuxArmVersion.jar*)
@@ -208,14 +208,14 @@ mv sevenzipjbinding-Linux-arm.jar [JD_Install_dir]/libs/sevenzipjbinding1509Linu
 - Remove old node
 
 ``` bash
-sudo npm uninstall -g npm
-sudo apt remove npm
-sudo apt-get autoremove
+$ sudo npm uninstall -g npm
+$ sudo apt remove npm
+$ sudo apt-get autoremove
 ```
 
 - Install new version (From [here](https://github.com/nodesource/distributions/blob/master/README.md))
 
 ``` bash
-curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
-sudo apt-get install -y nodejs
+$ curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
+$ sudo apt-get install -y nodejs
 ```
