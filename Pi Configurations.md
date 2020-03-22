@@ -230,6 +230,7 @@ alias bridhack='python brid_hack.py'
 alias dlcextractor='python dlc_extractor.py'
 alias linkscraping='python link_scraping.py'
 alias deezloader="node /home/pi/.deezloader/app/app.js > /dev/null 2>&1 &"
+alias deluged-all="deluged && deluge-web -f"
 ```
 
 After you add a new alias don't forget to run `. /home/pi/.bashrc`
