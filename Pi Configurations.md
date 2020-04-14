@@ -220,8 +220,10 @@ $ curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
 $ sudo apt-get install -y nodejs
 ```
 
-## Install Deluge torrent client with web client
-See [here](https://pimylifeup.com/raspberry-pi-deluge)
+## Install Deluge torrent client with web interface
+See [here](https://pimylifeup.com/raspberry-pi-deluge).
+Do not follow the last part ("Setting up Deluge as a service").
+Don't forget to add the alias in the `.bash_aliases` file.
 
 ## Install LAMP software
 See [here](https://howtoraspberrypi.com/how-to-install-web-server-raspberry-pi-lamp).
