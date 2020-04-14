@@ -220,6 +220,12 @@ $ curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
 $ sudo apt-get install -y nodejs
 ```
 
+## Install Deluge torrent client with web client
+See [here](https://pimylifeup.com/raspberry-pi-deluge)
+
+## Install LAMP software
+See [here](https://howtoraspberrypi.com/how-to-install-web-server-raspberry-pi-lamp).
+
 # .bash_aliases
 ``` sh
 alias hello='echo ciao'
