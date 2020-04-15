@@ -296,7 +296,7 @@ For example, `./rest/.htacces` should become
 </IfModule>
 ```
 
-- Navigate to your ampache url (eg., `http://localhost/ampache`) to start the Ampache installation.
+- Navigate to your ampache address (eg., `http://localhost/ampache`) to start the Ampache installation.
 
 # .bash_aliases
 ``` sh
