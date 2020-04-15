@@ -239,6 +239,20 @@ $ mkdir ampache
 $ git clone -b master https://github.com/ampache/ampache.git ampache
 ```
 **NB**: change the code to match your web server html folder location.
+
+- Install Composer. Refer to the [official page](https://getcomposer.org/download/). **BUT** instead of `php composer-setup.php` run
+
+``` bash
+$ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+```
+
+- Run composer dependencies installation from Ampache folder
+
+``` bash
+$ cd /var/www/html/ampache
+$ composer install --prefer-source --no-interaction
+```
+
 <br><br>
 Now we have to enable the url rewriting functionality. Next steps are taken from [here](https://www.digitalocean.com/community/tutorials/how-to-rewrite-urls-with-mod_rewrite-for-apache-on-ubuntu-16-04).
 - Enable mod_rewrite on Apache
