@@ -228,6 +228,25 @@ Don't forget to add the alias in the `.bash_aliases` file.
 ## Install LAMP software
 See [here](https://howtoraspberrypi.com/how-to-install-web-server-raspberry-pi-lamp).
 
+# Install Ampache
+First install *LAMP* (See [Install LAMP software](#install-lamp-software)).
+
+- Download application from git on the web server
+
+``` bash
+$ cd /var/www/html/
+$ mkdir ampache
+$ git clone -b master https://github.com/ampache/ampache.git ampache
+```
+**NB**: change the code according to your web server html folder location.
+
+- Enable mod_rewrite on Apache
+
+``` bash
+$ sudo a2enmod rewrite
+$ sudo systemctl restart apache2
+```
+
 # .bash_aliases
 ``` sh
 alias hello='echo ciao'
