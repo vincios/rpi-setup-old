@@ -238,8 +238,8 @@ $ cd /var/www/html/
 $ mkdir ampache
 $ git clone -b master https://github.com/ampache/ampache.git ampache
 ```
-**NB**: change the code according to your web server html folder location.
-<br>
+**NB**: change the code to match your web server html folder location.
+<br><br>
 Now we have to enable the url rewriting functionality. Next steps are taken from [here](https://www.digitalocean.com/community/tutorials/how-to-rewrite-urls-with-mod_rewrite-for-apache-on-ubuntu-16-04).
 - Enable mod_rewrite on Apache
 
@@ -247,7 +247,7 @@ Now we have to enable the url rewriting functionality. Next steps are taken from
 $ sudo a2enmod rewrite
 $ sudo systemctl restart apache2
 ```
-To check if module is enabled correctly launch a `phpinfo()` page and search `mod_rewrite` into the **Loaded Modules** section. <br>
+To check if module is enabled launch a `phpinfo()` page and search `mod_rewrite` into the **Loaded Modules** section. <br>
 
 - By default, Apache prohibits using an .htaccess file to apply rewrite rules, so first you need to allow changes to the file
 ``` bash
@@ -263,7 +263,7 @@ $ sudo nano /etc/apache2/sites-available/000-default.conf
 </Directory>
 ```
 
-This configuration will enable .haccess files for the default vhost (VirtualHost) located in /var/www/html folder and all subfolders.
+This configuration will enable .haccess files for the default vhost (VirtualHost) located in /var/www/html folder and all subfolders.<br>
 **TODO**: Investigate whether it would be better to create a new vhost.
 
 - Restart server 
@@ -271,7 +271,31 @@ This configuration will enable .haccess files for the default vhost (VirtualHost
 ``` bash
 $ sudo systemctl restart apache2
 ```
-**NB**: if you want test if url rewriting works correctly follow the Step 3 in the guide [above](https://www.digitalocean.com/community/tutorials/how-to-rewrite-urls-with-mod_rewrite-for-apache-on-ubuntu-16-04)
+
+- In your Ampache folder install .htaccess files
+``` bash
+$ cd /var/www/html/ampache
+$ cp rest/.htaccess.dist rest/.htaccess
+$ cp ./play/.htaccess.dist ./play/.htaccess
+$ cp ./channel/.htaccess.dist ./channel/.htaccess
+```
+
+- For each one of the three file above, edit them to match your Ampache public address (eg., `RewriteRule ^(/[^/]+|[^/]+/|/?)$ /play/index.php` become `RewriteRule ^(/[^/]+|[^/]+/|/?)$ /ampache/play/index.php` if your Ampache public url is `http://localhost/ampache/`). Do this for each `RewriteRule` statement.
+For example, `./rest/.htacces` should become
+
+``` 
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-s
+    RewriteRule ^(.+)\.view$ /ampache/rest/index.php?ssaction=$1 [PT,L,QSA]
+    RewriteRule ^fake/(.+)$ /ampache/play/$1 [PT,L,QSA]
+</IfModule>
+```
+
+**NB**: if you want test if url rewriting works correctly follow the "Step 3" paragraph in the guide [above](https://www.digitalocean.com/community/tutorials/how-to-rewrite-urls-with-mod_rewrite-for-apache-on-ubuntu-16-04).
+
+
 
 # .bash_aliases
 ``` sh
