@@ -246,6 +246,31 @@ $ git clone -b master https://github.com/ampache/ampache.git ampache
 $ sudo a2enmod rewrite
 $ sudo systemctl restart apache2
 ```
+To check if module is enabled correctly launch a `phpinfo()` page and search `mod_rewrite` into the **Loaded Modules** section. <br>
+
+- By default, Apache prohibits using an .htaccess file to apply rewrite rules, so first you need to allow changes to the file
+``` bash
+$ sudo nano /etc/apache2/sites-available/000-default.conf
+```
+- Inside the `<VirtualHost *:80>` block insert
+```
+# Enable .htaccess files for /var/www/html and subfolders
+<Directory /var/www/html>
+       Options Indexes FollowSymLinks MultiViews
+       AllowOverride All
+       Require all granted
+</Directory>
+```
+
+This configuration will enable .haccess files for the default vhost (VirtualHost) located in /var/www/html folder and all subfolders.
+**TODO**: Investigate whether it would be better to create a new vhost.
+
+- Restart server 
+
+``` bash
+$ sudo systemctl restart apache2
+```
+
 
 # .bash_aliases
 ``` sh
