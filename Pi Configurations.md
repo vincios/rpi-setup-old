@@ -228,7 +228,7 @@ Don't forget to add the alias in the `.bash_aliases` file.
 ## Install LAMP software
 See [here](https://howtoraspberrypi.com/how-to-install-web-server-raspberry-pi-lamp).
 
-# Install Ampache
+## Install Ampache
 First install *LAMP* (See [Install LAMP software](#install-lamp-software)).
 
 - Download application from git on the web server
