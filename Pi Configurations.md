@@ -231,7 +231,7 @@ See [here](https://howtoraspberrypi.com/how-to-install-web-server-raspberry-pi-l
 ## Install Ampache
 **NB** This steps are taken and detailed form the Ampache's [official installation wiki](https://github.com/ampache/ampache/wiki/Installation). Refer to that page for updated installation steps.
 <br>
-First install *LAMP* (See [Install LAMP software](#install-lamp-software)).
+- First install *LAMP* (See [Install LAMP software](#install-lamp-software)).
 
 - Download application from git on the web server
 
