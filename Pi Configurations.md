@@ -239,7 +239,8 @@ $ mkdir ampache
 $ git clone -b master https://github.com/ampache/ampache.git ampache
 ```
 **NB**: change the code according to your web server html folder location.
-
+<br>
+Now we have to enable the url rewriting functionality. Next steps are taken from [here](https://www.digitalocean.com/community/tutorials/how-to-rewrite-urls-with-mod_rewrite-for-apache-on-ubuntu-16-04).
 - Enable mod_rewrite on Apache
 
 ``` bash
@@ -270,7 +271,7 @@ This configuration will enable .haccess files for the default vhost (VirtualHost
 ``` bash
 $ sudo systemctl restart apache2
 ```
-
+**NB**: if you want test if url rewriting works correctly follow the Step 3 in the guide [above](https://www.digitalocean.com/community/tutorials/how-to-rewrite-urls-with-mod_rewrite-for-apache-on-ubuntu-16-04)
 
 # .bash_aliases
 ``` sh
