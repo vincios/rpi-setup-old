@@ -231,12 +231,12 @@ See [here](https://howtoraspberrypi.com/how-to-install-web-server-raspberry-pi-l
 ## Install Ampache
 **NB**: This steps are taken and detailed form the Ampache's [official installation wiki](https://github.com/ampache/ampache/wiki/Installation). Refer to that page for updated installation steps.
 <br>
-**NB2**: this guide assume that Apache uses the default `/var/www/html/` public folder. Change the code accordint to your web server public html folder location.
+**NB2**: this guide assume that Apache uses the default `/var/www/html/` public folder. Change the code according to your web server public html folder location.
 <br>
 
 - First install *LAMP* (See [Install LAMP software](#install-lamp-software)).
 
-- Download Ampache application from git and place on an `ampache` folder on the web server
+- Download the Ampache application from git to an `ampache` folder on the web server
 
 ``` bash
 $ cd /var/www/html/
@@ -244,11 +244,12 @@ $ mkdir ampache
 $ git clone -b master https://github.com/ampache/ampache.git ampache
 ```
 
-- Install Composer. Refer to the [official page](https://getcomposer.org/download/). **BUT** instead of `php composer-setup.php` run
+- Install Composer. Refer to the [official page](https://getcomposer.org/download/). **BUT** on the third command, run instead of `php composer-setup.php`
 
 ``` bash
 $ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 ```
+**NB**: You can run above commands from any folder but maybe is better to avoid the Ampache folder.<br>
 
 - Run composer dependencies installation from Ampache folder
 
