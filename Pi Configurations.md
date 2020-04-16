@@ -258,41 +258,41 @@ $ cd /var/www/html/ampache
 $ composer install --prefer-source --no-interaction
 ```
 
-Now we have to enable the url rewriting functionality. Next steps are taken from [here](https://www.digitalocean.com/community/tutorials/how-to-rewrite-urls-with-mod_rewrite-for-apache-on-ubuntu-16-04/).
+- Now we have to enable the url rewriting functionality. Next steps are taken from [here](https://www.digitalocean.com/community/tutorials/how-to-rewrite-urls-with-mod_rewrite-for-apache-on-ubuntu-16-04/).
 <br>
-- Enable mod_rewrite on Apache
+   1. Enable mod_rewrite on Apache
 
-``` bash
-$ sudo a2enmod rewrite
-$ sudo systemctl restart apache2
-```
-To check if module is enabled launch a `phpinfo()` page and search `mod_rewrite` into the **Loaded Modules** section. <br>
+   ``` bash
+   $ sudo a2enmod rewrite
+   $ sudo systemctl restart apache2
+   ```
+   To check if module is enabled launch a `phpinfo()` page and search `mod_rewrite` into the **Loaded Modules** section. <br>
 
-- By default, Apache prohibits using an .htaccess file to apply rewrite rules, so first you need to allow changes to the file `000-default.conf`
-``` bash
-$ sudo nano /etc/apache2/sites-available/000-default.conf
-```
-- Inside the `<VirtualHost *:80>` block insert
-```
-# Enable .htaccess files for /var/www/html and subfolders
-<Directory /var/www/html>
-       Options Indexes FollowSymLinks MultiViews
-       AllowOverride All
-       Require all granted
-</Directory>
-```
+   2. By default, Apache prohibits using an .htaccess file to apply rewrite rules, so first you need to allow changes to the file `000-default.conf`
+   ``` bash
+   $ sudo nano /etc/apache2/sites-available/000-default.conf
+   ```
+   3. Inside the `<VirtualHost *:80>` block insert
+   ```
+   # Enable .htaccess files for /var/www/html and subfolders
+   <Directory /var/www/html>
+          Options Indexes FollowSymLinks MultiViews
+          AllowOverride All
+          Require all granted
+   </Directory>
+   ```
 
-This configuration will enable .haccess files for the default vhost (VirtualHost) located in /var/www/html folder and all subfolders.<br>
-**TODO**: Investigate whether it would be better to create a new vhost.
+   This configuration will enable .haccess files for the default vhost (VirtualHost) located in /var/www/html folder and all subfolders.<br>
+   **TODO**: Investigate whether it would be better to create a new vhost.
 
-- Restart server 
+   4. Restart server 
 
-``` bash
-$ sudo systemctl restart apache2
-```
+   ``` bash
+   $ sudo systemctl restart apache2
+   ```
 
 
-**NB**: if you want test if url rewriting works correctly follow the "Step 3" paragraph in the [above](https://www.digitalocean.com/community/tutorials/how-to-rewrite-urls-with-mod_rewrite-for-apache-on-ubuntu-16-04) guide.
+   **NB**: if you want test if url rewriting works correctly follow the "Step 3" paragraph in the [above](https://www.digitalocean.com/community/tutorials/how-to-rewrite-urls-with-mod_rewrite-for-apache-on-ubuntu-16-04) guide.
 
 - In your Ampache folder install .htaccess files
 ``` bash
