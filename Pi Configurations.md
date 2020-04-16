@@ -257,7 +257,7 @@ $ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 $ cd /var/www/html/ampache
 $ composer install --prefer-source --no-interaction
 ```
-<br>
+
 Now we have to enable the url rewriting functionality. Next steps are taken from https://www.digitalocean.com/community/tutorials/how-to-rewrite-urls-with-mod_rewrite-for-apache-on-ubuntu-16-04.
 <br>
 - Enable mod_rewrite on Apache
