@@ -233,7 +233,7 @@ See [here](https://howtoraspberrypi.com/how-to-install-web-server-raspberry-pi-l
 <br>
 - First install *LAMP* (See [Install LAMP software](#install-lamp-software)).
 
-- Download application from git on the web server
+- Download Ampache application from git and place on an `ampache` folder on the web server
 
 ``` bash
 $ cd /var/www/html/
