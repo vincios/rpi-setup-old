@@ -229,8 +229,11 @@ Don't forget to add the alias in the `.bash_aliases` file.
 See [here](https://howtoraspberrypi.com/how-to-install-web-server-raspberry-pi-lamp).
 
 ## Install Ampache
-**NB** This steps are taken and detailed form the Ampache's [official installation wiki](https://github.com/ampache/ampache/wiki/Installation). Refer to that page for updated installation steps.
+**NB**: This steps are taken and detailed form the Ampache's [official installation wiki](https://github.com/ampache/ampache/wiki/Installation). Refer to that page for updated installation steps.
 <br>
+**NB2**: this guide assume that Apache uses the default `/var/www/html/` public folder. Change the code accordint to your web server public html folder location.
+<br>
+
 - First install *LAMP* (See [Install LAMP software](#install-lamp-software)).
 
 - Download Ampache application from git and place on an `ampache` folder on the web server
@@ -240,7 +243,6 @@ $ cd /var/www/html/
 $ mkdir ampache
 $ git clone -b master https://github.com/ampache/ampache.git ampache
 ```
-**NB**: change the code to match your web server html folder location.
 
 - Install Composer. Refer to the [official page](https://getcomposer.org/download/). **BUT** instead of `php composer-setup.php` run
 
