@@ -244,7 +244,7 @@ $ mkdir ampache
 $ git clone -b master https://github.com/ampache/ampache.git ampache
 ```
 
-- Install Composer. Refer to the [official page](https://getcomposer.org/download/). **BUT** on the third command, run instead of `php composer-setup.php`
+- Install Composer. Refer to the [official page](https://getcomposer.org/download/) **BUT** on the third command, run instead of `php composer-setup.php`
 
 ``` bash
 $ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
@@ -257,8 +257,7 @@ $ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 $ cd /var/www/html/ampache
 $ composer install --prefer-source --no-interaction
 ```
-
-<br><br>
+<br>
 Now we have to enable the url rewriting functionality. Next steps are taken from [here](https://www.digitalocean.com/community/tutorials/how-to-rewrite-urls-with-mod_rewrite-for-apache-on-ubuntu-16-04).
 - Enable mod_rewrite on Apache
 
@@ -268,7 +267,7 @@ $ sudo systemctl restart apache2
 ```
 To check if module is enabled launch a `phpinfo()` page and search `mod_rewrite` into the **Loaded Modules** section. <br>
 
-- By default, Apache prohibits using an .htaccess file to apply rewrite rules, so first you need to allow changes to the file
+- By default, Apache prohibits using an .htaccess file to apply rewrite rules, so first you need to allow changes to the file `000-default.conf`
 ``` bash
 $ sudo nano /etc/apache2/sites-available/000-default.conf
 ```
@@ -292,12 +291,12 @@ $ sudo systemctl restart apache2
 ```
 
 
-**NB**: if you want test if url rewriting works correctly follow the "Step 3" paragraph in the guide [above](https://www.digitalocean.com/community/tutorials/how-to-rewrite-urls-with-mod_rewrite-for-apache-on-ubuntu-16-04).
+**NB**: if you want test if url rewriting works correctly follow the "Step 3" paragraph in the [above](https://www.digitalocean.com/community/tutorials/how-to-rewrite-urls-with-mod_rewrite-for-apache-on-ubuntu-16-04) guide.
 
 - In your Ampache folder install .htaccess files
 ``` bash
 $ cd /var/www/html/ampache
-$ cp rest/.htaccess.dist rest/.htaccess
+$ cp ./rest/.htaccess.dist ./rest/.htaccess
 $ cp ./play/.htaccess.dist ./play/.htaccess
 $ cp ./channel/.htaccess.dist ./channel/.htaccess
 ```
