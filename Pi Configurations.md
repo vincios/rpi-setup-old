@@ -315,6 +315,23 @@ For example, `./rest/.htacces` should become
 </IfModule>
 ```
 
+- Make `ampache.cfg.php` writeable
+``` bash
+$ cd /var/www/html/ampache
+$ sudo chown -R www-data:www-data ./config
+```
+
+- Increase PHP max upload size. Run `sudo nano /etc/php/7.3/apache2/php.ini` and change the following values
+```
+; Maximum allowed size for uploaded files.
+upload_max_filesize = 40M
+
+; Must be greater than or equal to upload_max_filesize
+post_max_size = 40M
+```
+Change the following values
+
+
 - Navigate to your ampache address (eg., `http://localhost/ampache`) to start the Ampache installation.
 
 # .bash_aliases
