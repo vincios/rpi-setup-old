@@ -333,6 +333,7 @@ Change the following values
 
 
 - Navigate to your ampache address (eg., `http://localhost/ampache`) to start the Ampache installation.
+**NB**: During the installation on the "Step 1" check the **Create Database User** option.
 
 # .bash_aliases
 ``` sh
