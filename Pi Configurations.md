@@ -227,7 +227,8 @@ Don't forget to add the alias in the `.bash_aliases` file.
 
 ## Install LAMP software
 See [here](https://howtoraspberrypi.com/how-to-install-web-server-raspberry-pi-lamp).
-**NB: To install phpMyAdmin** latest version URL from the [phpMyAdmin homepage](https://www.phpmyadmin.net/), unzip it, move to `/var/www/html/` and rename the folder to `phpmyadmin`. Then, change permissions to 755.
+<br>
+**NB: To install phpMyAdmin**: download latest version from the [phpMyAdmin homepage](https://www.phpmyadmin.net/), unzip it, move to `/var/www/html/` and rename the folder to `phpmyadmin`. Then, change permissions to 755.
 
 ## Install Ampache
 **NB**: This steps are taken and detailed form the Ampache's [official installation wiki](https://github.com/ampache/ampache/wiki/Installation). Refer to that page for updated installation steps.
