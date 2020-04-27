@@ -228,7 +228,19 @@ Don't forget to add the alias in the `.bash_aliases` file.
 ## Install LAMP software
 See [here](https://howtoraspberrypi.com/how-to-install-web-server-raspberry-pi-lamp).
 <br>
-**NB: To install phpMyAdmin**, download latest version from the [phpMyAdmin homepage](https://www.phpmyadmin.net/), unzip it, move to `/var/www/html/` and rename the folder to `phpmyadmin`. Then, change permissions to 755.
+**NB: To install phpMyAdmin**, download latest version from the [phpMyAdmin homepage](https://www.phpmyadmin.net/), unzip it, move to `/var/www/html/`, rename the folder to `phpmyadmin` and change permissions to 755. Then
+
+- In phpmyadmin folder, create (if not exists) a `config.inc.php` file and edit it
+``` bash
+$ cp config.sample.inc.php config.inc.php #only if not exists
+$ nano config.inc.php
+```
+- Find the line
+``` php
+$cfg['blowfish_secret'] = ''; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
+```
+- Insert a 32 random characters string between quotes
+
 
 ## Install Ampache
 **NB**: This steps are taken and detailed form the Ampache's [official installation wiki](https://github.com/ampache/ampache/wiki/Installation). Refer to that page for updated installation steps.
