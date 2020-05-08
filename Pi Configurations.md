@@ -378,7 +378,29 @@ deactivate
 
 - Paste the string into `~/.config /deemix/.arl`
 <br>
-**NB**: don't forget to add 
+**NB**: don't forget to add into `.bash_aliases`
+```sh
+alias deemix="bash /home/pi/.deemix/launch.sh > /dev/null 2>&1 &"
+```
+
+## Useful commands
+### List active processes
+Simple
+```sh
+$ ps aux
+```
+<br>
+With pagination
+```sh
+$ ps aux | less
+```
+
+<br>
+Search for a specific process
+```sh
+$ ps aux | grep process
+```
+
 # .bash_aliases
 ``` sh
 alias hello='echo ciao'
