@@ -376,7 +376,7 @@ deactivate
 
 - Login into Deezer and exctract `arl` string
 
-- Paste the string into `~/.config /deemix/.arl`
+- Paste the string into `~/.config/deemix/.arl`
 <br>
 **NB**: don't forget to add into `.bash_aliases`
 ```sh
@@ -389,13 +389,12 @@ Simple
 ```sh
 $ ps aux
 ```
-<br>
+
 With pagination
 ```sh
 $ ps aux | less
 ```
 
-<br>
 Search for a specific process
 ```sh
 $ ps aux | grep process
