@@ -389,6 +389,11 @@ $ chmod u+x launch.sh
 alias deemix="bash /home/pi/.deemix/launch.sh > /dev/null 2>&1 &"
 ```
 
+Manually launch
+```bash
+$ bash launch.sh
+```
+
 ## Useful commands
 ### List active processes
 Simple
