@@ -349,6 +349,36 @@ Change the following values
 - Navigate to your ampache address (eg., `http://localhost/ampache`) to start the Ampache installation.
    - **NB**: During the installation on the "Step 1" check the **Create Database User** option.
 
+## Deemix
+```bash
+$ cd ~
+$ git clone https://notabug.org/RemixDev/deemix.git .deemix
+$ cd .deemix
+$ python3 -m venv ./venv
+$ source ./venv/bin/activate
+$ pip install -r requirements.txt
+# Launch and close (Ctrl-C) deemix (to create app folders)
+$ python3 server.py
+$ deactivate
+$ nano launch.sh
+```
+
+- In `launch.sh` paste following code
+
+```sh
+#/bin/sh
+
+source ./venv/bin/activate
+python3 server.py --serverwide-arl
+echo exiting...
+deactivate
+```
+
+- Login into Deezer and exctract `arl` string
+
+- Paste the string into `~/.config /deemix/.arl`
+<br>
+**NB**: don't forget to add 
 # .bash_aliases
 ``` sh
 alias hello='echo ciao'
@@ -359,6 +389,7 @@ alias bridhack='python brid_hack.py'
 alias dlcextractor='python dlc_extractor.py'
 alias linkscraping='python link_scraping.py'
 alias deezloader="node /home/pi/.deezloader/app/app.js > /dev/null 2>&1 &"
+alias deemix="bash /home/pi/.deemix/launch.sh > /dev/null 2>&1 &"
 alias deluged-all="deluged && deluge-web -f"
 ```
 
