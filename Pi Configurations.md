@@ -377,7 +377,7 @@ deactivate
 - Login into Deezer and exctract `arl` string
 
 - Paste the string into `~/.config/deemix/.arl`
-</br>
+
 **NB**: don't forget to add into `.bash_aliases`
 ```sh
 alias deemix="bash /home/pi/.deemix/launch.sh > /dev/null 2>&1 &"
