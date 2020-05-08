@@ -374,6 +374,12 @@ echo exiting...
 deactivate
 ```
 
+- Make `launch.sh` executable
+
+```bash
+$ chmod u+x launch.sh
+```
+
 - Login into Deezer and exctract `arl` string
 
 - Paste the string into `~/.config/deemix/.arl`
