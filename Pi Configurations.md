@@ -241,6 +241,18 @@ $cfg['blowfish_secret'] = ''; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
 ```
 - Insert a 32 random characters string between quotes
 
+### Add xdebug
+Paste `php_info()` (or `php -i` in command line) result into the official [wizard](https://xdebug.org/wizard), update also the `php.ini` file mentioned into `php_info()` page, at **Loaded Configuration File** line.
+
+### Start, Stop and Restart apache2 service
+```
+## Start command ##
+$ systemctl start apache2.service
+## Stop command ##
+$ systemctl stop apache2.service
+## Restart command ##
+$ systemctl restart apache2.service
+```
 
 ## Install Ampache
 **NB**: This steps are taken and detailed form the Ampache's [official installation wiki](https://github.com/ampache/ampache/wiki/Installation). Refer to that page for updated installation steps.
