@@ -418,6 +418,7 @@ $ chmod u+x launch.sh
 
 - Paste the string into `~/.config/deemix/.arl`
 
+### Notes
 **NB**: don't forget to add into `.bash_aliases`
 ```sh
 alias deemix="/home/pi/.deemix/launch.sh > /dev/null 2>&1 &"
