@@ -364,31 +364,53 @@ Change the following values
 ## Deemix
 ```bash
 $ cd ~
-$ git clone https://notabug.org/RemixDev/deemix.git .deemix
+$ git clone https://notabug.org/RemixDev/deemix-pyweb .deemix
 $ cd .deemix
+$ git submodule update --init --recursive
 $ python3 -m venv ./venv
 $ source ./venv/bin/activate
-$ pip install -r requirements.txt
+$ python3 -m pip install -U -r requirements.txt
 # Launch and close (Ctrl-C) deemix (to create app folders)
 $ python3 server.py
 $ deactivate
-$ nano launch.sh
 ```
 
-- In `launch.sh` paste following code
+- Make a new file `update.sh` (`nano update.sh`) and paste following code
 
 ```sh
-#/bin/sh
+echo "DEEMIX UPDATE"
+echo
+echo " Updating git repositories..."
+git pull
+git submodule update --init --recursive
 
+echo
+echo " Updating python packages..."
 source ./venv/bin/activate
-python3 server.py --serverwide-arl
-echo exiting...
+python3 -m pip install -U --upgrade-strategy eager -r requirements.txt
+deactivate
+
+echo
+echo "UPDATE COMPLETED!"
+```
+
+- Make a new file `launch.sh` (`nano launch.sh`) and paste following code
+
+```sh
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )" # get source file diretctory location
+cd $DIR
+
+echo "Launching deemix..."
+source ./venv/bin/activate
+python3 server.py --host 0.0.0.0 --serverwide-arl
+echo "Exiting ..."
 deactivate
 ```
 
-- Make `launch.sh` executable
+- Make files executable
 
 ```bash
+$ chmod u+x update.sh
 $ chmod u+x launch.sh
 ```
 
@@ -398,14 +420,18 @@ $ chmod u+x launch.sh
 
 **NB**: don't forget to add into `.bash_aliases`
 ```sh
-alias deemix="bash /home/pi/.deemix/launch.sh > /dev/null 2>&1 &"
+alias deemix="/home/pi/.deemix/launch.sh > /dev/null 2>&1 &"
 ```
 
 Manually launch
 ```bash
-$ bash launch.sh
+$ ./launch.sh
 ```
 
+Update programs and dependencies
+```bash
+$ ./update.sh
+```
 ## Useful commands
 ### List active processes
 Simple
@@ -432,8 +458,7 @@ alias bridtools='cd /home/pi/.BridTools/ && source ./venv/bin/activate'
 alias bridhack='python brid_hack.py'
 alias dlcextractor='python dlc_extractor.py'
 alias linkscraping='python link_scraping.py'
-alias deezloader="node /home/pi/.deezloader/app/app.js > /dev/null 2>&1 &"
-alias deemix="bash /home/pi/.deemix/launch.sh > /dev/null 2>&1 &"
+alias deemix="/home/pi/.deemix/launch.sh > /dev/null 2>&1 &"
 alias deluged-all="deluged && deluge-web -f"
 ```
 
