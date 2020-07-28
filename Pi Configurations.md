@@ -221,9 +221,58 @@ $ sudo apt-get install -y nodejs
 ```
 
 ## Install Deluge torrent client with web interface
+`NB: Instead of Deluge, install Transmission. This section will remain as refrence`.
+See [here](#install-transmission).
 See [here](https://pimylifeup.com/raspberry-pi-deluge).<br>
 Do not follow the last part ("Setting up Deluge as a service").<br>
 Don't forget to add the alias in the `.bash_aliases` file.
+
+
+## Install Transmission
+```bash
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo apt-get install transmission-cli transmission-common transmission-daemon
+$ sudo /etc/init.d/transmission-daemon stop
+```
+- Edit configuation file
+```bash 
+$ sudo nano /etc/transmission-daemon/settings.json
+```
+- **Edit** this entries as follow:
+```json
+{
+    "download-dir": "/media/nas/home_2/DOWNLOADS/torrent",
+    "incomplete-dir": "/media/nas/home_2/DOWNLOADS/torrent/parts",
+    "incomplete-dir-enabled": true,
+    "rpc-enabled": true,
+    "rpc-username": "transmission",
+    "rpc-password": "transmission",
+    "rpc-whitelist-enabled": false,
+    "umask": 2,
+}
+```
+- Add this entries at bottom
+```json
+    "watch-dir": "/media/nas/home/Pi/torrents",
+    "watch-dir-enabled": true
+```
+
+- Add user `pi` to the group `debian-transmission`
+```bash
+$ sudo usermod -a -G debian-transmission pi
+```
+
+- Add this lines in `.bash_aliases`
+```
+alias t-start='sudo service transmission-daemon start'
+alias t-stop='sudo service transmission-daemon stop'
+alias t-list='transmission-remote -n 'transmission:transmission' -l'
+alias t-basicstats='transmission-remote -n 'transmission:transmission' -st'
+alias t-fullstats='transmission-remote -n 'transmission:transmission' -si'
+```
+- Reboot
+
 
 ## Install LAMP software
 See [here](https://howtoraspberrypi.com/how-to-install-web-server-raspberry-pi-lamp).
