@@ -221,8 +221,8 @@ $ sudo apt-get install -y nodejs
 ```
 
 ## Install Deluge torrent client with web interface
-`NB: Instead of Deluge, install Transmission. This section will remain as refrence`.
-See [here](#install-transmission).
+`NB: Instead of Deluge, install Transmission. This section will remain as refrence`. See [here](#install-transmission).
+<br>
 See [here](https://pimylifeup.com/raspberry-pi-deluge).<br>
 Do not follow the last part ("Setting up Deluge as a service").<br>
 Don't forget to add the alias in the `.bash_aliases` file.
