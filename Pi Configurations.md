@@ -413,7 +413,7 @@ Change the following values
 ## Deemix
 ```bash
 $ cd ~
-$ git clone https://notabug.org/RemixDev/deemix-pyweb .deemix
+$ git clone https://codeberg.org/RemixDev/deemix-pyweb.git .deemix
 $ cd .deemix
 $ git submodule update --init --recursive
 $ python3 -m venv ./venv
