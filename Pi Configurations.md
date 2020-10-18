@@ -528,6 +528,7 @@ $ python3.8 --version
 
 - Now you can clean up downloaded files
 ```bash
+cd ..
 $ sudo rm -rf Python-3.8.6.tar.xz
 $ sudo rm -rf Python-3.8.6
 ```
