@@ -542,7 +542,7 @@ $ sudo rm -rf Python-3.8.6
 ```bash
 $ sudo nano -w /etc/systemd/system/home-assistant@homeassistant.service
 ```
-- Paste follownig text
+- Paste following text
 ```sh
 [Unit]
 Description=Home Assistant
