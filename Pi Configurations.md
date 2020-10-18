@@ -490,7 +490,7 @@ Python 3.8 is not on Debian repository so we have to build it from scratch.
 
 ```bash
 $ sudo apt update
-$ sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libsqlite3-dev libreadline-dev libffi-dev curl libbz2-dev
+$ sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libsqlite3-dev libreadline-dev libffi-dev wget libbz2-dev
 ```
 
 - Download the latest release’s source code from the Python download page with `wget` or `curl` . The last one should be `3.8.6`:
