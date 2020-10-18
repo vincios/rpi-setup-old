@@ -483,7 +483,7 @@ Update programs and dependencies
 $ ./update.sh
 ```
 
-## Update Python to 3.8
+## Install Python 3.8
 Python 3.8 is not on Debian repository so we have to build it from scratch.
 
 - Start by installing the packages necessary to build Python source:
@@ -531,6 +531,93 @@ $ python3.8 --version
 $ sudo rm -rf Python-3.8.6.tar.xz
 $ sudo rm -rf Python-3.8.6
 ```
+
+## Home Assistant
+### Install
+- [Install Python 3.8](#install-python-38)
+- Follow the official [guide](https://www.home-assistant.io/docs/installation/raspberry-pi/)
+
+### Run at boot
+- Create systemd service
+```bash
+$ sudo nano -w /etc/systemd/system/home-assistant@homeassistant.service
+```
+- Paste follownig text
+```sh
+[Unit]
+Description=Home Assistant
+After=network-online.target
+
+[Service]
+Type=simple
+User=%i
+ExecStart=/srv/homeassistant/bin/hass -c "/home/homeassistant/.homeassistant"
+
+[Install]
+WantedBy=multi-user.target
+```
+
+- Restart Systemd and load new service
+```bash
+$ sudo systemctl --system daemon-reload
+$ sudo systemctl enable home-assistant@homeassistant
+$ sudo systemctl start home-assistant@homeassistant
+```
+### Updating
+To update to the latest version of Home Assistant Core follow these simple steps:
+
+```bash
+$ sudo -u homeassistant -H -s
+$ source /srv/homeassistant/bin/activate
+$ pip3 install --upgrade homeassistant
+```
+
+### Other useful commands
+- Verify Home Assistant service status
+``` bash
+$ sudo systemctl status home-assistant@homeassistant
+```
+
+- Start Home Assistant service
+``` bash
+$ sudo systemctl start home-assistant@homeassistant
+````
+
+- Stop Home Assistant service
+``` bash
+$ sudo systemctl stop home-assistant@homeassistant
+```
+
+- Restart Home Assistant service
+``` bash
+$ sudo systemctl restart home-assistant@homeassistant
+```
+
+- Disable Home Assistant service autostart
+``` bash
+$ sudo systemctl disable home-assistant@homeassistant
+```
+
+- Read real time Home Assistant `systemlog` rows
+``` bash
+$sudo tail -f /var/log/syslog | grep hass
+```
+
+- Read Home Assistant log output
+``` bash
+$ sudo journalctl -f -u home-assistant@homeassistant
+```
+
+Because the log can scroll quite quickly, you can select to view only the error lines
+``` bash
+$ sudo journalctl -f -u home-assistant@homeassistant | grep -i ‘error’
+```
+
+- Verify configuration by manual launch
+``` bash
+$ hass --script check_config –h
+```
+
 ## Useful commands
 ### List active processes
 Simple
