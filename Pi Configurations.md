@@ -482,6 +482,55 @@ Update programs and dependencies
 ```bash
 $ ./update.sh
 ```
+
+## Update Python to 3.8
+Python 3.8 is not on Debian repository so we have to build it from scratch.
+
+- Start by installing the packages necessary to build Python source:
+
+```bash
+$ sudo apt update
+$ sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libsqlite3-dev libreadline-dev libffi-dev curl libbz2-dev
+```
+
+- Download the latest release’s source code from the Python download page with `wget` or `curl` . The last one should be `3.8.6`:
+
+```bash
+wget https://www.python.org/ftp/python/3.8.6/Python-3.8.6.tgz
+```
+
+When the download is complete, extract the tarball, navigate to the Python source directory and run the configure script:
+
+```bash
+$ tar -xf Python-3.8.2.tar.xz
+$ cd Python-3.8.2
+$ ./configure --enable-optimizations
+```
+
+The script performs a number of checks to make sure all of the dependencies on your system are present. The `--enable-optimizations` option will optimize the Python binary by running multiple tests, which will make the build process slower.
+
+- Run `make` to start the build process:
+```bash
+$ make -j 4
+```
+The `-j` to correspond to the number of cores in your processor.
+
+- Once the build is done, install the Python binaries by running the following command as a user with sudo access:
+```bash
+$ sudo make altinstall
+```
+**NB:** Do not use the standard make install as it will overwrite the default system python3 binary.
+
+<br> Now Python3.8 is installed. To use it instead of the system default 3.7 **you have to explicity run `python3.8`**, such as:
+```bash
+$ python3.8 --version
+```
+
+- Now you can clean up downloaded files
+```bash
+$ sudo rm -rf Python-3.8.0.tgz
+$ sudo rm -rf Python-3.8.0
+```
 ## Useful commands
 ### List active processes
 Simple
