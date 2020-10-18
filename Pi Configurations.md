@@ -528,8 +528,8 @@ $ python3.8 --version
 
 - Now you can clean up downloaded files
 ```bash
-$ sudo rm -rf Python-3.8.0.tgz
-$ sudo rm -rf Python-3.8.0
+$ sudo rm -rf Python-3.8.6.tgz
+$ sudo rm -rf Python-3.8.6
 ```
 ## Useful commands
 ### List active processes
