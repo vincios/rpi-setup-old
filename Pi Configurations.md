@@ -496,7 +496,7 @@ $ sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss
 - Download the latest release’s source code from the Python download page with `wget` or `curl` . The last one should be `3.8.6`:
 
 ```bash
-wget https://www.python.org/ftp/python/3.8.6/Python-3.8.6.tgz
+wget https://www.python.org/ftp/python/3.8.6/Python-3.8.6.tar.xz
 ```
 
 - When the download is complete, extract the tarball, navigate to the Python source directory and run the configure script:
@@ -528,7 +528,7 @@ $ python3.8 --version
 
 - Now you can clean up downloaded files
 ```bash
-$ sudo rm -rf Python-3.8.6.tgz
+$ sudo rm -rf Python-3.8.6.tar.xz
 $ sudo rm -rf Python-3.8.6
 ```
 ## Useful commands
