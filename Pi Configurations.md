@@ -499,11 +499,11 @@ $ sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss
 wget https://www.python.org/ftp/python/3.8.6/Python-3.8.6.tgz
 ```
 
-When the download is complete, extract the tarball, navigate to the Python source directory and run the configure script:
+- When the download is complete, extract the tarball, navigate to the Python source directory and run the configure script:
 
 ```bash
-$ tar -xf Python-3.8.2.tar.xz
-$ cd Python-3.8.2
+$ tar -xf Python-3.8.6.tar.xz
+$ cd Python-3.8.6
 $ ./configure --enable-optimizations
 ```
 
