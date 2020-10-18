@@ -536,8 +536,9 @@ $ sudo rm -rf Python-3.8.6
 ### Install
 - [Install Python 3.8](#install-python-38)
 - Follow the official [guide](https://www.home-assistant.io/docs/installation/raspberry-pi/)
+- Create the [service](#service-creation)
 
-### Run at boot
+### Service creation
 - Create systemd service
 ```bash
 $ sudo nano -w /etc/systemd/system/home-assistant@homeassistant.service
@@ -563,6 +564,15 @@ $ sudo systemctl --system daemon-reload
 $ sudo systemctl enable home-assistant@homeassistant
 $ sudo systemctl start home-assistant@homeassistant
 ```
+
+- Add these lines to `bash_aliases`
+``` sh
+alias ha-start="sudo systemctl start home-assistant@homeassistant"
+alias ha-stop="sudo systemctl stop home-assistant@homeassistant"
+alias ha-restart="sudo systemctl restart home-assistant@homeassistant"
+alias ha-restartlog="sudo systemctl restart home-assistant@homeassistant && sudo journalctl -f -u home-assistant@homeassistant"
+```
+
 ### Updating
 To update to the latest version of Home Assistant Core follow these simple steps:
 
@@ -646,6 +656,10 @@ alias dlcextractor='python dlc_extractor.py'
 alias linkscraping='python link_scraping.py'
 alias deemix="/home/pi/.deemix/launch.sh > /dev/null 2>&1 &"
 alias deluged-all="deluged && deluge-web -f"
+alias ha-start="sudo systemctl start home-assistant@homeassistant"
+alias ha-stop="sudo systemctl stop home-assistant@homeassistant"
+alias ha-restart="sudo systemctl restart home-assistant@homeassistant"
+alias ha-restartlog="sudo systemctl restart home-assistant@homeassistant && sudo journalctl -f -u home-assistant@homeassistant"
 ```
 
 After you add a new alias don't forget to run `. /home/pi/.bashrc`
