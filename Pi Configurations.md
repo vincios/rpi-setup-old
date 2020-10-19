@@ -540,6 +540,7 @@ $ sudo rm -rf Python-3.8.6
 - Create the [service](#service-creation)
 
 ### Service creation
+**NB:** Run this steps as `pi` user! 
 - Create systemd service
 ```bash
 $ sudo nano -w /etc/systemd/system/home-assistant@homeassistant.service
