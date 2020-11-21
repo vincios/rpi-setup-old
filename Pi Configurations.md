@@ -1,8 +1,32 @@
 # Common configurations for Raspberry Pi with Raspbian
 
-> Indice
-> + [VNC "cannot currently show the desktop" in headless mode](#vnc-cannot-currently-show-the-desktop-in-headless-mode)
-
+Indice
++ [VNC "cannot currently show the desktop" in headless mode](#vnc-cannot-currently-show-the-desktop-in-headless-mode)
++ [AutoMount Nas folders](automount-nas-folders)
++ [Samba shares](#samba-shares)
++ [Duckdns cron configuration](#duckdns-cron-configuration)
++ [Plex Media Server](#plex-media-server)
++ [Build TOR](#build-tor)
++ [Run BridTools](#run-bridtools)
++ [Install jDownloader in headless mode](#install-jdownloader-in-headless-mode)
++ [JDownloader RAR5 support](#jdownloader-rar5-support)
++ [Update Node and npm](#update-node-and-npm)
++ [Install Deluge torrent client with web interface](#install-deluge-torrent-client-with-web-interface)
++ [Install Transmission](#install-transmission)
++ [Install LAMP software](#install-lamp-software)
+    + [Add xdebug](#add-xdebug)
+	+ [Start, Stop and Restart apache2 service](#start-stop-and-restart-apache2-service)
++ [Install Ampache](#install-ampache)
++ [Deemix](#deemix)
+    + [Notes](#notes)
++ [Install Python 3.8)[#install-python-38)
++ [Home Assistant](#home-assistant)
+    + [Service creation](#service-creation)
+	+ [Updating](#updating)
+	+ [Other useful commands](#other-useful-commands)
++ [Useful commands](#useful-commands)
+    + [List active processes](#list-active-processes)
++ [.bash_aliases](#bash_aliases)
 ## VNC "cannot currently show the desktop" in headless mode
 Run `raspi-config` and change screen resolution to 1920x1080
 
