@@ -221,8 +221,7 @@ $ sudo apt-get install -y nodejs
 ```
 
 ## Install Deluge torrent client with web interface
-`NB: Instead of Deluge, install Transmission. This section will remain as refrence`. See [here](#install-transmission).
-<br>
+`NB: Instead of Deluge, install Transmission. This section will remain as refrence`. See [here](#install-transmission).<br>
 See [here](https://pimylifeup.com/raspberry-pi-deluge).<br>
 Do not follow the last part ("Setting up Deluge as a service").<br>
 Don't forget to add the alias in the `.bash_aliases` file.
@@ -275,8 +274,7 @@ alias t-fullstats='transmission-remote -n 'transmission:transmission' -si'
 
 
 ## Install LAMP software
-See [here](https://howtoraspberrypi.com/how-to-install-web-server-raspberry-pi-lamp).
-<br>
+See [here](https://howtoraspberrypi.com/how-to-install-web-server-raspberry-pi-lamp).<br>
 **NB: To install phpMyAdmin**, download latest version from the [phpMyAdmin homepage](https://www.phpmyadmin.net/), unzip it, move to `/var/www/html/`, rename the folder to `phpmyadmin` and change permissions to 755. Then
 
 - In phpmyadmin folder, create (if not exists) a `config.inc.php` file and edit it
@@ -304,10 +302,9 @@ $ systemctl restart apache2.service
 ```
 
 ## Install Ampache
-**NB**: This steps are taken and detailed form the Ampache's [official installation wiki](https://github.com/ampache/ampache/wiki/Installation). Refer to that page for updated installation steps.
-<br>
-**NB2**: this guide assume that Apache uses the default `/var/www/html/` public folder. Change the code according to your web server public html folder location.
-<br>
+**NB**: This steps are taken and detailed form the Ampache's [official installation wiki](https://github.com/ampache/ampache/wiki/Installation). Refer to that page for updated installation steps.<br>
+
+**NB2**: this guide assume that Apache uses the default `/var/www/html/` public folder. Change the code according to your web server public html folder location.<br>
 
 - First install *LAMP* (See [Install LAMP software](#install-lamp-software)).
 
@@ -333,8 +330,7 @@ $ cd /var/www/html/ampache
 $ composer install --prefer-source --no-interaction
 ```
 
-Now we have to enable the url rewriting functionality. Next steps are taken from [here](https://www.digitalocean.com/community/tutorials/how-to-rewrite-urls-with-mod_rewrite-for-apache-on-ubuntu-16-04/).
-<br>
+Now we have to enable the url rewriting functionality. Next steps are taken from [here](https://www.digitalocean.com/community/tutorials/how-to-rewrite-urls-with-mod_rewrite-for-apache-on-ubuntu-16-04/). <br>
 1. Enable mod_rewrite on Apache
 
 ``` bash
@@ -519,9 +515,9 @@ The `-j` to correspond to the number of cores in your processor.
 ```bash
 $ sudo make altinstall
 ```
-**NB:** Do not use the standard make install as it will overwrite the default system python3 binary.
+**NB:** Do not use the standard make install as it will overwrite the default system python3 binary. <br> 
 
-<br> Now Python3.8 is installed. To use it instead of the system default 3.7 **you have to explicity run `python3.8`**, such as:
+Now Python3.8 is installed. To use it instead of the system default 3.7 **you have to explicity run `python3.8`**, such as:
 ```bash
 $ python3.8 --version
 ```
