@@ -1,5 +1,8 @@
 # Common configurations for Raspberry Pi with Raspbian
 
+Indice
++ [VNC "cannot currently show the desktop" in headless mode](#vnc-cannot-currently-show-the-desktop-in-headless-mode)
+
 ## VNC "cannot currently show the desktop" in headless mode
 Run `raspi-config` and change screen resolution to 1920x1080
 
