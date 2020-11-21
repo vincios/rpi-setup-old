@@ -17,7 +17,7 @@ Run `raspi-config` and change screen resolution to 1920x1080
 - Check if OK with `sudo mount -a`
 
 
-## Samba share
+## Samba shares
 - `sudo apt-get install samba`
 
 - `sudo nano /etc/samba/smb.conf`
