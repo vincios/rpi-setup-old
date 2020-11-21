@@ -2,7 +2,7 @@
 
 Indice
 + [VNC "cannot currently show the desktop" in headless mode](#vnc-cannot-currently-show-the-desktop-in-headless-mode)
-+ [AutoMount Nas folders](automount-nas-folders)
++ [AutoMount Nas folders](#automount-nas-folders)
 + [Samba shares](#samba-shares)
 + [Duckdns cron configuration](#duckdns-cron-configuration)
 + [Plex Media Server](#plex-media-server)
@@ -19,7 +19,7 @@ Indice
 + [Install Ampache](#install-ampache)
 + [Deemix](#deemix)
     + [Notes](#notes)
-+ [Install Python 3.8)[#install-python-38)
++ [Install Python 3.8)(#install-python-38)
 + [Home Assistant](#home-assistant)
     + [Service creation](#service-creation)
 	+ [Updating](#updating)
