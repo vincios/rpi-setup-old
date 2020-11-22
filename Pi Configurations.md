@@ -594,11 +594,22 @@ $ sudo systemctl start home-assistant@homeassistant
 ```
 
 - Add these lines to `bash_aliases`
-``` sh
+```sh
 alias ha-start="sudo systemctl start home-assistant@homeassistant"
 alias ha-stop="sudo systemctl stop home-assistant@homeassistant"
 alias ha-restart="sudo systemctl restart home-assistant@homeassistant"
 alias ha-restartlog="sudo systemctl restart home-assistant@homeassistant && sudo journalctl -f -u home-assistant@homeassistant"
+```
+
+### Switch to homeassistant user
+To do some configuration operations (edit configuration files, updating application, etc.) you have to switch to the `homeassistant` user using the following command
+```bash
+$ sudo -u homeassistant -H -s
+```
+
+You can also automate this operation adding the command above in the `bash_aliases` file. Something such as:
+```sh
+alias ha-login="sudo -u homeassistant -H -s"
 ```
 
 ### Updating
