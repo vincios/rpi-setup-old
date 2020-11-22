@@ -22,11 +22,14 @@
 > + [Install Python 3.8](#install-python-38)
 > + [Home Assistant](#home-assistant)
 >     + [Service creation](#service-creation)
-> 	+ [Updating](#updating)
-> 	+ [Other useful commands](#other-useful-commands)
+>     + [Switch to homeassistant user](#switch-to-homeassistant-user)
+> 	  + [Updating](#updating)
+> 	  + [Other useful commands](#other-useful-commands)
 > + [Useful commands](#useful-commands)
 >     + [List active processes](#list-active-processes)
 > + [.bash_aliases](#bash_aliases)
+
+
 ## VNC "cannot currently show the desktop" in headless mode
 Run `raspi-config` and change screen resolution to 1920x1080
 
