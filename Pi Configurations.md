@@ -560,7 +560,9 @@ $ sudo rm -rf Python-3.8.6
 ### Install
 - [Install Python 3.8](#install-python-38)
 - Follow the official [guide](https://www.home-assistant.io/docs/installation/raspberry-pi/)
+
     For first launch use `hass -v`
+
 - Create the [service](#service-creation)
 
 ### Service creation
