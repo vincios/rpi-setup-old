@@ -662,7 +662,8 @@ From [this](https://indomus.it/guide/collegarsi-da-remoto-a-home-assistant-insta
 	```
 
 - Create in the same directory a file config (`nano config`) and paste these lines
-    ```sh
+    
+	```sh
 	# Which challenge should be used? Currently http-01 and dns-01 are supported
     CHALLENGETYPE="dns-01"
     
@@ -671,7 +672,8 @@ From [this](https://indomus.it/guide/collegarsi-da-remoto-a-home-assistant-insta
 	```
 
 - Create in the same directory a file hook.sh (`nano hook.sh`) and paste these lines
-    **NB:** change `domain` and `token` with your duckdns domain and token.
+    
+	**NB:** change `domain` and `token` with your duckdns domain and token.
 	
     ```sh
     #!/usr/bin/env bash
@@ -708,12 +710,14 @@ From [this](https://indomus.it/guide/collegarsi-da-remoto-a-home-assistant-insta
 	```
 
 - Make the file executable
-    ```bash
+    
+	```bash
 	$ chmod 0777 hook.sh
 	```
 
 - Run dehydrated a first time to register the certificate
-    ```bash
+    
+	```bash
 	$ ./dehydrated --register --accept-terms
 	````
 	
@@ -726,7 +730,8 @@ From [this](https://indomus.it/guide/collegarsi-da-remoto-a-home-assistant-insta
     + Done!
 	````
 - Run dehytrdrated a second time to sign the certificate
-    ```bash
+    
+	```bash
 	$ ./dehydrated -c
 	````
 	
@@ -751,13 +756,13 @@ From [this](https://indomus.it/guide/collegarsi-da-remoto-a-home-assistant-insta
 	**NB:** if the prompt requests the user password, simply stop the execution (`Ctrl+C`). The execution is still valid.
 	
 Now we have a valid certificate signed with a private keys that expiry after 90 days.
-You can find the signed certificate and the private key in the folder `~/dehydrated/certs/cclouds.duckdns.org`. There are these files (and others)
-> -- ~/dehydrated/certs/cclouds.duckdns.org
->    -- cert.csr
->	 -- cert.pem
->	 -- chain.pem
->	 -- fullchain.pem   <---- This is your signed certificate
->	 -- privkey.pem <---- This is your private key
+You can find the signed certificate and the private key in the folder `~/dehydrated/certs/cclouds.duckdns.org`. There should be these files (and others)
+> -- ~/dehydrated/certs/cclouds.duckdns.org  
+>    -- cert.csr  
+>	 -- cert.pem  
+>	 -- chain.pem  
+>	 -- fullchain.pem   <---- This is your signed certificate  
+>	 -- privkey.pem <---- This is your private key  
 
 
 ### Other useful commands
