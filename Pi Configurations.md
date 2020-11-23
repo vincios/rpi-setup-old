@@ -645,14 +645,15 @@ From [this](https://indomus.it/guide/collegarsi-da-remoto-a-home-assistant-insta
     ```
     http://cclouds.duckdns.org:8123
     ```
-	
-- Install Dehydrated
-    - [Switch to homeassistant user](#switch-to-homeassistant -user)
-	- `$ cd /home/homeassistant`
-	- Clone the repo
-	    ```sh
-		$ git clone https://github.com/dehydrated-io/dehydrated.git
-		```
+- [Switch to homeassistant user](#switch-to-homeassistant-user)
+
+- Go to the user home folder (`$ cd /home/homeassistant`)
+
+- Clone the Dehydrated repo
+
+    ```sh
+	$ git clone https://github.com/dehydrated-io/dehydrated.git
+	```
 	
 	
 ### Other useful commands
