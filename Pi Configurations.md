@@ -755,15 +755,19 @@ From [this](https://indomus.it/guide/collegarsi-da-remoto-a-home-assistant-insta
 	
 	**NB:** if the prompt requests the user password, simply stop the execution (`Ctrl+C`). The execution is still valid.
 	
-Now we have a valid certificate signed with a private keys that expiry after 90 days.
-You can find the signed certificate and the private key in the folder `~/dehydrated/certs/cclouds.duckdns.org`. There should be these files (and others)
-> -- ~/dehydrated/certs/cclouds.duckdns.org  
->    -- cert.csr  
->	 -- cert.pem  
->	 -- chain.pem  
->	 -- fullchain.pem   <---- This is your signed certificate  
->	 -- privkey.pem <---- This is your private key  
+Now we have a valid certificate signed with a private keys that expiry after 90 days. <br>
 
+You can find the signed certificate and the private key in the folder `~/dehydrated/certs/cclouds.duckdns.org`. <br>
+There should be these files (and others):
+
+```
+ -- ~/dehydrated/certs/cclouds.duckdns.org  
+  |-- cert.csr  
+  |-- cert.pem  
+  |-- chain.pem  
+  |-- fullchain.pem   <---- This is your signed certificate  
+  |-- privkey.pem <---- This is your private key  
+```
 
 ### Other useful commands
 - Verify Home Assistant service status
