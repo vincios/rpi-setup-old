@@ -624,6 +624,22 @@ $ source /srv/homeassistant/bin/activate
 $ pip3 install --upgrade homeassistant
 ```
 
+### Create ssl certificates
+From [this](https://indomus.it/guide/collegarsi-da-remoto-a-home-assistant-installato-su-raspberry-raspbian/) guide. <br>
+<br>
+
+**NOTE**: This guide assume a configured duckdns domain `cclouds.duckdns.org`. If you use a different domain, change scripts when indicated.
+
+- Enable port forwarding to Home Assistant on the router (port 8123)
+
+- Check that in `configuration.yaml` there isn't the field `base_url` under `http` block. Delete it if present.
+
+- Open Home Assistant, go to `Settings` > `General` > `External URL` and insert your Home Assistant external URL:
+```
+http://cclouds.duckdns.org:8123
+```
+    **NB**: You must activate Advanced Mode to see `Eternal URL` field
+	
 ### Other useful commands
 - Verify Home Assistant service status
 ``` bash
