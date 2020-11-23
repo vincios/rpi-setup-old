@@ -637,9 +637,9 @@ From [this](https://indomus.it/guide/collegarsi-da-remoto-a-home-assistant-insta
     
 	**NB**: You must activate Advanced Mode to see `Eternal URL` field
 	
-```
-http://cclouds.duckdns.org:8123
-```
+    ```
+    http://cclouds.duckdns.org:8123
+    ```
 	
 ### Other useful commands
 - Verify Home Assistant service status
