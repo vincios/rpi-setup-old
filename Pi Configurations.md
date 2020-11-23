@@ -655,7 +655,16 @@ From [this](https://indomus.it/guide/collegarsi-da-remoto-a-home-assistant-insta
 	$ git clone https://github.com/dehydrated-io/dehydrated.git
 	```
 	
+- Enter into the Dehydrated folder (`cd dehydrated`, create a `domains.txt` file (`nano domains.txt`) and paste your domain
 	
+	```
+	cclouds.duckdns.org
+	```
+
+- 
+	
+
+
 ### Other useful commands
 - Verify Home Assistant service status
 ``` bash
@@ -734,6 +743,7 @@ alias ha-start="sudo systemctl start home-assistant@homeassistant"
 alias ha-stop="sudo systemctl stop home-assistant@homeassistant"
 alias ha-restart="sudo systemctl restart home-assistant@homeassistant"
 alias ha-restartlog="sudo systemctl restart home-assistant@homeassistant && sudo journalctl -f -u home-assistant@homeassistant"
+alias ha-login="sudo -u homeassistant -H -s"
 ```
 
 After you add a new alias don't forget to run `. /home/pi/.bashrc`
