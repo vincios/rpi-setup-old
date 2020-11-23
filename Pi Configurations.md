@@ -37,12 +37,13 @@ Run `raspi-config` and change screen resolution to 1920x1080
 
 ## AutoMount Nas folders
 - Follow points 1, 2, 3 [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/)
-- Run `sudo /etc/fstab` and add these lines (changes paths as done in point 2)
+- Run `sudo nano /etc/fstab` and add these lines (changes paths as done in point 2)
 
 ``` 
-//192.168.1.200/home	/media/nas/home/	cifs	credentials=/home/pi/.nascredentials,uid=pi,gid=pi,iocharset=utf8,file_mode=0777,dir_mode=0777,noperm,vers=1.0	0	0
-//192.168.1.200/home_2	/media/nas/home_2/	cifs	credentials=/home/pi/.nascredentials,uid=pi,gid=pi,iocharset=utf8,file_mode=0777,dir_mode=0777,noperm,vers=1.0	0	0
-//192.168.1.200/share	/media/nas/share/	cifs	credentials=/home/pi/.nascredentials,uid=pi,gid=pi,iocharset=utf8,file_mode=0777,dir_mode=0777,noperm,vers=1.0	0	0
+//192.168.1.200/home          /media/nas/home/      cifs    credentials=/home/pi/.nascredentials,uid=pi,gid=pi,iocharset=utf8,file_mode=0777,dir_mode=0777,noperm,vers=1.0  0       0
+//192.168.1.200/home_2        /media/nas/home_2/    cifs    credentials=/home/pi/.nascredentials,uid=pi,gid=pi,iocharset=utf8,file_mode=0777,dir_mode=0777,noperm,vers=1.0  0       0
+//192.168.1.200/share         /media/nas/share/     cifs    credentials=/home/pi/.nascredentials,uid=pi,gid=pi,iocharset=utf8,file_mode=0777,dir_mode=0777,noperm,vers=1.0  0       0
+//192.168.1.210/Multimedia    /media/qnas/Media/    cifs    credentials=/home/pi/.nascredentials,uid=pi,gid=pi,iocharset=utf8,file_mode=0777,dir_mode=0777,noperm           0       0
 ```
 
 - Run `raspi-config` and enable "Wait for Network at Boot" under "Boot options"
@@ -629,6 +630,9 @@ $ pip3 install --upgrade homeassistant
 ### Activate Advanced Mode
 You can activate Advanced Mode under user profile page (click on the user's name at the bottom of the left sidebar).
 
+### Edit configuration.yaml file
+To edit the ***configuration.yaml*** file you have to [Switch to homeassistant user](#switch-to-homeassistant-user)
+
 ### Create ssl certificate
 From [this](https://indomus.it/guide/collegarsi-da-remoto-a-home-assistant-installato-su-raspberry-raspbian/) guide. <br>
 
@@ -645,6 +649,7 @@ From [this](https://indomus.it/guide/collegarsi-da-remoto-a-home-assistant-insta
     ```
     http://cclouds.duckdns.org:8123
     ```
+	
 - [Switch to homeassistant user](#switch-to-homeassistant-user)
 
 - Go to the user home folder (`$ cd /home/homeassistant`)
@@ -765,9 +770,46 @@ There should be these files (and others):
   |-- cert.csr  
   |-- cert.pem  
   |-- chain.pem  
-  |-- fullchain.pem   <---- This is your signed certificate  
-  |-- privkey.pem <---- This is your private key  
+  |-- fullchain.pem    <---- This is your signed certificate  
+  |-- privkey.pem    <---- This is your private key  
 ```
+
+Now we configure the system to check every day at 01:00 the certificate validity. **The certificate will be automatically renewd if the expiry date is less than 30 days**
+
+- Run the `cron` editor
+  
+    ```bash
+	$ export VISUAL=nano; crontab -e
+	```
+	
+	You may see a warning that the cron file doesn't exists. If it ask you which editor use, choose `nano`.
+	
+- Paste this line the end of file
+
+    ```
+	0 1 * * * /home/homeassistant/dehydrated/dehydrated -c | tee /home/homeassistant/dehydrated/update.log
+	```
+
+Now we have to add the certificate and the key to Home Assistant configuration file.  
+
+- Open the `configuration.yaml` file and add (or edit) these lines under the `http` block (if the block doesn't exists manually add it)
+
+    ```
+    http:
+      ssl_certificate: /home/homeassistant/dehydrated/certs/cclouds.duckdns.org/fullchain.pem
+      ssl_key: /home/homeassistant/dehydrated/certs/cclouds.duckdns.org/privkey.pem
+    ```
+
+- Open Home Assistant, go to `Settings` > `General` > `External URL` and edit the field
+
+    ```
+    https://cclouds.duckdns.org:8123
+    ```
+	
+- Restart Home assistant
+
+Home Assistant is now configured to use ssl connection. You can connect to it with the external URL `https://cclouds.duckdns.org:8123` or the internal URL `https://RASPI_IP:8123`.
+In the latter case, you should see a security error, this is normal because the certificate is signed for the external URL.
 
 ### Other useful commands
 - Verify Home Assistant service status
