@@ -651,18 +651,113 @@ From [this](https://indomus.it/guide/collegarsi-da-remoto-a-home-assistant-insta
 
 - Clone the Dehydrated repo
 
-    ```sh
+    ```bash
 	$ git clone https://github.com/dehydrated-io/dehydrated.git
 	```
 	
-- Enter into the Dehydrated folder (`cd dehydrated`, create a `domains.txt` file (`nano domains.txt`) and paste your domain
+- Enter into the Dehydrated folder (`cd dehydrated`), create a domains.txt file (`nano domains.txt`) and paste your domain
 	
 	```
 	cclouds.duckdns.org
 	```
 
-- 
+- Create in the same directory a file config (`nano config`) and paste these lines
+    ```sh
+	# Which challenge should be used? Currently http-01 and dns-01 are supported
+    CHALLENGETYPE="dns-01"
+    
+    # Script to execute the DNS challenge and run after cert generation
+    HOOK="${BASEDIR}/hook.sh"
+	```
+
+- Create in the same directory a file hook.sh (`nano hook.sh`) and paste these lines
+    **NB:** change `domain` and `token` with your duckdns domain and token.
 	
+    ```sh
+    #!/usr/bin/env bash
+    set -e
+    set -u
+    set -o pipefail
+    
+    domain="cclouds"
+    token="your-duckdns-token"
+    
+    case "$1" in
+        "deploy_challenge")
+            curl "https://www.duckdns.org/update?domains=$domain&token=$token&txt=$4"
+            echo
+            ;;
+        "clean_challenge")
+            curl "https://www.duckdns.org/update?domains=$domain&token=$token&txt=removed&clear=true"
+            echo
+            ;;
+        "deploy_cert")
+            sudo systemctl restart home-assistant@homeassistant.service
+            ;;
+        "unchanged_cert")
+            ;;
+        "startup_hook")
+            ;;
+        "exit_hook")
+            ;;
+        *)
+            echo Unknown hook "${1}"
+            exit 0
+            ;;
+    esac
+	```
+
+- Make the file executable
+    ```bash
+	$ chmod 0777 hook.sh
+	```
+
+- Run dehydrated a first time to register the certificate
+    ```bash
+	$ ./dehydrated --register --accept-terms
+	````
+	
+	You should obtain an output like this
+    ```bash
+    # INFO: Using main config file /home/homeassistant/dehydrated/config
+    + Generating account key...
+    + Registering account key with ACME server...
+    + Fetching account ID...
+    + Done!
+	````
+- Run dehytrdrated a second time to sign the certificate
+    ```bash
+	$ ./dehydrated -c
+	````
+	
+	You should obtain an output like this
+    ```bash
+    # INFO: Using main config file /home/homeassistant/dehydrated/config
+    Processing myhome.duckdns.org
+    + Signing domains...
+    + Generating private key...
+    + Generating signing request...
+    + Requesting challenge for myhome.duckdns.org... OK
+    + Responding to challenge for myhome.duckdns.org... OK
+    + Challenge is valid!
+    + Requesting certificate...
+    + Checking certificate...
+    + Done!
+    + Creating fullchain.pem...
+    + Walking chain...
+    + Done!
+	````
+	
+	**NB:** if the prompt requests the user password, simply stop the execution (`Ctrl+C`). The execution is still valid.
+	
+Now we have a valid certificate signed with a private keys that expiry after 90 days.
+You can find the signed certificate and the private key in the folder `~/dehydrated/certs/cclouds.duckdns.org`. There are these files (and others)
+> -- ~/dehydrated/certs/cclouds.duckdns.org
+>    -- cert.csr
+>	 -- cert.pem
+>	 -- chain.pem
+>	 -- fullchain.pem   <---- This is your signed certificate
+>	 -- privkey.pem <---- This is your private key
 
 
 ### Other useful commands
