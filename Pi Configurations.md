@@ -626,7 +626,6 @@ $ pip3 install --upgrade homeassistant
 
 ### Create ssl certificates
 From [this](https://indomus.it/guide/collegarsi-da-remoto-a-home-assistant-installato-su-raspberry-raspbian/) guide. <br>
-<br>
 
 **NOTE**: This guide assume a configured duckdns domain `cclouds.duckdns.org`. If you use a different domain, change scripts when indicated.
 
