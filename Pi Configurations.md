@@ -634,7 +634,9 @@ From [this](https://indomus.it/guide/collegarsi-da-remoto-a-home-assistant-insta
 - Check that in `configuration.yaml` there isn't the field `base_url` under `http` block. Delete it if present.
 
 - Open Home Assistant, go to `Settings` > `General` > `External URL` and insert your Home Assistant external URL.
-    **NB**: You must activate Advanced Mode to see `Eternal URL` field
+    
+	**NB**: You must activate Advanced Mode to see `Eternal URL` field
+	
 ```
 http://cclouds.duckdns.org:8123
 ```
