@@ -631,7 +631,7 @@ $ pip3 install --upgrade homeassistant
 You can activate Advanced Mode under user profile page (click on the user's name at the bottom of the left sidebar).
 
 ### Edit configuration.yaml file
-To edit the ***configuration.yaml*** file you have to [Switch to homeassistant user](#switch-to-homeassistant-user)
+To edit the ***configuration.yaml*** file you have to [switch to homeassistant user](#switch-to-homeassistant-user)
 
 ### Create ssl certificate
 From [this](https://indomus.it/guide/collegarsi-da-remoto-a-home-assistant-installato-su-raspberry-raspbian/) guide. <br>
@@ -810,6 +810,47 @@ Now we have to add the certificate and the key to Home Assistant configuration f
 
 Home Assistant is now configured to use ssl connection. You can connect to it with the external URL `https://cclouds.duckdns.org:8123` or the internal URL `https://RASPI_IP:8123`.
 In the latter case, you should see a security error, this is normal because the certificate is signed for the external URL.
+
+### Install HACS
+From [here](https://hacs.xyz/docs/installation/prerequisites) (With some modifications).
+
+- Create `custom_components` folder into the `.homeassistant` folder.
+
+    ```bash
+	$ sudo install -g homeassistant -o homeassistant -d /home/homeassistant/.homeassistant/custom_components
+	```
+	`install` will create the custom_components folder and give to it homeassistant ownership.
+	
+- Download `hacs.zip` into tmp folder. Take the latest release link from [here](https://github.com/hacs/integration/releases/latest).
+
+    ```bash
+	$ wget https://github.com/hacs/integration/releases/download/1.6.2/hacs.zip -P /tmp/
+	```
+	
+- Unzip it into a `hacs` folder (the folder name MUST BE exatly this), copy it in the homassistant folder, grant homeassistant ownership and delete temporary files.
+
+    ```bash
+	$ mkdir /tmp/hacs
+	$ unzip -d /tmp/hacs /tmp/hacs.zip
+	```
+	
+- Copy the folder into homeassistant custom_components folder and grant homeassistant ownership to it.
+
+    ```bash
+	$ sudo mv /tmp/hacs /home/homeassistant/.homeassistant/custom_components/
+	$ sudo chown -R homeassistant:homeassistant /home/homeassistant/.homeassistant/custom_components/hacs/
+	```
+
+- Delete temporary files 
+
+    ```bash
+	$ rm /tmp/hacs.zip
+	```
+
+- Reboot the system
+
+- Follow [this](https://hacs.xyz/docs/configuration/start) configuration steps.
+
 
 ### Other useful commands
 - Verify Home Assistant service status
