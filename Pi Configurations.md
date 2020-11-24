@@ -26,7 +26,7 @@
 > 	  + [Updating](#updating)
 >     + [Activate Advanced Mode](#activate-advanced-mode)
 >     + [Create ssl certificates](#create-ssl-certificates)
->     + [Install HACS](install-hacs)
+>     + [Install HACS](#install-hacs)
 > 	  + [Other useful commands](#other-useful-commands)
 > + [Useful commands](#useful-commands)
 >     + [List active processes](#list-active-processes)
