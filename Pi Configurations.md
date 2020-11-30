@@ -37,8 +37,8 @@ Index
 
 
 ## First operations
-Tutorials in this documents assumes that you have first followed this paragraph. <br>
-**Please make sure to follow this steps before all other tutorials**
+Tutorials in this document assumes that you have first followed this paragraph. <br>
+**Please make sure to follow this steps before all other tutorials!**
 
 1. Create an `~/Apps` folder
 
@@ -46,7 +46,7 @@ Tutorials in this documents assumes that you have first followed this paragraph.
 	$ mkdir ~/Apps
 	```
 
-2. Create a `~/.logs`
+2. Create a `~/.logs` folder
 
     ```sh
 	$ mkdir ~/.logs
