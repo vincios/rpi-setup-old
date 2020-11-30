@@ -1,38 +1,61 @@
 # Common configurations for Raspberry Pi with Raspbian
 
-> Indice
-> + [VNC "cannot currently show the desktop" in headless mode](#vnc-cannot-currently-show-the-desktop-in-headless-mode)
-> + [AutoMount Nas folders](#automount-nas-folders)
-> + [Samba shares](#samba-shares)
-> + [Duckdns cron configuration](#duckdns-cron-configuration)
-> + [Plex Media Server](#plex-media-server)
-> + [Build TOR](#build-tor)
-> + [Run BridTools](#run-bridtools)
-> + [Install jDownloader in headless mode](#install-jdownloader-in-headless-mode)
-> + [JDownloader RAR5 support](#jdownloader-rar5-support)
-> + [Update Node and npm](#update-node-and-npm)
-> + [Install Deluge torrent client with web interface](#install-deluge-torrent-client-with-web-interface)
-> + [Install Transmission](#install-transmission)
-> + [Install LAMP software](#install-lamp-software)
->     + [Add xdebug](#add-xdebug)
->     + [Start, Stop and Restart apache2 service](#start-stop-and-restart-apache2-service)
-> + [Install Ampache](#install-ampache)
-> + [Deemix](#deemix)
->     + [Notes](#notes)
-> + [Install Python 3.8](#install-python-38)
-> + [Home Assistant](#home-assistant)
->     + [Service creation](#service-creation)
->     + [Switch to homeassistant user](#switch-to-homeassistant-user)
-> 	  + [Updating](#updating)
->     + [Activate Advanced Mode](#activate-advanced-mode)
->     + [Create ssl certificates](#create-ssl-certificates)
->     + [Install HACS](#install-hacs)
-> 	  + [Other useful commands](#other-useful-commands)
-> + [Useful commands](#useful-commands)
->     + [List active processes](#list-active-processes)
-> + [.bash_aliases](#bash_aliases)
+**NOTE:** Please read before [First operations](#first-operations).
+
+Index
+    > + [First operations](#first-operations)
+    > + [VNC "cannot currently show the desktop" in headless mode](#vnc-cannot-currently-show-the-desktop-in-headless-mode)
+    > + [AutoMount Nas folders](#automount-nas-folders)
+    > + [Samba shares](#samba-shares)
+    > + [Duckdns cron configuration](#duckdns-cron-configuration)
+    > + [Plex Media Server](#plex-media-server)
+    > + [Build TOR](#build-tor)
+    > + [Run BridTools](#run-bridtools)
+    > + [Install jDownloader in headless mode](#install-jdownloader-in-headless-mode)
+    > + [JDownloader RAR5 support](#jdownloader-rar5-support)
+    > + [Update Node and npm](#update-node-and-npm)
+    > + [Install Deluge torrent client with web interface](#install-deluge-torrent-client-with-web-interface)
+    > + [Install Transmission](#install-transmission)
+    > + [Install LAMP software](#install-lamp-software)
+    >     + [Add xdebug](#add-xdebug)
+    >     + [Start, Stop and Restart apache2 service](#start-stop-and-restart-apache2-service)
+    > + [Install Ampache](#install-ampache)
+    > + [Deemix](#deemix)
+    >     + [Notes](#notes)
+    > + [Install Python 3.8](#install-python-38)
+    > + [Home Assistant](#home-assistant)
+    >     + [Service creation](#service-creation)
+    >     + [Switch to homeassistant user](#switch-to-homeassistant-user)
+    > 	  + [Updating](#updating)
+    >     + [Activate Advanced Mode](#activate-advanced-mode)
+    >     + [Create ssl certificates](#create-ssl-certificates)
+    >     + [Install HACS](#install-hacs)
+    > 	  + [Other useful commands](#other-useful-commands)
+    > + [Useful commands](#useful-commands)
+    >     + [List active processes](#list-active-processes)
+    > + [.bash_aliases](#bash_aliases)
 
 
+## First operations
+Tutorials in this documents assumes that you have first followed this paragraph. 
+** Please make sure to follow this steps before all other tutorials**
+
+1. Create an `~/Apps` folder
+    `$ mkdir ~/Apps`
+
+2. Create a `~/.logs`
+    `$ mkdir ~/.logs`
+	
+3. Create a `~/.bash_aliases` file
+    - `$ nano ~/.bash_aliases`
+	- Paste this lines
+	    ```bash
+		alias ll='ls -l'
+        alias la='ls -la'
+		```
+	- Exit and save
+	- `$ source ~/.bashrc`
+	
 ## VNC "cannot currently show the desktop" in headless mode
 Run `raspi-config` and change screen resolution to 1920x1080
 
@@ -441,14 +464,16 @@ Change the following values
    - **NB**: During the installation on the "Step 1" check the **Create Database User** option.
 
 ## Deemix
+NOTE: This guide assume you have a ~/Apps folder. If not, change the script as well.
+
 ```bash
-$ cd ~
-$ git clone https://codeberg.org/RemixDev/deemix-pyweb.git .deemix
-$ cd .deemix
+$ cd ~/Apps
+$ git clone https://git.rip/RemixDev/deemix-pyweb.git deemix
+$ cd deemix
 $ git submodule update --init --recursive
 $ python3 -m venv ./venv
 $ source ./venv/bin/activate
-$ python3 -m pip install -U -r requirements.txt
+$ python3 -m pip install -U -r server-requirements.txt
 # Launch and close (Ctrl-C) deemix (to create app folders)
 $ python3 server.py --host 0.0.0.0
 $ deactivate
@@ -482,6 +507,9 @@ cd $DIR
 echo "Launching deemix..."
 source ./venv/bin/activate
 python3 server.py --host 0.0.0.0 --serverwide-arl
+
+# Script will be stuck here until killed
+
 echo "Exiting ..."
 deactivate
 ```
@@ -500,7 +528,7 @@ $ chmod u+x launch.sh
 ### Notes
 **NB**: don't forget to add into `.bash_aliases`
 ```sh
-alias deemix="/home/pi/.deemix/launch.sh > /dev/null 2>&1 &"
+alias deemix="/home/pi/Apps/deemix/launch.sh > /home/pi/.logs/deemix.log 2>&1 &"
 ```
 
 Manually launch
@@ -921,11 +949,11 @@ $ ps aux | grep process
 alias hello='echo ciao'
 alias ll='ls -l'
 alias jd='java -Djava.awt.headless=true -jar /home/pi/JDownloader/JDownloader.jar >/dev/null 2>/dev/null &'
-alias bridtools='cd /home/pi/.BridTools/ && source ./venv/bin/activate'
+alias bridtools='cd /home/pi/Apps/BridTools/ && source ./venv/bin/activate'
 alias bridhack='python brid_hack.py'
 alias dlcextractor='python dlc_extractor.py'
 alias linkscraping='python link_scraping.py'
-alias deemix="/home/pi/.deemix/launch.sh > /dev/null 2>&1 &"
+alias deemix="/home/pi/Apps/deemix/launch.sh > /home/pi/.logs/deemix.log 2>&1 &"
 alias deluged-all="deluged && deluge-web -f"
 alias ha-start="sudo systemctl start home-assistant@homeassistant"
 alias ha-stop="sudo systemctl stop home-assistant@homeassistant"
