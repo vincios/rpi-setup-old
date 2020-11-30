@@ -42,11 +42,11 @@ Tutorials in this documents assumes that you have first followed this paragraph.
 
 1. Create an `~/Apps` folder
 
-    `$ mkdir ~/Apps`
+    ```$ mkdir ~/Apps```
 
 2. Create a `~/.logs`
 
-    `$ mkdir ~/.logs`
+    ```$ mkdir ~/.logs```
 	
 3. Create a `~/.bash_aliases` file
     - `$ nano ~/.bash_aliases`
