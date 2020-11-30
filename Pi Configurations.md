@@ -41,19 +41,24 @@ Tutorials in this documents assumes that you have first followed this paragraph.
 ** Please make sure to follow this steps before all other tutorials**
 
 1. Create an `~/Apps` folder
+
     `$ mkdir ~/Apps`
 
 2. Create a `~/.logs`
+
     `$ mkdir ~/.logs`
 	
 3. Create a `~/.bash_aliases` file
     - `$ nano ~/.bash_aliases`
-	- Paste this lines
+	- Paste these lines
+	
 	    ```bash
 		alias ll='ls -l'
         alias la='ls -la'
 		```
+		
 	- Exit and save
+	
 	- `$ source ~/.bashrc`
 	
 ## VNC "cannot currently show the desktop" in headless mode
