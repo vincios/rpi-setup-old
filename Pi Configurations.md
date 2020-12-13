@@ -931,6 +931,31 @@ From [here](https://hacs.xyz/docs/installation/prerequisites) (With some modific
     include_dir /etc/mosquitto/conf.d
 	```
 	
+	Then save and close the file
+	
+- Create the password file and the user `mqtt_usr`. For this purpose, we'll use the `mosquitto_passwd` tools that execute both operations in a one-line command
+
+    ``` bash
+	$ sudo mosquitto_passwd -c /etc/mosquitto/passwords mqtt_usr
+	```
+	
+	**NB**: you can also change the user username as you like. In this case rembember to change the username also in the rest of this guide as well.
+	
+- The tools will prompt you to set a password. Type it
+
+- Start the MQTT service
+    ``` bash
+	$ sudo systemctl enable mosquitto
+    $ sudo systemctl start mosquitto
+	```
+
+Now the MQTT borker il listening to the 1883 port. We can test it subscribing to a topic with the `mosquitto_sub` tool
+
+``` bash
+$ mosquitto_sub -d -u [MQTT_USERNAME] -P [MQTT_PASSWORD] -t [TOPC]
+```
+
+Change `[MQTT_USERNAME]`, `[MQTT_PASSWORD]` and `[TOPC]` as well.
 
 ### Other useful commands
 - Verify Home Assistant service status
