@@ -957,36 +957,37 @@ $ mosquitto_sub -d -u [MQTT_USERNAME] -P [MQTT_PASSWORD] -t [TOPC]
 
 Change `[MQTT_USERNAME]`, `[MQTT_PASSWORD]` and `[TOPC]` as well.
 
-- To configure Home Assistant
-   - Add these lines to the `configuration.yaml` file
-       ```yaml
-	    mqtt:
-          broker: 127.0.0.1
-          port: 1883
-          username: mqtt_usr
-          password: !secret mqtt_password
-	    ```
-	
-	- Add the password entry into `secrets.yaml` file
-	    ```yaml
-		mqtt_password: [MQTT_PASSWORD]
-		```
-		
-		Change `[MQTT_PASSWORD]` as well
+Now we have to configure Home Assistant to connect to the broker.
 
-    - To test the configuration we can subscribe to the `homeassistant/status` topic
-	    ```bash
-		$ mosquitto_sub -d -u mqtt_usr -P [MQTT_PASSWORD] -t homeassistant/status
-	    ```
-    
-	- Restart Home Assistant
+- Add these lines to the `configuration.yaml` file
+    ```yaml
+    mqtt:
+      broker: 127.0.0.1
+      port: 1883
+      username: mqtt_usr
+      password: !secret mqtt_password
+    ```
+
+- Add the password entry into `secrets.yaml` file
+    ```yaml
+	mqtt_password: [MQTT_PASSWORD]
+	```
 	
-		You should receive a message like this:
-		
-		```
-		Client mosqsub|20681-raspberry received PUBLISH (d0, q0, r0, m0, 'homeassistant/status', ... (6 bytes))
-        online
-        ```
+	Change `[MQTT_PASSWORD]` as well
+
+   - To test the configuration we can subscribe to the `homeassistant/status` topic
+    ```bash
+	$ mosquitto_sub -d -u mqtt_usr -P [MQTT_PASSWORD] -t homeassistant/status
+    ```
+   
+- Restart Home Assistant
+
+	You should receive a message like this:
+	
+	```
+	Client mosqsub|20681-raspberry received PUBLISH (d0, q0, r0, m0, 'homeassistant/status', ... (6 bytes))
+       online
+       ```
 		
 ### Other useful commands
 - Verify Home Assistant service status
