@@ -957,6 +957,24 @@ $ mosquitto_sub -d -u [MQTT_USERNAME] -P [MQTT_PASSWORD] -t [TOPC]
 
 Change `[MQTT_USERNAME]`, `[MQTT_PASSWORD]` and `[TOPC]` as well.
 
+- To configure Home Assistant
+   - Add these lines to the `configuration.yaml` file
+       ```yaml
+	    mqtt:
+          broker: 127.0.0.1
+          port: 1883
+          username: mqtt_usr
+          password: !secret mqtt_password
+	    ```
+	
+	- Add the password entry into `secrets.yaml`
+	    ```yaml
+		mqtt_password: [MQTT_PASSWORD]
+		```
+		
+		Change `[MQTT_PASSWORD` as well
+
+
 ### Other useful commands
 - Verify Home Assistant service status
 ``` bash
