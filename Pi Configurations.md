@@ -30,6 +30,7 @@ Index
 >     + [Activate Advanced Mode](#activate-advanced-mode)
 >     + [Create ssl certificates](#create-ssl-certificates)
 >     + [Install HACS](#install-hacs)
+>     + [Mosquitto installation and configuration](#mosquitto-installation-and-configuration)
 > 	  + [Other useful commands](#other-useful-commands)
 > + [Useful commands](#useful-commands)
 >     + [List active processes](#list-active-processes)
@@ -889,6 +890,47 @@ From [here](https://hacs.xyz/docs/installation/prerequisites) (With some modific
 
 - Follow [this](https://hacs.xyz/docs/configuration/start) configuration steps.
 
+### Mosquitto installation and configuration
+- Install Mosquitto
+    
+	```bash
+	$ sudo apt-get install mosquitto mosquitto-clients
+	```
+
+- Stop service and edit configuration 
+
+    ```bash
+	$ sudo /etc/init.d/mosquitto stop
+	$ sudo nano /etc/mosquitto/mosquitto.conf
+	```
+	
+- Add these lines to the file
+
+    ```
+	allow_anonymous false
+    password_file /etc/mosquitto/passwords
+	```
+	
+	The file should be like this:
+	```
+	# Place your local configuration in /etc/mosquitto/conf.d/
+    #
+    # A full description of the configuration file is at
+    # /usr/share/doc/mosquitto/examples/mosquitto.conf.example
+    
+    pid_file /var/run/mosquitto.pid
+    
+    persistence true
+    persistence_location /var/lib/mosquitto/
+    
+    log_dest file /var/log/mosquitto/mosquitto.log
+    
+    allow_anonymous false
+    password_file /etc/mosquitto/passwords
+    
+    include_dir /etc/mosquitto/conf.d
+	```
+	
 
 ### Other useful commands
 - Verify Home Assistant service status
