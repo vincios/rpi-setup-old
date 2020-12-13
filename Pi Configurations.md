@@ -985,7 +985,7 @@ Now we have to configure Home Assistant to connect to the broker.
 	You should receive a message like this:
 	```
 	Client mosqsub|20681-raspberry received PUBLISH (d0, q0, r0, m0, 'homeassistant/status', ... (6 bytes))
-       online
+    online
     ```
 	
 ### Other useful commands
