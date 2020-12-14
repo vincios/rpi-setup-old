@@ -661,7 +661,7 @@ alias ha-login="sudo -u homeassistant -H -s"
 To update to the latest version of Home Assistant Core follow these simple steps:
 
 ```bash
-$ sudo systemctl start home-assistant@homeassistant
+$ sudo systemctl stop home-assistant@homeassistant
 $ sudo -u homeassistant -H -s
 $ source /srv/homeassistant/bin/activate
 $ pip3 install --upgrade homeassistant
