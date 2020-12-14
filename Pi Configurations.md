@@ -654,7 +654,7 @@ $ sudo -u homeassistant -H -s
 
 You can also automate this operation adding the command above in the `bash_aliases` file. Something such as:
 ```sh
-alias ha-login="sudo -u homeassistant -H -s"
+alias ha-login="cd /home/homeassistant && sudo -u homeassistant -H -s"
 ```
 
 ### Updating
@@ -1069,7 +1069,7 @@ alias ha-start="sudo systemctl start home-assistant@homeassistant"
 alias ha-stop="sudo systemctl stop home-assistant@homeassistant"
 alias ha-restart="sudo systemctl restart home-assistant@homeassistant"
 alias ha-restartlog="sudo systemctl restart home-assistant@homeassistant && sudo journalctl -f -u home-assistant@homeassistant"
-alias ha-login="sudo -u homeassistant -H -s"
+alias ha-login="cd /home/homeassistant && sudo -u homeassistant -H -s"
 ```
 
 After you add a new alias don't forget to run `. /home/pi/.bashrc`
