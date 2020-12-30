@@ -31,6 +31,7 @@ Index
 >     + [Create ssl certificates](#create-ssl-certificates)
 >     + [Install HACS](#install-hacs)
 >     + [Mosquitto installation and configuration](#mosquitto-installation-and-configuration)
+>     + [Enable Alexa integration](#enable-alexa-integration)
 > 	  + [Other useful commands](#other-useful-commands)
 > + [Useful commands](#useful-commands)
 >     + [List active processes](#list-active-processes)
@@ -990,6 +991,11 @@ Now we have to configure Home Assistant to connect to the broker.
 	Client mosqsub|20681-raspberry received PUBLISH (d0, q0, r0, m0, 'homeassistant/status', ... (6 bytes))
     online
     ```
+
+### Enable Alexa integration
+Follow these two guides:
+  - [Guide 1](https://www.home-assistant.io/integrations/alexa.smart_home/)
+  - [Guide 2](https://www.saggiamente.com/2020/01/come-usare-home-assistant-con-alexa-gratuitamente-metodo-aggiornato-senza-nabucasa-e-token/)
 	
 ### Other useful commands
 - Verify Home Assistant service status
