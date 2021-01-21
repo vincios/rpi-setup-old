@@ -610,6 +610,8 @@ $ sudo rm -rf Python-3.8.6
 	$ curl -sSL https://install.pi-hole.net | bash
 	```
 
+   **NB**: Take note of the admin password (shown at installation end).
+   
 - Change the lighttpd port
     - Edit the `lighttpd.conf` file
 	
