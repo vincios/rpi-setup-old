@@ -23,6 +23,7 @@ Index
 > + [Deemix](#deemix)
 >     + [Notes](#notes)
 > + [Install Python 3.8](#install-python-38)
+> + [Install Pi-hole](#install-pi-hole)
 > + [Home Assistant](#home-assistant)
 >     + [Service creation](#service-creation)
 >     + [Switch to homeassistant user](#switch-to-homeassistant-user)
@@ -601,6 +602,31 @@ $ cd ..
 $ sudo rm -rf Python-3.8.6.tar.xz
 $ sudo rm -rf Python-3.8.6
 ```
+
+## Pi-hole
+- Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
+
+    ```bash
+	$ curl -sSL https://install.pi-hole.net | bash
+	```
+
+- Change the lighttpd port
+    - Edit the `lighttpd.conf` file
+	
+	    ```bash
+		$ sudo nano /etc/lighttpd/lighttpd.conf
+		```
+	
+	- Restart the service
+	
+	    ```bash
+		$ sudo service lighttpd restart
+		```
+
+Notes: 
+
+If you want use Pi-hole over a VPN, read this [guide](https://gabriele.tips/virtual-private-pi-holed-network/) (**untested**). 
+Current block lists are taken from [here](https://www.andreadraghetti.it/block-list-e-white-list-per-pi-hole-e-ad-blocker/).
 
 ## Home Assistant
 ### Install
