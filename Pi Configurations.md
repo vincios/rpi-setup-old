@@ -603,7 +603,7 @@ $ sudo rm -rf Python-3.8.6.tar.xz
 $ sudo rm -rf Python-3.8.6
 ```
 
-## Pi-hole
+## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
     ```bash
