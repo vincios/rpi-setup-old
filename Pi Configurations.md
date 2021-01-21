@@ -626,6 +626,7 @@ $ sudo rm -rf Python-3.8.6
 Notes: 
 
 If you want use Pi-hole over a VPN, read this [guide](https://gabriele.tips/virtual-private-pi-holed-network/) (**untested**). 
+
 Current block lists are taken from [here](https://www.andreadraghetti.it/block-list-e-white-list-per-pi-hole-e-ad-blocker/).
 
 ## Home Assistant
