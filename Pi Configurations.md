@@ -625,11 +625,17 @@ $ sudo rm -rf Python-3.8.6
 		$ sudo service lighttpd restart
 		```
 
+- Install [whitelist](https://github.com/anudeepND/whitelist)
+
+    ```bash
+	$ git clone https://github.com/anudeepND/whitelist.git
+    $ sudo python3 whitelist/scripts/whitelist.py
+	```
 Notes: 
 
-If you want use Pi-hole over a VPN, read this [guide](https://gabriele.tips/virtual-private-pi-holed-network/) (**untested**). 
+- If you want use Pi-hole over a VPN, read this [guide](https://gabriele.tips/virtual-private-pi-holed-network/) (**untested**). 
 
-Current block lists are taken from [here](https://www.andreadraghetti.it/block-list-e-white-list-per-pi-hole-e-ad-blocker/).
+- Current block lists are taken from [here](https://www.andreadraghetti.it/block-list-e-white-list-per-pi-hole-e-ad-blocker/).
 
 ## Home Assistant
 ### Install
