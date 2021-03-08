@@ -102,6 +102,7 @@ Samba share user folder with some security restrictions (See "[homes]" section i
    browseable = yes
    writeable = yes
    only guest = no
+   read only = no
    create mask = 0740
    dierectory mask = 0750
    public = yes
@@ -111,6 +112,7 @@ Samba share user folder with some security restrictions (See "[homes]" section i
 
 `sudo smbpasswd -a pi`
 
+NB: if the network folder is non writeable, try this command `sudo pdbedit -a -u pi`
 
 ## Duckdns cron configuration
 See [here](https://www.duckdns.org/install.jsp?tab=pi&domain=vncs10). BUT:
