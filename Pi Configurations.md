@@ -33,6 +33,7 @@ Index
 >     + [Install HACS](#install-hacs)
 >     + [Mosquitto installation and configuration](#mosquitto-installation-and-configuration)
 >     + [Enable Alexa integration](#enable-alexa-integration)
+>     + [Enable Google Home integration](#enable-google-home-integration)
 > 	  + [Other useful commands](#other-useful-commands)
 > + [Useful commands](#useful-commands)
 >     + [List active processes](#list-active-processes)
@@ -1033,6 +1034,41 @@ Now we have to configure Home Assistant to connect to the broker.
 Follow these two guides:
   - [Guide 1](https://www.home-assistant.io/integrations/alexa.smart_home/)
   - [Guide 2](https://www.saggiamente.com/2020/01/come-usare-home-assistant-con-alexa-gratuitamente-metodo-aggiornato-senza-nabucasa-e-token/)
+
+### Enable Google Home integration
+Follow these two guides:
+  - [Guide 1](https://www.home-assistant.io/integrations/google_assistant/)
+  - [Guide 2](https://indomus.it/guide/integrare-gratuitamente-google-home-assistant-con-home-assistant-via-gcp/)
+  
+1. Create Create a new project in the Actions on Google console
+  - Open the [Actions on Google console](https://console.actions.google.com/)
+  
+  - Name the project `Home Assistant` and select language and country
+  
+  - Click on the `Smart Home` card, then click the `Start Building` button
+  
+  - Click `Name your Smart Home action` under `Quick Setup` to give your Action a name (Home Assistant will appear in the Google Home app as `[test] <Action Name>`
+
+  - Click on the `Overview` tab at the top of the page to go back
+  
+  - Click `Build your Action`, then click `Add Action(s)`
+  - Add your Home Assistant URL: 
+  
+      ```
+      https://[YOUR HOME ASSISTANT URL:PORT]/api/google_assistant
+      ```  
+
+    in the Fulfillment URL box, replace the `[YOUR HOME ASSISTANT URL:PORT]` with the domain / IP address and the port under which your Home Assistant is reachable.
+
+  - Click `Save`
+
+  - Click the three little dots (more) icon in the upper right corner, select `Project settings`
+  
+  - Make note of the `Project ID` that are listed on the `GENERAL` tab of the Settings page
+  
+2. Setup `Account linking`
+
+  -   
 	
 ### Other useful commands
 - Verify Home Assistant service status
