@@ -1041,29 +1041,29 @@ From these two guides: [guide 1](https://www.home-assistant.io/integrations/goog
 
     - Open the [Actions on Google console](https://console.actions.google.com/)
 	
-  - Name the project `Home Assistant` and select language and country
-
-  - Click on the `Smart Home` card, then click the `Start Building` button
-
-  - Click `Name your Smart Home action` under `Quick Setup` to give your Action a name (Home Assistant will appear in the Google Home app as `[test] <Action Name>`
-
-  - Click on the `Overview` tab at the top of the page to go back
-
-  - Click `Build your Action`, then click `Add Action(s)`
-
-  - Add your Home Assistant URL: 
+    - Name the project `Home Assistant` and select language and country
   
-      ```
-      https://[YOUR HOME ASSISTANT URL:PORT]/api/google_assistant
-      ```  
-
-    in the Fulfillment URL box, replace the `[YOUR HOME ASSISTANT URL:PORT]` with the domain / IP address and the port under which your Home Assistant is reachable.
+    - Click on the `Smart Home` card, then click the `Start Building` button
   
-  - Click `Save`
-
-  - Click the three little dots (more) icon in the upper right corner, select `Project settings`
-
-  - Make note of the `Project ID` that are listed on the `GENERAL` tab of the Settings page
+    - Click `Name your Smart Home action` under `Quick Setup` to give your Action a name (Home Assistant will appear in the Google Home app as `[test] <Action Name>`
+  
+    - Click on the `Overview` tab at the top of the page to go back
+  
+    - Click `Build your Action`, then click `Add Action(s)`
+  
+    - Add your Home Assistant URL: 
+    
+        ```
+        https://[YOUR HOME ASSISTANT URL:PORT]/api/google_assistant
+        ```  
+  
+      in the Fulfillment URL box, replace the `[YOUR HOME ASSISTANT URL:PORT]` with the domain / IP address and the port under which your Home Assistant is reachable.
+    
+    - Click `Save`
+  
+    - Click the three little dots (more) icon in the upper right corner, select `Project settings`
+  
+    - Make note of the `Project ID` that are listed on the `GENERAL` tab of the Settings page
 
 2. Setup `Account linking`
 
