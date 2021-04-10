@@ -1040,6 +1040,7 @@ From these two guides:
   - [Guide 1](https://www.home-assistant.io/integrations/google_assistant/)
   - [Guide 2](https://indomus.it/guide/integrare-gratuitamente-google-home-assistant-con-home-assistant-via-gcp/)
 <br>
+
 - Create Create a new project in the Actions on Google console
 
   - Open the [Actions on Google console](https://console.actions.google.com/)
