@@ -1078,24 +1078,25 @@ From these two guides: [guide 1](https://www.home-assistant.io/integrations/goog
     - Enter the following:
         - **Client ID**: 
   	    
-  		```
-  		https://oauth-redirect.googleusercontent.com/r/[YOUR_PROJECT_ID]
-  		````
-  		(Replace [YOUR_PROJECT_ID] with your project ID from above)
+  		    ```
+  		    https://oauth-redirect.googleusercontent.com/r/[YOUR_PROJECT_ID]
+  		    ````
+  		   
+		    (Replace [YOUR_PROJECT_ID] with your project ID from above)
   		
         - **Client Secret**: Anything you like, Home Assistant doesn’t need this field
   	  
         - **Authorization URL**: 
   	    
-  		```
-  	    https://[YOUR HOME ASSISTANT URL:PORT]/auth/authorize
-  		```
+  		    ```
+  	        https://[YOUR HOME ASSISTANT URL:PORT]/auth/authorize
+  		    ```
   		
         - **Token URL**:
   	  
-  	    ```
-  	    https://[YOUR HOME ASSISTANT URL:PORT]/auth/token
-          ```
+  	       ```
+  	       https://[YOUR HOME ASSISTANT URL:PORT]/auth/token
+           ```
   		
     - In the `Configure your client`, type `email` and click `Add scope`, then type `name` and click `Add scope` again
     
