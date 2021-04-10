@@ -1066,9 +1066,6 @@ From these two guides:
   - Click the three little dots (more) icon in the upper right corner, select `Project settings`
   
   - Make note of the `Project ID` that are listed on the `GENERAL` tab of the Settings page
-
-<br>
- 
 2. Setup `Account linking`
 
   - Start by going back to the `Overview` tab
@@ -1101,7 +1098,7 @@ From these two guides:
 	    https://[YOUR HOME ASSISTANT URL:PORT]/auth/token
         ```
 		
-  - In the `Configure your client`, type `email` and click `Add scope`, then type `name and click `Add scope` again
+  - In the `Configure your client`, type `email` and click `Add scope`, then type `name` and click `Add scope` again
   
   - Do **NOT** check `Google to transmit clientID and secret via HTTP basic auth header`
   
