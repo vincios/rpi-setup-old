@@ -1067,41 +1067,41 @@ From these two guides: [guide 1](https://www.home-assistant.io/integrations/goog
 
 2. Setup `Account linking`
 
-  - Start by going back to the `Overview` tab
-  
-  - Click on `Setup account linking` under the `Quick Setup` section
-  
-  - If asked, leave options as they default `No, I only want to allow account creation on my website` and select `Next`
+    - Start by going back to the `Overview` tab
     
-  - Then if asked, for the `Linking type` select `OAuth` and `Authorization Code`. Click Next
-  
-  - Enter the following:
-      - **Client ID**: 
-	    
-		```
-		https://oauth-redirect.googleusercontent.com/r/[YOUR_PROJECT_ID]
-		````
-		(Replace [YOUR_PROJECT_ID] with your project ID from above)
-		
-      - **Client Secret**: Anything you like, Home Assistant doesn’t need this field
-	  
-      - **Authorization URL**: 
-	    
-		```
-	    https://[YOUR HOME ASSISTANT URL:PORT]/auth/authorize
-		```
-		
-      - **Token URL**:
-	  
-	    ```
-	    https://[YOUR HOME ASSISTANT URL:PORT]/auth/token
-        ```
-		
-  - In the `Configure your client`, type `email` and click `Add scope`, then type `name` and click `Add scope` again
-  
-  - Do **NOT** check `Google to transmit clientID and secret via HTTP basic auth header`
-  
-  - Click `Next`, then click `Save`
+    - Click on `Setup account linking` under the `Quick Setup` section
+    
+    - If asked, leave options as they default `No, I only want to allow account creation on my website` and select `Next`
+      
+    - Then if asked, for the `Linking type` select `OAuth` and `Authorization Code`. Click Next
+    
+    - Enter the following:
+        - **Client ID**: 
+  	    
+  		```
+  		https://oauth-redirect.googleusercontent.com/r/[YOUR_PROJECT_ID]
+  		````
+  		(Replace [YOUR_PROJECT_ID] with your project ID from above)
+  		
+        - **Client Secret**: Anything you like, Home Assistant doesn’t need this field
+  	  
+        - **Authorization URL**: 
+  	    
+  		```
+  	    https://[YOUR HOME ASSISTANT URL:PORT]/auth/authorize
+  		```
+  		
+        - **Token URL**:
+  	  
+  	    ```
+  	    https://[YOUR HOME ASSISTANT URL:PORT]/auth/token
+          ```
+  		
+    - In the `Configure your client`, type `email` and click `Add scope`, then type `name` and click `Add scope` again
+    
+    - Do **NOT** check `Google to transmit clientID and secret via HTTP basic auth header`
+    
+    - Click `Next`, then click `Save`
 
 	
 ### Other useful commands
