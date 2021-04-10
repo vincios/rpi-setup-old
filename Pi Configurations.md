@@ -1040,7 +1040,7 @@ From these two guides:
   - [Guide 1](https://www.home-assistant.io/integrations/google_assistant/)
   - [Guide 2](https://indomus.it/guide/integrare-gratuitamente-google-home-assistant-con-home-assistant-via-gcp/)
 <br>
-1. Create Create a new project in the Actions on Google console
+- Create Create a new project in the Actions on Google console
 
   - Open the [Actions on Google console](https://console.actions.google.com/)
 	
@@ -1068,7 +1068,7 @@ From these two guides:
 
   - Make note of the `Project ID` that are listed on the `GENERAL` tab of the Settings page
 
-2. Setup `Account linking`
+- Setup `Account linking`
 
   - Start by going back to the `Overview` tab
   
