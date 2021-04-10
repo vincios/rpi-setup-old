@@ -1036,10 +1036,10 @@ Follow these two guides:
   - [Guide 2](https://www.saggiamente.com/2020/01/come-usare-home-assistant-con-alexa-gratuitamente-metodo-aggiornato-senza-nabucasa-e-token/)
 
 ### Enable Google Home integration
-Follow these two guides:
-  - [Guide 1](https://www.home-assistant.io/integrations/google_assistant/)
-  - [Guide 2](https://indomus.it/guide/integrare-gratuitamente-google-home-assistant-con-home-assistant-via-gcp/)
-  
+From these two guides:
+[Guide 1](https://www.home-assistant.io/integrations/google_assistant/)
+[Guide 2](https://indomus.it/guide/integrare-gratuitamente-google-home-assistant-con-home-assistant-via-gcp/)
+
 1. Create Create a new project in the Actions on Google console
   - Open the [Actions on Google console](https://console.actions.google.com/)
   
