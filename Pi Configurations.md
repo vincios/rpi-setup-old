@@ -1104,6 +1104,47 @@ From these two guides: [guide 1](https://www.home-assistant.io/integrations/goog
     
     - Click `Next`, then click `Save`
 
+3. Enter Action Informations
+
+    - Start by going back to the `Overview` tab
+    
+    - Click on `Enter information required for the Actions directory` under the `Get ready for deployment` section
+	
+	- Compile `Description`, `Images` and `Contact details` paragraphs
+	
+	- In the `Privacy and consent` paragraph, enter `https://home-assistant.io` in both fields
+	
+	- Click `Save`
+	
+4. Configure the Service Account Key
+
+    - In the Google Cloud Platform Console, go to the [Create Service account key](https://console.cloud.google.com/apis/credentials/serviceaccountkey) page
+	
+    - At the top left of the page next to “Google Cloud Platform” logo, select your project created in the Actions on Google console. Confirm this by reviewing the project ID and it ensure it matches
+	
+	- Click `Create Service Account`
+	
+	- Into `Service Account Name` insert `homeassistant`
+	
+	- Compile descritption field
+	
+	- Click `CREATE`
+	
+	- From the Role list, select `Service Accounts` > `Service Account Token Creator`
+	
+	- Click `CONTINUE` and then `DONE`
+	
+	- In the main page, click on the newly created account
+	
+    - Select `KEYS` tab
+	
+	- Click `ADD KEY` and `Create new key`
+	
+	- Select `JSON` and click `CREATE`
+	
+	- Save the downloaded file somewhere
+	
+	
 	
 ### Other useful commands
 - Verify Home Assistant service status
