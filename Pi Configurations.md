@@ -1038,7 +1038,8 @@ Follow these two guides:
 ### Enable Google Home integration
 From these two guides: [guide 1](https://www.home-assistant.io/integrations/google_assistant/), [guide 2](https://indomus.it/guide/integrare-gratuitamente-google-home-assistant-con-home-assistant-via-gcp/).
 1. Create Create a new project in the Actions on Google console
-  - Open the [Actions on Google console](https://console.actions.google.com/)
+
+    - Open the [Actions on Google console](https://console.actions.google.com/)
 	
   - Name the project `Home Assistant` and select language and country
 
