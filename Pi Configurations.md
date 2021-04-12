@@ -1161,12 +1161,8 @@ From these two guides: [guide 1](https://www.home-assistant.io/integrations/goog
 	- Add the `google_assistant` integration configuration in this file, following the [documentation](https://www.home-assistant.io/integrations/google_assistant/#configuration-variables). This is an example:
 	
 	    ```yaml
-		project_id: XXXXXXX
-        service_account: !include YYYYYYY.json
-		report_state: true
-        filter:
-          exclude_entities:
-            - switch.switch_camera
+        project_id: home-assistant-367e3
+        service_account: !include home-assistant-367e3-b1e6275897c8.json
         entity_config:
           switch.switch_soggiorno:
             name: "Luce Soggiorno"
@@ -1204,6 +1200,35 @@ From these two guides: [guide 1](https://www.home-assistant.io/integrations/goog
               agent_user_id: !secret google_agent_user_id
 	    ```
 
+7. Test your action
+
+    - Open the [Actions on Google console](https://console.actions.google.com/) and select the Home Assistant project
+	
+	- Select the `Develop` tab at the top of the page, then click `Account linking` on the left side
+	
+	- In the upper right hand corner select the `Test` button to generate the draft version Test App. 
+	  If you don’t see this option, go to the `Test` tab instead, click on the `Settings` button in the top right below the header, and ensure `On device testing is enabled` (if it isn’t, enable it).
+	  
+	- You will be redirected to the `Test` tab. Write something into the field on top and press Enter. You will see an error on the right. Don't panic, it's normal.
+	
+8. Restart Home Assistant
+
+9. Add the action on Google Home App
+
+    - On your phone, open the Google Home app
+	
+	- Click on the `+` button on the top left corner
+	
+	- Select `Configure device` and `Compatible with Google`
+	
+	- Into the services list you will find `[test] Home Assistant`
+	
+	- Login into your account
+	
+	- Go back, you should see all your devices
+	
+	- Congratulations! Now configure them
+	
 
 ### Other useful commands
 - Verify Home Assistant service status
