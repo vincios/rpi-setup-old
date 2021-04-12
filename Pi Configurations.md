@@ -1211,6 +1211,9 @@ From these two guides: [guide 1](https://www.home-assistant.io/integrations/goog
 	  
 	- You will be redirected to the `Test` tab. Write something into the field on top and press Enter. You will see an error on the right. Don't panic, it's normal.
 	
+	**NB**: you might have to repeat this operation after a period of time, likely around 30 days. You will notice it because device sync (service `google_assistant.request_sync`) will fail with an 404 error.
+	For more info, see [here](https://www.home-assistant.io/integrations/google_assistant/#404-errors-on-request-sync).
+
 8. Restart Home Assistant
 
 9. Add the action on Google Home App
@@ -1229,7 +1232,7 @@ From these two guides: [guide 1](https://www.home-assistant.io/integrations/goog
 	
 	- Congratulations! Now configure them
 	
-
+10. BONUS: 
 ### Other useful commands
 - Verify Home Assistant service status
 ``` bash
