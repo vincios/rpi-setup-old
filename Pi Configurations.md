@@ -1175,9 +1175,9 @@ From these two guides: [guide 1](https://www.home-assistant.io/integrations/goog
 		```
 	    NB: `project_id` and `service_account` are required fields. Write, respectively, the project id noted into step 1 and the "Service Account Key" file (downloaded in step 4) path-
 
-6. Create the Auto Discovery automation
+7. Create the Auto Discovery automation
 
-    To synchronize Home Assistant devices with the Google Home app without unlinking and relinking an account, you have to call `google_assistant.request_sync` service (or say "Ok Google, sync my devices") each time you add a new device in Home Assistant that you wish to control via the Google Assistant integration.
+    To synchronize Home Assistant devices with the Google Home app without unlinking and relinking an account, you have to call the `google_assistant.request_sync` service (or say "Ok Google, sync my devices") each time you add a new device in Home Assistant that you wish to control via the Google Assistant integration.
 	To avoid this, you can optionally setup an automation to call this service each time Home Assistant starts.
 	
 	- Take note of your Home Assistant user id. 
@@ -1200,7 +1200,7 @@ From these two guides: [guide 1](https://www.home-assistant.io/integrations/goog
               agent_user_id: !secret google_agent_user_id
 	    ```
 
-7. Test your action
+8. Test your action
 
     - Open the [Actions on Google console](https://console.actions.google.com/) and select the Home Assistant project
 	
@@ -1211,12 +1211,12 @@ From these two guides: [guide 1](https://www.home-assistant.io/integrations/goog
 	  
 	- You will be redirected to the `Test` tab. Write something into the field on top and press Enter. You will see an error on the right. Don't panic, it's normal.
 	
-	**NB**: you might have to repeat this operation after a period of time, likely around 30 days. You will notice it because device sync (service `google_assistant.request_sync`) will fail with an 404 error.
+	**NB**: you might have to repeat this operation after a period of time, likely around 30 days. You will notice it because device sync (service `google_assistant.request_sync` call) will fail with an 404 error.
 	For more info, see [here](https://www.home-assistant.io/integrations/google_assistant/#404-errors-on-request-sync).
 
-8. Restart Home Assistant
+9. Restart Home Assistant
 
-9. Add the action on Google Home App
+10. Add the action on Google Home App
 
     - On your phone, open the Google Home app
 	
@@ -1232,7 +1232,9 @@ From these two guides: [guide 1](https://www.home-assistant.io/integrations/goog
 	
 	- Congratulations! Now configure them
 	
-10. BONUS: 
+11. **BONUS**: If you want to allow other household users to add this action to theirs accounts and control the devices, follow this [guide](https://www.home-assistant.io/integrations/google_assistant/#allow-other-users).
+
+
 ### Other useful commands
 - Verify Home Assistant service status
 ``` bash
