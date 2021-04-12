@@ -1143,9 +1143,68 @@ From these two guides: [guide 1](https://www.home-assistant.io/integrations/goog
 	- Select `JSON` and click `CREATE`
 	
 	- Save the downloaded file somewhere
+
+5. Enable HomeGraph API
+
+    - Go to the [Google HomeGraph API Console](https://console.cloud.google.com/apis/api/homegraph.googleapis.com/overview)
+    
+	- At the top left of the page next to “Google Cloud Platform” logo, select your project created in the Actions on Google console. Confirm this by reviewing the project ID and it ensure it matches
 	
+    - Click `ENABLE`
+
+6. Configure Home Assistant
 	
+	- Copy the "Service Account Key" file downloaded in previous step into the `.homeassistant` folder
 	
+	- Create a `google.yaml` file
+	
+	- Add the `google_assistant` integration configuration in this file, following the [documentation](https://www.home-assistant.io/integrations/google_assistant/#configuration-variables). This is an example:
+	
+	    ```yaml
+		project_id: XXXXXXX
+        service_account: !include YYYYYYY.json
+		report_state: true
+        filter:
+          exclude_entities:
+            - switch.switch_camera
+        entity_config:
+          switch.switch_soggiorno:
+            name: "Luce Soggiorno"
+          switch.switch_cucina:
+            name: "Luce Cucina"
+          light.luce_camera:
+            expose: false
+          cover.garage_msg100_main_channel:
+            expose: false
+		```
+	    NB: `project_id` and `service_account` are required fields. Write, respectively, the project id noted into step 1 and the "Service Account Key" file (downloaded in step 4) path-
+
+6. Create the Auto Discovery automation
+
+    To synchronize Home Assistant devices with the Google Home app without unlinking and relinking an account, you have to call `google_assistant.request_sync` service (or say "Ok Google, sync my devices") each time you add a new device in Home Assistant that you wish to control via the Google Assistant integration.
+	To avoid this, you can optionally setup an automation to call this service each time Home Assistant starts.
+	
+	- Take note of your Home Assistant user id. 
+	
+	  You can find it in Home Assistant under `Configuration` > `Users` > `[YOUR_USER_NAME]` > `ID`
+    		
+	- Copy it in a new field into the `.homeassistant`/`secrets.yaml` file (call it, for example, `google_agent_user_id`)
+	
+	- Add this at the end of the `.homeassistant`/`automations.yaml` file
+	
+	    ```yaml
+		- alias: Google Assistant Sync
+          trigger:
+          - event: start
+            platform: homeassistant
+          condition: []
+          action:
+          - service: google_assistant.request_sync
+            data:
+              agent_user_id: !secret google_agent_user_id
+	    ```
+
+
 ### Other useful commands
 - Verify Home Assistant service status
 ``` bash
