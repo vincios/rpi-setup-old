@@ -746,8 +746,8 @@ After a Python update, if you want to update the Home Assistant virtual environm
 	
 - Now, follow the official [installation guide](https://www.home-assistant.io/installation/raspberrypi#create-the-virtual-environment) to recreate the virtual environment.
 
-	Starts from the `python3.8 -m venv .` command (change the python version according your new version).
-
+	**NB1**: Starts from the `python3.8 -m venv .` command (change the python version according your new version).
+	**NB2**: Don't forget to run the `hass -v` command to reinstall the python packages required by the integratons!
 
 ### Activate Advanced Mode
 You can activate Advanced Mode under user profile page (click on the user's name at the bottom of the left sidebar).
