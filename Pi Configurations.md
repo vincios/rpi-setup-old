@@ -696,10 +696,11 @@ Notes:
 	```
 
 ### Install/Uninstall Rust
+
+#### Disclaimer
 Python `cryptography` package (required by Home Assistant) requires [Rust toolchain](https://www.rust-lang.org/tools/install) to build the package.
 So, to install or upgrade Home Assistant we have to install Rust. After that, Rust can also safely uninstalled.
 
-#### Disclaimer
 In theory, pip should be able to handle this requirement automatically (using a pre-built wheel package). 
 Unfortunately, for now (raspbian ?) pip does't have this wheel, so it tries to build cryptography package from scratch, returning an error `error: can't find Rust compiler`.
 So, in a near future, with a new pip version, installing Rust may be not necesary to install/upgrade Home Assistant.
