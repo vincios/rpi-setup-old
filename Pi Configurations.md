@@ -804,7 +804,7 @@ After a Python update, if you want to update the Home Assistant virtual environm
 
 - If necessary, [uninstall Rust](#uninstall-rust)
 
-- Check that all works flawlessy and, then, delete the backup
+- Check that everything works flawlessy and, then, delete the backup
 
     ```sh
 	$ rm -rf /home/homeassistant/homeassistant-backup
