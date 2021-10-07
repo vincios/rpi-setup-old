@@ -595,7 +595,7 @@ $ sudo make altinstall
 ```
 **NB:** Do not use the standard make install as it will overwrite the default system python3 binary. <br> 
 
-Now Python3.8 is installed. To use it instead of the system default 3.7 **you have to explicity run `python3.8`**, such as:
+Now Python3.10 is installed. To use it instead of the system default 3.7 **you have to explicity run `python3.10`**, such as:
 ```bash
 $ python3.10 --version
 ```
