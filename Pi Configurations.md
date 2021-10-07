@@ -25,7 +25,12 @@ Index
 > + [Install Python 3](#install-python-3)
 > + [Install Pi-hole](#install-pi-hole)
 > + [Home Assistant](#home-assistant)
+>     + [Install HA](#install-ha)
 >     + [Service creation](#service-creation)
+>     + [Install/Uninstall Rust](#installuninstall-rust)
+>          + [Disclaimer](#disclaimer)
+>          + [Install Rust](#install-rust)
+>          + [Uninstall Rust](#uninstall-rust)
 >     + [Switch to homeassistant user](#switch-to-homeassistant-user)
 > 	  + [Updating](#updating)
 > 	       + [Application](#application)
@@ -646,7 +651,7 @@ Notes:
 
 ## Home Assistant
 
-### Install
+### Install HA
 - [Install Python 3](#install-python-3)
 - Follow the official [guide](https://www.home-assistant.io/docs/installation/raspberry-pi/)
 
@@ -789,13 +794,17 @@ After a Python update, if you want to update the Home Assistant virtual environm
 	
 - Now, follow the official [installation guide](https://www.home-assistant.io/installation/raspberrypi#create-the-virtual-environment) to recreate the virtual environment.
 
-    **NB0**: If, necessary (see [disclaimer](#disclaimer])), [install Rust](#install-rust)
+	**Notes**:
+    1. Starts from the `python3.8 -m venv .` command (change the python version according your new version).
 	
-	**NB1**: Starts from the `python3.8 -m venv .` command (change the python version according your new version).
+	1. If, necessary (see [disclaimer](#disclaimer])), [install Rust](#install-rust)
 	
-	**NB2**: Don't forget to run the `hass -v` command to reinstall the python packages required by the integratons!
+	1. Don't forget to run the `hass -v` command to reinstall the python packages required by the integratons! 
+	   Remember that this command can took up to 30 minutes, so be patient.
 
 - If necessary, [uninstall Rust](#uninstall-rust)
+
+- 
 
 ### Activate Advanced Mode
 You can activate Advanced Mode under user profile page (click on the user's name at the bottom of the left sidebar).
