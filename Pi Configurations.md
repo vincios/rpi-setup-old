@@ -34,7 +34,7 @@ Index
 >     + [Mosquitto installation and configuration](#mosquitto-installation-and-configuration)
 >     + [Enable Alexa integration](#enable-alexa-integration)
 >     + [Enable Google Home integration](#enable-google-home-integration)
->     + [Create a reload integration rest command](#create-a-reload-integration-rest-command]
+>     + [Create a reload integration rest command](#create-a-reload-integration-rest-command)
 > 	  + [Other useful commands](#other-useful-commands)
 > + [Useful commands](#useful-commands)
 >     + [List active processes](#list-active-processes)
@@ -557,27 +557,27 @@ Update programs and dependencies
 $ ./update.sh
 ```
 
-## Install Python 3.8
-Python 3.8 is not on Debian repository so we have to build it from scratch.
+## Install Python 3.10
+Python 3.10 is not on Debian repository so we have to build it from scratch.
 
 - Start by installing the packages necessary to build Python source:
 
 ```bash
 $ sudo apt update
-$ sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libsqlite3-dev libreadline-dev libffi-dev wget libbz2-dev
+$ sudo apt install build-essential tk-dev libncurses5-dev libncursesw5-dev libreadline6-dev libdb5.3-dev libgdbm-dev libsqlite3-dev libssl-dev libbz2-dev libexpat1-dev liblzma-dev zlib1g-dev libffi-dev
 ```
 
-- Download the latest release’s source code from the Python download page with `wget` or `curl` . The last one should be `3.8.6`:
+- Download the latest release’s source code from the Python download page with `wget` or `curl`. For example, for the version `3.10.0`:
 
 ```bash
-wget https://www.python.org/ftp/python/3.8.6/Python-3.8.6.tar.xz
+wget https://www.python.org/ftp/python/3.10.0/Python-3.10.0.tar.xz
 ```
 
 - When the download is complete, extract the tarball, navigate to the Python source directory and run the configure script:
 
 ```bash
-$ tar -xf Python-3.8.6.tar.xz
-$ cd Python-3.8.6
+$ tar -xf Python-3.10.0.tar.xz
+$ cd Python-3.10.0
 $ ./configure --enable-optimizations
 ```
 
@@ -597,14 +597,14 @@ $ sudo make altinstall
 
 Now Python3.8 is installed. To use it instead of the system default 3.7 **you have to explicity run `python3.8`**, such as:
 ```bash
-$ python3.8 --version
+$ python3.10 --version
 ```
 
 - Now you can clean up downloaded files
 ```bash
 $ cd ..
-$ sudo rm -rf Python-3.8.6.tar.xz
-$ sudo rm -rf Python-3.8.6
+$ sudo rm -rf Python-3.10.0.tar.xz
+$ sudo rm -rf Python-3.10.0
 ```
 
 ## Install Pi-hole
