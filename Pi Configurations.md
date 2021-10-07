@@ -22,12 +22,14 @@ Index
 > + [Install Ampache](#install-ampache)
 > + [Deemix](#deemix)
 >     + [Notes](#notes)
-> + [Install Python 3.10](#install-python-310)
+> + [Install Python 3](#install-python-3)
 > + [Install Pi-hole](#install-pi-hole)
 > + [Home Assistant](#home-assistant)
 >     + [Service creation](#service-creation)
 >     + [Switch to homeassistant user](#switch-to-homeassistant-user)
 > 	  + [Updating](#updating)
+> 	       + [Application](#application)
+>		   + [Virtual Envrionment](#virtual-envrionment)
 >     + [Activate Advanced Mode](#activate-advanced-mode)
 >     + [Create ssl certificates](#create-ssl-certificates)
 >     + [Install HACS](#install-hacs)
@@ -557,7 +559,7 @@ Update programs and dependencies
 $ ./update.sh
 ```
 
-## Install Python 3.10
+## Install Python 3
 Python 3.10 is not on Debian repository so we have to build it from scratch.
 
 - Start by installing the packages necessary to build Python source:
@@ -643,7 +645,7 @@ Notes:
 
 ## Home Assistant
 ### Install
-- [Install Python 3.8](#install-python-38)
+- [Install Python 3](#install-python-3)
 - Follow the official [guide](https://www.home-assistant.io/docs/installation/raspberry-pi/)
 
     For first launch use `hass -v` and wait until log scroll stops.
@@ -653,38 +655,42 @@ Notes:
 ### Service creation
 **NB:** Run this steps as `pi` user! 
 - Create systemd service
-```bash
-$ sudo nano -w /etc/systemd/system/home-assistant@homeassistant.service
-```
+
+	```bash
+	$ sudo nano -w /etc/systemd/system/home-assistant@homeassistant.service
+	```
 - Paste following text
-```sh
-[Unit]
-Description=Home Assistant
-After=network-online.target
 
-[Service]
-Type=simple
-User=%i
-ExecStart=/srv/homeassistant/bin/hass -c "/home/homeassistant/.homeassistant"
+	```sh
+	[Unit]
+	Description=Home Assistant
+	After=network-online.target
 
-[Install]
-WantedBy=multi-user.target
-```
+	[Service]
+	Type=simple
+	User=%i
+	ExecStart=/srv/homeassistant/bin/hass -c "/home/homeassistant/.homeassistant"
+
+	[Install]
+	WantedBy=multi-user.target
+	```
 
 - Restart Systemd and load new service
-```bash
-$ sudo systemctl --system daemon-reload
-$ sudo systemctl enable home-assistant@homeassistant
-$ sudo systemctl start home-assistant@homeassistant
-```
+
+	```bash
+	$ sudo systemctl --system daemon-reload
+	$ sudo systemctl enable home-assistant@homeassistant
+	$ sudo systemctl start home-assistant@homeassistant
+	```
 
 - Add these lines to `bash_aliases`
-```sh
-alias ha-start="sudo systemctl start home-assistant@homeassistant"
-alias ha-stop="sudo systemctl stop home-assistant@homeassistant"
-alias ha-restart="sudo systemctl restart home-assistant@homeassistant"
-alias ha-restartlog="sudo systemctl restart home-assistant@homeassistant && sudo journalctl -f -u home-assistant@homeassistant"
-```
+
+	```sh
+	alias ha-start="sudo systemctl start home-assistant@homeassistant"
+	alias ha-stop="sudo systemctl stop home-assistant@homeassistant"
+	alias ha-restart="sudo systemctl restart home-assistant@homeassistant"
+	alias ha-restartlog="sudo systemctl restart home-assistant@homeassistant && sudo journalctl -f -u home-assistant@homeassistant"
+	```
 
 ### Switch to homeassistant user
 To do some configuration operations (edit configuration files, updating application, etc.) you have to switch to the `homeassistant` user using the following command
@@ -698,6 +704,7 @@ alias ha-login="cd /home/homeassistant && sudo -u homeassistant -H -s"
 ```
 
 ### Updating
+#### Application
 To update to the latest version of Home Assistant Core follow these simple steps:
 
 ```bash
@@ -708,6 +715,39 @@ $ pip3 install --upgrade homeassistant
 $ exit
 $ sudo systemctl start home-assistant@homeassistant
 ```
+
+#### Virtual Envrionment
+After a python update you want to update the Home Assistant virtual environment, follow these steps.
+
+- Stop service and login as homeassistant user
+
+	```sh
+	$ sudo systemctl stop home-assistant@homeassistant
+	$ sudo -u homeassistant -H -s
+	```
+
+- Backup `.homeassistant` folder
+	
+	```sh
+	$ mkdir /home/homeassistant/homeassistant-backup
+	$ cp /home/homeassistant/.homeassistant/ /home/homeassistant/homeassistant-backup
+	```
+
+- Go to the Home Assistant installation folder and make a backup of the old venv
+
+	```sh
+	$ cd /srv/homeassistant/
+	$ mkdir old-venv
+	$ mv bin old-venv/
+	$ mv include old-venv/
+	$ mv lib old-venv/
+	$ mv pyvenv.cfg old-venv/
+	```
+	
+- Now, follow the official [installation guide](https://www.home-assistant.io/installation/raspberrypi#create-the-virtual-environment) to recreate the virtual environment.
+
+	Starts from the `python3.8 -m venv .` command (change the python version according your new version).
+
 
 ### Activate Advanced Mode
 You can activate Advanced Mode under user profile page (click on the user's name at the bottom of the left sidebar).
