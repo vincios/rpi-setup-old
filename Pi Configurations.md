@@ -22,7 +22,7 @@ Index
 > + [Install Ampache](#install-ampache)
 > + [Deemix](#deemix)
 >     + [Notes](#notes)
-> + [Install Python 3.8](#install-python-38)
+> + [Install Python 3.10](#install-python-310)
 > + [Install Pi-hole](#install-pi-hole)
 > + [Home Assistant](#home-assistant)
 >     + [Service creation](#service-creation)
