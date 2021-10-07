@@ -804,7 +804,11 @@ After a Python update, if you want to update the Home Assistant virtual environm
 
 - If necessary, [uninstall Rust](#uninstall-rust)
 
-- 
+- Check that all works flawlessy and, then, delete the backup
+
+    ```sh
+	$ rm -rf /home/homeassistant/homeassistant-backup
+	```
 
 ### Activate Advanced Mode
 You can activate Advanced Mode under user profile page (click on the user's name at the bottom of the left sidebar).
