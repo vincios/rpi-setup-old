@@ -717,7 +717,7 @@ $ sudo systemctl start home-assistant@homeassistant
 ```
 
 #### Virtual Envrionment
-After a python update you want to update the Home Assistant virtual environment, follow these steps.
+After a Python update, if you want to update the Home Assistant virtual environment, follow these steps.
 
 - Stop service and login as homeassistant user
 
