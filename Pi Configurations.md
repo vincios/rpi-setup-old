@@ -789,7 +789,7 @@ After a Python update, if you want to update the Home Assistant virtual environm
 	
 - Now, follow the official [installation guide](https://www.home-assistant.io/installation/raspberrypi#create-the-virtual-environment) to recreate the virtual environment.
 
-    **NB0**: If, necessary (see [disclaimer](#disclaimer]), [install Rust](#install-rust)
+    **NB0**: If, necessary (see [disclaimer](#disclaimer])), [install Rust](#install-rust)
 	
 	**NB1**: Starts from the `python3.8 -m venv .` command (change the python version according your new version).
 	
