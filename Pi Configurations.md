@@ -655,7 +655,7 @@ Notes:
 	
     **NB2**: For first launch use `hass -v` and wait until log scroll stops.
 
-- If, necessary, [uninstall Rust](#uninstall-rust)
+- If necessary, [uninstall Rust](#uninstall-rust)
 - Create the [service](#service-creation)
 
 ### Service creation
@@ -748,7 +748,7 @@ $ sudo systemctl stop home-assistant@homeassistant
 $ sudo -u homeassistant -H -s
 ```
 
-If, necessary (see [disclaimer](#disclaimer]), [install Rust](#install-rust)
+If necessary (see [disclaimer](#disclaimer])), [install Rust](#install-rust)
 
 ``` bash
 $ source /srv/homeassistant/bin/activate
@@ -757,7 +757,7 @@ $ exit
 $ sudo systemctl start home-assistant@homeassistant
 ```
 
-If, necessary, [uninstall Rust](#uninstall-rust)
+If necessary, [uninstall Rust](#uninstall-rust)
 
 #### Virtual Envrionment
 After a Python update, if you want to update the Home Assistant virtual environment, follow these steps.
@@ -795,7 +795,7 @@ After a Python update, if you want to update the Home Assistant virtual environm
 	
 	**NB2**: Don't forget to run the `hass -v` command to reinstall the python packages required by the integratons!
 
-- If, necessary, [uninstall Rust](#uninstall-rust)
+- If necessary, [uninstall Rust](#uninstall-rust)
 
 ### Activate Advanced Mode
 You can activate Advanced Mode under user profile page (click on the user's name at the bottom of the left sidebar).
