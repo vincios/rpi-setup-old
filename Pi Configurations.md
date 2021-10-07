@@ -667,14 +667,22 @@ $ curl https://sh.rustup.rs -sSf | sh
 
 And choose option 1.
 
-# Uninstall
+
+#### Uninstall
+After Home Assistant installation/upgrade is done, Rust is [no more necessary](https://github.com/pyca/cryptography/blob/main/docs/installation.rst#rust) and can be deleted with this command:
+
+```sh
+$ rustup self uninstall
+```
+
 
 ### Install
 - [Install Python 3](#install-python-3)
 - Follow the official [guide](https://www.home-assistant.io/docs/installation/raspberry-pi/)
-
-    For first launch use `hass -v` and wait until log scroll stops.
-	
+	**NB1**: After `Create an account` part and before `Create the virtual environment` part of the guide, [it may be necessary](#disclaimer) install Rust. 
+	In this case, [switch to homeassistant user](#switch-to-homeassistant-user) and [install Rust](#install-uninstall-rust)
+    **NB2**: For first launch use `hass -v` and wait until log scroll stops.
+- If, necessary, [uninstall Rust](#install-uninstall-rust)
 - Create the [service](#service-creation)
 
 ### Service creation
@@ -735,11 +743,18 @@ To update to the latest version of Home Assistant Core follow these simple steps
 ```bash
 $ sudo systemctl stop home-assistant@homeassistant
 $ sudo -u homeassistant -H -s
+```
+
+If, necessary (see [disclaimer](#disclaimer]), [install Rust](#install-uninstall-rust)
+
+``` bash
 $ source /srv/homeassistant/bin/activate
 $ pip3 install --upgrade homeassistant
 $ exit
 $ sudo systemctl start home-assistant@homeassistant
 ```
+
+If, necessary, [uninstall Rust](#install-uninstall-rust)
 
 #### Virtual Envrionment
 After a Python update, if you want to update the Home Assistant virtual environment, follow these steps.
@@ -771,8 +786,11 @@ After a Python update, if you want to update the Home Assistant virtual environm
 	
 - Now, follow the official [installation guide](https://www.home-assistant.io/installation/raspberrypi#create-the-virtual-environment) to recreate the virtual environment.
 
+    **NB0**: If, necessary (see [disclaimer](#disclaimer]), [install Rust](#install-uninstall-rust)
 	**NB1**: Starts from the `python3.8 -m venv .` command (change the python version according your new version).
 	**NB2**: Don't forget to run the `hass -v` command to reinstall the python packages required by the integratons!
+
+- If, necessary, [uninstall Rust](#install-uninstall-rust)
 
 ### Activate Advanced Mode
 You can activate Advanced Mode under user profile page (click on the user's name at the bottom of the left sidebar).
