@@ -723,6 +723,7 @@ Rust toolchain installation is very simple via `rustup`. Simply run this command
 $ curl https://sh.rustup.rs -sSf | sh
 ```
 ⚠️ **RUST MUST BE INSTALLED ON THE `homeassistant` USER!!**
+
 And choose option 1.
 
 
