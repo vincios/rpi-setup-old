@@ -717,12 +717,12 @@ So, sometime, try to make an Home Assistant upgrade without install Rust. If the
 Otherwise, install Rust and retry to upgrade.
 
 #### Install Rust
-Rust toolchain installation is very simple via `rustup`. Simply run this command:
+Rust toolchain installation is very simple via `rustup`. Simply run this command ** from __homeassistant__'s shell**:
 
 ```
 $ curl https://sh.rustup.rs -sSf | sh
 ```
-
+⚠️ ** RUST MUST BE INSTALLED ON __HOMEASSISTANT__ USER!! **
 And choose option 1.
 
 
@@ -753,7 +753,7 @@ $ sudo systemctl stop home-assistant@homeassistant
 $ sudo -u homeassistant -H -s
 ```
 
-If necessary (see [disclaimer](#disclaimer])), [install Rust](#install-rust)
+If necessary (see [disclaimer](#disclaimer)), [install Rust](#install-rust)
 
 ``` bash
 $ source /srv/homeassistant/bin/activate
@@ -797,7 +797,7 @@ After a Python update, if you want to update the Home Assistant virtual environm
 	**Notes**:
     1. Starts from the `python3.8 -m venv .` command (change the python version according your new version).
 	
-	1. If, necessary (see [disclaimer](#disclaimer])), [install Rust](#install-rust)
+	1. If, necessary (see [disclaimer](#disclaimer)), [install Rust](#install-rust)
 	
 	1. Don't forget to run the `hass -v` command to reinstall the python packages required by the integratons! 
 	   Remember that this command can took up to 30 minutes, so be patient.
