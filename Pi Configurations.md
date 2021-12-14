@@ -717,12 +717,12 @@ So, sometime, try to make an Home Assistant upgrade without install Rust. If the
 Otherwise, install Rust and retry to upgrade.
 
 #### Install Rust
-Rust toolchain installation is very simple via `rustup`. Simply run this command **from _homeassistant_'s user shell**:
+Rust toolchain installation is very simple via `rustup`. Simply run this command **from `homeassistant`'s user shell**:
 
 ```
 $ curl https://sh.rustup.rs -sSf | sh
 ```
-⚠️ **RUST MUST BE INSTALLED ON _HOMEASSISTANT_ USER!!**
+⚠️ **RUST MUST BE INSTALLED ON THE `homeassistant` USER!!**
 And choose option 1.
 
 
