@@ -680,7 +680,9 @@ Notes:
 	[Service]
 	Type=simple
 	User=%i
-	ExecStart=/srv/homeassistant/bin/hass -c "/home/homeassistant/.homeassistant"
+	WorkingDirectory=/home/%i/.homeassistant
+	ExecStart=/srv/homeassistant/bin/hass -c "/home/%i/.homeassistant"
+	RestartForceExitStatus=100
 
 	[Install]
 	WantedBy=multi-user.target
