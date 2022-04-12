@@ -763,6 +763,12 @@ If necessary (see [disclaimer](#disclaimer)), [install Rust](#install-rust)
 ``` bash
 $ source /srv/homeassistant/bin/activate
 $ pip3 install --upgrade homeassistant
+$ hass -v
+```
+
+Wait until the application fully loads (it can take up to 30 minutes), then close it (Ctrl-C).
+
+``` bash
 $ exit
 $ sudo systemctl start home-assistant@homeassistant
 ```
