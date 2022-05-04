@@ -826,7 +826,7 @@ You can activate Advanced Mode under user profile page (click on the user's name
 ## Edit configuration.yaml file
 To edit the ***configuration.yaml*** file you have to [switch to homeassistant user](#switch-to-homeassistant-user)
 
-### Create ssl certificate
+## Create ssl certificate
 From [this](https://indomus.it/guide/collegarsi-da-remoto-a-home-assistant-installato-su-raspberry-raspbian/) guide. <br>
 
 **NOTE**: This guide assume a configured duckdns domain `cclouds.duckdns.org`. If you use a different domain, change scripts when indicated.
