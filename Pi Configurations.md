@@ -38,7 +38,7 @@ Index
     - [Virtual Envrionment](#virtual-envrionment)
   - [Mosquitto installation and configuration](#mosquitto-installation-and-configuration)
   - [Enable Alexa integration](#enable-alexa-integration)
-    - [Enable Google Home integration](#enable-google-home-integration)
+  - [Enable Google Home integration](#enable-google-home-integration)
     - [Create a reload integration rest command](#create-a-reload-integration-rest-command)
     - [Other useful commands](#other-useful-commands)
     - [Troubleshooting](#troubleshooting)
@@ -1147,7 +1147,7 @@ Follow these two guides:
   - [Guide 1](https://www.home-assistant.io/integrations/alexa.smart_home/)
   - [Guide 2](https://www.saggiamente.com/2020/01/come-usare-home-assistant-con-alexa-gratuitamente-metodo-aggiornato-senza-nabucasa-e-token/)
 
-### Enable Google Home integration
+## Enable Google Home integration
 From these two guides: [guide 1](https://www.home-assistant.io/integrations/google_assistant/), [guide 2](https://indomus.it/guide/integrare-gratuitamente-google-home-assistant-con-home-assistant-via-gcp/).
 1. Create Create a new project in the Actions on Google console
 
