@@ -823,7 +823,7 @@ After a Python update, if you want to update the Home Assistant virtual environm
 ## Activate Advanced Mode
 You can activate Advanced Mode under user profile page (click on the user's name at the bottom of the left sidebar).
 
-### Edit configuration.yaml file
+## Edit configuration.yaml file
 To edit the ***configuration.yaml*** file you have to [switch to homeassistant user](#switch-to-homeassistant-user)
 
 ### Create ssl certificate
