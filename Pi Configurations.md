@@ -42,7 +42,7 @@ Index
   - [Create a reload integration rest command](#create-a-reload-integration-rest-command)
   - [Other useful commands](#other-useful-commands)
   - [Troubleshooting](#troubleshooting)
-      - ["GLIBC_2.29" not found](#glibc_229-not-found)
+    - ["GLIBC_2.29" not found](#glibc_229-not-found)
   - [Useful commands](#useful-commands)
     - [List active processes](#list-active-processes)
 - [.bash_aliases](#bash_aliases)
@@ -1398,7 +1398,7 @@ $ hass --script check_config –h
 ## Troubleshooting
 Here you can find solution to some Home Assistant issues.
 
-#### "GLIBC_2.29" not found
+### "GLIBC_2.29" not found
 Error: `ImportError: /lib/arm-linux-gnueabihf/libm.so.6: version 'GLIBC_2.29' not found (required by /srv/homeassistant/lib/python3.9/site-packages/_miniaudio.abi3.so)`
 
 From this [issue](https://github.com/home-assistant/core/issues/66378):
