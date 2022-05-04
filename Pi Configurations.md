@@ -1408,7 +1408,7 @@ From [here](https://github.com/home-assistant/core/issues/66378):
     $ sudo -u homeassistant -H -s
     ```
 2. Change to /srv/homeassistant (with "cd")
-Activate the virtual environment ("source bin/activate")
+3. Activate the virtual environment ("source bin/activate")
 Recompile miniaudio ("pip install --ignore-installed miniaudio --no-binary :all:")
 It takes a while for the compile to finish!
 Restart HA (actually I restarted the server but that might be overkill)
