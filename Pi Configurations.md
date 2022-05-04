@@ -27,7 +27,7 @@ Index
   - [Install Pi-hole](#install-pi-hole)
 - [Home Assistant](#home-assistant)
   - [Install HA](#install-ha)
-    - [Service creation](#service-creation)
+  - [Service creation](#service-creation)
     - [Install/Uninstall Rust](#installuninstall-rust)
       - [Disclaimer](#disclaimer)
       - [Install Rust](#install-rust)
@@ -662,7 +662,7 @@ Notes:
 - If necessary, [uninstall Rust](#uninstall-rust)
 - Create the [service](#service-creation)
 
-### Service creation
+## Service creation
 **NB:** Run this steps as `pi` user! 
 - Create systemd service
 
