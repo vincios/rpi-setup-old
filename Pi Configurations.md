@@ -33,8 +33,8 @@ Index
     - [Install Rust](#install-rust)
     - [Uninstall Rust](#uninstall-rust)
   - [Switch to homeassistant user](#switch-to-homeassistant-user)
-    - [Updating](#updating)
-      - [Application](#application)
+  - [Updating](#updating)
+    - [Application](#application)
       - [Virtual Envrionment](#virtual-envrionment)
     - [Mosquitto installation and configuration](#mosquitto-installation-and-configuration)
     - [Enable Alexa integration](#enable-alexa-integration)
@@ -748,8 +748,8 @@ You can also automate this operation adding the command above in the `bash_alias
 alias ha-login="cd /home/homeassistant && sudo -u homeassistant -H -s"
 ```
 
-### Updating
-#### Application
+## Updating
+### Application
 To update to the latest version of Home Assistant Core follow these simple steps:
 
 ```bash
