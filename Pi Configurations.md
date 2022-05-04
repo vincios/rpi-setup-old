@@ -1396,6 +1396,7 @@ $ sudo journalctl -f -u home-assistant@homeassistant | grep -i ‘error’
 $ hass --script check_config –h
 ```
 
+
 ## Useful commands
 ### List active processes
 Simple
