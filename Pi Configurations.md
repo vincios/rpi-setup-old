@@ -1402,6 +1402,7 @@ Here you can find solution to some Home Assistant issues.
 #### "GLIBC_2.29" not found
 Error: `ImportError: /lib/arm-linux-gnueabihf/libm.so.6: version 'GLIBC_2.29' not found (required by /srv/homeassistant/lib/python3.9/site-packages/_miniaudio.abi3.so)`
 
+From th [here](https://github.com/home-assistant/core/issues/66378):
 1. [Switch to homeassistant user](#switch-to-homeassistant-user)
    
     ```bash
