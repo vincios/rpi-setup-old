@@ -704,9 +704,9 @@ Notes:
 	alias ha-restartlog="sudo systemctl restart home-assistant@homeassistant && sudo journalctl -f -u home-assistant@homeassistant"
 	```
 
-### Install/Uninstall Rust
+## Install/Uninstall Rust
 
-#### Disclaimer
+### Disclaimer
 Python `cryptography` package (required by Home Assistant) requires [Rust toolchain](https://www.rust-lang.org/tools/install) to build the package.
 So, to install or upgrade Home Assistant we have to install Rust. After that, Rust can also safely uninstalled.
 
