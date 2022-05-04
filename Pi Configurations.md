@@ -1401,7 +1401,13 @@ $ hass --script check_config –h
 Error: `ImportError: /lib/arm-linux-gnueabihf/libm.so.6: version 'GLIBC_2.29' not found (required by /srv/homeassistant/lib/python3.9/site-packages/_miniaudio.abi3.so)`
 
 From [here](https://github.com/home-assistant/core/issues/66378):
- 
+Log in as homeassistant
+Change to /srv/homeassistant (with "cd")
+Activate the virtual environment ("source bin/activate")
+Recompile miniaudio ("pip install --ignore-installed miniaudio --no-binary :all:")
+It takes a while for the compile to finish!
+Restart HA (actually I restarted the server but that might be overkill)
+Hope it works for others too! 
 
 ## Useful commands
 ### List active processes
