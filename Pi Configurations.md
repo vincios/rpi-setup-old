@@ -3,6 +3,7 @@
 **NOTE:** Please read before [First operations](#first-operations).
 
 Index
+- [Common configurations for Raspberry Pi with Raspbian](#common-configurations-for-raspberry-pi-with-raspbian)
   - [First operations](#first-operations)
   - [VNC "cannot currently show the desktop" in headless mode](#vnc-cannot-currently-show-the-desktop-in-headless-mode)
   - [AutoMount Nas folders](#automount-nas-folders)
