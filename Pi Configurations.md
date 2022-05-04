@@ -820,7 +820,7 @@ After a Python update, if you want to update the Home Assistant virtual environm
 	$ rm -rf /home/homeassistant/homeassistant-backup
 	```
 
-### Activate Advanced Mode
+## Activate Advanced Mode
 You can activate Advanced Mode under user profile page (click on the user's name at the bottom of the left sidebar).
 
 ### Edit configuration.yaml file
