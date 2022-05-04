@@ -1402,9 +1402,9 @@ Error: `ImportError: /lib/arm-linux-gnueabihf/libm.so.6: version 'GLIBC_2.29' no
 
 From [here](https://github.com/home-assistant/core/issues/66378):
 1. [Switch to homeassistant user](#switch-to-homeassistant-user)
-```bash
-$ sudo -u homeassistant -H -s
-```
+    ```bash
+    $ sudo -u homeassistant -H -s
+    ```
 Change to /srv/homeassistant (with "cd")
 Activate the virtual environment ("source bin/activate")
 Recompile miniaudio ("pip install --ignore-installed miniaudio --no-binary :all:")
