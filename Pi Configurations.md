@@ -32,7 +32,7 @@ Index
     - [Disclaimer](#disclaimer)
     - [Install Rust](#install-rust)
     - [Uninstall Rust](#uninstall-rust)
-    - [Switch to homeassistant user](#switch-to-homeassistant-user)
+  - [Switch to homeassistant user](#switch-to-homeassistant-user)
     - [Updating](#updating)
       - [Application](#application)
       - [Virtual Envrionment](#virtual-envrionment)
@@ -737,7 +737,7 @@ After Home Assistant installation/upgrade is done, Rust is [no more necessary](h
 $ rustup self uninstall
 ```
 
-### Switch to homeassistant user
+## Switch to homeassistant user
 To do some configuration operations (edit configuration files, updating application, etc.) you have to switch to the `homeassistant` user using the following command
 ```bash
 $ sudo -u homeassistant -H -s
