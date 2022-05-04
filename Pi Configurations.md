@@ -40,7 +40,7 @@ Index
   - [Enable Alexa integration](#enable-alexa-integration)
   - [Enable Google Home integration](#enable-google-home-integration)
   - [Create a reload integration rest command](#create-a-reload-integration-rest-command)
-    - [Other useful commands](#other-useful-commands)
+  - [Other useful commands](#other-useful-commands)
     - [Troubleshooting](#troubleshooting)
       - ["GLIBC_2.29" not found](#glibc_229-not-found)
   - [Useful commands](#useful-commands)
@@ -1349,7 +1349,7 @@ From these two guides: [guide 1](https://www.home-assistant.io/integrations/goog
 ## Create a reload integration rest command
 See [here](https://community.home-assistant.io/t/add-service-integration-reload/231940/52).
 
-### Other useful commands
+## Other useful commands
 - Verify Home Assistant service status
 ``` bash
 $ sudo systemctl status home-assistant@homeassistant
