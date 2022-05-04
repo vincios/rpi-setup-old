@@ -28,9 +28,9 @@ Index
 - [Home Assistant](#home-assistant)
   - [Install HA](#install-ha)
   - [Service creation](#service-creation)
-    - [Install/Uninstall Rust](#installuninstall-rust)
-      - [Disclaimer](#disclaimer)
-      - [Install Rust](#install-rust)
+  - [Install/Uninstall Rust](#installuninstall-rust)
+    - [Disclaimer](#disclaimer)
+    - [Install Rust](#install-rust)
       - [Uninstall Rust](#uninstall-rust)
     - [Switch to homeassistant user](#switch-to-homeassistant-user)
     - [Updating](#updating)
@@ -717,7 +717,7 @@ So, in a near future, with a new pip version, installing Rust may be not necesar
 So, sometime, try to make an Home Assistant upgrade without install Rust. If the upgrade command ends successfully, you don't need Rust anymore.
 Otherwise, install Rust and retry to upgrade.
 
-#### Install Rust
+### Install Rust
 Rust toolchain installation is very simple via `rustup`. Simply run this command **from `homeassistant`'s user shell**:
 
 ```
