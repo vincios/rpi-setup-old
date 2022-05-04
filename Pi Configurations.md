@@ -1397,7 +1397,7 @@ $ hass --script check_config –h
 ```
 
 ### Troubleshooting
-
+#### 
 ## Useful commands
 ### List active processes
 Simple
