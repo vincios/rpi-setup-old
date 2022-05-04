@@ -1401,6 +1401,7 @@ $ hass --script check_config –h
 Error: `ImportError: /lib/arm-linux-gnueabihf/libm.so.6: version `GLIBC_2.29' not found (required by /srv/homeassistant/lib/python3.9/site-packages/_miniaudio.abi3.so)`
 
 
+
 ## Useful commands
 ### List active processes
 Simple
