@@ -44,7 +44,7 @@ Index
   - [Troubleshooting](#troubleshooting)
     - ["GLIBC_2.29" not found](#glibc_229-not-found)
 - [Useful commands](#useful-commands)
-    - [List active processes](#list-active-processes)
+  - [List active processes](#list-active-processes)
 - [.bash_aliases](#bash_aliases)
 
 ## First operations
@@ -1420,7 +1420,7 @@ From this [issue](https://github.com/home-assistant/core/issues/66378):
 
 
 # Useful commands
-### List active processes
+## List active processes
 Simple
 ```sh
 $ ps aux
