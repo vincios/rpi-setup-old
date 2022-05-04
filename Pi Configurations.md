@@ -31,7 +31,7 @@ Index
   - [Install/Uninstall Rust](#installuninstall-rust)
     - [Disclaimer](#disclaimer)
     - [Install Rust](#install-rust)
-      - [Uninstall Rust](#uninstall-rust)
+    - [Uninstall Rust](#uninstall-rust)
     - [Switch to homeassistant user](#switch-to-homeassistant-user)
     - [Updating](#updating)
       - [Application](#application)
@@ -730,7 +730,7 @@ And choose option 1.
 ⚠️ **RUST MUST BE INSTALLED ON THE `homeassistant` USER!!**
 
 
-#### Uninstall Rust
+### Uninstall Rust
 After Home Assistant installation/upgrade is done, Rust is [no more necessary](https://github.com/pyca/cryptography/blob/main/docs/installation.rst#rust) and can be deleted with this command:
 
 ```sh
