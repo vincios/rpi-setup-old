@@ -41,7 +41,7 @@ Index
   - [Enable Google Home integration](#enable-google-home-integration)
   - [Create a reload integration rest command](#create-a-reload-integration-rest-command)
   - [Other useful commands](#other-useful-commands)
-    - [Troubleshooting](#troubleshooting)
+  - [Troubleshooting](#troubleshooting)
       - ["GLIBC_2.29" not found](#glibc_229-not-found)
   - [Useful commands](#useful-commands)
     - [List active processes](#list-active-processes)
@@ -1395,7 +1395,7 @@ $ sudo journalctl -f -u home-assistant@homeassistant | grep -i ‘error’
 $ hass --script check_config –h
 ```
 
-### Troubleshooting
+## Troubleshooting
 Here you can find solution to some Home Assistant issues.
 
 #### "GLIBC_2.29" not found
