@@ -25,8 +25,8 @@ Index
     - [Notes](#notes)
   - [Install Python 3](#install-python-3)
   - [Install Pi-hole](#install-pi-hole)
-  - [Home Assistant](#home-assistant)
-    - [Install HA](#install-ha)
+- [Home Assistant](#home-assistant)
+  - [Install HA](#install-ha)
     - [Service creation](#service-creation)
     - [Install/Uninstall Rust](#installuninstall-rust)
       - [Disclaimer](#disclaimer)
@@ -648,9 +648,9 @@ Notes:
 - Current block lists are taken from [here](https://www.andreadraghetti.it/block-list-e-white-list-per-pi-hole-e-ad-blocker/).
 
 
-## Home Assistant
+# Home Assistant
 
-### Install HA
+## Install HA
 - [Install Python 3](#install-python-3)
 - Follow the official [guide](https://www.home-assistant.io/docs/installation/raspberry-pi/)
 
