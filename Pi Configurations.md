@@ -1402,6 +1402,7 @@ Error: `ImportError: /lib/arm-linux-gnueabihf/libm.so.6: version 'GLIBC_2.29' no
 
 From [here](https://github.com/home-assistant/core/issues/66378):
 1. [Switch to homeassistant user](#switch-to-homeassistant-user)
+2. 
 To do some configuration operations (edit configuration files, updating application, etc.) you have to switch to the `homeassistant` user using the following command
 ```bash
 $ sudo -u homeassistant -H -s
