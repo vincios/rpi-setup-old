@@ -1418,7 +1418,7 @@ From [here](https://github.com/home-assistant/core/issues/66378):
 
 
 5. Restart HA (actually I restarted the server but that might be overkill)
-Hope it works for others too! 
+
 
 ## Useful commands
 ### List active processes
