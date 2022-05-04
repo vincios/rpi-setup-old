@@ -1416,7 +1416,7 @@ From [here](https://github.com/home-assistant/core/issues/66378):
     pip install --ignore-installed miniaudio --no-binary :all:
     ```
 
-It takes a while for the compile to finish!
+
 Restart HA (actually I restarted the server but that might be overkill)
 Hope it works for others too! 
 
