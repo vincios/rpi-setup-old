@@ -35,7 +35,7 @@ Index
   - [Switch to homeassistant user](#switch-to-homeassistant-user)
   - [Updating](#updating)
     - [Application](#application)
-      - [Virtual Envrionment](#virtual-envrionment)
+    - [Virtual Envrionment](#virtual-envrionment)
     - [Mosquitto installation and configuration](#mosquitto-installation-and-configuration)
     - [Enable Alexa integration](#enable-alexa-integration)
     - [Enable Google Home integration](#enable-google-home-integration)
@@ -774,7 +774,7 @@ $ sudo systemctl start home-assistant@homeassistant
 
 If necessary, [uninstall Rust](#uninstall-rust)
 
-#### Virtual Envrionment
+### Virtual Envrionment
 After a Python update, if you want to update the Home Assistant virtual environment, follow these steps.
 
 - Stop service and login as homeassistant user
