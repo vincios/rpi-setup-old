@@ -3,7 +3,6 @@
 **NOTE:** Please read before [First operations](#first-operations).
 
 Index
-
   - [First operations](#first-operations)
   - [VNC "cannot currently show the desktop" in headless mode](#vnc-cannot-currently-show-the-desktop-in-headless-mode)
   - [AutoMount Nas folders](#automount-nas-folders)
