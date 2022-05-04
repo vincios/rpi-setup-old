@@ -1408,7 +1408,7 @@ From this [issue](https://github.com/home-assistant/core/issues/66378):
     ```bash
     $ sudo -u homeassistant -H -s
     ```
-2. Change to /srv/homeassistant (with "cd")
+2. Change to  ' (with "cd")
 3. Activate the virtual environment ("source bin/activate")
 4. Recompile miniaudio (It takes a while for the compile to finish!)
     
