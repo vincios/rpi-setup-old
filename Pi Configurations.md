@@ -36,7 +36,7 @@ Index
   - [Updating](#updating)
     - [Application](#application)
     - [Virtual Envrionment](#virtual-envrionment)
-    - [Mosquitto installation and configuration](#mosquitto-installation-and-configuration)
+  - [Mosquitto installation and configuration](#mosquitto-installation-and-configuration)
     - [Enable Alexa integration](#enable-alexa-integration)
     - [Enable Google Home integration](#enable-google-home-integration)
     - [Create a reload integration rest command](#create-a-reload-integration-rest-command)
@@ -1044,7 +1044,7 @@ From [here](https://hacs.xyz/docs/installation/prerequisites) (With some modific
 
 - Follow [this](https://hacs.xyz/docs/configuration/start) configuration steps.
 
-### Mosquitto installation and configuration
+## Mosquitto installation and configuration
 - Install Mosquitto
     
 	```bash
