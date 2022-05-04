@@ -43,7 +43,7 @@ Index
   - [Other useful commands](#other-useful-commands)
   - [Troubleshooting](#troubleshooting)
     - ["GLIBC_2.29" not found](#glibc_229-not-found)
-  - [Useful commands](#useful-commands)
+- [Useful commands](#useful-commands)
     - [List active processes](#list-active-processes)
 - [.bash_aliases](#bash_aliases)
 
@@ -1419,7 +1419,7 @@ From this [issue](https://github.com/home-assistant/core/issues/66378):
 5. Restart HA (actually I restarted the server but that might be overkill)
 
 
-## Useful commands
+# Useful commands
 ### List active processes
 Simple
 ```sh
