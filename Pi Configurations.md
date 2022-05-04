@@ -39,7 +39,7 @@ Index
   - [Mosquitto installation and configuration](#mosquitto-installation-and-configuration)
   - [Enable Alexa integration](#enable-alexa-integration)
   - [Enable Google Home integration](#enable-google-home-integration)
-    - [Create a reload integration rest command](#create-a-reload-integration-rest-command)
+  - [Create a reload integration rest command](#create-a-reload-integration-rest-command)
     - [Other useful commands](#other-useful-commands)
     - [Troubleshooting](#troubleshooting)
       - ["GLIBC_2.29" not found](#glibc_229-not-found)
@@ -1346,7 +1346,7 @@ From these two guides: [guide 1](https://www.home-assistant.io/integrations/goog
 	
 11. **BONUS**: If you want to allow other household users to add this action to theirs accounts and control the devices, follow this [guide](https://www.home-assistant.io/integrations/google_assistant/#allow-other-users).
 
-### Create a reload integration rest command
+## Create a reload integration rest command
 See [here](https://community.home-assistant.io/t/add-service-integration-reload/231940/52).
 
 ### Other useful commands
