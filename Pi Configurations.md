@@ -760,6 +760,7 @@ $ sudo -u homeassistant -H -s
 If necessary (see [disclaimer](#disclaimer)), [install Rust](#install-rust)
 
 ``` bash
+$ cd /srv/homeassistant
 $ source /srv/homeassistant/bin/activate
 $ pip3 install --upgrade homeassistant
 $ hass -v
