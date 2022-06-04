@@ -1470,13 +1470,28 @@ If all is working fine (the log doesn't show errors and HA's logbook works), you
 
 0. Login as `pi` user
 1. Stop Home Assistant
+
    ```bash
-   sudo systemctl stop home-assistant@homeassistant.service
+   $ sudo systemctl stop home-assistant@homeassistant.service
    ```
 
 3. Edit the service 
-4. `sudo nano -w /etc/systemd/system/home-assistant@homeassistant.service`
-5. 
+   
+    ```bash 
+    $ sudo nano -w /etc/systemd/system/home-assistant@homeassistant.service
+    ```
+4. Add this line to the `[Service]` section (after the `User=%i` line)
+   
+    ```
+    Environment="LD_LIBRARY_PATH=/usr/local/lib/"
+    ```
+5. Save the file and reload Systemd
+
+    ```bash
+
+    ``
+
+
 # Useful commands
 ## List active processes
 Simple
