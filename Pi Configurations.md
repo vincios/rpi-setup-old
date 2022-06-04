@@ -1449,10 +1449,12 @@ adapted with [this](https://community.home-assistant.io/t/raspberrypi-ha-core-ve
 
 The last command above (`sudo make install`) will output the folder where the new libraries have been installed (should be `/usr/local/lib`). Note it somewhere.
 
-Try now to launch Home Assistant. If the issue still occour, it should be the libraries location. From [here](https://community.home-assistant.io/t/raspberrypi-ha-core-version-3-27-2-of-sqlite-is-not-supported/352858/2):
+Try now to launch Home Assistant. If the issue still occour, the cause should be the libraries location. From [here](https://community.home-assistant.io/t/raspberrypi-ha-core-version-3-27-2-of-sqlite-is-not-supported/352858/2):
 
->
+> hass still complained. It turned out to be where the libraries were installed.
+> The old libraries were in `/usr/lib/arm-linux-gnueabihf/`, whereas the new ones were in `/usr/local/lib`.
 
+So we have to link the new location 
 # Useful commands
 ## List active processes
 Simple
