@@ -1424,7 +1424,8 @@ If you have an outdated version of SQLite, try to update it with your system pac
 
 If this doesn't work (package manager says already up to date) you can try a manual upgrade.
 
-From this suggestion, adapted with this additional comment:
+From [this](https://community.home-assistant.io/t/raspberrypi-ha-core-version-3-27-2-of-sqlite-is-not-supported/352858/2) suggestion,
+adapted with [this]() additional comment:
 
 1. Get the download link of the latest SQLite source code form the [official page](https://sqlite.org/download.html).
 
