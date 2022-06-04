@@ -1449,7 +1449,7 @@ adapted with [this](https://community.home-assistant.io/t/raspberrypi-ha-core-ve
 
 The last command above (`sudo make install`) will output the folder where the new libraries have been installed (should be `/usr/local/lib`). Note it somewhere.
 
-Try now to launch Home Assistant. If the issue 
+Try now to launch Home Assistant. If the issue still occour, it should be the library 
 
 # Useful commands
 ## List active processes
