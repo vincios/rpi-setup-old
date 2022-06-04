@@ -1444,8 +1444,8 @@ If this doesn't work (package manager says already up to date) you can try a man
     $ sudo make install
     ```
 
-
-4. 
+The last command above (`sudo make install`) will output the folder where the new library version have been installed (should be `). 
+1. 
 
 # Useful commands
 ## List active processes
