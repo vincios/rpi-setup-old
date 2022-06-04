@@ -1488,7 +1488,7 @@ If all is working fine (the log doesn't show errors and HA's logbook works), you
 5. Save the file and reload Systemd
 
     ```bash
-
+    $ sudo systemctl --system daemon-reload
     ``
 
 
