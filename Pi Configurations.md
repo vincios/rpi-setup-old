@@ -1424,6 +1424,8 @@ If you have an outdated version of SQLite, try to update it with your system pac
 
 If this doesn't work (package manager says already up to date) you can try a manual upgrade.
 
+From this suggestion, adapted with this additional comment:
+
 1. Get the download link of the latest SQLite source code form the [official page](https://sqlite.org/download.html).
 
     > NB: make sure you choose the `autoconf` version!
@@ -1444,8 +1446,9 @@ If this doesn't work (package manager says already up to date) you can try a man
     $ sudo make install
     ```
 
-The last command above (`sudo make install`) will output the folder where the new libraries have been installed (should be `/usr/local/lib`). Note
-1. 
+The last command above (`sudo make install`) will output the folder where the new libraries have been installed (should be `/usr/local/lib`). Note it somewhere.
+
+
 
 # Useful commands
 ## List active processes
