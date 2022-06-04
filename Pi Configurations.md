@@ -1427,6 +1427,7 @@ If this doesn't work (package manager says already up to date) you can try a man
 From [this](https://community.home-assistant.io/t/raspberrypi-ha-core-version-3-27-2-of-sqlite-is-not-supported/352858/2) suggestion,
 adapted with [this](https://community.home-assistant.io/t/raspberrypi-ha-core-version-3-27-2-of-sqlite-is-not-supported/352858/13) additional comment:
 
+0. **Make a backup of the `.homeassistant` folder!**
 1. Get the download link of the latest SQLite source code form the [official page](https://sqlite.org/download.html).
 
     > NB: make sure you choose the `autoconf` version!
@@ -1454,8 +1455,9 @@ Try now to launch Home Assistant. If the issue still occour, the cause should be
 > hass still complained. It turned out to be where the libraries were installed.
 > The old libraries were in `/usr/lib/arm-linux-gnueabihf/`, whereas the new ones were in `/usr/local/lib`.
 
-So we have to link the new libraries to Home Assistant.
-1. 
+So we have to link the new libraries folder to Home Assistant.
+
+1. Login as
 # Useful commands
 ## List active processes
 Simple
