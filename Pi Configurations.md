@@ -1422,7 +1422,9 @@ From this [issue](https://github.com/home-assistant/core/issues/66378):
 ### HA Core - Version xx.xx.xx of SQLite is not supported
 If you have an outdated version of SQLite, try to update it with your system package manager (`sudo apt update` and `sudo apt upgrade`).
 
-If this doesn't work (package manager says already up to date) you can manually upgrade
+If this doesn't work (package manager says already up to date) you can try a manual upgrade.
+
+1. Get the download link of the latest SQLite source code form the [official page]() ( make sure y`autoconf` versio)
 
 # Useful commands
 ## List active processes
