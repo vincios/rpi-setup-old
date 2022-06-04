@@ -1476,7 +1476,7 @@ If all is working fine (the log doesn't show errors and HA's logbook works), you
    $ sudo systemctl stop home-assistant@homeassistant.service
    ```
 
-2. Edit the service 
+2. Edit the service file
    
     ```bash 
     $ sudo nano -w /etc/systemd/system/home-assistant@homeassistant.service
