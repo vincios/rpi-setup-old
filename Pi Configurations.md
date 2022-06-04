@@ -1440,6 +1440,7 @@ If this doesn't work (package manager says already up to date) you can try a man
 
     ```bash
     $ ./configure
+    $ make
     $ 
     ```
 4. 
