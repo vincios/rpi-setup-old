@@ -1455,7 +1455,7 @@ Try now to launch Home Assistant. If the issue still occour, the cause should be
 > hass still complained. It turned out to be where the libraries were installed.
 > The old libraries were in `/usr/lib/arm-linux-gnueabihf/`, whereas the new ones were in `/usr/local/lib`.
 
-So we have to link the new libraries folder to Home Assistant.
+So we have to link the new libraries folder to Home Assistant, using the .
 
 1. Activate the hass venv
 
@@ -1466,7 +1466,7 @@ So we have to link the new libraries folder to Home Assistant.
     $ source /srv/homeassistant/bin/activate
     ```
 
-2. Export 
+2. Export the variable 
 # Useful commands
 ## List active processes
 Simple
