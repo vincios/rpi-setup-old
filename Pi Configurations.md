@@ -1492,7 +1492,7 @@ If all is working fine (the log doesn't show errors and HA's logbook works), you
 
     ```bash
     $ sudo systemctl --system daemon-reload
-    ``
+    ```
 
 5. Start Home Assistant
 
