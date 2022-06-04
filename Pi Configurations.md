@@ -1469,9 +1469,14 @@ $ hass -v
 If all is working fine (the log doesn't show errors and HA's logbook works), you have to persist this modification to the HASS systemd service.
 
 0. Login as `pi` user
-1. `sudo systemctl stop home-assistant@homeassistant.service`
-2. `sudo nano -w /etc/systemd/system/home-assistant@homeassistant.service`
-3. 
+1. Stop Home Assistant
+   ```bash
+   sudo systemctl stop home-assistant@homeassistant.service
+   ```
+
+3. Edit the service 
+4. `sudo nano -w /etc/systemd/system/home-assistant@homeassistant.service`
+5. 
 # Useful commands
 ## List active processes
 Simple
