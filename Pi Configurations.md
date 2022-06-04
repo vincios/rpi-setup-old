@@ -1428,7 +1428,13 @@ If this doesn't work (package manager says already up to date) you can try a man
 
     > NB: make sure you choose the `autoconf` version!
 
-2. 
+2. Download it to a temporary folder
+
+    ```bash
+    $ cd /tmp/
+    $ 
+    ```
+3. 
 
 # Useful commands
 ## List active processes
