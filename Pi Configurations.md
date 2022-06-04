@@ -1457,7 +1457,12 @@ Try now to launch Home Assistant. If the issue still occour, the cause should be
 
 So we have to link the new libraries folder to Home Assistant.
 
-1. Login as
+1. Activate the hass venv
+
+    ```bash
+    
+    ```
+2. 
 # Useful commands
 ## List active processes
 Simple
