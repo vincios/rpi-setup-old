@@ -1475,22 +1475,29 @@ If all is working fine (the log doesn't show errors and HA's logbook works), you
    $ sudo systemctl stop home-assistant@homeassistant.service
    ```
 
-3. Edit the service 
+2. Edit the service 
    
     ```bash 
     $ sudo nano -w /etc/systemd/system/home-assistant@homeassistant.service
     ```
-4. Add this line to the `[Service]` section (after the `User=%i` line)
+
+3. Add this line to the `[Service]` section (after the `User=%i` line)
    
     ```
     Environment="LD_LIBRARY_PATH=/usr/local/lib/"
     ```
-5. Save the file and reload Systemd
+
+4. Save the file and reload Systemd
 
     ```bash
     $ sudo systemctl --system daemon-reload
     ``
 
+5. Start Home Assistant
+
+    ```bash
+    $ sudo systemctl start home-assistant@homeassistant.service
+    ```
 
 # Useful commands
 ## List active processes
