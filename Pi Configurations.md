@@ -1466,7 +1466,7 @@ $ export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
 $ hass -v
 ```
 
-If all working fine (the log doesn't show errors and logbook works), you have to persist this modification to the HASS systemd service.
+If all is working fine (the log doesn't show errors and HA's logbook works), you have to persist this modification to the HASS systemd service.
 
 
 # Useful commands
