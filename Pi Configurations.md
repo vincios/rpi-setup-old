@@ -1454,8 +1454,8 @@ Try now to launch Home Assistant. If the issue still occour, the cause should be
 > hass still complained. It turned out to be where the libraries were installed.
 > The old libraries were in `/usr/lib/arm-linux-gnueabihf/`, whereas the new ones were in `/usr/local/lib`.
 
-So we have to link the new libraries to Home Assistant, as the `make install` comand says:
-
+So we have to link the new libraries to Home Assistant.
+1. 
 # Useful commands
 ## List active processes
 Simple
