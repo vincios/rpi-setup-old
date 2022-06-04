@@ -1428,7 +1428,7 @@ If this doesn't work (package manager says already up to date) you can try a man
 
     > NB: make sure you choose the `autoconf` version!
 
-2. Download it to a temporary folder
+2. Download it to a temporary folder and extract
 
     ```bash
     $ cd /tmp/
