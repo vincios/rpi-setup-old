@@ -1434,8 +1434,14 @@ If this doesn't work (package manager says already up to date) you can try a man
     $ cd /tmp/
     $ wget https://sqlite.org/2022/sqlite-autoconf-3380500.tar.gz
     $ tar -xvf sqlite-autoconf-3380500.tar.gz
+    $ cd sqlite-autoconf-3380500/
     ```
-3. 
+3. Compile and install
+
+    ```bash
+    
+    ```
+4. 
 
 # Useful commands
 ## List active processes
