@@ -1455,18 +1455,17 @@ Try now to launch Home Assistant. If the issue still occour, the cause should be
 > hass still complained. It turned out to be where the libraries were installed.
 > The old libraries were in `/usr/lib/arm-linux-gnueabihf/`, whereas the new ones were in `/usr/local/lib`.
 
-So we have to link the new libraries folder to Home Assistant, using the .
+So we have to link the new libraries folder to Home Assistant, using the `LD_LIBRARY_PATH` environment variable.
 
-1. Activate the hass venv
+```bash
+$ sudo systemctl stop home-assistant@homeassistant
+$ sudo -u homeassistant -H -s
+$ cd /srv/homeassistant
+$ source /srv/homeassistant/bin/activate
+$ 
+```
 
-    ```bash
-    $ sudo systemctl stop home-assistant@homeassistant
-    $ sudo -u homeassistant -H -s
-    $ cd /srv/homeassistant
-    $ source /srv/homeassistant/bin/activate
-    ```
 
-2. Export the variable 
 # Useful commands
 ## List active processes
 Simple
