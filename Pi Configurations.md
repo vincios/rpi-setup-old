@@ -1419,6 +1419,7 @@ From this [issue](https://github.com/home-assistant/core/issues/66378):
 
 5. Restart HA (actually I restarted the server but that might be overkill)
 
+### SQLITE version too old
 
 # Useful commands
 ## List active processes
