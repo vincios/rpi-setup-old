@@ -1426,8 +1426,8 @@ If this doesn't work (package manager says already up to date) you can try a man
 
 1. Get the download link of the latest SQLite source code form the [official page](https://sqlite.org/download.html).
 
-    NB: make sure you choose the `autoconf` version!
-    
+    > NB: make sure you choose the `autoconf` version!
+
 2. 
 
 # Useful commands
