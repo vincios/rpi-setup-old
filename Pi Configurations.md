@@ -1470,7 +1470,8 @@ If all is working fine (the log doesn't show errors and HA's logbook works), you
 
 0. Login as `pi` user
 1. `sudo systemctl stop home-assistant@homeassistant.service`
-2. 
+2. `sudo nano -w /etc/systemd/system/home-assistant@homeassistant.service`
+3. 
 # Useful commands
 ## List active processes
 Simple
