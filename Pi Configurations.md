@@ -1439,7 +1439,8 @@ If this doesn't work (package manager says already up to date) you can try a man
 3. Compile and install
 
     ```bash
-    
+    $ ./configure
+    $ 
     ```
 4. 
 
