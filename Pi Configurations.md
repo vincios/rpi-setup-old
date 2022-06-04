@@ -1432,6 +1432,7 @@ If this doesn't work (package manager says already up to date) you can try a man
 
     ```bash
     $ cd /tmp/
+    $ wget https://sqlite.org/2022/sqlite-autoconf-3380500.tar.gz
     $ 
     ```
 3. 
