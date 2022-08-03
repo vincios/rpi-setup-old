@@ -1420,6 +1420,9 @@ From this [issue](https://github.com/home-assistant/core/issues/66378):
 
 5. Restart HA (actually I restarted the server but that might be overkill)
 
+### Manual start with `hass -v` (or `hass`) crash without errors
+For some reasons start 
+
 ### HA Core - Version xx.xx.xx of SQLite is not supported
 If you have an outdated version of SQLite, try to update it with your system package manager (`sudo apt update` and `sudo apt upgrade`).
 
