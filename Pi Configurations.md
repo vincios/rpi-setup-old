@@ -1424,7 +1424,7 @@ From this [issue](https://github.com/home-assistant/core/issues/66378):
 ### Manual start with `hass -v` (or `hass`) crash without errors
 For some reasons, the `hass -v` command could stop without give some feedback on the error. 
 
-In this case, with homeassistan venv activated, try to start homeassistant with following command 
+In this case, with homeassistant venv activated, try to start homeassistant with following command 
 
 ```sh
 $ /srv/homeassistant/bin/hass -v -c /home/homeassistant/.homeassistant
