@@ -43,6 +43,7 @@ Index
   - [Other useful commands](#other-useful-commands)
   - [Troubleshooting](#troubleshooting)
     - ["GLIBC_2.29" not found](#glibc_229-not-found)
+    - [Manual start with `hass -v` (or `hass`) crash without errors](#manual-start-with-hass--v-or-hass-crash-without-errors)
     - [HA Core - Version xx.xx.xx of SQLite is not supported](#ha-core---version-xxxxxx-of-sqlite-is-not-supported)
 - [Useful commands](#useful-commands)
   - [List active processes](#list-active-processes)
@@ -1423,7 +1424,13 @@ From this [issue](https://github.com/home-assistant/core/issues/66378):
 ### Manual start with `hass -v` (or `hass`) crash without errors
 For some reasons, the `hass -v` command could stop without give some feedback on the error. 
 
-In this case try to start 
+In this case, with homeassistan venv activated, try to start homeassistant with following command 
+
+```sh
+$ /srv/homeassistant/bin/hass -v -c /home/homeassistant/.homeassistant
+```
+
+It should show you the error that have stopped the execution. Probabily, the cause is some package that is missing.
 
 ### HA Core - Version xx.xx.xx of SQLite is not supported
 If you have an outdated version of SQLite, try to update it with your system package manager (`sudo apt update` and `sudo apt upgrade`).
