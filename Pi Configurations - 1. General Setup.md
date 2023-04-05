@@ -216,6 +216,7 @@ Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-
     $ sudo chown -R root:root /etc/traefik
     $ sudo chown -R traefik:traefik /etc/traefik/dynamic /etc/traefik/acme
 
+    $ sudo mkdir /var/log/traefik
     
     ```
 ## Duckdns cron configuration
