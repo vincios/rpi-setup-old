@@ -34,6 +34,7 @@ Tutorials in this document assumes that you have first followed this paragraph. 
 **Please make sure to follow this steps before all other tutorials!**
 
 0. Your user is `raspi`
+   
 1. Create an `~/Apps` folder
 
     ```sh
