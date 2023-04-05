@@ -171,7 +171,7 @@ Traefik is designed to run in docker and auto discover the services by its [prov
 Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-and-traefik/) guide, we will skip the node part and change the acme configuration to work with Duckdns.
 
 ### Install
-1. Go to the Traefik [releases](https://github.com/containous/traefik/releases) page, find the latest `linux_arm64` release. Download and 
+1. Go to the Traefik [releases](https://github.com/containous/traefik/releases) page, find the latest `linux_arm64` release. Download and extract it
 
     ```bash
     $ wget <RELEASE-URL>
