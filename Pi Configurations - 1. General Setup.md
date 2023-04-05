@@ -79,7 +79,7 @@ From [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/)
     $ sudo mkdir /media/qnas/Download
     ```
 
-- Create credentials files, in a `~`
+- Create credentials files, in a `~/.n`
     One for each network share
 
     - `
