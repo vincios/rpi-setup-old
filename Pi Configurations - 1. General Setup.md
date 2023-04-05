@@ -135,7 +135,7 @@ Samba share user folder with some security restrictions (See "[homes]" section i
 
 - Choose a smb password for raspi user
 
-`sudo smbpasswd -a pi`
+`sudo smbpasswd -a tpi`
 
 NB: if the network folder is non writeable, try this command `sudo pdbedit -a -u pi`
 
