@@ -155,7 +155,7 @@ echo " | Last run: $(timestamp)" >> /home/raspi/duckdns/log.log
 - Change crontab string as follows:
 
 ``` sh 
-*/5 * * * * /home/pi/duckdns/duck.sh >/dev/null 2>&1
+*/5 * * * * /home/raspi/duckdns/duck.sh >/dev/null 2>&1
 ```
 
 
