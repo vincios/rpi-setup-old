@@ -227,7 +227,7 @@ OR, to hide any output from the terminal
 - Run in headless mode with `java -Djava.awt.headless=true -jar JDownloader.jar >/dev/null 2>/dev/null &`
 
 To open the GUI:
-- ` wget -O /home/pi/[JD_Install_dir]/jDownloader.png http://jdownloader.org/_media/knowledge/wiki/jdownloader.png`
+- ` wget -O /home/raspi/[JD_Install_dir]/jDownloader.png http://jdownloader.org/_media/knowledge/wiki/jdownloader.png`
 
 - Go to desktop
 
