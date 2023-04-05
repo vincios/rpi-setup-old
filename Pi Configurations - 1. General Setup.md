@@ -123,7 +123,7 @@ Samba share user folder with some security restrictions (See "[homes]" section i
 ```
 [PiShare]
    comment = Pi Share
-   path = /home/pi
+   path = /home/raspi
    browseable = yes
    writeable = yes
    only guest = no
