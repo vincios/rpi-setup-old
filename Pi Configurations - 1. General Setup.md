@@ -157,7 +157,7 @@ From [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/)
 ### Note for Windows users
 If the network folder is not visible, or not writeable, try this solutions:
 
-1. 
+1. Ma
 
 ## Duckdns cron configuration
 See [here](https://www.duckdns.org/install.jsp?tab=pi&domain=vncs10). BUT:
