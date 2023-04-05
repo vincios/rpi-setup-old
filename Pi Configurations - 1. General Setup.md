@@ -168,7 +168,7 @@ If the network folder is not visible or is not writeable, try this solutions (on
 ## Traefik
 Traefik is designed to run in docker and auto discover the services by its [providers](https://doc.traefik.io/traefik/providers/overview/) (like the [docker](https://doc.traefik.io/traefik/providers/docker/) one). But in this setup, we will install it locally and use the [file provider](https://doc.traefik.io/traefik/providers/file/) to define the dynamic configuration (i.e. Routers, Services and Middlewares).
 
-Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-and-traefik/) guide, we will skip the node part and change the acme configuration to work with DuckDns.
+Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-and-traefik/) guide, we will skip the node part and change the acme configuration to work with Duckdns.
 
 ### Install
 1. Go to the Traefik [releases](https://github.com/containous/traefik/releases) page and download the latest release
