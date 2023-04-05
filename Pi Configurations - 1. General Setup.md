@@ -96,7 +96,9 @@ From [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/)
         $ chmod 600 .credentials/.qnascredentials
         ```
 
-    - Repeat for each 
+    - Repeat for each network share you want to automount
+
+
 - Follow points 1, 2, 3 
 - Run `sudo nano /etc/fstab` and add these lines (changes paths as done in point 2)
 
