@@ -151,7 +151,7 @@ From [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/)
 - Restart smb
 
     ```bash
-
+    $ sudo systemctl restart smbd.service
     ```
 NB: if the network folder is non writeable, try this command `sudo pdbedit -a -u raspi`
 
