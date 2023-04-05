@@ -166,6 +166,7 @@ If the network folder is not visible or is not writeable, try this solutions (on
 
 ## Traefik
 
+
 ## Duckdns cron configuration
 See [here](https://www.duckdns.org/install.jsp?tab=pi&domain=vncs10). BUT:
 - Change `duck.sh` as follows: (Change domains and token in update URL if necessary)
