@@ -94,7 +94,7 @@ From [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/)
     - Give access only to the user
 
         ```bash
-        $ chmod 600 .credentials/.qnascredentials
+        $ chmod 600 ~/.credentials/.qnascredentials
         ```
 
     - Repeat for each network share you want to login
