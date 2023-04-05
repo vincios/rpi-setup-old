@@ -144,7 +144,7 @@ From [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/)
 
 - Choose a smb password for raspi user
 
-        `sudo smbpasswd -a raspi`
+    `sudo smbpasswd -a raspi`
 
 NB: if the network folder is non writeable, try this command `sudo pdbedit -a -u raspi`
 
