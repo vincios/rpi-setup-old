@@ -202,6 +202,7 @@ Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-
 5. Setup traefik user and group and permissions
 
     ```bash
+    $ sudo groupadd -g 321 traefik
     
     ```
 
