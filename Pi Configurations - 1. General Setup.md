@@ -66,7 +66,7 @@ From [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/)
 
 - Install dependencies
 
-    ```sh
+    ```bash
     $ sudo apt update
     $ sudo apt install cifs-utils
     ```
