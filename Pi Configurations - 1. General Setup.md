@@ -210,7 +210,8 @@ Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-
 6. Create the config and logs folders, give it the right permissions
 
     ```bash
-
+    $ sudo mkdir /etc/traefik
+    
     ```
 ## Duckdns cron configuration
 See [here](https://www.duckdns.org/install.jsp?tab=pi&domain=vncs10). BUT:
