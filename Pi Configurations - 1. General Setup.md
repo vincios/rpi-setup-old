@@ -179,7 +179,7 @@ Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-
     ```
 
 2. Use help to check it works
-3. 
+   1. 
 
 ## Duckdns cron configuration
 See [here](https://www.duckdns.org/install.jsp?tab=pi&domain=vncs10). BUT:
