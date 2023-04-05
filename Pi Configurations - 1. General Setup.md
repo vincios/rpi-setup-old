@@ -121,6 +121,7 @@ From [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/)
 - Default Samba share of the user folder have some security restrictions. So, choose one of the following options
     
     - **OPTION 1**: edit the default configuration
+      
       -  So, in the `[homes]` section of *smb.conf* find the line `read only = yes` and change to `read only = no`
   
     **OR**  add to bottom:
