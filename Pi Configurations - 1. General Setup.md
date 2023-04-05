@@ -11,7 +11,6 @@ Index
     - [Note for Windows users](#note-for-windows-users)
   - [Traefik](#traefik)
     - [Install](#install)
-  - [Duckdns cron configuration](#duckdns-cron-configuration)
   - [Plex Media Server](#plex-media-server)
   - [Build TOR](#build-tor)
   - [Run BridTools](#run-bridtools)
@@ -195,7 +194,7 @@ Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-
 
 4. Give the traefik binary the ability to bind to privileged ports (80, 443) as non-root
    
-   ```bash
+    ```bash
     $ sudo setcap 'cap_net_bind_service=+ep' /usr/local/bin/traefik
    ```
 
