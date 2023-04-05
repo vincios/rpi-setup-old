@@ -241,7 +241,7 @@ Encoding=UTF-8
 Name=jDownloader2
 Comment=jDownloader2
 Exec=bash -c "java -jar /home/raspi/[JD_install_dir]/JDownloader.jar"
-Icon=/home/pi/[JD_install_dir]/jDownloader.png
+Icon=/home/raspi/[JD_install_dir]/jDownloader.png
 Type=Application
 Categories=GTK;Utility;
 ```
