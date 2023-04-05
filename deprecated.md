@@ -1,2 +1,2 @@
 # Deprecated Guides
-Good old deprecated guides
+Good old deprecated guides fri raspberry set
