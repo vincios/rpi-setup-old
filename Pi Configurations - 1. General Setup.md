@@ -213,8 +213,8 @@ Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-
     ```bash
     # configuration folders
     $ sudo mkdir /etc/traefik
-    $ sudo mkdir /etc/traefik/dynamic
     $ sudo mkdir /etc/traefik/acme
+    $ sudo mkdir /etc/traefik/dynamic
     $ sudo chown -R root:root /etc/traefik
     $ sudo chown -R traefik:traefik /etc/traefik/dynamic /etc/traefik/acme
 
