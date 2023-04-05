@@ -49,7 +49,7 @@ Tutorials in this document assumes that you have first followed this paragraph. 
     - `$ nano ~/.bash_aliases`
 	- Paste these lines
 	
-	    ```bash_aliases
+	    ```bash
 		alias ll='ls -l'
         alias la='ls -la'
 		```
