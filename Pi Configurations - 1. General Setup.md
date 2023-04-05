@@ -139,6 +139,7 @@ From [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/)
             create mask = 0740
             dierectory mask = 0750
             public = yes
+            valid users = %S
             ```
 
 - Choose a smb password for raspi user
