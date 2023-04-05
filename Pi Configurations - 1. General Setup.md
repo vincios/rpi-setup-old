@@ -62,8 +62,10 @@ Tutorials in this document assumes that you have first followed this paragraph. 
 Run `raspi-config` and change screen resolution to 1920x1080
 
 ## AutoMount Nas folders
-From 
-- Follow points 1, 2, 3 [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/)
+From [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/).
+
+- 
+- Follow points 1, 2, 3 
 - Run `sudo nano /etc/fstab` and add these lines (changes paths as done in point 2)
 
 ``` 
