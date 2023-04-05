@@ -178,7 +178,7 @@ Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-
     $ tar -zxvf traefik_${traefik_version}_linux_arm64.tar.gz
     ```
 
-2.  check help
+2. help,
 
 ## Duckdns cron configuration
 See [here](https://www.duckdns.org/install.jsp?tab=pi&domain=vncs10). BUT:
