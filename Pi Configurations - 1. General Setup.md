@@ -137,7 +137,7 @@ Samba share user folder with some security restrictions (See "[homes]" section i
 
 `sudo smbpasswd -a raspi`
 
-NB: if the network folder is non writeable, try this command `sudo pdbedit -a -u pi`
+NB: if the network folder is non writeable, try this command `sudo pdbedit -a -u raspi`
 
 ## Duckdns cron configuration
 See [here](https://www.duckdns.org/install.jsp?tab=pi&domain=vncs10). BUT:
