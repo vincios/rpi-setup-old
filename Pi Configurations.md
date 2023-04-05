@@ -1,4 +1,4 @@
-# Common configurations for setup a Raspberry Pi with Raspbian
+# Common configurations for setup a Raspberry Pi with Raspberry OS
 
 **NOTE:** Please read before [First operations](#first-operations).
 
