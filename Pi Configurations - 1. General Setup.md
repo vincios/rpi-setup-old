@@ -118,8 +118,7 @@ From [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/)
 
 - `sudo nano /etc/samba/smb.conf`
 
-Samba share user folder with some security restrictions (See "[homes]" section in *smb.conf*). So, instead of change this configuration we add a new one. 
-
+Samba share user folder with some security restrictions (See "[homes]" section in *smb.conf*). 
 - Add to bottom:
 
 ```
