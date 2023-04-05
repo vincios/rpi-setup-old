@@ -207,7 +207,7 @@ Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-
     $ sudo usermod -a -G traefik $USER
     ```
 
-6. Create the config folders
+6. Create the config and folders
 ## Duckdns cron configuration
 See [here](https://www.duckdns.org/install.jsp?tab=pi&domain=vncs10). BUT:
 - Change `duck.sh` as follows: (Change domains and token in update URL if necessary)
