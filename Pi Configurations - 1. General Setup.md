@@ -75,6 +75,7 @@ From [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/)
 
     ```bash
     $ sudo mkdir /media/qnas
+    $ sudo mkdir /media/qnas/Media
     
     ```
 - Follow points 1, 2, 3 
