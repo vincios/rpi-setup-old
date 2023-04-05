@@ -210,7 +210,7 @@ Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-
 6. Create the config and logs folders, give it the right permissions
 
     ```bash
-    # configuration
+    # configuration folders
     $ sudo mkdir /etc/traefik
     $ sudo mkdir /etc/traefik/acme
     $ sudo mkdir /etc/traefik/dynamic
