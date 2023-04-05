@@ -125,7 +125,8 @@ From [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/)
       -  In the `[homes]` section of *smb.conf* find the line `read only = yes` and change to `read only = no`
   
     - **OPTION 2**: crate a new one configuration
-    - 
+
+        - A
 
 ```
 [PiShare]
