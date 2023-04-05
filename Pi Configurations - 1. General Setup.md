@@ -193,7 +193,7 @@ Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-
     $ sudo chmod 755 /usr/local/bin/traefik
     ```
 
-4. 
+4. # give the traefik binary the ability to bind to privileged ports (80, 443) as non-root
 
 ## Duckdns cron configuration
 See [here](https://www.duckdns.org/install.jsp?tab=pi&domain=vncs10). BUT:
