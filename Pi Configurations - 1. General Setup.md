@@ -70,6 +70,7 @@ From [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/)
     $ sudo apt update
     $ sudo apt install cifs-utils
     ```
+
 - Follow points 1, 2, 3 
 - Run `sudo nano /etc/fstab` and add these lines (changes paths as done in point 2)
 
