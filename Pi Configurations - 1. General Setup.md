@@ -174,8 +174,8 @@ Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-
 1. Go to the Traefik [releases](https://github.com/containous/traefik/releases) page, find the latest `linux_arm64` release. Download and extract
 
     ```bash
-    $ wget <RELEASE-URL>
-    
+    $ wget https://github.com/traefik/traefik/releases/download/v2.4.5/traefik_v2.4.5_linux_amd64.tar.gz
+
     ```
 
 2. 
