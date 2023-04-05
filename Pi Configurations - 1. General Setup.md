@@ -148,7 +148,7 @@ timestamp() {
   date +"%Y-%m-%d %H:%M:%S"
 }
 
-echo url="https://www.duckdns.org/update?domains=vncs10&token=b6e9eba3-1b42-4c66-898a-0d5204833f36&ip=" | curl -k -o /home/pi/duckdns/log.log -K -
+echo url="https://www.duckdns.org/update?domains=vncs10&token=b6e9eba3-1b42-4c66-898a-0d5204833f36&ip=" | curl -k -o /home/raspi/duckdns/log.log -K -
 echo " | Last run: $(timestamp)" >> /home/raspi/duckdns/log.log
 ```
 
