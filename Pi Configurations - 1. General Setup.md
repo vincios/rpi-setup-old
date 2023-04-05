@@ -159,6 +159,7 @@ If the network folder is not visible, or not writeable, try this solutions:
 
 - If windows explorer doesn't ask for password when you open the network share, manually the credentials in the Credential Manager for the network address `\\
 
+- , try this command `sudo pdbedit -a -u raspi`
 ## Duckdns cron configuration
 See [here](https://www.duckdns.org/install.jsp?tab=pi&domain=vncs10). BUT:
 - Change `duck.sh` as follows: (Change domains and token in update URL if necessary)
