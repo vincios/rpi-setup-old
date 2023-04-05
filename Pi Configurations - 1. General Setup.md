@@ -211,7 +211,7 @@ Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-
 
     ```bash
     $ sudo mkdir /etc/traefik
-    
+    $ sudo mkdir /etc/traefik/acme
     ```
 ## Duckdns cron configuration
 See [here](https://www.duckdns.org/install.jsp?tab=pi&domain=vncs10). BUT:
