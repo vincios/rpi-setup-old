@@ -102,11 +102,9 @@ From [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/)
 - Run `sudo nano /etc/fstab` and add these lines (changes paths as done in point 2)
 
     ``` 
-    
-    //192.168.1.200/home          /media/nas/home/      cifs    credentials=/home/pi/.nascredentials,uid=pi,gid=pi,iocharset=utf8,file_mode=0777,dir_mode=0777,noperm,vers=1.0  0       0
-    //192.168.1.200/home_2        /media/nas/home_2/    cifs    credentials=/home/pi/.nascredentials,uid=pi,gid=pi,iocharset=utf8,file_mode=0777,dir_mode=0777,noperm,vers=1.0  0       0
-    //192.168.1.200/share         /media/nas/share/     cifs    credentials=/home/pi/.nascredentials,uid=pi,gid=pi,iocharset=utf8,file_mode=0777,dir_mode=0777,noperm,vers=1.0  0       0
-    //192.168.1.210/Multimedia    /media/qnas/Media/    cifs    credentials=/home/pi/.nascredentials,uid=pi,gid=pi,iocharset=utf8,file_mode=0777,dir_mode=0777,noperm           0       0
+    //192.168.1.200/Volume_1	/media/dnas/			cifs	credentials=/home/raspi/.credentials/.dnascredentials,uid=raspi,gid=raspi,iocharset=utf8,file_mode=0777,dir_mode=0777,noperm,vers=1.0	0	0
+    //192.168.1.210/Multimedia	/media/qnas/Media/		cifs	credentials=/home/raspi/.credentials/.qnascredentials,uid=raspi,gid=raspi,iocharset=utf8,file_mode=0777,dir_mode=0777,noperm			0	0
+//192.168.1.210/Download	/media/qnas/Download/	cifs	credentials=/home/raspi/.credentials/.qnascredentials,uid=raspi,gid=raspi,iocharset=utf8,file_mode=0777,dir_mode=0777,noperm			0	0
     ```
 
 - Run `raspi-config` and enable "Wait for Network at Boot" under "Boot options"
