@@ -172,7 +172,8 @@ Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-
 
 ### Install
 1. Go to the Traefik [releases](https://github.com/containous/traefik/releases) page and download the latest release
-    
+
+    `
 2. 
 
 ## Duckdns cron configuration
