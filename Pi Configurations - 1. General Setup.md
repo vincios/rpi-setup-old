@@ -64,7 +64,7 @@ Run `raspi-config` and change screen resolution to 1920x1080
 ## AutoMount Nas folders
 From [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/).
 
-- Installs dependencies
+- Install dependencies
 
     ```sh
     $ sudo apt update
