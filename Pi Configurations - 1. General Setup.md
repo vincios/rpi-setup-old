@@ -175,6 +175,7 @@ Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-
 
     ```bash
     $ wget <RELEASE-URL>
+    
     ```
 
 2. 
