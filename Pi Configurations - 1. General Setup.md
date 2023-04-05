@@ -85,7 +85,7 @@ From [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/)
     - `nano .credentials/.qnascredentials`
 
         ```bash
-        user=<>
+        user=<YOUR-USER>
         password=Admin@1234
         domain=WORKGROUP
         ```
