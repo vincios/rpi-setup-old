@@ -567,7 +567,7 @@ $ chmod u+x launch.sh
 ### Notes
 **NB**: don't forget to add into `.bash_aliases`
 ```sh
-alias deemix="/home/pi/Apps/deemix/launch.sh > /home/pi/.logs/deemix.log 2>&1 &"
+alias deemix="/home/raspi/Apps/deemix/launch.sh > /home/pi/.logs/deemix.log 2>&1 &"
 ```
 
 Manually launch
