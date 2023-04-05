@@ -80,7 +80,7 @@ From [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/)
     ```
 
 - Create credentials files, in a `~/.credentials` folder (create if not exists)
-    One for each network share (if have credentials )
+    One for each network share (if it have credentials )
 
     - `nano .credentials/.qnascredentials`
 
