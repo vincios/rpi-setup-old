@@ -203,7 +203,7 @@ Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-
 
     ```bash
     $ sudo groupadd -g 321 traefik
-    
+    $ sudo useradd -g traefik --no-user-group --home-dir /var/www --no-create-home --shell /usr/sbin/nologin --system --uid 321 traefik
     ```
 
 ## Duckdns cron configuration
