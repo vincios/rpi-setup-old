@@ -133,7 +133,7 @@ Samba share user folder with some security restrictions (See "[homes]" section i
    public = yes
 ```
 
-- Choose a smb password for pi user
+- Choose a smb password for raspi user
 
 `sudo smbpasswd -a pi`
 
