@@ -79,7 +79,8 @@ From [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/)
     $ sudo mkdir /media/qnas/Download
     ```
 
-- Create a credentials file 
+- Create credentials files
+    
 - Follow points 1, 2, 3 
 - Run `sudo nano /etc/fstab` and add these lines (changes paths as done in point 2)
 
