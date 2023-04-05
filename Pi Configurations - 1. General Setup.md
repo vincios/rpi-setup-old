@@ -353,7 +353,7 @@ $ sudo nano /etc/transmission-daemon/settings.json
     "watch-dir-enabled": true
 ```
 
-- Add user `pi` to the group `debian-transmission`
+- Add user `raspi` to the group `debian-transmission`
 ```bash
 $ sudo usermod -a -G debian-transmission pi
 ```
