@@ -157,7 +157,7 @@ From [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/)
 ### Note for Windows users
 If the network folder is not visible, or not writeable, try this solutions:
 
-- If windows explorer doesn't ask for password when you open the network share, manually add `raspi` credentials in the 
+- If windows explorer doesn't ask for password when you open the network share, manually add `raspi` credentials in the Crede
 
 ## Duckdns cron configuration
 See [here](https://www.duckdns.org/install.jsp?tab=pi&domain=vncs10). BUT:
