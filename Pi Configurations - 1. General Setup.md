@@ -33,7 +33,7 @@ Index
 Tutorials in this document assumes that you have first followed this paragraph. <br>
 **Please make sure to follow this steps before all other tutorials!**
 
-0. The OS default user name:  `raspi`
+0. The OS default user name is:  `raspi`
    
 1. Create an `~/Apps` folder
 
