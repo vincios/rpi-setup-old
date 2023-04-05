@@ -208,7 +208,7 @@ Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-
     $ sudo usermod -a -G traefik $USER
     ```
 
-6. Create the configuration and logs folders, give it the right permissions
+6. Create the configuration and logs folders, give them the right permissions
 
     ```bash
     # configuration folders
