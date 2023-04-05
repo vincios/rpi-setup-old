@@ -192,6 +192,7 @@ Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-
     $ sudo chown root:root /usr/local/bin/traefik
     $ sudo chmod 755 /usr/local/bin/traefik
     ```
+    
 4. 
 
 ## Duckdns cron configuration
