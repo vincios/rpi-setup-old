@@ -355,7 +355,7 @@ $ sudo nano /etc/transmission-daemon/settings.json
 
 - Add user `raspi` to the group `debian-transmission`
 ```bash
-$ sudo usermod -a -G debian-transmission pi
+$ sudo usermod -a -G debian-transmission raspi
 ```
 
 - Add this lines in `.bash_aliases`
