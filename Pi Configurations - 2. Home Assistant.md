@@ -1,4 +1,5 @@
 # Home Assistant
+
 - [Home Assistant](#home-assistant)
   - [Install HA](#install-ha)
   - [Service creation](#service-creation)
