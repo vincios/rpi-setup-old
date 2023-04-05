@@ -157,7 +157,7 @@ From [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/)
 ### Note for Windows users
 If the network folder is not visible, or not writeable, try this solutions:
 
-- If windows explorer doesn't ask for password when you open the network share, manually the credentials in the Credential Manager for the network address `\\RASPBERRYPI`
+- If windows explorer doesn't ask for password when you open the network share, open the Windows Credential Manager for the network address `\\RASPBERRYPI`
 
 - Try this command `sudo pdbedit -a -u raspi`
 
