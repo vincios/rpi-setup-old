@@ -144,7 +144,8 @@ From [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/)
 
 - Choose a smb password for raspi user
 
-    `sudo smbpasswd -a raspi`
+    ```bash
+    sudo smbpasswd -a raspi`
 
 - Restart smb
 
