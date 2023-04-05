@@ -185,6 +185,7 @@ Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-
     ```
 
 3. Make executable and move to /usr/local/bin
+4. 
 
 ## Duckdns cron configuration
 See [here](https://www.duckdns.org/install.jsp?tab=pi&domain=vncs10). BUT:
