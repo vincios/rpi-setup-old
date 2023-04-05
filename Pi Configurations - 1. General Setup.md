@@ -33,7 +33,7 @@ Index
 Tutorials in this document assumes that you have first followed this paragraph. <br>
 **Please make sure to follow this steps before all other tutorials!**
 
-0. Your user is `raspi`
+0. The  `raspi`
    
 1. Create an `~/Apps` folder
 
