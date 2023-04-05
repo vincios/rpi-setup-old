@@ -94,7 +94,9 @@ From [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/)
 
         ```bash
         $ chmod 600 .credentials/.qnascredentials
-        
+        ```
+
+    - Repeat for each 
 - Follow points 1, 2, 3 
 - Run `sudo nano /etc/fstab` and add these lines (changes paths as done in point 2)
 
