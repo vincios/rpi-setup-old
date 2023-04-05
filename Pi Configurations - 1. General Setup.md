@@ -11,6 +11,7 @@ Index
     - [Note for Windows users](#note-for-windows-users)
   - [Traefik](#traefik)
     - [Install](#install)
+  - [Duckdns cron configuration](#duckdns-cron-configuration)
   - [Plex Media Server](#plex-media-server)
   - [Build TOR](#build-tor)
   - [Run BridTools](#run-bridtools)
@@ -196,7 +197,7 @@ Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-
    
     ```bash
     $ sudo setcap 'cap_net_bind_service=+ep' /usr/local/bin/traefik
-   ```
+    ```
 
 ## Duckdns cron configuration
 See [here](https://www.duckdns.org/install.jsp?tab=pi&domain=vncs10). BUT:
