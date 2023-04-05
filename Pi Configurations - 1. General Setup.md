@@ -126,7 +126,7 @@ From [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/)
   
     - **OPTION 2**: crate a new one configuration
 
-        - Add to the botto,
+        - Add to the bottom
 
 ```
 [PiShare]
