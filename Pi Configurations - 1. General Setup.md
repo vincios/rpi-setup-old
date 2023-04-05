@@ -8,6 +8,7 @@ Index
   - [VNC "cannot currently show the desktop" in headless mode](#vnc-cannot-currently-show-the-desktop-in-headless-mode)
   - [AutoMount Nas folders](#automount-nas-folders)
   - [Samba shares](#samba-shares)
+    - [Note for Windows users](#note-for-windows-users)
   - [Duckdns cron configuration](#duckdns-cron-configuration)
   - [Plex Media Server](#plex-media-server)
   - [Build TOR](#build-tor)
