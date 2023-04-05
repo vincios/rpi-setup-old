@@ -159,7 +159,7 @@ If the network folder is not visible or is not writeable, try this solutions (on
 
 - If windows explorer doesn't ask for password when you open the network share: open the Windows Credential Manager and, under the `Windows Credentias` tab, manually add the credentias for the network address `\\RASPBERRYPI`. Then, restart Explorer or the computer.
 
-- On the raspberry Try this command `sudo pdbedit -a -u raspi`
+- On the raspberry, try this command `sudo pdbedit -a -u raspi`
 
 ## Duckdns cron configuration
 See [here](https://www.duckdns.org/install.jsp?tab=pi&domain=vncs10). BUT:
