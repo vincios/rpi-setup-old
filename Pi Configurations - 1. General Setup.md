@@ -171,7 +171,7 @@ Traefik is designed to run in docker and auto discover the services by its [prov
 Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-and-traefik/) guide, we will skip the node part and change the acme configuration to work with DuckDns.
 
 ### Install
- go to https://github.com/containous/traefik/releases and download the latest binary.
+1. go to https://github.com/containous/traefik/releases and download the latest binary.
 ## Duckdns cron configuration
 See [here](https://www.duckdns.org/install.jsp?tab=pi&domain=vncs10). BUT:
 - Change `duck.sh` as follows: (Change domains and token in update URL if necessary)
