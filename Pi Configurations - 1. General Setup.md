@@ -118,7 +118,7 @@ From [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/)
 
 - `sudo nano /etc/samba/smb.conf`
 
-- Default Samba share of the user folder have some security restrictions. So, in the `[homes]` section of *smb.conf* find the line `read only = no` and change to `read only = 
+- Default Samba share of the user folder have some security restrictions. So, in the `[homes]` section of *smb.conf* find the line `read only = no` and change to `read only = no`
 - Add to bottom:
 
 ```
