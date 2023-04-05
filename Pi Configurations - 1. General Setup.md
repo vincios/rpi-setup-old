@@ -349,7 +349,7 @@ $ sudo nano /etc/transmission-daemon/settings.json
 ```
 - Add this entries at bottom
 ```json
-    "watch-dir": "/media/nas/home/Pi/torrents",
+    "watch-dir": "/media/nas/home/raspi/torrents",
     "watch-dir-enabled": true
 ```
 
