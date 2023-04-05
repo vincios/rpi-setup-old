@@ -33,7 +33,7 @@ Index
 Tutorials in this document assumes that you have first followed this paragraph. <br>
 **Please make sure to follow this steps before all other tutorials!**
 
-0. Your Ras
+0. Your 
 1. Create an `~/Apps` folder
 
     ```sh
