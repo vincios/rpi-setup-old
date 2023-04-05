@@ -86,7 +86,7 @@ From [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/)
 
         ```bash
         user=<YOUR-USER>
-        password=<>
+        password=<YOUR-PASSWORD>
         domain=WORKGROUP
         ```
 - Follow points 1, 2, 3 
