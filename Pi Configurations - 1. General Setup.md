@@ -104,7 +104,7 @@ From [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/)
     ``` 
     //192.168.1.200/Volume_1	/media/dnas/			cifs	credentials=/home/raspi/.credentials/.dnascredentials,uid=raspi,gid=raspi,iocharset=utf8,file_mode=0777,dir_mode=0777,noperm,vers=1.0	0	0
     //192.168.1.210/Multimedia	/media/qnas/Media/		cifs	credentials=/home/raspi/.credentials/.qnascredentials,uid=raspi,gid=raspi,iocharset=utf8,file_mode=0777,dir_mode=0777,noperm			0	0
-//192.168.1.210/Download	/media/qnas/Download/	cifs	credentials=/home/raspi/.credentials/.qnascredentials,uid=raspi,gid=raspi,iocharset=utf8,file_mode=0777,dir_mode=0777,noperm			0	0
+    //192.168.1.210/Download	/media/qnas/Download/	cifs	credentials=/home/raspi/.credentials/.qnascredentials,uid=raspi,gid=raspi,iocharset=utf8,file_mode=0777,dir_mode=0777,noperm			0	0
     ```
 
 - Run `raspi-config` and enable "Wait for Network at Boot" under "Boot options"
