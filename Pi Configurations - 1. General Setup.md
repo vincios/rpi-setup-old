@@ -122,7 +122,7 @@ From [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/)
     
     - **OPTION 1**: edit the default configuration
       
-      -  So, in the `[homes]` section of *smb.conf* find the line `read only = yes` and change to `read only = no`
+      -  In the `[homes]` section of *smb.conf* find the line `read only = yes` and change to `read only = no`
   
     **OR**  add to bottom:
 
