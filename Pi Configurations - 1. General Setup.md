@@ -190,6 +190,7 @@ Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-
     $ sudo chmod +x traefik
     $ sudo cp traefik /usr/local/bin/
     $ sudo chown root:root /usr/local/bin/traefik
+    $ sudo chmod 755 /usr/local/bin/traefik
     ```
 4. 
 
