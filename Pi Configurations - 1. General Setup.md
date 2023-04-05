@@ -128,18 +128,18 @@ From [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/)
 
         - Add to the bottom
 
-```
-[PiShare]
-   comment = Pi Share
-   path = /home/raspi
-   browseable = yes
-   writeable = yes
-   only guest = no
-   read only = no
-   create mask = 0740
-   dierectory mask = 0750
-   public = yes
-```
+        ```
+        [PiShare]
+        comment = Pi Share
+        path = /home/raspi
+        browseable = yes
+        writeable = yes
+        only guest = no
+        read only = no
+        create mask = 0740
+        dierectory mask = 0750
+        public = yes
+        ```
 
 - Choose a smb password for raspi user
 
