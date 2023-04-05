@@ -71,7 +71,7 @@ From [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/)
     $ sudo apt install cifs-utils
     ```
 
-- Create mountpoints
+- Create mountpoints into the `
 
     ```bash
     $ sudo mkdir /media/qnas
