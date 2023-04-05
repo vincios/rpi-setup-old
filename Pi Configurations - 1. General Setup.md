@@ -687,12 +687,12 @@ $ ps aux | grep process
 ``` sh
 alias hello='echo ciao'
 alias ll='ls -l'
-alias jd='java -Djava.awt.headless=true -jar /home/pi/JDownloader/JDownloader.jar >/dev/null 2>/dev/null &'
-alias bridtools='cd /home/pi/Apps/BridTools/ && source ./venv/bin/activate'
+alias jd='java -Djava.awt.headless=true -jar /home/raspi/JDownloader/JDownloader.jar >/dev/null 2>/dev/null &'
+alias bridtools='cd /home/raspi/Apps/BridTools/ && source ./venv/bin/activate'
 alias bridhack='python brid_hack.py'
 alias dlcextractor='python dlc_extractor.py'
 alias linkscraping='python link_scraping.py'
-alias deemix="/home/pi/Apps/deemix/launch.sh > /home/pi/.logs/deemix.log 2>&1 &"
+alias deemix="/home/raspi/Apps/deemix/launch.sh > /home/raspi/.logs/deemix.log 2>&1 &"
 alias deluged-all="deluged && deluge-web -f"
 alias ha-start="sudo systemctl start home-assistant@homeassistant"
 alias ha-stop="sudo systemctl stop home-assistant@homeassistant"
