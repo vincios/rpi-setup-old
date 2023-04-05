@@ -175,7 +175,7 @@ Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-
 
     ```bash
     $ wget https://github.com/traefik/traefik/releases/download/v2.4.5/traefik_v2.4.5_linux_amd64.tar.gz
-
+    $ tar -zxvf traefik_${traefik_version}_linux_${arch}.tar.gz
     ```
 
 2. 
