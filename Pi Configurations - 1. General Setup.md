@@ -166,7 +166,7 @@ If the network folder is not visible or is not writeable, try this solutions (on
 
 
 ## Traefik
-Traefik is designed for 
+Traefik is designed for docker 
 ### Install
 ## Duckdns cron configuration
 See [here](https://www.duckdns.org/install.jsp?tab=pi&domain=vncs10). BUT:
