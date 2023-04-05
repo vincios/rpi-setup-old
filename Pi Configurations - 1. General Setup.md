@@ -218,6 +218,7 @@ Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-
     $ sudo touch /etc/traefik/acme/acme.json
     $ sudo chown -R root:root /etc/traefik
     $ sudo chown -R traefik:traefik /etc/traefik/dynamic /etc/traefik/acme
+    $ sudo chmod 600 /etc/traefik/acme/acme.json
 
     # logs files
     $ sudo mkdir /var/log/traefik
