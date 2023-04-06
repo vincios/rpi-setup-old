@@ -257,7 +257,7 @@ We configure Traefik to [automatic renew](https://doc.traefik.io/traefik/https/a
           email: "<YOUR_EMAIL>"
 
           # File or key used for certificates storage.
-          # 
+          # Rec
           storage: "/etc/traefik/acme/acme.json"
 
           # CA server to use.
