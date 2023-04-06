@@ -318,7 +318,7 @@ We configure Traefik to [automatic renew](https://doc.traefik.io/traefik/https/a
     ProtectHome=true
     ; Make /usr, /boot, /etc and possibly some more folders read-only.
     ProtectSystem=full
-    ; … except /etc/ssl/traefik, because we want Letsencrypt-certificates there.
+    ; … except /etc/traefik/acme, because we want Letsencrypt-certificates there.
     ;   This merely retains r/w access rights, it does not add any new. Must still be writable on the host!
     ReadWriteDirectories=/etc/traefik/acme
     ; The following additional security directives only work with systemd v229 or later.
