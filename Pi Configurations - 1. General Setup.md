@@ -292,6 +292,7 @@ We configure Traefik to [automatic renew](https://doc.traefik.io/traefik/https/a
 
     - Don't forget to edit the `<YOUR_DUCKDNS_DOMAIN>` and `<YOUR_EMAIL>` fields
 
+
 ### Setup Service
 1. Create the file `/etc/systemd/system/traefik.service` with the following content
 
