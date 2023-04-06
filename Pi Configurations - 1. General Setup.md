@@ -228,7 +228,9 @@ Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-
     ```
 
 ### Configure traefik (static configuration)
-Create the file `/etc/traefik/traefik.yml` with the following content
+We configure Traefik to automatic renewal of TLS certificates, using a `duckdns` domain.
+
+1. Create the file `/etc/traefik/traefik.yml` with the following content
 
     ```yml
     entryPoints:
