@@ -268,10 +268,6 @@ certificatesResolvers:
 
       # The certificates' duration in hours.
       # It defaults to 2160 (90 days) to follow Let's Encrypt certificates' duration.
-      #
-      # Optional
-      # Default: 2160
-      #
       # certificatesDuration: 2160
 
       # With duckdns, we use a DNS-01 ACME challenge
