@@ -304,7 +304,6 @@ We configure Traefik to [automatic renew](https://doc.traefik.io/traefik/https/a
         # for an example, see /etc/traefik/dynamic/monitor.yml
         directory: /etc/traefik/dynamic
         watch: true
-  
     ```
 
 
