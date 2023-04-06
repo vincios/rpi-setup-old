@@ -248,7 +248,7 @@ We configure Traefik to [automatic renew](https://doc.traefik.io/traefik/https/a
           domains:
             - main: "<YOUR_DUCKDNS_DOMAIN>.duckdns.org"
               sans:
-                - "*.cclouds.duckdns.org"
+                - "*.<YOUR_DUCKDNS_DOMAIN>.duckdns.org"
     certificatesResolvers:
       letsEncryptResolver:
         # Enable ACME (Let's Encrypt): automatic SSL.
