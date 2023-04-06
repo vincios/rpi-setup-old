@@ -272,7 +272,7 @@ We configure Traefik to [automatic renew](https://doc.traefik.io/traefik/https/a
             provider: "duckdns"
             delayBeforeCheck: 20
     log:
-      level: DEBUG
+      level: "DEBUG"
       filePath: "/var/log/traefik/debug.log"
     accessLog:
       filePath: "/var/log/traefik/access.log"
