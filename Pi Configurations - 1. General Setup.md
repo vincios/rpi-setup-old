@@ -232,7 +232,7 @@ Create teh file `/etc/traefik/traefik.yml` with the following content
 
 ```yml
 
-
+```
 ## Duckdns cron configuration
 See [here](https://www.duckdns.org/install.jsp?tab=pi). BUT:
 - Change `duck.sh` as follows: (Change domains and token in update URL if necessary)
