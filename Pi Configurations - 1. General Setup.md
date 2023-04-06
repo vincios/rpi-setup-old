@@ -258,7 +258,7 @@ certificatesResolvers:
       email: "<YOUR_EMAIL>"
 
       # File or key used for certificates storage.
-      # Recommended: give to the file permissions
+      # Recommended: give 600 to the file permissions
       storage: "/etc/traefik/acme/acme.json"
 
       # CA server to use.
