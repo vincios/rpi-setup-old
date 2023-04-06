@@ -228,7 +228,7 @@ Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-
     ```
 
 ### Configure traefik (static configuration)
-This file configures Traefik to [automatic renew](https://doc.traefik.io/traefik/https/acme/#automatic-renewals) Let's Encrypt ACME certificates, with a `duckdns` domain and a `DNS-01` challenge: 
+We configures Traefik to [automatic renew](https://doc.traefik.io/traefik/https/acme/#automatic-renewals) Let's Encrypt ACME certificates, with a `duckdns` domain and a `DNS-01` challenge: 
 Create the file `/etc/traefik/traefik.yml` with the following content
 
 ```yml
