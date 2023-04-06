@@ -257,7 +257,7 @@ We configure Traefik to [automatic renew](https://doc.traefik.io/traefik/https/a
           #
           # Required
           #
-          email: "vinciosdev@gmail.com"
+          email: "<YOUR_DUCKDNS_DOMAIN>"
 
           # File or key used for certificates storage.
           #
