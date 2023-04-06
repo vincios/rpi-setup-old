@@ -289,7 +289,8 @@ providers:
 
 NOTES:
 - The file is configured to automatic renew Let's Encrypt ACME certificates, with a `duckdns` domain and a `DNS-01` challenge. See the [official](https://doc.traefik.io/traefik/https/acme/#automatic-renewals) documentation.
-- Don't forget to edit the `<YOUR_DUCKDNS_DOMAIN>` and ``
+- Don't forget to edit the `<YOUR_DUCKDNS_DOMAIN>` and `<YOUR_EMAIL>` fields
+- Don't
 ## Duckdns cron configuration
 See [here](https://www.duckdns.org/install.jsp?tab=pi). BUT:
 - Change `duck.sh` as follows: (Change domains and token in update URL if necessary)
