@@ -306,7 +306,7 @@ We configure Traefik to [automatic renew](https://doc.traefik.io/traefik/https/a
     ; User and group the process will run as.
     User=traefik
     Group=traefik
-    ; Always set "-root" to something safe in case it gets forgotten in the traefikfile.
+    ; Always set "-root" to something safe in case it gets forgotten in the traefik file.
     ExecStart=/usr/local/bin/traefik --configfile=/etc/traefik/traefik.toml
     ; Limit the number of file descriptors; see `man systemd.exec` for more limit settings.
     LimitNOFILE=1048576
