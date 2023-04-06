@@ -275,8 +275,8 @@ Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-
             provider: duckdns
             delayBeforeCheck: 20
     log:
-    level: DEBUG
-    filePath: "/var/log/traefik/debug.log"
+        level: DEBUG
+        filePath: "/var/log/traefik/debug.log"
     accessLog:
     filePath: "/var/log/traefik/access.log"
     bufferingSize: 100
