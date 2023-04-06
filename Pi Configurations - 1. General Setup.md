@@ -159,6 +159,8 @@ From [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/)
     ```
 
 ### Note for Windows users
+
+### Install
 If the network folder is not visible or is not writeable, try this solutions (one at time):
 
 - If windows explorer doesn't ask for password when you open the network share: open the Windows Credential Manager and, under the `Windows Credentias` tab, manually add the credentias for the network address `\\RASPBERRYPI`. Then, restart Explorer or the computer.
