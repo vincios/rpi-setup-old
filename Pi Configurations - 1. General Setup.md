@@ -246,7 +246,7 @@ entryPoints:
       domains:
         - main: "<YOUR_DUCKDNS_DOMAIN>.duckdns.org"
           sans:
-            - "*.YOUR_DUCKDNS_DOMAIN.duckdns.org"
+            - "*.<YOUR_DUCKDNS_DOMAIN>.duckdns.org"
 certificatesResolvers:
   letsEncryptResolver:
     # Enable ACME (Let's Encrypt): automatic SSL.
