@@ -228,7 +228,7 @@ Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-
     ```
 
 ### Configure traefik (static configuration)
-Here we configure 
+Here we configure the 
 1. Create the file `/etc/traefik/traefik.yml` with the following content
 
     ```yml
