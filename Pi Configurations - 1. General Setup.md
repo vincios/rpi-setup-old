@@ -255,7 +255,7 @@ certificatesResolvers:
       #
       # Required
       #
-      email: "vinciosdev@gmail.com"
+      email: "<>"
 
       # File or key used for certificates storage.
       #
