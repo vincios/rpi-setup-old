@@ -284,13 +284,13 @@ Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-
         # insecure: true
         dashboard: true
     providers:
-    # The traefik dynamic configuration (Routers/Services/Middlewares) is configured with a file provider
-    file:
-        # all the yml files found into this folder will be used as dynamic configuration
-        # so you can split your services configuration in multiple files, one for each service
-        # for an example, see /etc/traefik/dynamic/monitor.yml
-        directory: /etc/traefik/dynamic
-        watch: true
+        # The traefik dynamic configuration (Routers/Services/Middlewares) is configured with a file provider
+        file:
+            # all the yml files found into this folder will be used as dynamic configuration
+            # so you can split your services configuration in multiple files, one for each service
+            # for an example, see /etc/traefik/dynamic/monitor.yml
+            directory: /etc/traefik/dynamic
+            watch: true
     ```
 
 
