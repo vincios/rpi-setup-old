@@ -244,7 +244,7 @@ entryPoints:
     tls: # Move the tls section to each Router for a fine-grained configuration of tls
       certResolver: "letsEncryptResolver"
       domains:
-        - main: "<>.duckdns.org"
+        - main: "<YOUR_DUCKDNS_DOMAIN>.duckdns.org"
           sans:
             - "*.cclouds.duckdns.org"
 certificatesResolvers:
