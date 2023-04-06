@@ -255,7 +255,7 @@ certificatesResolvers:
       #
       # Required
       #
-      email: "<YOUR_>"
+      email: "<>"
 
       # File or key used for certificates storage.
       #
