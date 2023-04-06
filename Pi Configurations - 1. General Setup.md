@@ -260,8 +260,6 @@ certificatesResolvers:
       # CA server to use.
       # Uncomment the line to use Let's Encrypt's staging server,
       # leave commented to go to prod.
-      #
-      # Optional
       # Default: "https://acme-v02.api.letsencrypt.org/directory"
       #
       # caServer: "https://acme-staging-v02.api.letsencrypt.org/directory"
