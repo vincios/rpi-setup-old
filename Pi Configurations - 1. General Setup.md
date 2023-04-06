@@ -232,6 +232,7 @@ We configure Traefik to [automatic renew](https://doc.traefik.io/traefik/https/a
 
 1. Create the file `/etc/traefik/traefik.yml` with the following content
     
+- Don't forget to edit the `<YOUR_DUCKDNS_DOMAIN>` and `<YOUR_EMAIL>` fields
     ```yml
     entryPoints:
       web:
