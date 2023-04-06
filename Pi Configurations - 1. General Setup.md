@@ -295,7 +295,7 @@ We configure Traefik to [automatic renew](https://doc.traefik.io/traefik/https/a
 ### Setup Service
 1. Create the file `/etc/systemd/system/traefik.service` with the following content
 
-    ```s
+    ```sys
     [Unit]
     Description=traefik proxy
     After=network-online.target
