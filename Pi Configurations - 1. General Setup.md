@@ -291,7 +291,7 @@ We configure Traefik to [automatic renew](https://doc.traefik.io/traefik/https/a
     - Don't forget to edit the `<YOUR_DUCKDNS_DOMAIN>` and `<YOUR_EMAIL>` fields
 
 2. Set your duckdns token in a `DUCKDNS_TOKEN` environment variable. If you have configured the [duckdns cron](#duckdns-cron-configuration), the environment variable should be already set.
-- 
+
 ## Duckdns cron configuration
 See [here](https://www.duckdns.org/install.jsp?tab=pi). BUT:
 - Change `duck.sh` as follows: (Change domains and token in update URL if necessary)
