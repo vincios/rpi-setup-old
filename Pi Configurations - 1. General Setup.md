@@ -228,13 +228,13 @@ Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-
     ```
 
 ### Configure traefik (static configuration)
-1. Create the file `/etc/traefik/traefik.yml` with the following content
+1.Create the file `/etc/traefik/traefik.yml` with the following content
 
 
 ```yml
-    entryPoints:
-      web:
-        address: ":80"
+entryPoints:
+  web:
+    address: ":80"
     http:
       redirections:
         entryPoint:
