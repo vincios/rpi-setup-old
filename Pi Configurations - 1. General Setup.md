@@ -294,6 +294,7 @@ We configure Traefik to [automatic renew](https://doc.traefik.io/traefik/https/a
 
 ### Setup Service
 1. Create the file `/etc/systemd/system/traefik.service` with the following content
+2. 
 ## Duckdns cron configuration
 See [here](https://www.duckdns.org/install.jsp?tab=pi). BUT:
 - Change `duck.sh` as follows: (Change domains and token in update URL if necessary)
