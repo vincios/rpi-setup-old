@@ -233,59 +233,7 @@ We configure Traefik to [automatic renew](https://doc.traefik.io/traefik/https/a
 1. Create the file `/etc/traefik/traefik.yml` with the following content
 
     ```yml
-  entryPoints:
-    web:
-      address: ":80"
-      http:
-        redirections:
-          entryPoint:
-            to: "websecure"
-            scheme: "https"
-    websecure:
-      address: ":443"
-      tls: # Move the tls section to each Router for a fine-grained configuration of tls
-        certResolver: "letsEncryptResolver"
-        domains:
-          - main: "<YOUR_DUCKDNS_DOMAIN>.duckdns.org"
-            sans:
-              - "*.<YOUR_DUCKDNS_DOMAIN>.duckdns.org"
-  certificatesResolvers:
-    letsEncryptResolver:
-      # Enable ACME (Let's Encrypt): automatic SSL.
-      acme:
-        # Email address used for Let's Encrypt registration.
-        email: "<YOUR_EMAIL>"
 
-        # File or key used for certificates storage. 
-        # It is recommended that the file have permissions 600
-        storage: "/etc/traefik/acme/acme.json"
-
-        # The certificates' duration in hours.
-        # It defaults to 2160 (90 days) to follow Let's Encrypt certificates' duration.
-        # certificatesDuration: 2160
-
-        # With duckdns, we use a DNS-01 ACME challenge
-        # NB: don't forget to set your duckdns token in a DUCKDNS_TOKEN environment variable
-        dnsChallenge:
-          provider: duckdns
-          delayBeforeCheck: 20
-  log:
-    level: DEBUG
-    filePath: "/var/log/traefik/debug.log"
-  accessLog:
-    filePath: "/var/log/traefik/access.log"
-    bufferingSize: 100
-  api:
-    # insecure: true
-    dashboard: true
-  providers:
-    # The traefik dynamic configuration (Routers/Services/Middlewares) is configured with a file provider
-    file:
-      # all the yml files found into this folder will be used as dynamic configuration
-      # so you can split your services configuration in multiple files, one for each service
-      # for an example, see /etc/traefik/dynamic/monitor.yml
-      directory: /etc/traefik/dynamic
-      watch: true
     ```
 
 
