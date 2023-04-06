@@ -234,7 +234,7 @@ Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-
 ```yml
     entryPoints:
       web:
-    address: ":80"
+        address: ":80"
     http:
       redirections:
         entryPoint:
