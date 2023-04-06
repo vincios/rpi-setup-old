@@ -281,8 +281,8 @@ Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-
         filePath: "/var/log/traefik/access.log"
         bufferingSize: 100
     api:
-    # insecure: true
-    dashboard: true
+        # insecure: true
+        dashboard: true
     providers:
     # The traefik dynamic configuration (Routers/Services/Middlewares) is configured with a file provider
     file:
