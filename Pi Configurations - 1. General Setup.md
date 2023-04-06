@@ -261,15 +261,6 @@ certificatesResolvers:
       # It is recommended that the file have permissions 600
       storage: "/etc/traefik/acme/acme.json"
 
-      # CA server to use.
-      # Uncomment the line to use Let's Encrypt's staging server,
-      # leave commented to go to prod.
-      #
-      # Optional
-      # Default: "https://acme-v02.api.letsencrypt.org/directory"
-      #
-      # caServer: "https://acme-staging-v02.api.letsencrypt.org/directory"
-
       # The certificates' duration in hours.
       # It defaults to 2160 (90 days) to follow Let's Encrypt certificates' duration.
       #
