@@ -288,7 +288,7 @@ providers:
 ```
 
 NOTES:
-- The file is configured to automatic renew TLS certificates with a `duckdns` 
+- The file is configured to automatic renew TLS certificates with a `duckdns` domain.
 ## Duckdns cron configuration
 See [here](https://www.duckdns.org/install.jsp?tab=pi). BUT:
 - Change `duck.sh` as follows: (Change domains and token in update URL if necessary)
