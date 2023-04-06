@@ -251,7 +251,7 @@ certificatesResolvers:
   letsEncryptResolver:
     # Enable ACME (Let's Encrypt): automatic SSL.
     acme:
-      # Email address used for registration.
+      # Email address used for registration .
       email: "<YOUR_EMAIL>"
 
       # File or key used for certificates storage. 
