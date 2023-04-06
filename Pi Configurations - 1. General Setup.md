@@ -292,6 +292,7 @@ We configure Traefik to [automatic renew](https://doc.traefik.io/traefik/https/a
 
     - Don't forget to edit the `<YOUR_DUCKDNS_DOMAIN>` and `<YOUR_EMAIL>` fields
 
+
 ## Duckdns cron configuration
 See [here](https://www.duckdns.org/install.jsp?tab=pi). BUT:
 - Change `duck.sh` as follows: (Change domains and token in update URL if necessary)
