@@ -269,7 +269,7 @@ We configure Traefik to [automatic renew](https://doc.traefik.io/traefik/https/a
           # With duckdns, we use a DNS-01 ACME challenge
           # NB: don't forget to set your duckdns token in a DUCKDNS_TOKEN environment variable
           dnsChallenge:
-            provider: duckdns
+            provider: "duckdns"
             delayBeforeCheck: 20
     log:
       level: DEBUG
