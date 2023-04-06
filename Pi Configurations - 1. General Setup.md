@@ -286,7 +286,7 @@ We configure Traefik to [automatic renew](https://doc.traefik.io/traefik/https/a
         # all the yml files found into this folder will be used as dynamic configuration
         # so you can split your services configuration in multiple files, one for each service
         # for an example, see /etc/traefik/dynamic/monitor.yml
-        directory: /etc/traefik/dynamic
+        directory: "/etc/traefik/dynamic"
         watch: true
     ```
 
