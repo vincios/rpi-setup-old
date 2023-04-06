@@ -258,7 +258,7 @@ certificatesResolvers:
       email: "<YOUR_EMAIL>"
 
       # File or key used for certificates storage.
-      # Recommended 
+      # Recommended: give to the file 
       storage: "/etc/traefik/acme/acme.json"
 
       # CA server to use.
