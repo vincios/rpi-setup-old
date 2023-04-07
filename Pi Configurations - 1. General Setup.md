@@ -354,8 +354,8 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
   4. Set file permissions
   
 ```bash
-     $ sudo chown -R traefik:traefik /etc/traefik/dynamic
-     $ sudo chmod -R 755 /etc/traefik/dynamic
+$ sudo chown -R traefik:traefik /etc/traefik/dynamic
+$ sudo chmod -R 755 /etc/traefik/dynamic
 ```
 #### Add new Services
 
