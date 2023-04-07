@@ -330,7 +330,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
 
     Where the users field is an array of authorized users. Each user must be declared using the `name:hashed-password` format. See the [BasicAuth](https://doc.traefik.io/traefik/middlewares/http/basicauth/#configuration-examples) documentation. To generate the `name:hashed-password` string you can use an online HTPasswd Generator, like [this](https://www.web2generators.com/apache-tools/htpasswd-generator).
 
-2. Create the file `/etc/traefik/dynamic/middlewares.yml`
+2. Create the file `/etc/traefik/dynamic/.yml`
 
 ### Setup Service
 1. Create the file `/etc/systemd/system/traefik.service` with the following content
