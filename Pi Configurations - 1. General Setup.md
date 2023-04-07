@@ -334,24 +334,7 @@ We configure Traefik to [automatic renew](https://doc.traefik.io/traefik/https/a
     [Install]
     WantedBy=multi-user.target
     ```
-## Duckdns cron configuration
-See [here](https://www.duckdns.org/install.jsp?tab=pi). BUT:
-- Change `duck.sh` as follows: (Change domains and token in update URL if necessary)
 
-``` sh
-timestamp() {
-  date +"%Y-%m-%d %H:%M:%S"
-}
-
-echo url="https://www.duckdns.org/update?domains=vncs10&token=b6e9eba3-1b42-4c66-898a-0d5204833f36&ip=" | curl -k -o /home/raspi/duckdns/log.log -K -
-echo " | Last run: $(timestamp)" >> /home/raspi/duckdns/log.log
-```
-
-- Change crontab string as follows:
-
-``` sh 
-*/5 * * * * /home/raspi/duckdns/duck.sh >/dev/null 2>&1
-```
 
 
 ## Plex Media Server
