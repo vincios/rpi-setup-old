@@ -320,7 +320,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
 1. Create the file `/etc/traefik/dynamic/middlewares.yml` with the following content:
 
   ```yml
-  
+
   ```
 
 ### Setup Service
