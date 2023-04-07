@@ -359,7 +359,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
       ```
 
 #### Custom dynamic configuration
-Add new [Middlewares](https://doc.traefik.io/traefik/middlewares/overview/) to the `/etc/traefik/dynamic/middlewares.yml` file if 
+Add new [Middlewares](https://doc.traefik.io/traefik/middlewares/overview/) to the `/etc/traefik/dynamic/middlewares.yml` file if they 
 ### Setup Service
 1. Create the file `/etc/systemd/system/traefik.service` with the following content
 
