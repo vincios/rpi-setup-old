@@ -349,22 +349,22 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
         #  certResolver: "duckdnsResolver"
     ```
 
-```yaml
-http:
-  routers:
-    dashboard:
-      rule: Host(`traefik.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org`) && (PathPrefix(`/api`) || PathPrefix(`/dashboard`))
-      # If not specified, HTTP routers will accept requests from all defined entry points. 
-      # If you want to limit the router scope only to ssl, uncomment these lines
-      # entryPoints:
-      #  - "websecure"
-      service: "api@internal"
-      middlewares:
-        -  "authentication"
-      # certResolver was already globally set for all routes by the websecure entrypoint
-      #tls:
-      #  certResolver: "duckdnsResolver"
-```
+  ```yaml
+  http:
+    routers:
+      dashboard:
+        rule: Host(`traefik.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org`) && (PathPrefix(`/api`) || PathPrefix(`/dashboard`))
+        # If not specified, HTTP routers will accept requests from all defined entry points. 
+        # If you want to limit the router scope only to ssl, uncomment these lines
+        # entryPoints:
+        #  - "websecure"
+        service: "api@internal"
+        middlewares:
+          -  "authentication"
+        # certResolver was already globally set for all routes by the websecure entrypoint
+        #tls:
+        #  certResolver: "duckdnsResolver"
+  ```
 
 ### Setup Service
 1. Create the file `/etc/systemd/system/traefik.service` with the following content
