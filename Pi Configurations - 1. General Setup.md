@@ -351,7 +351,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
 
 ```yml
 
-
+```
 
 ### Setup Service
 1. Create the file `/etc/systemd/system/traefik.service` with the following content
