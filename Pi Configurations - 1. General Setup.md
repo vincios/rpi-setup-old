@@ -318,7 +318,7 @@ We use the [file provider](https://doc.traefik.io/traefik/providers/file/) to ma
 The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, split in multiple files, one for each service we want to configure.
 
 1. Create the file `/etc/traefik/dynamic/middlewares.yml`
-2. 
+
 ### Setup Service
 1. Create the file `/etc/systemd/system/traefik.service` with the following content
 
