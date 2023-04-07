@@ -335,8 +335,6 @@ We configure Traefik to [automatic renew](https://doc.traefik.io/traefik/https/a
     WantedBy=multi-user.target
     ```
 
-
-
 ## Plex Media Server
 See [here](https://pimylifeup.com/raspberry-pi-plex-server/).
 
