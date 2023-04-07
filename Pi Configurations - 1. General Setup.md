@@ -351,7 +351,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
 
   3. Set your duckdns domain in a `DUCKDNS_DOMAIN` environment variable. If you have configured the [duckdns cron](#duckdns-cron-configuration), the environment variable should be already set.
 
-#### Add new services
+#### Add new Services
 
 ### Setup Service
 1. Create the file `/etc/systemd/system/traefik.service` with the following content
