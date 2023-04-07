@@ -324,7 +324,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
     middlewares:
       test-auth:
         basicAuth:
-        users:
+          users:
           - "test:$apr1$H6uskkkW$IgXLP6ewTrSuBkTrqE8wj/"
           - "test2:$apr1$d9hr9HBB$4HxwgUir3HP4EsggP/QNo0"
   ```
