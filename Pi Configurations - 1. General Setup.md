@@ -272,7 +272,7 @@ We configure Traefik to [automatic renew](https://doc.traefik.io/traefik/https/a
               sans:
                 - "*.<YOUR_DUCKDNS_DOMAIN>.duckdns.org"
     certificatesResolvers:
-      duckdns:
+      duckdnsResolver:
         # Enable ACME (Let's Encrypt): automatic SSL.
         acme:
           # Email address used for Let's Encrypt registration.
