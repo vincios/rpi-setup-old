@@ -320,12 +320,12 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
 1. Create the file `/etc/traefik/dynamic/middlewares.yml` with the following content:
 
   ```yml
-http:
-  middlewares:
-    auth:
-      basicAuth:
-        users:
-          - "monitor:$apr1$39orxq8k$iym93MoTk2F3PA6tKbik71"
+  http:
+    middlewares:
+      auth:
+        basicAuth:
+          users:
+            - "monitor:$apr1$39orxq8k$iym93MoTk2F3PA6tKbik71"
   ```
 
 ### Setup Service
