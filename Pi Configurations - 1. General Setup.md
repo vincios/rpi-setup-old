@@ -328,7 +328,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
               - "<YOUR_USER_AND_PASSWORD>"
     ```
 
-    Where 
+    Where The users option is an array of authorized users. Each user must be declared using the name:hashed-password format
 ### Setup Service
 1. Create the file `/etc/systemd/system/traefik.service` with the following content
 
