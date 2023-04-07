@@ -331,23 +331,6 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
     Where the users field is an array of authorized users. Each user must be declared using the `name:hashed-password` format. See the [BasicAuth](https://doc.traefik.io/traefik/middlewares/http/basicauth/#configuration-examples) documentation. To generate the `name:hashed-password` string you can use an online HTPasswd Generator, like [this](https://www.web2generators.com/apache-tools/htpasswd-generator).
 
 2. Create the file `/etc/traefik/dynamic/dashboard.yml`, with the following content
-  
-    ```yml
-    http:
-      routers:
-        dashboard:
-            rule: Host(`traefik.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org`) && (PathPrefix(`/api`) || PathPrefix(`/dashboard`))
-        # If not specified, HTTP routers will accept requests from all defined entry points. 
-        # If you want to limit the router scope only to ssl, uncomment these lines
-        # entryPoints:
-        #  - "websecure"
-        service: "api@internal"
-        middlewares:
-          -  "authentication"
-        # certResolver was already globally set for all routes by the websecure entrypoint
-        #tls:
-        #  certResolver: "duckdnsResolver"
-    ```
 
     ```yaml
     http:
