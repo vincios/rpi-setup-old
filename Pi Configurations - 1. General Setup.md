@@ -358,7 +358,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
       $ sudo chmod -R 755 /etc/traefik/dynamic
       ```
 
-#### Add dynamic c
+#### Add dynamic configuration
 
 ### Setup Service
 1. Create the file `/etc/systemd/system/traefik.service` with the following content
