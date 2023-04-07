@@ -325,7 +325,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
         auth:
           basicAuth:
             users:
-              - "<YOUR_USER_PASSWORD>"
+              - "<YOUR_USER_AND_PASSWORD>"
     ```
 
     Where 
