@@ -165,6 +165,24 @@ If the network folder is not visible or is not writeable, try this solutions (on
 
 - On the raspberry, try this command `sudo pdbedit -a -u raspi`
 
+## Duckdns cron configuration
+See [here](https://www.duckdns.org/install.jsp?tab=pi). BUT:
+- Change `duck.sh` as follows: (Change domains and token in update URL if necessary)
+
+``` sh
+timestamp() {
+  date +"%Y-%m-%d %H:%M:%S"
+}
+
+echo url="https://www.duckdns.org/update?domains=vncs10&token=b6e9eba3-1b42-4c66-898a-0d5204833f36&ip=" | curl -k -o /home/raspi/duckdns/log.log -K -
+echo " | Last run: $(timestamp)" >> /home/raspi/duckdns/log.log
+```
+
+- Change crontab string as follows:
+
+``` sh 
+*/5 * * * * /home/raspi/duckdns/duck.sh >/dev/null 2>&1
+```
 
 ## Traefik
 Traefik is designed to run in docker and auto discover the services by its [providers](https://doc.traefik.io/traefik/providers/overview/) (like the [docker](https://doc.traefik.io/traefik/providers/docker/) one). But in this setup, we will install it locally and use the [file provider](https://doc.traefik.io/traefik/providers/file/) to define the dynamic configuration (i.e. Routers, Services and Middlewares).
