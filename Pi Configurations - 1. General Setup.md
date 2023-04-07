@@ -315,7 +315,9 @@ We configure Traefik to [automatic renew](https://doc.traefik.io/traefik/https/a
 ### Configure Services (dynamic configuration)
 We use the [file provider](https://doc.traefik.io/traefik/providers/file/) to manually set the dynamic configuration (Routers, Services and Middlewares) for each service we want to be served by the Traefik proxy.
 
-The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, split in multiple files, one for each service we want to configure. 
+The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, split in multiple files, one for each service we want to configure.
+
+
 ### Setup Service
 1. Create the file `/etc/systemd/system/traefik.service` with the following content
 
