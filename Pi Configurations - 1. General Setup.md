@@ -418,7 +418,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
               service: "my-service"
 
               # Middlewares to which the request will be forwarded when the route is activated
-              
+              # (optionally) 
               middlewares:
                 - "authentication"
                 - "my-local-middleware"
