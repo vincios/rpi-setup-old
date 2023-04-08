@@ -414,7 +414,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
               # If you want to limit the router scope only to an entry point, uncomment these lines
               # entryPoints:
               #  - "websecure"
-
+              #
               service: "my-service"
               #
               # Middlewares to which the request will be forwarded when the route is activated
