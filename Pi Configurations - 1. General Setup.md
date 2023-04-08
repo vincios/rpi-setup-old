@@ -340,9 +340,6 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
           service: "api@internal"
           middlewares:
             -  "authentication"
-          # certResolver was already globally set for all routes by the websecure entrypoint
-          #tls:
-          #  certResolver: "duckdnsResolver"
     ```
 
   3. Set your duckdns domain in a `DUCKDNS_DOMAIN` environment variable. If you have configured the [duckdns cron](#duckdns-cron-configuration), the environment variable should be already set
