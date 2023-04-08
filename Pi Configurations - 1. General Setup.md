@@ -361,7 +361,8 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
 #### Custom dynamic configuration
 - Add new [Middlewares](https://doc.traefik.io/traefik/middlewares/overview/) to the `/etc/traefik/dynamic/middlewares.yml` file if they are global Middlewares (i.e. can be shared between multiple routers) or to the Service's dynamic configuration file (see next point) if they are local Middlewares (i.e. related only to a Service's router)
 
- - To add a new Service to Traefik, create a new file `service_name.yml` in the `/etc/traefik/dynamic/` folder. Configure into this file the Service's [Router](https://doc.traefik.io/traefik/routing/routers/) and [Service](https://doc.traefik.io/traefik/routing/services/) (and, eventually, local Middlewares). Use this template as reference
+ - To add a new Service to Traefik, create a new file `service_name.yml` in the `/etc/traefik/dynamic/` folder. Configure into this file the Service's [Router](https://doc.traefik.io/traefik/routing/routers/) and [Service](https://doc.traefik.io/traefik/routing/services/) (and, eventually, local Middlewares). Use this template as reference:
+ - 
 ### Setup Service
 1. Create the file `/etc/systemd/system/traefik.service` with the following content
 
