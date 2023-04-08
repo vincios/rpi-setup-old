@@ -408,7 +408,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
           routers:
             my-router:
               rule: Host(`new-service.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org`)
-              # OR rule (Host(`{{ env "DUCKDNS_DOMAIN"}}.duckdns.org`) && PathPrefix(`/new-service`))
+              # OR rule: (Host(`{{ env "DUCKDNS_DOMAIN"}}.duckdns.org`) && PathPrefix(`/new-service`))
               # If no entryPoints specified, the router will accept requests from all defined entry points. 
               # If you want to limit the router scope only to an entry point, uncomment these lines
               # entryPoints:
