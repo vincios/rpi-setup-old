@@ -435,6 +435,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
                 - url: "http://<private-ip-server-1>:<private-port-server-1>/"
 
           # Local middlewares (i.e. middlewares that will be used only by my-router)
+          # Optional
           middlewares:
             my-local-middleware:
               addPrefix:
