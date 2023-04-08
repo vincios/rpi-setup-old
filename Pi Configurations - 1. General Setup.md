@@ -401,7 +401,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
     1. Create a new file `service_name.yml` in the `/etc/traefik/dynamic/` folder 
     2. Configure into this file the Service's [Router](https://doc.traefik.io/traefik/routing/routers/) and [Service](https://doc.traefik.io/traefik/routing/services/) (and, eventually, local Middlewares). 
     
-        See `/etc/traefik/dynamic/dashboard.yml` ìand use this template as reference:
+        See `/etc/traefik/dynamic/dashboard.yml` and use this template as reference:
 
         ```yaml
         http:
