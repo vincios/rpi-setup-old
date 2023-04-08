@@ -419,7 +419,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
 
               # Middlewares to which the request will be forwarded when the route is activated
               # Optional
-              
+              #
               middlewares:
                 - "authentication"
                 - "my-local-middleware"
