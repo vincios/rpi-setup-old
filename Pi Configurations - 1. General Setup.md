@@ -361,36 +361,36 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
     
         See `/etc/traefik/dynamic/dashboard.yml` as an example and use this template as reference:
 
-```yaml
-http:
-  routers:
-    my-router:
-      rule: Host(`new-service.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org`) || (Host(`{{ env "DUCKDNS_DOMAIN"}}.duckdns.org`) && PathPrefix(`/new-service`))
-      # If no entryPoints specified, the router will accept requests from all defined entry points. 
-      # If you want to limit the router scope only to an entry point, uncomment these lines
-      # entryPoints:
-      #  - "websecure"
-      service: "my-service"
-      middlewares:  # (optionally) list here the middlewares to which the request will be forwarded
-        - "authentication"
-        - "my-local-middleware"
-      # certResolver is already globally set for all routes (see the websecure entrypoint in local configuration)
-      #tls:
-      #  certResolver: "duckdnsResolver"
-  
-  # define here where the request will be forwarded
-  services:
-    my-service:
-      loadBalancer:
-        servers:
-        - url: "http://<private-ip-server-1>:<private-port-server-1>/"
+    ```yaml
+    http:
+      routers:
+        my-router:
+          rule: Host(`new-service.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org`) || (Host(`{{ env "DUCKDNS_DOMAIN"}}.duckdns.org`) && PathPrefix(`/new-service`))
+          # If no entryPoints specified, the router will accept requests from all defined entry points. 
+          # If you want to limit the router scope only to an entry point, uncomment these lines
+          # entryPoints:
+          #  - "websecure"
+          service: "my-service"
+          middlewares:  # (optionally) list here the middlewares to which the request will be forwarded
+            - "authentication"
+            - "my-local-middleware"
+          # certResolver is already globally set for all routes (see the websecure entrypoint in local configuration)
+          #tls:
+          #  certResolver: "duckdnsResolver"
+      
+      # define here where the request will be forwarded
+      services:
+        my-service:
+          loadBalancer:
+            servers:
+            - url: "http://<private-ip-server-1>:<private-port-server-1>/"
 
-  # (optionally) define here local middlewares (i.e. middlewares that will be used only by my-router)
-  middlewares:
-    my-local-middleware:
-      addPrefix:
-        prefix: "/foo"
-```
+      # (optionally) define here local middlewares (i.e. middlewares that will be used only by my-router)
+      middlewares:
+        my-local-middleware:
+          addPrefix:
+            prefix: "/foo"
+    ```
 ### Setup Service
 1. Create the file `/etc/systemd/system/traefik.service` with the following content
 
