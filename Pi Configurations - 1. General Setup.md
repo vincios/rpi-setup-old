@@ -391,7 +391,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
     WantedBy=multi-user.target
     ```
 
-### Custom dynamic configuration
+### ACustom dynamic configuration
 - Add new [Middlewares](https://doc.traefik.io/traefik/middlewares/overview/) 
   - To the `/etc/traefik/dynamic/middlewares.yml` file if they are global Middlewares (i.e. can be shared between multiple routers)
   - To the Service's dynamic configuration file (see next point) if they are local Middlewares (i.e. related only to a Service's router)
