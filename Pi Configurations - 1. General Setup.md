@@ -339,7 +339,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
           rule: Host(`traefik.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org`) && (PathPrefix(`/api`) || PathPrefix(`/dashboard`))
           service: "api@internal"
           middlewares:
-            -  "authentication"
+            - "authentication"
     ```
 
   3. Set your duckdns domain in a `DUCKDNS_DOMAIN` environment variable. If you have configured the [duckdns cron](#duckdns-cron-configuration), the environment variable should be already set
