@@ -392,7 +392,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
                 prefix: "/foo"
         ```
 
-    3. 
+    3. Give 
 ### Setup Service
 1. Create the file `/etc/systemd/system/traefik.service` with the following content
 
