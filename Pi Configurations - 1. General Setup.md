@@ -427,7 +427,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
               #tls:
               #  certResolver: "duckdnsResolver"
           
-          # define here the service's urls where the request will be forwarded
+          # Service's urls where the request will be forwarded
           services:
             my-service:
               loadBalancer:
