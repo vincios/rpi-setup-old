@@ -351,54 +351,6 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
       $ sudo chmod -R 755 /etc/traefik/dynamic
       ```
 
-#### Custom dynamic configuration
-- Add new [Middlewares](https://doc.traefik.io/traefik/middlewares/overview/) to the `/etc/traefik/dynamic/middlewares.yml` file if they are global Middlewares (i.e. can be shared between multiple routers) or to the Service's dynamic configuration file (see next point) if they are local Middlewares (i.e. related only to a Service's router)
-
- - To add a new Service to Traefik
-    
-    1. Create a new file `service_name.yml` in the `/etc/traefik/dynamic/` folder 
-    2. Configure into this file the Service's [Router](https://doc.traefik.io/traefik/routing/routers/) and [Service](https://doc.traefik.io/traefik/routing/services/) (and, eventually, local Middlewares). 
-    
-        See `/etc/traefik/dynamic/dashboard.yml` as an example and use this template as reference:
-
-        ```yaml
-        http:
-          routers:
-            my-router:
-              rule: Host(`new-service.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org`) || (Host(`{{ env "DUCKDNS_DOMAIN"}}.duckdns.org`) && PathPrefix(`/new-service`))
-              # If no entryPoints specified, the router will accept requests from all defined entry points. 
-              # If you want to limit the router scope only to an entry point, uncomment these lines
-              # entryPoints:
-              #  - "websecure"
-              service: "my-service"
-              middlewares:  # (optionally) list here the middlewares to which the request will be forwarded
-                - "authentication"
-                - "my-local-middleware"
-              # certResolver is already globally set for all routes (see the websecure entrypoint in local configuration)
-              #tls:
-              #  certResolver: "duckdnsResolver"
-          
-          # define here where the request will be forwarded
-          services:
-            my-service:
-              loadBalancer:
-                servers:
-                - url: "http://<private-ip-server-1>:<private-port-server-1>/"
-
-          # (optionally) define here local middlewares (i.e. middlewares that will be used only by my-router)
-          middlewares:
-            my-local-middleware:
-              addPrefix:
-                prefix: "/foo"
-        ```
-
-    3. Set file permissions
-
-        ```bash
-        $ sudo chown traefik:traefik /etc/traefik/dynamic/service_name.yml
-        $ sudo chmod 755 /etc/traefik/dynamic/service_name.yml
-        ```
-
 ### Setup Service
 1. Create the file `/etc/systemd/system/traefik.service` with the following content
 
