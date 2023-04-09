@@ -1,4 +1,4 @@
-# General Setup
+*# General Setup
 
 **NOTE:** Please read before [First operations](#first-operations).
 
@@ -1008,4 +1008,4 @@ alias ha-restartlog="sudo systemctl restart home-assistant@homeassistant && sudo
 alias ha-login="cd /home/homeassistant && sudo -u homeassistant -H -s"
 ```
 
-After you add a new alias don't forget to run `. /home/raspi/.bashrc`
+After you add a new alias don't forget to run `. /home/raspi/.bashrc`*
