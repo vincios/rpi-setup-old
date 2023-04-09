@@ -394,7 +394,11 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
     WantedBy=multi-user.target
     ```
 
-  
+2. Set file permissions
+
+    ```yaml
+
+    
 
 ### Annex: Add custom dynamic configuration
 - Add new [Middlewares](https://doc.traefik.io/traefik/middlewares/overview/) 
