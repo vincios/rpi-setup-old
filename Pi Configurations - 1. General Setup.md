@@ -404,7 +404,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
 3. Reload systemd and enable the service (autoboot)
 
     ```bash
-    
+    $ sudo systemctl daemon-reload
   
     ```
 
