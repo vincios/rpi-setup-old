@@ -401,7 +401,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
     $ sudo chmod 644 /etc/systemd/system/traefik.service
     ```
 
-3. Load and enable (the service
+3. Reload the service
 
 ### Annex: Add custom dynamic configuration
 - Add new [Middlewares](https://doc.traefik.io/traefik/middlewares/overview/) 
