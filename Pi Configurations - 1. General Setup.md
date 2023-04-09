@@ -275,7 +275,7 @@ entryPoints:
           - main: "cclouds.duckdns.org"
             sans:
               - "*.cclouds.duckdns.org"
-certificatesResolvers
+certificatesResolvers:
       duckdnsResolver:
         # Enable ACME (Let's Encrypt): automatic SSL.
         acme:
