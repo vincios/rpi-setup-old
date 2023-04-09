@@ -268,13 +268,14 @@ entryPoints:
           scheme: "https"
   websecure:
     address: ":443"
-    tls: # Move the tls section to each Router for a fine-grained configuration of tls
-      certResolver: "duckdnsResolver"
-      domains:
-        - main: "<YOUR_DUCKDNS_DOMAIN>.duckdns.org"
-          sans:
-            - "*.<YOUR_DUCKDNS_DOMAIN>.duckdns.org"
-certificatesResolvers:
+    http:
+      tls: # Move the tls section to each Router for a fine-grained configuration of tls
+        certResolver: "duckdnsResolver"
+        domains:
+          - main: "cclouds.duckdns.org"
+            sans:
+              - "*.cclouds.duckdns.org"
+certificatesResolvers
       duckdnsResolver:
         # Enable ACME (Let's Encrypt): automatic SSL.
         acme:
