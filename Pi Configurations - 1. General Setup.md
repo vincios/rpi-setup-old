@@ -369,7 +369,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
     User=traefik
     Group=traefik
     ; Always set "-root" to something safe in case it gets forgotten in the traefik file.
-    ExecStart=/usr/local/bin/traefik --configfile=/etc/traefik/traefik.toml
+    ExecStart=/usr/local/bin/traefik --configfile=/etc/traefik/traefik.yml
     ; Limit the number of file descriptors; see `man systemd.exec` for more limit settings.
     LimitNOFILE=1048576
     ; Use private /tmp and /var/tmp, which are discarded after traefik stops.
