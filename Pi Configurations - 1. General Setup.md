@@ -403,6 +403,8 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
 
 3. Reload systemd and enable the service (autoboot)
 
+    ```yaml
+
 ### Annex: Add custom dynamic configuration
 - Add new [Middlewares](https://doc.traefik.io/traefik/middlewares/overview/) 
   - To the `/etc/traefik/dynamic/middlewares.yml` file if they are global Middlewares (i.e. can be shared between multiple routers)
