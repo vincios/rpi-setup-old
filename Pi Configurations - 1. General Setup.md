@@ -396,7 +396,8 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
 
 2. Set file permissions
 
-    ```yaml
+    ```bash
+    
 
     ```
 
