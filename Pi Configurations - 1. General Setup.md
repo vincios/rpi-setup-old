@@ -257,24 +257,24 @@ We configure Traefik to [automatic renew](https://doc.traefik.io/traefik/https/a
 
 2. Create the file `/etc/traefik/traefik.yml` with the following content:
     
-  ```yml
-  entryPoints:
-    web:
-      address: ":80"
-      http:
-        redirections:
-          entryPoint:
-            to: "websecure"
-            scheme: "https"
-    websecure:
-      address: ":443"
-      tls: # Move the tls section to each Router for a fine-grained configuration of tls
-        certResolver: "duckdnsResolver"
-        domains:
-          - main: "<YOUR_DUCKDNS_DOMAIN>.duckdns.org"
-            sans:
-              - "*.<YOUR_DUCKDNS_DOMAIN>.duckdns.org"
-  certificatesResolvers:
+```yml
+entryPoints:
+  web:
+    address: ":80"
+    http:
+      redirections:
+        entryPoint:
+          to: "websecure"
+          scheme: "https"
+  websecure:
+    address: ":443"
+    tls: # Move the tls section to each Router for a fine-grained configuration of tls
+      certResolver: "duckdnsResolver"
+      domains:
+        - main: "<YOUR_DUCKDNS_DOMAIN>.duckdns.org"
+          sans:
+            - "*.<YOUR_DUCKDNS_DOMAIN>.duckdns.org"
+certificatesResolvers:
       duckdnsResolver:
         # Enable ACME (Let's Encrypt): automatic SSL.
         acme:
