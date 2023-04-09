@@ -397,7 +397,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
 2. Set file permissions
 
     ```bash
-    
+    $ sudo chown root:root /etc/systemd/system/traefik.service
     ```
 
 ### Annex: Add custom dynamic configuration
