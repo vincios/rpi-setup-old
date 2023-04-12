@@ -366,7 +366,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
 
     > 💡 Using this configuration the dashboard will be available at the address
     >
-    > 
+    > httpz
     >
     >
   3. Set file permissions
