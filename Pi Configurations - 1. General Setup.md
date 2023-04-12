@@ -462,19 +462,20 @@ Traefik doesn't rotate log files by default, so we'll use `logrotate` to rotate 
 1. Create the file `/etc/logrotate.d/traefik` (with `sudo`) and paste this content
    
     ```config
-    /var/log/traefik/*.log {
-      compress
-      rotate 14
-      daily
-      missingok
-      notifempty
-      postrotate
-        sudo systemctl kill --signal=USR1 traefik
-      endscript
-    }
+/var/log/traefik/*.log {
+  compress
+  rotate 7
+  daily
+  missingok
+  notifempty
+  dateext
+  postrotate
+    sudo systemctl kill --signal=USR1 traefik
+  endscript
+}
     ```
 
-    
+
 
 ### Annex: Add custom dynamic configuration
 - Add new [Middlewares](https://doc.traefik.io/traefik/middlewares/overview/) 
