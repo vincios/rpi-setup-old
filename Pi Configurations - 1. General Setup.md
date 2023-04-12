@@ -415,15 +415,15 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
     ```
 
 2. Create the file `/etc/traefik/traefik.conf` with the following content
-3. 
-4. Set file permissions
+
+3. Set file permissions
 
     ```bash
     $ sudo chown root:root /etc/systemd/system/traefik.service
     $ sudo chmod 644 /etc/systemd/system/traefik.service
     ```
 
-5. Reload systemd and enable the service (autoboot)
+4. Reload systemd and enable the service (autoboot)
 
     ```bash
     $ sudo systemctl daemon-reload
