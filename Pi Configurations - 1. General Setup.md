@@ -438,7 +438,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
     $ sudo systemctl enable traefik.service
     ```
 
-# Configure log rotation
+### Configure log rotation
 
 ### Annex: Add custom dynamic configuration
 - Add new [Middlewares](https://doc.traefik.io/traefik/middlewares/overview/) 
