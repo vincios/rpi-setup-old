@@ -427,7 +427,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
 
     ```bash
     $ sudo chown root:root /etc/systemd/system/traefik.service
-    $ sudo chown traefik:root /etc/systemd/system/traefik.service
+    $ sudo chown traefik:traefik /etc/systemd/system/traefik.service
     $ sudo chmod 644 /etc/systemd/system/traefik.service
     ```
 
