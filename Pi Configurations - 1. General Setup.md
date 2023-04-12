@@ -421,7 +421,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
     DUCKDNS_TOKEN=<YOUR_DUCKDNS_TOKEN>
     ```
 
-  ⚠️ Don't forget to edit the 
+  ⚠️ Don't forget to edit the `<YOUR_DUCKDNS_DOMAIN>
 3. Set file permissions
 
     ```bash
