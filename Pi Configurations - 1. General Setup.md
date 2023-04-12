@@ -368,7 +368,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
     >
     >    `https://traefik.<DUCKDNS.DOMAIN>.duckdns.org/dashboard/`
     >
-    > ⚠️ Note the trailing `/`: without it you'll receive a _404 Not found_ error
+    > ⚠️ Note the trailing `/`: without it you should receive a _404 Not found_ error
 
   3. Set file permissions
   
