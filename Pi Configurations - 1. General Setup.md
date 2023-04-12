@@ -448,6 +448,10 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
 Traefik doesn't rotate log files by default, so we'll use `logrotate` to rotate the log files.
 
 `logrotate` should be already installed on Raspberry OS, you can check with the command
+
+```bash
+
+```
 1. Create the file `/etc/logrotate.d/traefik`
    
     ```bash
