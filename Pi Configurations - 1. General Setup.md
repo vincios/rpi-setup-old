@@ -449,7 +449,9 @@ Traefik doesn't rotate log files by default, so we'll use `logrotate` to rotate 
 
 1. Create the file `/etc/logrotate.d/traefik`
    
-   ```bas
+   ```bash
+  
+   ```
 2. 
 ### Annex: Add custom dynamic configuration
 - Add new [Middlewares](https://doc.traefik.io/traefik/middlewares/overview/) 
