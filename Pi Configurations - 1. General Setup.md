@@ -416,7 +416,8 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
 
 2. Create the file `/etc/traefik/traefik.conf` with the following content
 ```env
-
+DUCKDNS_DOMAIN=cclouds
+DUCKDNS_TOKEN=8f4bea43-235d-4def-98ee-00438278da81
 ```
 3. Set file permissions
 
