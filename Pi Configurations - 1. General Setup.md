@@ -364,7 +364,8 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
                   - "*.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org"
     ```
 
-    > 💡 Using this configuration the dashboard 
+    > 💡 Using this configuration the dashboard will be available at the address
+    >
   3. Set file permissions
   
       ```bash
