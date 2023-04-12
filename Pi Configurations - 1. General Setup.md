@@ -309,7 +309,6 @@ providers:
     # for an example, see /etc/traefik/dynamic/dashboard.yml
     directory: "/etc/traefik/dynamic"
     watch: true
-
 ```
 
     ⚠️ Don't forget to edit the `<YOUR_DUCKDNS_DOMAIN>` and `<YOUR_EMAIL>` fields.
