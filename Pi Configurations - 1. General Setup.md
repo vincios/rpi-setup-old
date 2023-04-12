@@ -414,7 +414,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
     WantedBy=multi-user.target
     ```
 
-2. Create the file 
+2. Create the file `/etc&
 2. Set file permissions
 
     ```bash
