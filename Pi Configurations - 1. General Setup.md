@@ -257,59 +257,59 @@ We configure Traefik to [automatic renew](https://doc.traefik.io/traefik/https/a
 
 2. Create the file `/etc/traefik/traefik.yml` with the following content:
     
-```yml
-entryPoints:
-  web:
-    address: ":80"
-    http:
-      redirections:
-        entryPoint:
-          to: "websecure"
-          scheme: "https"
-  websecure:
-    address: ":443"
-    http:
-certificatesResolvers:
-  duckdnsResolver:
-    # Enable ACME (Let's Encrypt): automatic SSL.
-    acme:
-      # Email address used for Let's Encrypt registration.
-      email: "vinciosdev@gmail.com"
+    ```yml
+    entryPoints:
+      web:
+        address: ":80"
+        http:
+          redirections:
+            entryPoint:
+              to: "websecure"
+              scheme: "https"
+      websecure:
+        address: ":443"
+        http:
+    certificatesResolvers:
+      duckdnsResolver:
+        # Enable ACME (Let's Encrypt): automatic SSL.
+        acme:
+          # Email address used for Let's Encrypt registration.
+          email: "vinciosdev@gmail.com"
 
-      # File or key used for certificates storage.
-      # Recommended: give to the file permissions 600
-      storage: "/etc/traefik/acme/acme.json"
+          # File or key used for certificates storage.
+          # Recommended: give to the file permissions 600
+          storage: "/etc/traefik/acme/acme.json"
 
-      # The certificates' duration in hours.
-      # It defaults to 2160 (90 days) to follow Let's Encrypt certificates' duration.
-      # certificatesDuration: 2160
+          # The certificates' duration in hours.
+          # It defaults to 2160 (90 days) to follow Let's Encrypt certificates' duration.
+          # certificatesDuration: 2160
 
-      # With duckdns, we use a DNS-01 ACME challenge
-      # NB: don't forget to set your duckdns token in a DUCKDNS_TOKEN environment variable
-      dnsChallenge:
-        provider: "duckdns"
-        # Wait x seconds before traefik checks the TXT record
-        delayBeforeCheck: 20
-log:
-  level: "INFO"
-  filePath: "/var/log/traefik/traefik.log"
-accessLog:
-  filePath: "/var/log/traefik/access.log"
-  bufferingSize: 100
-api:
-  # Set to true allows to access the api without HTTPS
-  insecure: false
-  # Enable the dashboard service
-  dashboard: true
-providers:
-  # The traefik dynamic configuration (Routers/Services/Middlewares) is configured with a file provider
-  file:
-    # all the yml files found into this folder will be used as dynamic configuration
-    # so you can split your services configuration in multiple files, one for each service
-    # for an example, see /etc/traefik/dynamic/dashboard.yml
-    directory: "/etc/traefik/dynamic"
-    watch: true
-```
+          # With duckdns, we use a DNS-01 ACME challenge
+          # NB: don't forget to set your duckdns token in a DUCKDNS_TOKEN environment variable
+          dnsChallenge:
+            provider: "duckdns"
+            # Wait x seconds before traefik checks the TXT record
+            delayBeforeCheck: 20
+    log:
+      level: "INFO"
+      filePath: "/var/log/traefik/traefik.log"
+    accessLog:
+      filePath: "/var/log/traefik/access.log"
+      bufferingSize: 100
+    api:
+      # Set to true allows to access the api without HTTPS
+      insecure: false
+      # Enable the dashboard service
+      dashboard: true
+    providers:
+      # The traefik dynamic configuration (Routers/Services/Middlewares) is configured with a file provider
+      file:
+        # all the yml files found into this folder will be used as dynamic configuration
+        # so you can split your services configuration in multiple files, one for each service
+        # for an example, see /etc/traefik/dynamic/dashboard.yml
+        directory: "/etc/traefik/dynamic"
+        watch: true
+    ```
 
     ⚠️ Don't forget to edit the `<YOUR_DUCKDNS_DOMAIN>` and `<YOUR_EMAIL>` fields.
 
