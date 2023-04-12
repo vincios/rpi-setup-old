@@ -470,7 +470,7 @@ Traefik doesn't rotate log files by default, so we'll use `logrotate` to rotate 
       notifempty
       dateext
       postrotate
-        sudo systemctl kill --signal=USR1 traefik
+        systemctl kill --signal=USR1 traefik
       endscript
     }
     ```
