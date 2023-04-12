@@ -431,7 +431,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
     $ sudo chmod 644 /etc/systemd/system/traefik.service /etc/traefik/traefik.conf
     ```
 
-4. Reload systemd and enable the service)
+4. Reload systemd and enable the service
 
     ```bash
     $ sudo systemctl daemon-reload
