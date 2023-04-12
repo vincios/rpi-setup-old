@@ -1,4 +1,4 @@
-*# General Setup
+# General Setup
 
 **NOTE:** Please read before [First operations](#first-operations).
 
