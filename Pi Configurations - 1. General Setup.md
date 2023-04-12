@@ -452,6 +452,7 @@ Traefik doesn't rotate log files by default, so we'll use `logrotate` to rotate 
 ```bash
 $ logrotate -v
 ```
+
 1. Create the file `/etc/logrotate.d/traefik`
    
     ```bash
