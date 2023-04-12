@@ -293,6 +293,23 @@ certificatesResolvers:
 log:
   level: "INFO"
   filePath: "/var/log/traefik/traefik.log"
+accessLog:
+  filePath: "/var/log/traefik/access.log"
+  bufferingSize: 100
+api:
+  # Set to true allows to access the api without HTTPS
+  insecure: false
+  # Enable the dashboard service
+  dashboard: true
+providers:
+  # The traefik dynamic configuration (Routers/Services/Middlewares) is configured with a file provider
+  file:
+    # all the yml files found into this folder will be used as dynamic configuration
+    # so you can split your services configuration in multiple files, one for each service
+    # for an example, see /etc/traefik/dynamic/dashboard.yml
+    directory: "/etc/traefik/dynamic"
+    watch: true
+
 ```
 
     ⚠️ Don't forget to edit the `<YOUR_DUCKDNS_DOMAIN>` and `<YOUR_EMAIL>` fields.
