@@ -447,7 +447,8 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
 ### Configure log rotation
 Traefik doesn't rotate log files by default, so we'll use `logrotate` to rotate the log files.
 
-1. Create the file `sudo nano /etc/logrotate.d/traefik
+1. Create the file `/etc/logrotate.d/traefik`
+2. 
 ### Annex: Add custom dynamic configuration
 - Add new [Middlewares](https://doc.traefik.io/traefik/middlewares/overview/) 
   - To the `/etc/traefik/dynamic/middlewares.yml` file if they are global Middlewares (i.e. can be shared between multiple routers)
