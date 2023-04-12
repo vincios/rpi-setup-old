@@ -268,13 +268,7 @@ We configure Traefik to [automatic renew](https://doc.traefik.io/traefik/https/a
               scheme: "https"
       websecure:
         address: ":443"
-        http:
-          tls: # Move the tls section to each Router for a fine-grained configuration of tls
-            certResolver: "duckdnsResolver"
-            domains:
-              - main: "cclouds.duckdns.org"
-                sans:
-                  - "*.cclouds.duckdns.org"
+
     certificatesResolvers:
       duckdnsResolver:
         # Enable ACME (Let's Encrypt): automatic SSL.
