@@ -473,7 +473,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
               
               tls:
                 certResolver: "duckdnsResolver"
-        domains:
+                domains:
           - main: "{{ env "DUCKDNS_DOMAIN"}}.duckdns.org"
             sans:
               - "*.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org"
