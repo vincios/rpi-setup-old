@@ -415,7 +415,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
     ```
 
 2. Create the file `/etc/traefik/traefik.conf` with the following content
-
+```
 3. Set file permissions
 
     ```bash
