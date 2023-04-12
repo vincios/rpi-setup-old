@@ -453,7 +453,7 @@ Traefik doesn't rotate log files by default, so we'll use `logrotate` to rotate 
     $ logrotate -v
     ```
 
-    In case 
+    If it 
 1. Create the file `/etc/logrotate.d/traefik`
    
     ```bash
