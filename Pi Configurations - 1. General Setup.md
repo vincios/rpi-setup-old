@@ -471,7 +471,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
                 - "authentication"
                 - "my-local-middleware"
               
-              # Enable the TLS
+              # Enable the TLS encryption.
               tls:
                 certResolver: "duckdnsResolver"
                 domains:
