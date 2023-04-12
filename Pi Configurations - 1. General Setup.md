@@ -386,14 +386,16 @@ Restart=on-abnormal
 ; User and group the process will run as.
 User=traefik
 Group=traefik
+; Set environment variables
+EnvironmentFile=/etc/traefik/traefik.conf
+PassEnvironment=DUCKDNS_DOMAIN DUCKDNS_TOKEN
 ; Always set "-root" to something safe in case it gets forgotten in the traefik file.
 ExecStart=/usr/local/bin/traefik --configfile=/etc/traefik/traefik.yml
 ; Limit the number of file descriptors; see `man systemd.exec` for more limit settings.
 LimitNOFILE=1048576
 ; Use private /tmp and /var/tmp, which are discarded after traefik stops.
 PrivateTmp=true
-; Use a minimal /dev (May bring additional security if switched to 'true', but it may not work on Raspberry Pi's or other devices, so it has been disabled in this dist.)
-PrivateDevices=false
+; Use a minimal /dev (May bring additional security if switched to 'true', but it may not work on Raspberry Pi's or other devices, so it has been disabled >PrivateDevices=false
 ; Hide /home, /root, and /run/user. Nobody will steal your SSH-keys.
 ProtectHome=true
 ; Make /usr, /boot, /etc and possibly some more folders read-only.
