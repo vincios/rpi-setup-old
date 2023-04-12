@@ -313,7 +313,7 @@ We configure Traefik to [automatic renew](https://doc.traefik.io/traefik/https/a
 
     ⚠️ Don't forget to edit the `<YOUR_EMAIL>`
     
-    💡 For the first runs you may wants to set log level to `DEBUG` to 
+    💡 For the first runs you may want to set log level to `DEBUG` to 
 
 ### Configure Services (dynamic configuration)
 We use the [file provider](https://doc.traefik.io/traefik/providers/file/) to manually set the dynamic configuration (Routers, Services and Middlewares) for each service we want to be served by the Traefik proxy.
