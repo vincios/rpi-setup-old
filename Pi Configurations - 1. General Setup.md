@@ -345,7 +345,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
             - "authentication"
     ```
 
-  1. Set file permissions
+  3. Set file permissions
   
       ```bash
       $ sudo chown -R traefik:traefik /etc/traefik/dynamic
