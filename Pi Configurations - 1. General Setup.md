@@ -312,7 +312,7 @@ We configure Traefik to [automatic renew](https://doc.traefik.io/traefik/https/a
     
     💡 For the first runs you may want to set the log level to `DEBUG` to troubleshoot (eventual) errors
 
-  2. Set file permissions
+2. Set file permissions
 
     ```bash
       $ sudo chown traefik:traefik /etc/traefik/traefik.yml
