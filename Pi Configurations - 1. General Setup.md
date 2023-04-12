@@ -288,7 +288,6 @@ certificatesResolvers:
       # NB: don't forget to set your duckdns token in a DUCKDNS_TOKEN environment variable
       dnsChallenge:
         provider: "duckdns"
-      
         # Wait x seconds before traefik checks the TXT record
         delayBeforeCheck: 20
 log:
