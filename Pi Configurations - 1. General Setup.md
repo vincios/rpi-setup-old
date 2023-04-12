@@ -315,7 +315,8 @@ We configure Traefik to [automatic renew](https://doc.traefik.io/traefik/https/a
   2. Set file permissions
 
     ```bash
-    $ sudo chown traefik:traefik 
+    $ sudo chown traefik:traefik /etc/traefik/traefik.yml
+    
     ```
 ### Configure Services (dynamic configuration)
 We use the [file provider](https://doc.traefik.io/traefik/providers/file/) to manually set the dynamic configuration (Routers, Services and Middlewares) for each service we want to be served by the Traefik proxy.
