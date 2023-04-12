@@ -337,15 +337,15 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
 
 2. Create the file `/etc/traefik/dynamic/dashboard.yml`, with the following content:
 
-    ```yaml
-    http:
-      routers:
-        dashboard:
-          rule: Host(`traefik.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org`) && (PathPrefix(`/api`) || PathPrefix(`/dashboard`))
-          service: "api@internal"
-          middlewares:
-            - "authentication"
-    ```
+```yaml
+http:
+  routers:
+    dashboard:
+      rule: Host(`traefik.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org`) && (PathPrefix(`/api`) || PathPrefix(`/dashboard`))
+      service: "api@internal"
+      middlewares:
+        - "authentication"
+```
 
   3. Set file permissions
   
