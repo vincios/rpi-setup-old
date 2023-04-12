@@ -442,7 +442,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
     ```bash
     $ sudo systemctl daemon-reload
     $ sudo systemctl enable traefik.service
-    $ sudo systemctl enable traefik.service
+    $ sudo systemctl en traefik.service
     ```
 
 ### Configure log rotation
