@@ -314,7 +314,7 @@ We configure Traefik to [automatic renew](https://doc.traefik.io/traefik/https/a
         watch: true
     ```
 
-    💡 Don't forget to edit the `<YOUR_DUCKDNS_DOMAIN>` and `<YOUR_EMAIL>` fields.
+    ⚠️ Don't forget to edit the `<YOUR_DUCKDNS_DOMAIN>` and `<YOUR_EMAIL>` fields.
 
 ### Configure Services (dynamic configuration)
 We use the [file provider](https://doc.traefik.io/traefik/providers/file/) to manually set the dynamic configuration (Routers, Services and Middlewares) for each service we want to be served by the Traefik proxy.
