@@ -337,28 +337,28 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
 
 2. Create the file `/etc/traefik/dynamic/dashboard.yml`, with the following content:
 
-```yaml
-http:
-  routers:
-    # Overrides the default 'api' router
-    api:
-      # The rule matches http://example.com/api/ or http://example.com/dashboard/
-      # but does not match http://example.com/hello
-      rule: Host(`traefik.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org`) && (PathPrefix(`/api`) || PathPrefix(`/dashboard`))
-      entrypoints:
-        - web
-        - websecure
-        # - traefik  # uncomment to use the :8080 port
-      service: api@internal
-      middlewares:
-        - authentication
-      tls:
-        certResolver: "duckdnsResolver"
-        domains:
-          - main: "{{ env "DUCKDNS_DOMAIN"}}.duckdns.org"
-            sans:
-              - "*.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org"
-```
+    ```yaml
+    http:
+      routers:
+        # Overrides the default 'api' router
+        api:
+          # The rule matches http://example.com/api/ or http://example.com/dashboard/
+          # but does not match http://example.com/hello
+          rule: Host(`traefik.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org`) && (PathPrefix(`/api`) || PathPrefix(`/dashboard`))
+          entrypoints:
+            - web
+            - websecure
+            # - traefik  # uncomment to use the :8080 port
+          service: api@internal
+          middlewares:
+            - authentication
+          tls:
+            certResolver: "duckdnsResolver"
+            domains:
+              - main: "{{ env "DUCKDNS_DOMAIN"}}.duckdns.org"
+                sans:
+                  - "*.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org"
+    ```
 
   3. Set file permissions
   
