@@ -461,9 +461,9 @@ Traefik doesn't rotate log files by default, so we'll use `logrotate` to rotate 
 
 1. Create the file `/etc/logrotate.d/traefik` (with `sudo`) and paste this content
    
-   ```config
+```config
 
-   ```
+```
 
 ### Annex: Add custom dynamic configuration
 - Add new [Middlewares](https://doc.traefik.io/traefik/middlewares/overview/) 
