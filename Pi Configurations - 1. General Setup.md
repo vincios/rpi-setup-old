@@ -477,6 +477,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
           - main: "{{ env "DUCKDNS_DOMAIN"}}.duckdns.org"
             sans:
               - "*.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org"
+
           # Service's urls where the request will be forwarded
           services:
             my-service:
