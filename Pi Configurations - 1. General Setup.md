@@ -315,7 +315,7 @@ We configure Traefik to [automatic renew](https://doc.traefik.io/traefik/https/a
 2. Set file permissions
 
     ```bash
-      $ sudo chown traefik:traefik /etc/traefik/traefik.yml
+    $ sudo chown traefik:traefik /etc/traefik/traefik.yml
       $ sudo chmod 644 /etc/traefik/traefik.yml
       ```
 ### Configure Services (dynamic configuration)
