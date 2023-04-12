@@ -245,7 +245,7 @@ Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-
 
     # logs files
     $ sudo mkdir /var/log/traefik
-    $ sudo touch /var/log/traefik/debug.log
+    $ sudo touch /var/log/traefik/traefik.log
     $ sudo touch /var/log/traefik/access.log
     $ sudo chown traefik:traefik  /var/log/traefik/ /var/log/traefik/access.log  /var/log/traefik/debug.log
     ```
