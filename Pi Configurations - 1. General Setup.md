@@ -274,7 +274,7 @@ We configure Traefik to [automatic renew](https://doc.traefik.io/traefik/https/a
         # Enable ACME (Let's Encrypt): automatic SSL.
         acme:
           # Email address used for Let's Encrypt registration.
-          email: "vinciosdev@gmail.com"
+          email: "<YOUR_EMAIL>"
 
           # File or key used for certificates storage.
           # Recommended: give to the file permissions 600
