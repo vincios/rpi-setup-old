@@ -459,7 +459,7 @@ Traefik doesn't rotate log files by default, so we'll use `logrotate` to rotate 
     $ sudo apt install logrotate
     ```
 
-1. Create the file `/etc/logrotate.d/traefik` (with `sudo`)
+1. Create the file `/etc/logrotate.d/traefik` (with `sudo`) and paste this content
 
 2. 
 ### Annex: Add custom dynamic configuration
