@@ -471,7 +471,6 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
                 - "authentication"
                 - "my-local-middleware"
               
-              # certResolver is already globally set for all routes (see the websecure entrypoint in local configuration)
               #tls:
               #  certResolver: "duckdnsResolver"
           
