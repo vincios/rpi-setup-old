@@ -452,7 +452,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
 
     ⚠️ Note the trailing `/`: without it you should receive a _404 Not found_ error
 
-    If not, check logs for any errors with journalctl --boot -u traefik.service. or log files at /var/log/traefik/
+    If not, check logs for any errors with `journalctl --boot -u traefik.service. or log files at /var/log/traefik/
 ### Configure log rotation
 Traefik doesn't rotate log files by default, so we use `logrotate` to rotate the log files.
 
