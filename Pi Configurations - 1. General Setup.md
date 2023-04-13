@@ -176,7 +176,9 @@ Edited from [here](https://www.duckdns.org/install.jsp?tab=pi).
 
 2. Create a `duck.sh` file with following content
 
-    
+    ```bash
+  
+    ```
 - Change `duck.sh` as follows: (Change domains and token in update URL if necessary)
 
 ``` sh
