@@ -184,6 +184,8 @@ Edited from [here](https://www.duckdns.org/install.jsp?tab=pi).
     echo url="https://www.duckdns.org/update?domains=$DUCKDNS_DOMAINS&token=$DUCKDNS_TOKEN&ip=" | curl -k -o ~/.duckdns/log.log -K -
     echo " | Last run: $(timestamp)" >> ~/.duckdns/log.log
     ```
+  
+3. Create a `duck.conf.
 - Change `duck.sh` as follows: (Change domains and token in update URL if necessary)
 
 ``` sh
