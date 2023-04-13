@@ -593,8 +593,7 @@ Traefik doesn't rotate log files by default, so we use `logrotate` to rotate the
         $ sudo chmod 644 /etc/traefik/dynamic/service_name.yml
         ```
 
-## Plex Media Server
-See [here](https://pimylifeup.com/raspberry-pi-plex-server/).
+
 
 
 ## Build TOR
