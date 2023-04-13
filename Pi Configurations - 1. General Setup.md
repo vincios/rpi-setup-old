@@ -594,8 +594,6 @@ Traefik doesn't rotate log files by default, so we use `logrotate` to rotate the
         ```
 
 
-
-
 ## Build TOR
 **NEW** (but not tested yet):
 
