@@ -189,7 +189,7 @@ Edited from [here](https://www.duckdns.org/install.jsp?tab=pi).
 
     ```bash
     export DUCKDNS_DOMAINS=<YOUR_DUKCDNS_DOMAINS>
-    export DUCKDNS_TOKEN=8f4bea43-235d-4def-98ee-00438278da81
+    export DUCKDNS_TOKEN=<YOUR_DUCKDNS_TOKEN>
     ```
 - Change `duck.sh` as follows: (Change domains and token in update URL if necessary)
 
