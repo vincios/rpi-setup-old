@@ -447,10 +447,12 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
     ```
 
 5. Now Traefik should be running, and you should be reach the dashboard page at the address
+
+  ```
 ### Configure log rotation
 Traefik doesn't rotate log files by default, so we use `logrotate` to rotate the log files.
 
-0. `logrotate` should already be installed on Raspberry OS, you can check this with the command
+1. `logrotate` should already be installed on Raspberry OS, you can check this with the command
 
     ```bash
     $ logrotate -v
@@ -462,7 +464,7 @@ Traefik doesn't rotate log files by default, so we use `logrotate` to rotate the
     $ sudo apt install logrotate
     ```
 
-1. Create the file `/etc/logrotate.d/traefik` (with `sudo`) and paste this content
+2. Create the file `/etc/logrotate.d/traefik` (with `sudo`) and paste this content
    
     ```config
     /var/log/traefik/*.log {
