@@ -536,8 +536,8 @@ Traefik doesn't rotate log files by default, so we use `logrotate` to rotate the
     $ sudo systemctl stop traefik.service
     ```
 
-    
-To update Traefik, follow the first 4 steps of the [install](#install-traefik) guide.
+
+2. To update Traefik, follow the first 4 steps of the [install](#install-traefik) guide.
 
 ### Annex: Add custom dynamic configuration
 - Add new [Middlewares](https://doc.traefik.io/traefik/middlewares/overview/) 
