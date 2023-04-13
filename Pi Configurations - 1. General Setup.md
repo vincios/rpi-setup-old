@@ -532,6 +532,7 @@ Traefik doesn't rotate log files by default, so we use `logrotate` to rotate the
 ### Update Traefik
 1. Stop the service
 
+    ```bash
     
 To update Traefik, follow the first 4 steps of the [install](#install-traefik) guide.
 
