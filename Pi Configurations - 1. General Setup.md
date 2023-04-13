@@ -188,7 +188,7 @@ Edited from [here](https://www.duckdns.org/install.jsp?tab=pi).
 3. Create a `duck.conf.sh` file with following content
 
     ```bash
-    export DUCKDNS_DOMAINS=cclouds
+    export DUCKDNS_DOMAINS=<YOUR_DUKCDNS_>
     export DUCKDNS_TOKEN=8f4bea43-235d-4def-98ee-00438278da81
     ```
 - Change `duck.sh` as follows: (Change domains and token in update URL if necessary)
