@@ -508,7 +508,7 @@ Traefik doesn't rotate log files by default, so we use `logrotate` to rotate the
               # Middlewares to which the request will be forwarded when the route is activated
               # Optional
               middlewares:
-                - "authentication"
+                - "authentication
                 - "my-local-middleware"
               
               # Enable the TLS encryption
