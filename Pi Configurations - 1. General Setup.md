@@ -518,7 +518,7 @@ Traefik doesn't rotate log files by default, so we use `logrotate` to rotate the
                 domains:
                   - main: {{ env "DUCKDNS_DOMAIN"}}.duckdns.org
                     sans:
-                      - "*.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org"
+                      - "*.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org
               
           # Service's urls where the request will be forwarded
           services:
