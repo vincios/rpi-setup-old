@@ -516,7 +516,7 @@ Traefik doesn't rotate log files by default, so we use `logrotate` to rotate the
               tls:
                 certResolver: duckdnsResolver
                 domains:
-                  - main: "{{ env "DUCKDNS_DOMAIN"}}.duckdns.org"
+                  - main: {{ env "DUCKDNS_DOMAIN"}}.duckdns.org
                     sans:
                       - "*.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org"
               
