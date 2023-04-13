@@ -530,7 +530,7 @@ Traefik doesn't rotate log files by default, so we use `logrotate` to rotate the
 
 
 ### Update Traefik
-To update Traefik, follow the first 4 steps of [Install](#install)
+To update Traefik, follow the first 4 steps of the [Install](#install)
 ### Annex: Add custom dynamic configuration
 - Add new [Middlewares](https://doc.traefik.io/traefik/middlewares/overview/) 
   - To the `/etc/traefik/dynamic/middlewares.yml` file if they are global Middlewares (i.e. can be shared between multiple routers)
