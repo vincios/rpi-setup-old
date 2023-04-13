@@ -535,7 +535,8 @@ Traefik doesn't rotate log files by default, so we use `logrotate` to rotate the
                 prefix: "/foo"
         ```
 
-        For an example, See `/etc/traefik/dynamic/dashboard.yml` 
+        For an example, see the file `/etc/traefik/dynamic/dashboard.yml` 
+
     3. Set file permissions
 
         ```bash
