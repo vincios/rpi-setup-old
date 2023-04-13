@@ -170,7 +170,7 @@ If the network folder is not visible or is not writeable, try this solutions (on
 - On the raspberry, try this command `sudo pdbedit -a -u raspi`
 
 ## Duckdns cron configuration
-Edited from [here](https://www.duckdns.org/install.jsp?tab=pi).
+Revisited from [here](https://www.duckdns.org/install.jsp?tab=pi).
 
 1. Create a `.duckdns` folder in your home directory
 
