@@ -17,7 +17,6 @@ Index
     - [Setup systemd service](#setup-systemd-service)
     - [Configure log rotation](#configure-log-rotation)
     - [Annex: Add custom dynamic configuration](#annex-add-custom-dynamic-configuration)
-  - [Plex Media Server](#plex-media-server)
   - [Build TOR](#build-tor)
   - [Run BridTools](#run-bridtools)
   - [Install jDownloader in headless mode](#install-jdownloader-in-headless-mode)
