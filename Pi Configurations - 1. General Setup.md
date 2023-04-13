@@ -514,7 +514,7 @@ Traefik doesn't rotate log files by default, so we use `logrotate` to rotate the
               # Enable the TLS encryption
               # Normally, you should not need to edit this section
               tls:
-                certResolver: "duckdnsResolver"
+                certResolver: "duckdnsResolver
                 domains:
                   - main: "{{ env "DUCKDNS_DOMAIN"}}.duckdns.org"
                     sans:
