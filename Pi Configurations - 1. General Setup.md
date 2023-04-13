@@ -185,7 +185,7 @@ Edited from [here](https://www.duckdns.org/install.jsp?tab=pi).
     echo " | Last run: $(timestamp)" >> ~/.duckdns/log.log
     ```
   
-3. Create a `duck.conf.
+3. Create a `duck.conf.sh` file wiht 
 - Change `duck.sh` as follows: (Change domains and token in update URL if necessary)
 
 ``` sh
