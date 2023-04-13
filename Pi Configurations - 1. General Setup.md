@@ -12,7 +12,7 @@ Index
   - [Duckdns cron configuration](#duckdns-cron-configuration)
   - [Traefik](#traefik)
     - [Install](#install)
-    - [Configure traefik (static configuration)](#configure-traefik-static-configuration)
+    - [Configure Traefik (static configuration)](#configure-traefik-static-configuration)
     - [Configure Services (dynamic configuration)](#configure-services-dynamic-configuration)
     - [Setup systemd service](#setup-systemd-service)
     - [Configure log rotation](#configure-log-rotation)
@@ -291,7 +291,7 @@ Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-
     $ sudo chown traefik:traefik  /var/log/traefik/ /var/log/traefik/access.log  /var/log/traefik/traefik.log
     ```
 
-### Configure traefik (static configuration)
+### Configure Traefik (static configuration)
 We configure Traefik to [automatic renew](https://doc.traefik.io/traefik/https/acme/#automatic-renewals) Let's Encrypt ACME certificates, with a `duckdns` domain and a `DNS-01` challenge.
 
 1. Create the file `/etc/traefik/traefik.yml` with the following content:
