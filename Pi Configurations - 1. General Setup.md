@@ -477,7 +477,7 @@ Traefik doesn't rotate log files by default, so we use `logrotate` to rotate the
     }
     ```
 
-    💡 This configuration will daily compress the logs files, keeping the last 7 days logs and deleting the oldest ones. See the ()
+    💡 This configuration will daily compress the logs files, keeping the last 7 days logs and deleting the oldest ones. See the [logrotate]
 
 ### Annex: Add custom dynamic configuration
 - Add new [Middlewares](https://doc.traefik.io/traefik/middlewares/overview/) 
