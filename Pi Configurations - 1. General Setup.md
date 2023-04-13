@@ -16,7 +16,7 @@ Index
     - [Configure Services (dynamic configuration)](#configure-services-dynamic-configuration)
     - [Setup systemd service](#setup-systemd-service)
     - [Configure log rotation](#configure-log-rotation)
-    - [Update](#update)
+    - [Update Traefik](#update-traefik)
     - [Annex: Add custom dynamic configuration](#annex-add-custom-dynamic-configuration)
   - [Build TOR](#build-tor)
   - [Run BridTools](#run-bridtools)
@@ -529,7 +529,7 @@ Traefik doesn't rotate log files by default, so we use `logrotate` to rotate the
     💡 This configuration will daily compress the logs files, keeping the last 7 days logs and deleting the oldest ones. See this [logrotate](https://guide.debianizzati.org/index.php/Logrotate:_configurare_la_rotazione_automatica_dei_log) tutorial, and the `man logrotate` command.
 
 
-### Update
+### Update Traefik
 To update Tra
 ### Annex: Add custom dynamic configuration
 - Add new [Middlewares](https://doc.traefik.io/traefik/middlewares/overview/) 
