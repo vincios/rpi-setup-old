@@ -487,7 +487,7 @@ Traefik doesn't rotate log files by default, so we use `logrotate` to rotate the
  - To add a new Service
     
     1. Create a new file `service_name.yml` in the `/etc/traefik/dynamic/` folder 
-    2. Configure into this file the Service's [Router](https://doc.traefik.io/traefik/routing/routers/) and [Service](https://doc.traefik.io/traefik/routing/services/) (and, eventually, local Middlewares)
+    2. Configure into this file the Service's [Router](https://doc.traefik.io/traefik/routing/routers/) and [Service](https://doc.traefik.io/traefik/routing/services/) (and, eventually, local Middlewares). 
     
         Use the following template as reference
 
@@ -503,12 +503,12 @@ Traefik doesn't rotate log files by default, so we use `logrotate` to rotate the
               # entryPoints:
               #  - "websecure"
 
-              service: my-service
+              service: "my-service"
 
               # Middlewares to which the request will be forwarded when the route is activated
               # Optional
               middlewares:
-                - "authentication
+                - "authentication"
                 - "my-local-middleware"
               
               # Enable the TLS encryption
@@ -535,8 +535,7 @@ Traefik doesn't rotate log files by default, so we use `logrotate` to rotate the
                 prefix: "/foo"
         ```
 
-        💡 For an example, see the file `/etc/traefik/dynamic/dashboard.yml` 
-
+        For an example, see the file `/etc/traefik/dynamic/dashboard.yml` 
     3. Set file permissions
 
         ```bash
