@@ -218,7 +218,11 @@ Revisited from [here](https://www.duckdns.org/install.jsp?tab=pi).
     $ crontab -e
     ```
 
-7. Add the 
+7. Add this line to the bottom
+
+    ```bash
+
+    ```
 ## Traefik
 Traefik is designed to run in docker and auto discover the services by its [providers](https://doc.traefik.io/traefik/providers/overview/) (like the [docker](https://doc.traefik.io/traefik/providers/docker/) one). But in this setup, we will install it locally and use the [file provider](https://doc.traefik.io/traefik/providers/file/) to define the dynamic configuration (i.e. Routers, Services and Middlewares).
 
