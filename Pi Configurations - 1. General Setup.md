@@ -1,4 +1,4 @@
-# General Setup
+*# General Setup
 
 **NOTE:** Please read before [First operations](#first-operations).
 
@@ -452,7 +452,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
 
     ⚠️ Note the trailing `/`: without it you should receive a _404 Not found_ error
 
-    If not, check logs for any errors with `journalctl --boot -u traefik.service` or log files at `/var/log/traefik/
+    If not, check logs for any errors with `journalctl --boot -u traefik.service` or log files at `/var/log/traefik/`
 
 ### Configure log rotation
 Traefik doesn't rotate log files by default, so we use `logrotate` to rotate the log files.
@@ -1094,4 +1094,4 @@ alias ha-restartlog="sudo systemctl restart home-assistant@homeassistant && sudo
 alias ha-login="cd /home/homeassistant && sudo -u homeassistant -H -s"
 ```
 
-After you add a new alias don't forget to run `. /home/raspi/.bashrc`*
+After you add a new alias don't forget to run `. /home/raspi/.bashrc`**
