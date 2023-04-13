@@ -210,7 +210,7 @@ Edited from [here](https://www.duckdns.org/install.jsp?tab=pi).
 
     ⚠️ Note the leading dot `.`
 
-    💡 Check the `log.log` 
+    💡 Check the result in the `log.log` file
 
 
 ## Traefik
