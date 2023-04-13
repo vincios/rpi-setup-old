@@ -194,7 +194,7 @@ Edited from [here](https://www.duckdns.org/install.jsp?tab=pi).
 
     ⚠️ Don't forget to edit the `<YOUR_DUCKDNS_DOMAINS>` and `<YOUR_DUCKDNS_TOKEN>` fields. No quotes needed. 
     
-    If y
+    If you have
 
 - Change `duck.sh` as follows: (Change domains and token in update URL if necessary)
 
