@@ -503,7 +503,7 @@ Traefik doesn't rotate log files by default, so we use `logrotate` to rotate the
               # entryPoints:
               #  - "websecure"
 
-              service: "my-service"
+              service: my-service
 
               # Middlewares to which the request will be forwarded when the route is activated
               # Optional
