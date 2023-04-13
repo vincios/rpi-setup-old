@@ -509,7 +509,7 @@ Traefik doesn't rotate log files by default, so we use `logrotate` to rotate the
               # Optional
               middlewares:
                 - authentication
-                - "my-local-middleware"
+                - my-local-middleware
               
               # Enable the TLS encryption
               # Normally, you should not need to edit this section
