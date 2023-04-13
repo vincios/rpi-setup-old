@@ -172,7 +172,7 @@ If the network folder is not visible or is not writeable, try this solutions (on
 ## Duckdns cron configuration
 Edited from [here](https://www.duckdns.org/install.jsp?tab=pi).
 
-1. Cre
+1. Create a `.duckdns
 - Change `duck.sh` as follows: (Change domains and token in update URL if necessary)
 
 ``` sh
