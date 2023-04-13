@@ -525,7 +525,7 @@ Traefik doesn't rotate log files by default, so we use `logrotate` to rotate the
             my-service:
               loadBalancer:
                 servers:
-                - url: "http://<private-ip-server-1>:<private-port-server-1>/"
+                - url: http://<private-ip-server-1>:<private-port-server-1>/
 
           # Local middlewares (i.e. middlewares that will be used only by my-router)
           # Optional
