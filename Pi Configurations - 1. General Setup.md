@@ -194,7 +194,7 @@ Edited from [here](https://www.duckdns.org/install.jsp?tab=pi).
 
     ⚠️ Don't forget to edit the `<YOUR_DUCKDNS_DOMAINS>` and `<YOUR_DUCKDNS_TOKEN>` fields. No quotes needed. 
     
-    `<YOUR_DUCKDNS_DOMAINS>` can be a comma separated (with **NO spaceslist of domanis
+    `<YOUR_DUCKDNS_DOMAINS>` can be a comma separated (with **NO spaces**) list of domanis
 
 - Change `duck.sh` as follows: (Change domains and token in update URL if necessary)
 
