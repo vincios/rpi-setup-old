@@ -174,7 +174,9 @@ Edited from [here](https://www.duckdns.org/install.jsp?tab=pi).
 
 1. Create a `.duckdns` folder in your home folder
 
-2. Create a `duck.sh` file with 
+2. Create a `duck.sh` file with following content
+
+    
 - Change `duck.sh` as follows: (Change domains and token in update URL if necessary)
 
 ``` sh
