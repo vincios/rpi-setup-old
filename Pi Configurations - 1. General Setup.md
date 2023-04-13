@@ -508,24 +508,24 @@ Traefik doesn't rotate log files by default, so we use `logrotate` to rotate the
               # Middlewares to which the request will be forwarded when the route is activated
               # Optional
               middlewares:
-                - authentication
-                - my-local-middleware
+                - "authentication
+                - "my-local-middleware"
               
               # Enable the TLS encryption
               # Normally, you should not need to edit this section
               tls:
-                certResolver: duckdnsResolver
+                certResolver: "duckdnsResolver"
                 domains:
-                  - main: {{ env "DUCKDNS_DOMAIN"}}.duckdns.org
+                  - main: "{{ env "DUCKDNS_DOMAIN"}}.duckdns.org"
                     sans:
-                      - *.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org
+                      - "*.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org"
               
           # Service's urls where the request will be forwarded
           services:
             my-service:
               loadBalancer:
                 servers:
-                - url: http://<private-ip-server-1>:<private-port-server-1>/
+                - url: "http://<private-ip-server-1>:<private-port-server-1>/"
 
           # Local middlewares (i.e. middlewares that will be used only by my-router)
           # Optional
