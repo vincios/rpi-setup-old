@@ -198,9 +198,9 @@ Edited from [here](https://www.duckdns.org/install.jsp?tab=pi).
 
 4. Make the script executable
 
-  ```bash
-  $ chmod 700 duck.sh duck.conf.sh
-  ```
+    ```bash
+    $ chmod 700 duck.sh duck.conf.sh
+    ```
 
 5. 
 ## Traefik
