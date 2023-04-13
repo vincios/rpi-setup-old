@@ -530,7 +530,8 @@ Traefik doesn't rotate log files by default, so we use `logrotate` to rotate the
 
 
 ### Update Traefik
-Update Traefik is simple as 
+Update Traefik is simple as replace the binary file with the updated one
+
 1. Stop the service
 
     ```bash
