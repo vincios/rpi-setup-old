@@ -11,7 +11,7 @@ Index
     - [Note for Windows users](#note-for-windows-users)
   - [Duckdns cron configuration](#duckdns-cron-configuration)
   - [Traefik](#traefik)
-    - [Install](#install)
+    - [Install Traefik](#install-traefik)
     - [Configure Traefik (static configuration)](#configure-traefik-static-configuration)
     - [Configure Services (dynamic configuration)](#configure-services-dynamic-configuration)
     - [Setup systemd service](#setup-systemd-service)
@@ -235,7 +235,7 @@ Traefik is designed to run in docker and auto discover the services by its [prov
 
 Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-and-traefik/) guide, we will skip the node part and change the acme configuration to work with Duckdns.
 
-### Install
+### Install Traefik
 1. Go to the Traefik [releases](https://github.com/containous/traefik/releases) page, find the latest `linux_arm64` release. Download and extract
 
     ```bash
