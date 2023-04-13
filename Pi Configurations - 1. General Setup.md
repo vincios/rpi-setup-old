@@ -449,6 +449,8 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
 5. Now Traefik should be running, and you should be reach the dashboard page at the address
 
   ```
+
+  ```
 ### Configure log rotation
 Traefik doesn't rotate log files by default, so we use `logrotate` to rotate the log files.
 
