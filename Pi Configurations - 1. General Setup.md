@@ -177,7 +177,12 @@ Edited from [here](https://www.duckdns.org/install.jsp?tab=pi).
 2. Create a `duck.sh` file with following content
 
     ```bash
-  
+timestamp() {
+  date +"%Y-%m-%d %H:%M:%S"
+}
+
+echo url="https://www.duckdns.org/update?domains=$DUCKDNS_DOMAINS&token=$DUCKDNS_TOKEN&ip=" | curl -k -o ~/.duckdns/log.log -K -
+echo " | Last run: $(timestamp)" >> ~/.duckdns/log.log
     ```
 - Change `duck.sh` as follows: (Change domains and token in update URL if necessary)
 
