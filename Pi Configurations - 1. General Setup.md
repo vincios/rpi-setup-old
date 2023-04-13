@@ -191,6 +191,8 @@ Edited from [here](https://www.duckdns.org/install.jsp?tab=pi).
     export DUCKDNS_DOMAINS=<YOUR_DUCKDNS_DOMAINS>
     export DUCKDNS_TOKEN=<YOUR_DUCKDNS_TOKEN>
     ```
+
+    
 - Change `duck.sh` as follows: (Change domains and token in update URL if necessary)
 
 ``` sh
