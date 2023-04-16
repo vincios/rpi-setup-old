@@ -605,6 +605,41 @@ Update Traefik is simple as replace the binary file with the updated one
         $ sudo chmod 644 /etc/traefik/dynamic/service_name.yml
         ```
 
+## Install Pi-hole
+- Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
+
+    ```bash
+	$ curl -sSL https://install.pi-hole.net | bash
+	```
+
+   **NB**: Take note of the admin password (shown at installation end).
+   
+- Change the lighttpd port
+    - Edit the `lighttpd.conf` file
+	
+	    ```bash
+		$ sudo nano /etc/lighttpd/lighttpd.conf
+		```
+	
+	- Restart the service
+	
+	    ```bash
+		$ sudo service lighttpd restart
+		```
+
+- Install [whitelist](https://github.com/anudeepND/whitelist)
+
+    ```bash
+	$ git clone https://github.com/anudeepND/whitelist.git
+    $ sudo python3 whitelist/scripts/whitelist.py
+	```
+Notes: 
+
+- If you want use Pi-hole over a VPN, read this [guide](https://gabriele.tips/virtual-private-pi-holed-network/) (**untested**). 
+
+- Current block lists are taken from [here](https://www.andreadraghetti.it/block-list-e-white-list-per-pi-hole-e-ad-blocker/).
+
+
 
 ## Build TOR
 **NEW** (but not tested yet):
