@@ -610,6 +610,8 @@ At its core, all WireGuard does is create an interface from one computer to anot
 
 Basically, for each computer (peer) we have to configure an interface, with an IP address, a private key and a listening port. Then we have to list all the peers we wants to connect.
 
+See this guide
+
 In our setup, we have a server peer (the pi) to which we connect all the client peers (the other devices).
 
 
