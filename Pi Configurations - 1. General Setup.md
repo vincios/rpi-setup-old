@@ -608,7 +608,7 @@ Update Traefik is simple as replace the binary file with the updated one
 ## Wireguard VPN
 At its core, all WireGuard does is create an interface from one computer to another. It doesn’t really let you access other computers on either end of the network, or forward all your traffic through the VPN server, or anything like that. It just connects two computers, directly, quickly and securely.
 
-Basically, for each computer (peer) we have to configure an interface, with an IP address, a private key and a listening port. Then we have to list all the peers we wants to connect.
+Basically, for each computer (peer) we have to configure an interface, with an IP address, a private key and a listening port. Then we have to list the public keys of all the peers we wants to connect.
 
 The configuration will be written in a `.conf` file. See this [guide](https://www.stavros.io/posts/how-to-configure-wireguard/) for details about the configuration. 
 
