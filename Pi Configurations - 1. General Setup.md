@@ -614,7 +614,7 @@ The configuration will be written in a `.conf` file. For details about this conf
 
 In our setup, we have a server peer (the pi) to which all client peers (the other devices) connect.  
 
-We will follow the official Pi-hole guide for configuring Wireguard. All the necessary steps are briefly summarized below, however for a more detailed description, you can follow that guide(https://docs.pi-hole.net/guides/vpn/wireguard/server/).
+We will follow the official Pi-hole guide for configuring Wireguard. All the necessary steps are briefly summarized below, however for a more detailed description, you can follow that guide.
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
