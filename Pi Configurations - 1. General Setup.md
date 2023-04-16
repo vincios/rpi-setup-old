@@ -614,7 +614,7 @@ The configuration will be written in a `.conf` file. For details about this conf
 
 In our setup, we have a server peer (the pi) to which all client peers (the other devices) connect.
 
-
+We f
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
