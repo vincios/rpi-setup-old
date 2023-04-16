@@ -612,7 +612,7 @@ Basically, for each computer (peer) we have to configure an interface, with an I
 
 The configuration will be written in a `.conf` file. See this [guide](https://www.stavros.io/posts/how-to-configure-wireguard/) for details about the configuration. 
 
-In our setup, we have a server peer (the pi) to which all client peers (the other devices) connect. 
+In our setup, we have a server peer (the pi) to which all client peers (the other devices) connect.
 
 
 ## Install Pi-hole
