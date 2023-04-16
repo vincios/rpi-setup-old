@@ -610,7 +610,7 @@ At its core, all WireGuard does is create an interface from one computer to anot
 
 Basically, for each computer (peer) we have to configure an interface, with an IP address, a private key and a listening port. Then we have to list all the peers we wants to connect.
 
-In our setup, we have a server peer (the pi) where all the other peers ()
+In our setup, we have a server peer (the pi) where all the other peers (t)
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
