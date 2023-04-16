@@ -606,7 +606,7 @@ Update Traefik is simple as replace the binary file with the updated one
         ```
 
 ## Wireguard VPN
-Wireguard basically 
+Wireguard basically connects two 
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
