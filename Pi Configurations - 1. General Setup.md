@@ -605,7 +605,8 @@ Update Traefik is simple as replace the binary file with the updated one
         $ sudo chmod 644 /etc/traefik/dynamic/service_name.yml
         ```
 
-
+## Wireguard VPN
+Wireguard basically 
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
