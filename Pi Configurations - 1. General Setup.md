@@ -612,7 +612,9 @@ Basically, for each computer (peer) we have to configure an interface, with an I
 
 The configuration will be written in a `.conf` file. For details about this configuration file, see this [guide](https://www.stavros.io/posts/how-to-configure-wireguard/). 
 
-In our setup, we have a server peer (the pi) to which all client peers (the other devices) connect.  (https://docs.pi-hole.net/guides/vpn/wireguard/server/).
+In our setup, we have a server peer (the pi) to which all client peers (the other devices) connect.  
+
+We will follow the official Pi-hole guide for configuring Wireguard. All the necessary steps are briefly summarised below, however for a more detailed description, you can follow that guide(https://docs.pi-hole.net/guides/vpn/wireguard/server/).
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
