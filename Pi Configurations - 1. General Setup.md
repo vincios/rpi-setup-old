@@ -608,7 +608,7 @@ Update Traefik is simple as replace the binary file with the updated one
 ## Wireguard VPN
 At its core, all WireGuard does is create an interface from one computer to another. It doesn’t really let you access other computers on either end of the network, or forward all your traffic through the VPN server, or anything like that. It just connects two computers, directly, quickly and securely.
 
-Basically, for each computer (peer) we have to configure an interface, with an IP address, a private key and a listening port. The
+Basically, for each computer (peer) we have to configure an interface, with an IP address, a private key and a listening port. Then we a
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
