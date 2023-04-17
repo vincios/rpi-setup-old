@@ -690,7 +690,7 @@ So, to create a connection between our server and client we have make two config
 
     ⚠️ Change the `name` variable value with the name you want give to the new client, for example `vincenzo-laptop`
 
-2. Create the client's private and public keys
+2. Generate the client's private and public keys
 
     ```bash
     $ wg genkey | tee "/etc/wireguard/clients/${name}.key" | wg pubkey > "/etc/wireguard/clients/${name}.pub"
