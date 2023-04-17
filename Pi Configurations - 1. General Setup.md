@@ -845,7 +845,7 @@ peer: XYZ123456ABC=   ⬅ Your peer's public key will be different
   transfer: 3.43 KiB received, 188 B sent
 ```
 
-### Split Tunnel vs Full Tunnell 
+### Split Tunnel vs Full Tunnel
 In the steps above we have configuread a *split tunnel*
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
