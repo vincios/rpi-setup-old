@@ -782,7 +782,11 @@ PresharedKey = XYZ123456ABC=
 
     ⚠️ Don't forget to replace the `[X]` part of the last command with the client's IP address set in step 5
 
-The server's `.conf` file (i.e. `/etc/wireguard/wg0.conf`) sh
+The server's `.conf` file (i.e. `/etc/wireguard/wg0.conf`) should look like this
+
+```ini
+
+```
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
