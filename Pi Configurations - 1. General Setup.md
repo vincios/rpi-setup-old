@@ -810,7 +810,7 @@ AllowedIPs = 10.100.0.[X]/32, fd08:4711::[X]/128
     $ exit
     ```
 
-#### Connect your client and test the connection
+#### 3. Connect your client and test the connection
 You can now copy the client's `.conf` file to your client. If the client is a mobile device such as a phone, `qrencode` can be used to generate a scanable QR code:
 
 ```bash
