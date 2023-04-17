@@ -642,7 +642,9 @@ We will follow the official Pi-hole guide for setup Wireguard. All the necessary
     ListenPort = 47111
     ```  
 
-    💡 In the `[Interface]` section of the config file we configure the peer's wireguard network interface (the server, in this case). We assign a static IP address to the interface, `10.100.0.1` (where `10.100.0` is the network part). 
+    💡 In the `[Interface]` section of the config file we configure the peer's wireguard network interface (the server, in this case). We assign a static IP address to the interface, `10.100.0.1` (where `10.100.0` is the network part). To the other peers we will assign different IPs.
+
+    
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
