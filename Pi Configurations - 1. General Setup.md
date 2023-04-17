@@ -805,7 +805,7 @@ AllowedIPs = 10.100.0.[X]/32, fd08:4711::[X]/128
     $ wg syncconf wg0 <(wg-quick strip wg0)
     ```
 
-You can now copy the client's configuration file to your client. If the client is a mobile device such as a phone, qrencode can be used to generate a scanable QR code:
+You can now copy the client's  file to your client. If the client is a mobile device such as a phone, qrencode can be used to generate a scanable QR code:
 
 sudo qrencode -t ansiutf8 < "/etc/wireguard/${name}.conf"
 
