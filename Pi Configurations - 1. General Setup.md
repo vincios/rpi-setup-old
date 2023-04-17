@@ -779,6 +779,8 @@ PresharedKey = XYZ123456ABC=
     $ "PresharedKey = $(cat "/etc/wireguard/clients/${name}.psk")" >> /etc/wireguard/wg0.conf
     $ echo "AllowedIPs = 10.100.0.2/32, fd08:4711::2/128" >> /etc/wireguard/wg0.conf
     ```
+
+
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
