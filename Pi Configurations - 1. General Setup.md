@@ -756,7 +756,17 @@ So, to create a connection between our server and client we have make two config
 Now, your client's `.conf` file (i.e. `/etc/wireguard/clients/${name}.conf`) should look like this
 
 ```ini
+[Interface]
+Address = 10.100.0.2/32, fd08:4711::2/128
+DNS = 10.100.0.1
+PrivateKey = uMomlzfqqcVZp8xaQO1rYvL0xLF1qPsxJKg3LpVZ8VY=
 
+[Peer]
+AllowedIPs = 10.100.0.1/32, fd08:4711::1/128
+Endpoint = [your public IP or domain]:47111
+PersistentKeepalive = 25
+PublicKey = 8k8gb8AFhjPx7zHOkagWR0fWDHHEyioWTp5Jf0pVkFM=
+PresharedKey = fje3wIj3Cf/b+EWUQgeNdgwj7lyAOXUl5D1sybHYqpA=
 ```
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
