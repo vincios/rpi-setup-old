@@ -796,7 +796,7 @@ PrivateKey = XYZ123456ABC=
 [Peer]
 PublicKey = XYZ123456ABC=
 PresharedKey = XYZ123456ABC=
-AllowedIPs = 10.100.0.[/32, fd08:4711::2/128
+AllowedIPs = 10.100.0.[X]/32, fd08:4711::2/128
 ```
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
