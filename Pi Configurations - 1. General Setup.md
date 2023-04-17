@@ -713,6 +713,7 @@ So, to create a connection between our server and client we have make two config
    $ echo "Address = 10.100.0.2/32, fd08:4711::2/128" >> "/etc/wireguard/clients/${name}.conf"
    $ echo "DNS = 10.100.0.1" >> "/etc/wireguard/clients/${name}.conf"
    $ echo "PrivateKey = $(cat "/etc/wireguard/clients/${name}.key")" >> "/etc/wireguard/clients/${name}.conf"
+   ```
    
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
