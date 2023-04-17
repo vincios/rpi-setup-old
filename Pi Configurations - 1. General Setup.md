@@ -769,7 +769,7 @@ PublicKey = XYZ123456ABC=
 PresharedKey = XYZ123456ABC=
 ```
 
-9. N
+9. Now, we have to add the client's c
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
