@@ -708,9 +708,9 @@ So, to create a connection between our server and client we have make two config
 
 4. Create the client's `.conf` file
    
-  ```bash
-  $ echo "[Interface]" > "/etc/wireguard/clients/${name}.conf"
-  ```
+    ```bash
+    $ echo "[Interface]" > "/etc/wireguard/clients/${name}.conf"
+    ```
 
    ⚠️ Make sure to give an unique IP address to any client! The `Address` setting sets the peer's static IP, so make sure to increment it for each client you add to Wireguard
 
