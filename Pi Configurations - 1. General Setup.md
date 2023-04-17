@@ -652,7 +652,8 @@ We will follow the official Pi-hole guide for setup Wireguard. All the necessary
     $ exit
     ```
 
-To check everything is running, you can 
+To check everything is running, you can run
+
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
