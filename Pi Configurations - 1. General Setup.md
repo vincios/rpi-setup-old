@@ -658,7 +658,7 @@ To check everything is running, you can run
 $ sudo wg
 ```
 
-
+the output should be something like 
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
