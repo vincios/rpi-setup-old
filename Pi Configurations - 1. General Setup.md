@@ -691,6 +691,10 @@ So, to create a connection between our server and client we have make two config
     ⚠️ Change the `name` variable value with the name you want give to the new client, for example `vincenzo-laptop`
 
 2. Create the client's private and public keys
+
+    ```bash
+
+    ```
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
