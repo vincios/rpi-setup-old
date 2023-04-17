@@ -674,7 +674,7 @@ Wireguard creates peer-to-peer connections (called VPN tunnels) between devices.
 
 So, to create a connection between our server and client we have make two configuration steps:
 
-1. Create a `.conf` file for the client: this file will contain the client's interface configuration and a `[peer]` section, 
+1. Create a `.conf` file for the client: this file will contain the client's interface configuration and a `[peer]` section
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
