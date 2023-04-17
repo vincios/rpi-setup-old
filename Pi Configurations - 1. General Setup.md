@@ -667,7 +667,7 @@ interface: wg0
   listening port: 47111
 ```
 
-Also, running `ifconfig`
+Also, running `ifconfig`, you should see a 
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
