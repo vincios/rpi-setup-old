@@ -816,6 +816,7 @@ $ sudo qrencode -t ansiutf8 < "/etc/wireguard/${name}.conf"
 
 
 After creating/copying the `.conf` file to your client, you may use the client you prefer to connect to your sever.
+
 You can check if your client successfully connected by, once again, running
 
 sudo wg
