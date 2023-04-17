@@ -627,6 +627,7 @@ We will follow the official Pi-hole guide for setup Wireguard. All the necessary
 
     ```bash
     $ sudo -i
+    # cd /etc/wireguard/
     
     ```
 
