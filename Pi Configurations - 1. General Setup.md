@@ -708,7 +708,8 @@ So, to create a connection between our server and client we have make two config
     $ wg genpsk > "/etc/wireguard/clients/${name}.psk"
     ```
 
-#### Create the client's `.conf`
+#### Create the client's `.conf` file
+
 4. Create the client's `.conf` file
    
     ```bash
