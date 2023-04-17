@@ -652,6 +652,7 @@ We will follow the official Pi-hole guide for setup Wireguard. All the necessary
     $ exit
     ```
 
+
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
