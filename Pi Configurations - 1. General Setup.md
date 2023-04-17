@@ -695,6 +695,8 @@ So, to create a connection between our server and client we have make two config
     ```bash
     $ wg genkey | tee "clients/${name}.key" | wg pubkey > "clients/${name}.pub"
     ```
+
+    
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
