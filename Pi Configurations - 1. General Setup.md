@@ -846,7 +846,7 @@ peer: XYZ123456ABC=   ⬅ Your peer's public key will be different
 ```
 
 ### Split Tunnel vs Full Tunnel
-In the steps above 
+In the steps above ()
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
