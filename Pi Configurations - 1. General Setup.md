@@ -773,7 +773,7 @@ PresharedKey = XYZ123456ABC=
 
     ```bash
     $ echo "" >> /etc/wireguard/wg0.conf
-    $ 
+    $ "# ${name}" >> /etc/wireguard/wg0.conf
     ```
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
