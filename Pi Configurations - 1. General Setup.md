@@ -825,7 +825,7 @@ $ sudo wg
 
 on the server. If everything works, it should show some traffic for your client:
 
-
+```bash
 interface: wg0
   public key: XYZ123456ABC=          ⬅ Your server's public key will be different
   private key: (hidden)
