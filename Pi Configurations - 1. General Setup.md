@@ -772,7 +772,8 @@ PresharedKey = XYZ123456ABC=
 9. Now, we have to add a new `[Peer]` section in the server's `.conf` file with the client's connection parameters
 
     ```bash
-
+    $ echo "" >> /etc/wireguard/wg0.conf
+    
     ```
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
