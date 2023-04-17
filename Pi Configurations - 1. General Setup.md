@@ -788,7 +788,7 @@ The server's `.conf` file (i.e. `/etc/wireguard/wg0.conf`) should look like this
 [Interface]
 Address = 10.100.0.1/24, fd08:4711::1/64
 ListenPort = 47111
-PrivateKey = +PRMjjysfrvfS0vc8LfzNHEiCv6Qnib1TClUA9bJH3M=
+PrivateKey = XYZ123456ABC=
 
 # ... other [Peer] sections
 
