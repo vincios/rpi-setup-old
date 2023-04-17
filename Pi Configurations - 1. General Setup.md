@@ -712,7 +712,7 @@ So, to create a connection between our server and client we have make two config
     $ echo "[Interface]" > "/etc/wireguard/clients/${name}.conf"
     ```
 
-5. Add the  IP address to the client's `.conf` file
+5. Add the IP address to the client's `.conf` file
 
     The `Address` setting of the `[interface]` section sets the peer's static IP, so make sure to increment it for each client you add to Wireguard. 
 
