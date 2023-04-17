@@ -794,7 +794,7 @@ PrivateKey = XYZ123456ABC=
 
 # client-name
 [Peer]
-PublicKey = c37iLVueF0j6V2kLneOd/A1x4ws8vTpNrrrrR/cM5RI=
+PublicKey = XYZ123456ABC=
 PresharedKey = fje3wIj3Cf/b+EWUQgeNdgwj7lyAOXUl5D1sybHYqpA=
 AllowedIPs = 10.100.0.2/32, fd08:4711::2/128
 ```
