@@ -732,7 +732,7 @@ So, to create a connection between our server and client we have make two config
 
 7. Add the server's connection parameters as `[peer]` section of the `.conf` file
 
-    Edit the `/` and paste the following 
+    Edit the `/` and paste the following content at the end
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
