@@ -744,7 +744,7 @@ So, to create a connection between our server and client we have make two config
     💡 About these parameters:
     - `AllowedIPs`: see the description of the section [####]()
     - `Endpoint`: set your server public IP or domain. Tipically, your duckdns domain
-    - `PersistentKeepalive`: see the description on the (pihole) guide
+    - `PersistentKeepalive`: see the description on the [] guide
 
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
