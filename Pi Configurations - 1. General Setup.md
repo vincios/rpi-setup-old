@@ -669,7 +669,8 @@ interface: wg0
 
 Also, running `ifconfig`, you should see a `wg0` interface listed.
 
-### Add l
+### Add clients
+As we have seen, 
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
