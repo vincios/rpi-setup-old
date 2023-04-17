@@ -831,7 +831,7 @@ interface: wg0
   private key: (hidden)
   listening port: 47111
 
-peer: F+80gbmHVlOrU+es13S18oMEX2g=   ⬅ Your peer's public key will be different
+peer: XYZ123456ABC=   ⬅ Your peer's public key will be different
   preshared key: (hidden)
   allowed ips: 10.100.0.2/32
   latest handshake: 32 seconds ago
