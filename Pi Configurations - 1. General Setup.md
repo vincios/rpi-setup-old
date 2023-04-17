@@ -733,6 +733,13 @@ So, to create a connection between our server and client we have make two config
 7. Add the server's connection parameters as `[peer]` section of the `.conf` file
 
     Edit the `/` and paste the following content at the end
+
+    ```ini
+[Peer]
+AllowedIPs = 10.100.0.1/32, fd08:4711::1/128
+Endpoint = [your public IP or domain]:47111
+PersistentKeepalive = 25
+    ```
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
