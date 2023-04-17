@@ -623,6 +623,8 @@ We will follow the official Pi-hole guide for setup Wireguard. All the necessary
     $ sudo apt install wireguard wireguard-tools
     ```
 
+2. Use a sudo shell to generate the 
+
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
