@@ -749,7 +749,7 @@ So, to create a connection between our server and client we have make two config
 8. Add the server's public key to the client's `.conf` file
 
     ```bash
-    
+    $ 
     ```
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
