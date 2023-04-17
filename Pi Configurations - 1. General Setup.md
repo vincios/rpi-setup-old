@@ -693,7 +693,7 @@ So, to create a connection between our server and client we have make two config
 2. Create the client's private and public keys
 
     ```bash
-    $ wg genkey | tee "/etc/wireguard/clients/${name}.key" | wg pubkey > "clients/${name}.pub"
+    $ wg genkey | tee "/etc/wireguard/clients/${name}.key" | wg pubkey > "/etc/wireguard/clients/${name}.pub"
     ```
 
 
