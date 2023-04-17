@@ -698,7 +698,7 @@ So, to create a connection between our server and client we have make two config
 
     ⚠️ Create the `/etc/wireguard/clients/` folder if doesn't exists
 
-3. Create a 
+3. Generate a pre-shared key 
 
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
