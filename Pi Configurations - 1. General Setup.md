@@ -629,7 +629,7 @@ We will follow the official Pi-hole guide for setup Wireguard. All the necessary
     $ sudo -i
     $ cd /etc/wireguard/
     $ umask 077
-  \$
+    $
     ```
 
 ## Install Pi-hole
