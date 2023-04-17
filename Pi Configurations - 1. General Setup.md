@@ -647,7 +647,7 @@ We will follow the official Pi-hole guide for setup Wireguard. All the necessary
 4. Add the server's private key (written in the `server.key` file) to the config file
 
     ```bash
-    $ 
+    $ echo "PrivateKey = $(cat /etc/wireguard/server.key)" >> /etc/wireguard/wg0.conf
     ```
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
