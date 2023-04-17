@@ -636,7 +636,7 @@ We will follow the official Pi-hole guide for setup Wireguard. All the necessary
 
 3. Create the `/etc/wireguard/wg0.conf` file and paste the following content
 
-
+  
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
