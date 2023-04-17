@@ -688,7 +688,7 @@ So, to create a connection between our server and client we have make two config
     $ name="client_name"
     ```
 
-    ⚠️ Change the `name` variable value with the name you want give to the new client
+    ⚠️ Change the `name` variable value with the name you want give to the new client, for example `vincenzo-laptop`
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
