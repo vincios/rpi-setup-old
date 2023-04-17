@@ -765,7 +765,7 @@ PrivateKey = uMomlzfqqcVBp8xaQO1rYvL0xLF1qPsxJKg3LpVZ8VY=
 AllowedIPs = 10.100.0.1/32, fd08:4711::1/128
 Endpoint = [your public IP or domain]:47111
 PersistentKeepalive = 25
-PublicKey = 8k8gb8AFhjPx7zHOkagWR0fWDHHEyioWTp5Jf0pVkFM=
+PublicKey = 8k8gb8AFhjPx7zHOkagWR0fWDHPEyioWTp5Jf0pVkFM=
 PresharedKey = fje3wIj3Cf/b+EWUQgeNdgwj7lyAOXUl5D1sybHYqpA=
 ```
 ## Install Pi-hole
