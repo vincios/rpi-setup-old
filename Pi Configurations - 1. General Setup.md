@@ -823,7 +823,7 @@ You can check if your client successfully connected by running
 $ sudo wg
 ```
 
-on the server. if everything works, it should show some traffic for your client:
+on the server. If everything works, it should show some traffic for your client:
 
 interface: wg0
   public key: XYZ123456ABC=          ⬅ Your server's public key will be different
