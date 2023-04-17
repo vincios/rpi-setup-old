@@ -877,7 +877,7 @@ In a split tunnel, only DNS request packets are routed throught the tunnel, whil
 	$ git clone https://github.com/anudeepND/whitelist.git
     $ sudo python3 whitelist/scripts/whitelist.py
 	```
-d
+
 Notes: 
 - Current block lists are taken from [here](https://www.andreadraghetti.it/block-list-e-white-list-per-pi-hole-e-ad-blocker/).
 
