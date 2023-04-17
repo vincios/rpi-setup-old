@@ -635,6 +635,8 @@ We will follow the official Pi-hole guide for setup Wireguard. All the necessary
     💡 This will generate two files, the private key `server.key` file and public key `server.pub` file. The public key is for telling the world, the privatekey file is secret and should stay on the computer it was generated on. You'll need to paste the contents of these files in the config file, since WireGuard doesn’t support referencing them by path yet.
 
 3. Create the `/etc/wireguard/wg0.conf` file and paste the following code
+
+  
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
