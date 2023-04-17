@@ -759,7 +759,7 @@ Now, your client's `.conf` file (i.e. `/etc/wireguard/clients/${name}.conf`) sho
 [Interface]
 Address = 10.100.0.[X]/32, fd08:4711::[X]/128
 DNS = 10.100.0.1
-PrivateKey = uMomlzfqqcVBp8xaQO1rYvL0xLF1qPsxJKg3LpVZ8VY=
+PrivateKey = XYZ123456ABC=
 
 [Peer]
 AllowedIPs = 10.100.0.1/32, fd08:4711::1/128
