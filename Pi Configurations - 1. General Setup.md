@@ -815,7 +815,7 @@ You can now copy the client's `.conf` file to your client. If the client is a mo
 
 ```bash
 $ sudo -i
-$ sudo qrencode -t ansiutf8 < "/etc/wireguard/${name}.conf"
+$ sudo qrencode -t ansiutf8 < "/etc/wireguard/clients/${name}.conf"
 $ exit
 ```
 
