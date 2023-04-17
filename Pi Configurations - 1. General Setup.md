@@ -729,6 +729,8 @@ So, to create a connection between our server and client we have make two config
     ```
 
     💡 We set the server's IP `10.100.0.1` in the `DNS` setting since we will install Pi-hole on the server
+
+7. 
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
