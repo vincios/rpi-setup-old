@@ -719,7 +719,7 @@ So, to create a connection between our server and client we have make two config
     ```bash
     $ echo "Address = 10.100.0.[X]/32, fd08:4711::[X]/128" >> "/etc/wireguard/clients/${name}.conf"
     ```
-    ⚠️ Don't forget to edit the `[X]` part of the address. 
+    ⚠️ Don't forget to edit the `[X]` part of the address. Increment it for each clients 
 
    
 ## Install Pi-hole
