@@ -721,7 +721,9 @@ So, to create a connection between our server and client we have make two config
     ```
     ⚠️ Don't forget to edit the `[X]` part of the address. Increment it for each client you add
 
-6. Add the DNS setting and client's private key
+6. Add the DNS setting and client's private key to the `.conf` file
+
+  
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
