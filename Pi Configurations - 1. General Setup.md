@@ -768,6 +768,7 @@ PersistentKeepalive = 25
 PublicKey = 8k8gb8AFhjPx7zHOkagWR0fWDHPEyioWTp5Jf0pVkFM=
 PresharedKey = fje3wIj3Cf/b+EWUQgeNdgwj0lyAOXUl5D1sybHYqpA=
 ```
+
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
