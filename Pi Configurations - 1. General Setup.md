@@ -623,7 +623,7 @@ We will follow the official Pi-hole guide for setup Wireguard. All the necessary
     $ sudo apt install wireguard wireguard-tools
     ```
 
-2. Use a sudo shell to generate the server public and private keys
+2. Use a sudo shell to generate the server public and private keys in the `/etc/wiregurard/` folder
 
     ```bash
 
