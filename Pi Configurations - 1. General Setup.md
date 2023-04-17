@@ -780,7 +780,7 @@ PresharedKey = XYZ123456ABC=
     $ echo "AllowedIPs = 10.100.0.[X]/32, fd08:4711::[X]/128" >> /etc/wireguard/wg0.conf
     ```
 
-    
+    ⚠️ Don't forget to 
 
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
