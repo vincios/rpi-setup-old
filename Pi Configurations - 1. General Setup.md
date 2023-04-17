@@ -670,7 +670,7 @@ interface: wg0
 Also, running `ifconfig`, you should see a `wg0` interface listed.
 
 ### Add clients
-In a Wireguard VPN each peer must have a `.conf` file containing the peer 
+In a Wireguard VPN each peer must have a `.conf` file containing the peer's inteface configuration and a list of peers the 
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
