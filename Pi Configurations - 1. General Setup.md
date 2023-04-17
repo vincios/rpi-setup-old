@@ -712,7 +712,7 @@ So, to create a connection between our server and client we have make two config
     $ echo "[Interface]" > "/etc/wireguard/clients/${name}.conf"
     ```
 
-5. Add the client's interface IP address to the client
+5. Add the client's interface IP address to the `.conf` file
 
     ```bash
     $ echo "Address = 10.100.0.[X]/32, fd08:4711::[X]/128" >> "/etc/wireguard/clients/${name}.conf"
