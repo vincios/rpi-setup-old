@@ -743,7 +743,7 @@ So, to create a connection between our server and client we have make two config
 
     💡 About these parameters:
     - `AllowedIPs`: see the description of the section [####]()
-    - `Endpoint`: your sever ip
+    - `Endpoint`: set your server IP
 
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
