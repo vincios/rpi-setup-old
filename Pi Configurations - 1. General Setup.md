@@ -819,7 +819,7 @@ $ sudo qrencode -t ansiutf8 < "/etc/wireguard/clients/${name}.conf"
 $ exit
 ```
 
->💡 You can directly scan this QR code with the official WireGuard app after clicking on the blue plus symbol in the lower right corner.
+>💡 You can directly scan this QR code with the official WireGuard app after clicking on the blue plus symbol in the lower right corner
 
 
 After creating/copying the `.conf` file to your client, you may use the client you prefer to connect to your sever.
