@@ -659,6 +659,13 @@ $ sudo wg
 ```
 
 the output should be something like 
+
+```bash
+interface: wg0
+  public key: XYZ123456ABC=   ⬅ Your public key will be different
+  private key: (hidden)
+  listening port: 47111
+```
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
