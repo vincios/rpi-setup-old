@@ -728,7 +728,7 @@ So, to create a connection between our server and client we have make two config
     $ echo "PrivateKey = $(cat "/etc/wireguard/clients/${name}.key")" >> "/etc/wireguard/clients/${name}.conf"
     ```
 
-    💡 We set the server's IP `10.100.0.1` in the `DNS` setting since we will install the Pi-hole DNS server on it
+    💡 We set the server's IP `10.100.0.1` in the `DNS` setting since we will install Pi-hole DNS server on it
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
