@@ -805,6 +805,35 @@ AllowedIPs = 10.100.0.[X]/32, fd08:4711::[X]/128
     $ wg syncconf wg0 <(wg-quick strip wg0)
     ```
 
+You can now copy the configuration file to your client (if you created the config on the server). If the client is a mobile device such as a phone, qrencode can be used to generate a scanable QR code:
+
+sudo qrencode -t ansiutf8 < "/etc/wireguard/${name}.conf"
+
+(you may need to install qrencode using sudo apt-get install qrencode)
+
+You can directly scan this QR code with the official WireGuard app after clicking on the blue plus symbol in the lower right corner.
+Connect to your WireGuard VPN¶
+
+After creating/copying the connection information over to your client, you may use the client you prefer to connect to your system. Mind that setting up auto-start of the WireGuard connection may lead to issues if you are doing this too early (when the system cannot resolve DNS). See our FAQ for further hints.
+
+You can check if your client successfully connected by, once again, running
+
+sudo wg
+
+on the server. It should show some traffic for your client if everything works:
+
+interface: wg0
+  public key: XYZ123456ABC=          ⬅ Your server's public key will be different
+  private key: (hidden)
+  listening port: 47111
+
+peer: F+80gbmHVlOrU+es13S18oMEX2g=   ⬅ Your peer's public key will be different
+  preshared key: (hidden)
+  allowed ips: 10.100.0.2/32
+  latest handshake: 32 seconds ago
+  transfer: 3.43 KiB received, 188 B sent
+
+
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
