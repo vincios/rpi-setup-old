@@ -674,7 +674,7 @@ Wireguard creates peer-to-peer connections (called VPN tunnels) between devices.
 
 So, to create a connection between our server and client we have make two configuration steps:
 
-1. Create a `.conf` file for the client (also known as `Profile`): this file will contain the client's interface configuration and a `[peer]` section containing the parameters for the connection with the server
+1. Create a `.conf` file for the client (also known as `VPN Profile`): this file will contain the client's interface configuration and a `[peer]` section containing the parameters for the connection with the server
 2. Create, in the server's `.conf` file, a `[peer]` section containing parameter fo the connection with the client
 
 💡 For the sake of simplicity, we will create the client's `.conf` file on the server itself. This, however, means that you need to store this config file securely, as it contains the private key of your client. An alternative way of doing this is to generate the `.conf` file locally on your client and add the necessary lines to your server's configuration.
