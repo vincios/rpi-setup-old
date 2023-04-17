@@ -743,7 +743,8 @@ So, to create a connection between our server and client we have make two config
 
     💡 About these parameters:
     - `AllowedIPs`: see the description of the section [####]()
-    - `Endpoint`: set your server IP
+    - `Endpoint`: set your server public IP or domain. Tipically, your duckdns domain
+    - 
 
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
