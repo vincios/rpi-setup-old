@@ -732,7 +732,7 @@ So, to create a connection between our server and client we have make two config
 
 7. Add the server's connection parameters as `[peer]` section of the `.conf` file
 
-    Edit the `/etc/wireguard/clients/${name}.conf` and paste the following content at the end
+    Edit the `/etc/wireguard/clients/${name}.conf` file and paste the following content at the end
 
     ```ini
     [Peer]
