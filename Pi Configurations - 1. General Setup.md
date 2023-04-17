@@ -739,7 +739,7 @@ So, to create a connection between our server and client we have make two config
 
     ```ini
     [Peer]
-    AllowedIPs = 10.100.0.1/32, fd08:4711::1/128, 192.168.1.0/24
+    AllowedIPs = 10.100.0.1/32, fd08:4711::1/128
     Endpoint = [your public IP or domain]:47111
     PersistentKeepalive = 25
     ```
