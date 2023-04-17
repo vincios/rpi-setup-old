@@ -687,6 +687,8 @@ So, to create a connection between our server and client we have make two config
     $ umask 077
     $ name="client_name"
     ```
+
+    
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
