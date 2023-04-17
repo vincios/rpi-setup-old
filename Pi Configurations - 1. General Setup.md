@@ -741,7 +741,8 @@ So, to create a connection between our server and client we have make two config
     PersistentKeepalive = 25
     ```
 
-    💡 About these
+    💡 About these parameters:
+    
 
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
