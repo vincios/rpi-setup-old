@@ -799,6 +799,9 @@ PresharedKey = XYZ123456ABC=
 AllowedIPs = 10.100.0.[X]/32, fd08:4711::[X]/128
 ```
 
+10. Reload your server config to add the new client:
+
+wg syncconf wg0 <(wg-quick strip wg0)
 
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
