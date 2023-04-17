@@ -819,6 +819,7 @@ After creating/copying the `.conf` file to your client, you may use the client y
 
 You can check if your client successfully connected by running
 
+```bash
 sudo wg
 
 on the server. It should show some traffic for your client if everything works:
