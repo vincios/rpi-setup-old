@@ -636,11 +636,11 @@ We will follow the official Pi-hole guide for setup Wireguard. All the necessary
 
 3. Create the `/etc/wireguard/wg0.conf` file and paste the following content
 
-  ```ini
-  [Interface]
-  Address = 10.100.0.1/24, fd08:4711::1/64
-  ListenPort = 47111
-  ```  
+    ```ini
+    [Interface]
+    Address = 10.100.0.1/24, fd08:4711::1/64
+    ListenPort = 47111
+    ```  
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
