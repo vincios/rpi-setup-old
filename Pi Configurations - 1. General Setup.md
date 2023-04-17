@@ -781,6 +781,7 @@ PresharedKey = XYZ123456ABC=
     ```
 
     ⚠️ Don't forget to replace the `[X]` part of the last command with the client's IP address set in step 5
+    
 
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
