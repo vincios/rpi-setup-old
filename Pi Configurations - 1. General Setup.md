@@ -813,7 +813,7 @@ $ sudo qrencode -t ansiutf8 < "/etc/wireguard/${name}.conf"
 ```
 
 You can directly scan this QR code with the official WireGuard app after clicking on the blue plus symbol in the lower right corner.
-Connect to your WireGuard VPN¶
+
 
 After creating/copying the connection information over to your client, you may use the client you prefer to connect to your system. Mind that setting up auto-start of the WireGuard connection may lead to issues if you are doing this too early (when the system cannot resolve DNS). See our FAQ for further hints.
 
