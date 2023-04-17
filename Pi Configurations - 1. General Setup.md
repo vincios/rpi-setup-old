@@ -750,7 +750,7 @@ So, to create a connection between our server and client we have make two config
 
     ```bash
     $ echo "PublicKey = $(cat /etc/wireguard/server.pub)" >> "/etc/wireguard/clients/${name}.conf"
-    $ 
+    $ echo "PresharedKey = $(cat "/etc/wireguard/clients/${name}.psk")" >> "/etc/wireguard/clients/${name}.conf"
     ```
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
