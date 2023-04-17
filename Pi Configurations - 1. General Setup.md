@@ -769,7 +769,7 @@ PublicKey = XYZ123456ABC=
 PresharedKey = XYZ123456ABC=
 ```
 
-9. Now, we have to add a new `[Peer]` section in the server's `.conf` file
+9. Now, we have to add a new `[Peer]` section in the server's `.conf` file the client's connection parameters
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
