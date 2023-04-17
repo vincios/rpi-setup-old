@@ -630,7 +630,7 @@ We will follow the official Pi-hole guide for setup Wireguard. All the necessary
     $ cd /etc/wireguard/
     $ umask 077  # This makes sure credentials don't leak in a race condition
     $ wg genkey | tee server.key | wg pubkey > server.pub
-    
+    $ exit
     ```
 
 ## Install Pi-hole
