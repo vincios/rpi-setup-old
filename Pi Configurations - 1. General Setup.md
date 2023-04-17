@@ -620,7 +620,7 @@ We will follow the official Pi-hole guide for setup Wireguard. All the necessary
 
     ```bash
     $ sudo apt update
-    
+    $ 
     ```
 
 ## Install Pi-hole
