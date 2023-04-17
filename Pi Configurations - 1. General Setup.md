@@ -616,6 +616,7 @@ In our setup, we have a server peer (the pi) to which all client peers (the othe
 
 We will follow the official Pi-hole guide for setup Wireguard. All the necessary steps are briefly summarized below, however for a more detailed description, you can follow the [guide](https://docs.pi-hole.net/guides/vpn/wireguard/server/) as well.
 
+
 1. Install Wireguard
 
     ```bash
