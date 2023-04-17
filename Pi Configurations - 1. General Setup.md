@@ -749,7 +749,8 @@ So, to create a connection between our server and client we have make two config
 8. Add the server's public key and the pre-shared key to the client's `.conf` file
 
     ```bash
-    $ 
+    $ echo "PublicKey = $(cat /etc/wireguard/server.pub)" >> "/etc/wireguard/clients/${name}.conf"
+    
     ```
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
