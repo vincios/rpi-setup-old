@@ -790,7 +790,8 @@ Address = 10.100.0.1/24, fd08:4711::1/64
 ListenPort = 47111
 PrivateKey = +PRMjjysfrvfS0vc8LfzNHEiCv6Qnib1TClUA9bJH3M=
 
-# ... 
+# ... other [Peer] sections
+
 # vincenzo-pixel7
 [Peer]
 PublicKey = c37iLVueF0j6V2kLneOd/A1x4ws8vTpNrrrrR/cM5RI=
