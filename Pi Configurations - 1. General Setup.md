@@ -666,6 +666,8 @@ interface: wg0
   private key: (hidden)
   listening port: 47111
 ```
+
+Also, running `ifconfig`
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
