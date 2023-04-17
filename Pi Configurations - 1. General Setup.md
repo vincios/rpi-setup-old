@@ -792,7 +792,7 @@ PrivateKey = +PRMjjysfrvfS0vc8LfzNHEiCv6Qnib1TClUA9bJH3M=
 
 # ... other [Peer] sections
 
-# vincenzo-pixel7
+# client_name
 [Peer]
 PublicKey = c37iLVueF0j6V2kLneOd/A1x4ws8vTpNrrrrR/cM5RI=
 PresharedKey = fje3wIj3Cf/b+EWUQgeNdgwj7lyAOXUl5D1sybHYqpA=
