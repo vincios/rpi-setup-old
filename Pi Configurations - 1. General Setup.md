@@ -836,7 +836,7 @@ peer: F+80gbmHVlOrU+es13S18oMEX2g=   ⬅ Your peer's public key will be differen
   allowed ips: 10.100.0.2/32
   latest handshake: 32 seconds ago
   transfer: 3.43 KiB received, 188 B sent
-
+```
 
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
