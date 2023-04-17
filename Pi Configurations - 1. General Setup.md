@@ -709,7 +709,8 @@ So, to create a connection between our server and client we have make two config
 4. Create the client's `.conf` file
    
    ```bash
-   
+   $ echo "[Interface]" > "/etc/wireguard/clients/${name}.conf"
+   $ 
    
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
