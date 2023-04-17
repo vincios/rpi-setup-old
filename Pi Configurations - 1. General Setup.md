@@ -744,7 +744,7 @@ So, to create a connection between our server and client we have make two config
     💡 About these parameters:
     - `AllowedIPs`: see the description of the section [####]()
     - `Endpoint`: set your server public IP or domain. Tipically, your duckdns domain
-    - `PersistentKeepalive`: see the note on the [pihole](https://docs.pi-hole.net/guides/vpn/wireguard/client/#create-client-configuration) documentation. Briefly, we send a keepalive packet every 25 second to the server to prevent the (router/server's) NAT closes the client's mapping rule
+    - `PersistentKeepalive`: see the note on the [pihole](https://docs.pi-hole.net/guides/vpn/wireguard/client/#create-client-configuration) documentation. Briefly, we send a keepalive packet every 25 second to the server to prevent the (router/server's) NAT deletes the client's mapping rule
 
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
