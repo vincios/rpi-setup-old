@@ -670,7 +670,7 @@ interface: wg0
 Also, running `ifconfig`, you should see a `wg0` interface listed.
 
 ### Add clients
-Wireguard creates peer-to-peer connections (called VPN tunnels) between devices. Each peer must have a `.conf` file containing the peer's interface configuration (`[interface]` section) and list of `[peer]` sections, one for each peer i will be connected.
+Wireguard creates peer-to-peer connections (called VPN tunnels) between devices. Each peer must have a `.conf` file containing the peer's interface configuration (`[interface]` section) and list of `[peer]` sections, one for each peer it will be connected.
 
 So, to create a connection between our server and client we have to 
 ## Install Pi-hole
