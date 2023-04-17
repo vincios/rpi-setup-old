@@ -715,7 +715,7 @@ So, to create a connection between our server and client we have make two config
    $ echo "PrivateKey = $(cat "/etc/wireguard/clients/${name}.key")" >> "/etc/wireguard/clients/${name}.conf"
    ```
 
-   ⚠️ Make sure to give an unique IP address to any client! The `Address` setting sets the peer's static IP
+   ⚠️ Make sure to give an unique IP address to any client! The `Address` setting sets the peer's static IP, so make sure to increment 
    
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
