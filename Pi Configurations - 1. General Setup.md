@@ -772,6 +772,7 @@ PublicKey = XYZ123456ABC=
 PresharedKey = XYZ123456ABC=
 ```
 
+#### Add the new client to the server's `.conf` file
 
 9. Now we have to add a new `[Peer]` section in the server's `.conf` file with the client's connection parameters
 
