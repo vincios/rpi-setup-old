@@ -721,7 +721,7 @@ So, to create a connection between our server and client we have make two config
     ```
     ⚠️ Don't forget to edit the `[X]` part of the address. Increment it for each client you add
 
-6. Add the DNS setting and client's private key to the `.conf` file
+6. Add the DNS setting and client's private key to the client's `.conf` file
 
     ```bash
     $ echo "DNS = 10.100.0.1" >> "/etc/wireguard/clients/${name}.conf"
