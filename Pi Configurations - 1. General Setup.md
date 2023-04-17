@@ -685,7 +685,7 @@ So, to create a connection between our server and client we have make two config
     $ sudo -i
     $ cd /etc/wireguard/
     $ umask 077
-    $ name="client_name"
+    $ name="clientname"
     ```
 
     ⚠️ Change the `name` variable value with the name you want give to the new client, for example `vincenzo-laptop`
