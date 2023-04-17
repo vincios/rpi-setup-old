@@ -703,7 +703,7 @@ So, to create a connection between our server and client we have make two config
     We furthermore generate a pre-shared key (PSK) in addition to the keys above. This adds an additional layer of symmetric-key cryptography to be mixed into the already existing public-key cryptography and is mainly for post-quantum resistance.
 
     ```bash
-    $ 
+    $ wg genpsk > "/etc/wireguard/clients/${name}.psk"
     ```
 
 ## Install Pi-hole
