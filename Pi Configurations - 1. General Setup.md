@@ -785,7 +785,16 @@ PresharedKey = XYZ123456ABC=
 The server's `.conf` file (i.e. `/etc/wireguard/wg0.conf`) should look like this
 
 ```ini
+[Interface]
+Address = 10.100.0.1/24, fd08:4711::1/64
+ListenPort = 47111
+PrivateKey = +PRMjjysfrvfS0vc8LfzNHEiCv6Qnib1TClUA9bJH3M=
 
+# vincenzo-pixel7
+[Peer]
+PublicKey = c37iLVueF0j6V2kLneOd/A1x4ws8vTpNrrrrR/cM5RI=
+PresharedKey = fje3wIj3Cf/b+EWUQgeNdgwj7lyAOXUl5D1sybHYqpA=
+AllowedIPs = 10.100.0.2/32, fd08:4711::2/128
 ```
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
