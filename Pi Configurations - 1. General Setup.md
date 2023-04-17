@@ -708,7 +708,7 @@ So, to create a connection between our server and client we have make two config
 
 4. Create the client's `.conf` file
    
-   ```bash
+  ```bash
    $ echo "[Interface]" > "/etc/wireguard/clients/${name}.conf"
   
 
