@@ -642,7 +642,7 @@ We will follow the official Pi-hole guide for setup Wireguard. All the necessary
     ListenPort = 47111
     ```  
 
-    
+    💡 In the `[Interface]` section of the config file we 
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
