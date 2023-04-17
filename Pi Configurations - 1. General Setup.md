@@ -760,7 +760,7 @@ Now, your client's `.conf` file (i.e. `/etc/wireguard/clients/${name}.conf`) sho
 
 ```ini
 [Interface]
-Address = 10.100.0.[X]/32, fd08:4711::[X]/128
+Address = 10.100.0.[X]/32, fd08:4711::[X]/128, 192.168.2.0/24
 DNS = 10.100.0.1
 PrivateKey = XYZ123456ABC=
 
