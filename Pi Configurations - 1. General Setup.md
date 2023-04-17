@@ -682,7 +682,8 @@ So, to create a connection between our server and client we have make two config
 1. Enter in a sudo session
 
     ```bash
-
+    $ sudo -i
+    
     ```
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
