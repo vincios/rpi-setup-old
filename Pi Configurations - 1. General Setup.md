@@ -815,8 +815,7 @@ $ sudo qrencode -t ansiutf8 < "/etc/wireguard/${name}.conf"
 💡 You can directly scan this QR code with the official WireGuard app after clicking on the blue plus symbol in the lower right corner.
 
 
-After creating/copying the `.conf` file to your client, you may use the client you prefer to connect to your system. Mind that setting up auto-start of the WireGuard connection may lead to issues if you are doing this too early (when the system cannot resolve DNS). See our FAQ for further hints.
-
+After creating/copying the `.conf` file to your client, you may use the client you prefer to connect to your system. 
 You can check if your client successfully connected by, once again, running
 
 sudo wg
