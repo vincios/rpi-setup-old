@@ -716,8 +716,6 @@ So, to create a connection between our server and client we have make two config
 
     ```bash
     $ echo "Address = 10.100.0.[X]/32, fd08:4711::[X]/128" >> "/etc/wireguard/clients/${name}.conf"
-    $ echo "DNS = 10.100.0.1" >> "/etc/wireguard/clients/${name}.conf"
-    $ echo "PrivateKey = $(cat "/etc/wireguard/clients/${name}.key")" >> "/etc/wireguard/clients/${name}.conf"
     ```
    ⚠️ Make sure to give an unique IP address to any client! The `Address` setting sets the peer's static IP, so make sure to increment it for each client you add to Wireguard
 
