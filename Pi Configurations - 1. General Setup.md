@@ -857,10 +857,10 @@ We need to change some roules on the server's firewall to allow the packets forw
 #### Enable IP forwarding on the server
 1. Edit the file `/etc/sysctl.d/99-sysctl.conf` and uncomment the lines
 
-```ini
-net.ipv4.ip_forward = 1
-net.ipv6.conf.all.forwarding = 1
-```
+    ```ini
+    net.ipv4.ip_forward = 1
+    net.ipv6.conf.all.forwarding = 1
+    ```
 
 #### Accessing your home LAN
 
