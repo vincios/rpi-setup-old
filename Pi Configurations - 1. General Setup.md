@@ -935,7 +935,7 @@ PublicKey = XYZ123456ABC=
 PresharedKey = XYZ123456ABC=
 ```
 
-With this configuration, when your client tries to send a packet to an IP address into your LAN (i.e. its Destination address is in the ), that packet will be intercepted by the wireguard interface and routed through the tunnel to the server (even outside the LAN). Then, the server will forward it to the right LAN client.
+With this configuration, when your client tries to send a packet to an IP address into your LAN (i.e. its Destination address is in the 192.168.1.), that packet will be intercepted by the wireguard interface and routed through the tunnel to the server (even outside the LAN). Then, the server will forward it to the right LAN client.
 
 
 ## Install Pi-hole
