@@ -886,7 +886,7 @@ We will use the Wireguard `PostUp` and `PreDown` configuration settings. The `Po
 
 1. Edit the `/etc/wireguard/wg0.conf` file and add these lines under the `[Interface]` section
 
-    ```ini
+    ```bash
     PostUp = ufw route allow in on wg0 out on eth0
     PostUp = nft add table ip wireguard; nft add chain ip wireguard wireguard_chain {type nat hook postrouting priority srcnat\; policy accept\;}; nft add rule ip wireguard wireguard_chain counter packets 0 bytes 0 masquerade
     PostUp = nft add table ip6 wireguard; nft add chain ip6 wireguard wireguard_chain {type nat hook postrouting priority srcnat\; policy accept\;}; nft add rule ip6 wireguard wireguard_chain counter packets 0 bytes 0 masquerade
