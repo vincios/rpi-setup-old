@@ -927,7 +927,9 @@ AllowedIPs = 10.100.0.1/32, fd08:4711::1/128, 192.168.1.0/24
 # ... other Peer settings
 ```
 
-So, when your client tries to send a packet to an IP address of your LAN, that packet will be intercepted by the wireguard interface and routed through the tunnel to the server (even outside the LAN). Then, the server will forward it to the 
+So, when your client tries to send a packet to an IP address of your LAN, that packet will be intercepted by the wireguard interface and routed through the tunnel to the server (even outside the LAN). Then, the server will forward it to the right LAN client.
+
+
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
