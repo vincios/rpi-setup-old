@@ -956,7 +956,7 @@ $ sudo find /etc/wireguard/clients/ -type f -name "*.conf" -exec sed -i '/^Allow
 #### Route the entire Internet traffic through the WireGuard tunnel
 >⚠️ The following assumes you have already prepared your server for [IP forwarding](#enable-ip-forwarding-on-the-server) and [enabled NAT](#enable-nat-on-the-server).
 
-Simply edit the client's `.conf` file (**NOT the server's one**) and replace the `AllowedIPs` 
+Simply edit the client's `.conf` file (**NOT the server's one**) and replace the `AllowedIPs` setting 
 
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
