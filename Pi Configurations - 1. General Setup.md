@@ -915,7 +915,7 @@ We will use the Wireguard `PostUp` and `PreDown` configuration settings. The `Po
 > - `nft add table ip6 wireguard; ...`: same as the previous one, but for IPv6
 
 
-#### Accessing your home LAN
+#### Accessing your server LAN
 >⚠️ The following assumes you have already prepared your server for [IP forwarding](#enable-ip-forwarding-on-the-server) and [enabled NAT](#enable-nat-on-the-server).
 
 
