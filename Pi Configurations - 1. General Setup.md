@@ -922,9 +922,17 @@ Simply edit the client's `.conf` file (**NOT the server's one**) and add your ho
 
 Example:
 ```ini
+[Interface]
+Address = 10.100.0.[X]/32, fd08:4711::[X]/128
+DNS = 10.100.0.1
+PrivateKey = XYZ123456ABC=
+
 [Peer]
-AllowedIPs = 10.100.0.1/32, fd08:4711::1/128, 192.168.1.0/24
-# ... other Peer settings
+AllowedIPs = 10.100.0.1/32, fd08:4711::1/128
+Endpoint = [your public IP or domain]:47111
+PersistentKeepalive = 25
+PublicKey = XYZ123456ABC=
+PresharedKey = XYZ123456ABC=
 ```
 
 So, when your client tries to send a packet to an IP address of your LAN, that packet will be intercepted by the wireguard interface and routed through the tunnel to the server (even outside the LAN). Then, the server will forward it to the right LAN client.
