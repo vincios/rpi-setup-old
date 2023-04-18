@@ -967,6 +967,7 @@ With this configuration, all packets sent by the client will be intercepted by t
 
 >💡 Instead of editing your existing configuration, you can easily add a new one with the modified `AllowedIPs` line as above. This will give you two VPN profiles and you can decide - at any time from mobile - which variant you want. 
 
+
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
