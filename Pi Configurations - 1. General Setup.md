@@ -916,7 +916,7 @@ We will use the Wireguard `PostUp` and `PreDown` configuration settings. The `Po
 
 
 #### Accessing your home LAN
-⚠️ The following assumes you have already prepared your Pi-hole for IP forwarding and enabled NAT.
+⚠️ The following assumes you have already prepared your server for IP forwarding and enabled NAT.
 
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
