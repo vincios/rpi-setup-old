@@ -945,7 +945,8 @@ Use this command to quickly edit the `AllowedIPs` setting of a client's `.conf`f
 $ 
 ```
 
-Or, use this command to quickly enable the LAN access feature for all the client's `.conf` files in your `/etc/wireguard/
+Or, use this command to quickly enable the LAN access feature for all the client's `.conf` files in your `/etc/wireguard/clients/` folder
+
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
