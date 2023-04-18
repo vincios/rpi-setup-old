@@ -920,7 +920,7 @@ We will use the Wireguard `PostUp` and `PreDown` configuration settings. The `Po
 
 Simply edit the client's `.conf` file (**NOT the server's one**) and add your home network ip (generally, `192.168.1.0/24`) to the `AllowedIPs` setting.
 
-Example of a client's :
+Example of a client's `.conf` file configured to :
 ```ini
 [Interface]
 Address = 10.100.0.[X]/32, fd08:4711::[X]/128
