@@ -951,7 +951,7 @@ Or, use this command to quickly enable the LAN access feature for all the client
 $ sudo find /etc/wireguard/clients/ -type f -name "*.conf" -exec sed -i '/^AllowedIPs =/ s/$/, 192.168.1.0\/24/' {} \;
 ```
 
->⚠️ Don't forget to share the new `.conf` file with your client
+>⚠️ Don't forget to share the edited `.conf` file with your client
 
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
