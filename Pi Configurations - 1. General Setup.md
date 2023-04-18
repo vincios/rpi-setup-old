@@ -939,7 +939,7 @@ With this configuration, when your client (outside the LAN) tries to send a pack
 
 >💡 You can also add this only to some client's `.conf` files. In this way, you'll enable the LAN access feature for only some clients, leaving the other ones isolated from your LAN.
 
-Use this command to quic
+Use this command to quickly add 
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
