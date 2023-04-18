@@ -895,7 +895,7 @@ We will use the Wireguard `PostUp` and `PreDown` configuration settings. The `Po
     PreDown = nft delete table ip6 wireguard
     ```
 
-    ⚠️ You may need to change the `eth0` interface with the one you use to connect to the LAN and to internet (for example, if you use wifi instead of ethernet). 
+    ⚠️ You may need to change the `eth0` interface with the one you use to connect to the LAN and to internet (for example, if you use wifi instead of ethernet). You can find the correct interface with the command `ip route list default`
 >💡 
 #### Accessing your home LAN
 
