@@ -937,7 +937,7 @@ PresharedKey = XYZ123456ABC=
 
 With this configuration, when your client (outside the LAN) tries to send a packet to an IP address into your LAN (i.e. its destination address is in the `192.168.1.0` range), that packet will be intercepted by the wireguard interface and routed through the tunnel to the server. Then, the server will forward it to the right LAN client.
 
-💡 You can also edit only sme enable the LAN access feature for only some clients, leaving the 
+💡 You can also add this only to some  enable the LAN access feature for only some clients, leaving the 
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
