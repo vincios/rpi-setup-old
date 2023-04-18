@@ -874,8 +874,7 @@ We need to change some roules on the server's firewall to allow the packets forw
     net.ipv4.ip_forward = 1
     net.ipv6.conf.all.forwarding = 1
     ```
-
-  they were enabled successfully.
+    they were enabled successfully.
 #### Accessing your home LAN
 
 ## Install Pi-hole
