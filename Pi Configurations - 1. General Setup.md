@@ -877,7 +877,7 @@ We need to change some roules on the server's firewall to allow the packets forw
 
     they were enabled successfully.
 
-Now your Wireguard server is a
+Now your Wireguard server is able to fo
 #### Accessing your home LAN
 
 ## Install Pi-hole
