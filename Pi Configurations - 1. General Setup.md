@@ -877,7 +877,7 @@ We need to change some roules on the server's firewall to allow the packets forw
 
     they were enabled successfully.
 
-Now your Wireguard server is able to forward the 
+Now your Wireguard server is able to forward the packets icoming from the wireguard interfcate to the 
 #### Accessing your home LAN
 
 ## Install Pi-hole
