@@ -903,7 +903,7 @@ We will use the Wireguard `PostUp` and `PreDown` configuration settings. The `Po
 
 >💡 Some details about the lines we have added to the configuration file:
 > - `nft add table ip wireguard; ...`: this rule configures *masquerading*, i.e. rewrites IPv4 traffic that comes in on the wireguard `wg0` interface to make it appear like it originates directly from the Wireguard server’s public IPv4 address
-> - `nft add table ip6 wireguard; ...`: Same as the previous one, but for IPv6
+> - `nft add table ip6 wireguard; ...`: same as the previous one, but for IPv6
 
 
 #### Accessing your home LAN
