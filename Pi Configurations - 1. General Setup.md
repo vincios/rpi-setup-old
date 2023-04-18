@@ -915,10 +915,10 @@ We will use the Wireguard `PostUp` and `PreDown` configuration settings. The `Po
 > - `nft add table ip6 wireguard; ...`: same as the previous one, but for IPv6
 
 
-#### Accessing your server LAN
+#### Accessing your home LAN
 >⚠️ The following assumes you have already prepared your server for [IP forwarding](#enable-ip-forwarding-on-the-server) and [enabled NAT](#enable-nat-on-the-server).
 
-
+To allow a c
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
