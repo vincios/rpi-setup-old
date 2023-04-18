@@ -963,7 +963,7 @@ Simply edit the client's `.conf` file (**NOT the server's one**) and add the def
 AllowedIPs = 0.0.0.0/0, ::/0
 ```
 
-
+With this configuration, all packets sent by the client will be 
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
