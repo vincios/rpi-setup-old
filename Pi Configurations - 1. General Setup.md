@@ -885,8 +885,8 @@ Now we have to edit the Wireguard server’s firewall to add rules that will ens
 We will use the Wireguard `PostUp` and `PreDown` configuration settings. The `PostUp` lines will run when the Wireguard server starts, the `PreDown` lines run when the Wireguard Server stops the VPN inteface. In this way we can add the NAT rules when the wireguard interface is up and delete them when the wireguard interface is taken down.
 
 1. Stop the `wg0` interface
-2. 
-3. Edit the `/etc/wireguard/wg0.conf` file and add these lines under the `[Interface]` section
+
+2. Edit the `/etc/wireguard/wg0.conf` file and add these lines under the `[Interface]` section
 
     ```bash
     PostUp = ufw route allow in on wg0 out on eth0
