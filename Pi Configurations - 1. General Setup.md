@@ -898,7 +898,7 @@ We will use the Wireguard `PostUp` and `PreDown` configuration settings. The `Po
     ⚠️ You may need to change the `eth0` interface with the one you use to connect to the LAN and to internet (for example, if you use wifi instead of ethernet). You can find the correct interface with the command `ip route list default`
 
 >💡 Some details about the lines we have added to the configuration file:
-
+> -
 #### Accessing your home LAN
 
 ## Install Pi-hole
