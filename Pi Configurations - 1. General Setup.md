@@ -978,6 +978,9 @@ For example, if you have a `vincenzo-laptop.conf`:
 ```bash
 sudo sed '/AllowedIPs =/c\AllowedIPs = 0.0.0.0/0, ::/0' /etc/wireguard/clients/vincenzo-laptop.conf > /etc/wireguard/clients/vincenzo-laptop-full.conf
 ```
+
+>⚠️ Don't forget to share the edited `.conf` file with your client
+
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
