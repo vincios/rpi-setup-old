@@ -924,7 +924,7 @@ Example:
 ```ini
 [Peer]
 AllowedIPs = 10.0.0.0/24, fd08:4711::/64, 192.168.2.0/24
-
+# ... other Peer settings
 ```
 
 ## Install Pi-hole
