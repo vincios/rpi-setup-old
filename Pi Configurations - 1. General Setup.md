@@ -965,7 +965,7 @@ AllowedIPs = 0.0.0.0/0, ::/0
 
 With this configuration, all packets sent by the client will be intercepted by the wireguard interface and routed through the tunnel.
 
->💡 Instead of editing your existing configuration, you can create a copy with the modified `AllowedIPs` line as above. This will give you two VPN profiles and you can decide - at any time from mobile - which variant you want. 
+>💡 Instead of editing your existing client's configuration, you can create a copy with the modified `AllowedIPs` line as above. This will give you two VPN profiles and you can decide - at any time from mobile - which variant you want. 
 
 Use this command to quickly create 
 ## Install Pi-hole
