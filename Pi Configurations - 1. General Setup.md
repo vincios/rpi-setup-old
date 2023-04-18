@@ -882,7 +882,7 @@ Now your Wireguard server is able to forward the packets icoming from the wiregu
 #### Enable NAT on the server
 Now we have to edit the Wireguard server’s firewall to add rules that will ensure traffic to and from the server and clients is routed correctly.
 
-1. Edit the 
+1. Edit the `/etc/wireguard/wg0.conf` file and add these lines 
 
 #### Accessing your home LAN
 
