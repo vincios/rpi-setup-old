@@ -953,6 +953,8 @@ $ sudo find /etc/wireguard/clients/ -type f -name "*.conf" -exec sed -i '/^Allow
 
 >⚠️ Don't forget to share the edited `.conf` file with your client
 
+#### Route the entire Internet traffic through the WireGuard tunnel
+
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
