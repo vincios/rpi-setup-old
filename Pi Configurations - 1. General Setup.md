@@ -942,7 +942,7 @@ With this configuration, when your client (outside the LAN) tries to send a pack
 Use this command to quickly edit the `AllowedIPs` setting of a client's `.conf`file:
 
 ```bash
-$ sudo sed '/^AllowedIPs =/ s/$/, 192.168.1.0\/24/' /etc/wireguard/clients/vincenzo-pixel7.conf
+$ sudo sed -i '/^AllowedIPs =/ s/$/, 192.168.1.0\/24/' /etc/wireguard/clients/vincenzo-pixel7.conf
 ```
 
 Or, use this command to quickly enable the LAN access feature for all the client's `.conf` files in your `/etc/wireguard/clients/` folder
