@@ -942,7 +942,7 @@ With this configuration, when your client (outside the LAN) tries to send a pack
 Use this command to quickly edit the `AllowedIPs` setting of a client's `.conf`file:
 
 ```bash
-$ sudo find /etc/wireguard/clients/ -type f -name "*.conf" -exec sed -i '/^AllowedIPs =/ s/$/, 192.168.1.0\/24/' {} \;
+$ 
 ```
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
