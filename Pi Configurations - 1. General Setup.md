@@ -759,7 +759,17 @@ So, to create a connection between our server and client we have make two config
 Now, your client's `.conf` file (i.e. `/etc/wireguard/clients/${name}.conf`) should look like this
 
 ```ini
+[Interface]
+Address = 10.100.0.[X]/32, fd08:4711::[X]/128
+DNS = 10.100.0.1
+PrivateKey = XYZ123456ABC=
 
+[Peer]
+AllowedIPs = 10.100.0.1/32, fd08:4711::1/128
+Endpoint = [your public IP or domain]:47111
+PersistentKeepalive = 25
+PublicKey = XYZ123456ABC=
+PresharedKey = XYZ123456ABC=
 ```
 
 #### Add the new client to the server's `.conf` file
