@@ -947,6 +947,8 @@ $
 
 Or, use this command to quickly enable the LAN access feature for all the client's `.conf` files in your `/etc/wireguard/clients/` folder
 
+```bash
+
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
