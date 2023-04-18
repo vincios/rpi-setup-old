@@ -899,7 +899,7 @@ We will use the Wireguard `PostUp` and `PreDown` configuration settings. The `Po
 
 >💡 Some details about the lines we have added to the configuration file:
 > - `ufw route allow in on wg0 out on eth0`: This rule will allow forwarding IPv4 and IPv6 traffic that comes in on the `wg0` interface to the `eth0` network interface on the server. It works in conjunction with the `net.ipv4.ip_forward` and `net.ipv6.conf.all.forwarding` sysctl values that you configured in the previous section
-> - `nft add table ip wireguard
+> - `nft add table ip wireguard; ...`
 #### Accessing your home LAN
 
 ## Install Pi-hole
