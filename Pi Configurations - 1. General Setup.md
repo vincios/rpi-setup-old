@@ -862,6 +862,7 @@ We need to change some roules on the server's firewall to allow the packets forw
     net.ipv6.conf.all.forwarding = 1
     ```
 
+2. 
 #### Accessing your home LAN
 
 ## Install Pi-hole
