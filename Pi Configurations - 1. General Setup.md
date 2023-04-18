@@ -882,7 +882,7 @@ Now your Wireguard server is able to forward the packets icoming from the wiregu
 #### Enable NAT on the server
 Now we have to edit the Wireguard server’s firewall to add rules that will ensure traffic to and from the server and clients is routed correctly.
 
-We will use the Wireguard `PostUp` and `PreDown` configuration settings to enable the . The `PostUp` lines will run when the WireGuard Server starts 
+We will use the Wireguard `PostUp` and `PreDown` configuration settings to enable the NAT rules when the . The `PostUp` lines will run when the WireGuard Server starts 
 1. Edit the `/etc/wireguard/wg0.conf` file and add these lines under the `[Interface]` section
 
     ```ini
