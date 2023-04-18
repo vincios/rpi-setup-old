@@ -880,7 +880,7 @@ We need to change some roules on the server's firewall to allow the packets forw
 Now your Wireguard server is able to forward the packets icoming from the wireguard interfce `wg0` to other interfaces (like the `eth0`).
 
 #### Enable NAT on the server
-Now we ahve to edit the WireGuard Server’s configuration to add firewall rules that will ensure traffic to and from the server and clients is routed correctly
+Now we ahve to edit the Wireguard Server’s configuration to add firewall rules that will ensure traffic to and from the server and clients is routed correctly
 
 #### Accessing your home LAN
 
