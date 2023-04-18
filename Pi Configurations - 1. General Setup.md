@@ -870,8 +870,8 @@ We need to change some roules on the server's firewall to allow the packets forw
 
     If you see the options repeated like
     
-    ```
-    
+    ```bash
+    # Output
     net.ipv4.ip_forward = 1
     net.ipv6.conf.all.forwarding = 1
     ```
