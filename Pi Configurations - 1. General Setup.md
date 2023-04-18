@@ -902,7 +902,7 @@ We will use the Wireguard `PostUp` and `PreDown` configuration settings. The `Po
     ⚠️ You may need to change the `eth0` interface with the one you use to connect to the LAN and to internet (for example, if you use wifi instead of ethernet). You can find the correct interface with the command `ip route list default`
 
 >💡 Some details about the lines we have added to the configuration file:
-> - `nft add table ip wireguard; ...`: This rule configures *masquerading*, i.e. rewrites IPv4 traffic that comes in on the wireguard `wg0` interface to make it appear like it originates directly from the Wireguard server’s public IPv4 address
+> - `nft add table ip wireguard; ...`: this rule configures *masquerading*, i.e. rewrites IPv4 traffic that comes in on the wireguard `wg0` interface to make it appear like it originates directly from the Wireguard server’s public IPv4 address
 > - `nft add table ip6 wireguard; ...`: Same as the previous one, but for IPv6
 
 
