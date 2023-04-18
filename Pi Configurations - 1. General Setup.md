@@ -916,7 +916,7 @@ We will use the Wireguard `PostUp` and `PreDown` configuration settings. The `Po
 
 
 #### Accessing your home LAN
-
+Pre
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
