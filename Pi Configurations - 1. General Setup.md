@@ -895,7 +895,7 @@ We will use the Wireguard `PostUp` and `PreDown` configuration settings. The `Po
     PreDown = nft delete table ip6 wireguard
     ```
 
-> 💡 
+>💡 
 #### Accessing your home LAN
 
 ## Install Pi-hole
