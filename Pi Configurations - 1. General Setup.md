@@ -852,7 +852,7 @@ That's mainly configured by the `AllowedIPs` setting, on the client `.conf` file
 
 The `AllowedIPs` setting acts as [a routing table when sending packets, and an ACL when receiving packets](https://www.wireguard.com/#cryptokey-routing). When a peer tries to send a packet to an IP, it will check `AllowedIPs`, and if that IP appears in the list, the packet will be routed through the WireGuard interface. When the peer receives a packet over the wiregurad interface, it will check `AllowedIPs` again, and if the source address is not in the list, it will be dropped.
 
-We need to change some roules on the server's firewall to allow the packets forwarding, but 
+We need to change some roules on the server's firewall to allow the packets forwarding, but basically to route the packets on 
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
