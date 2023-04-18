@@ -976,7 +976,7 @@ $ sudo sed '/AllowedIPs =/c\AllowedIPs = 0.0.0.0/0, ::/0' /etc/wireguard/clients
 For example, if you have a `vincenzo-laptop.conf`:
 
 ```bash
-sudo sed '/AllowedIPs =/c\AllowedIPs = 0.0.0.0/0, ::/0' /etc/wireguard/clients/vincenzo-laptop.conf > /etc/wireguard/clients/CLIENTS-CONF-full.conf
+sudo sed '/AllowedIPs =/c\AllowedIPs = 0.0.0.0/0, ::/0' /etc/wireguard/clients/vincenzo-laptop.conf > /etc/wireguard/clients/vincenzo-laptop-full.conf
 ```
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
