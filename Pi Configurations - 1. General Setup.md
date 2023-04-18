@@ -879,7 +879,7 @@ We need to change some roules on the server's firewall to allow the packets forw
 
 Now your Wireguard server is able to forward the packets icoming from the wireguard interfcate to the other interfaces.
 
-#### 
+#### Enable NAT on the server¶
 #### Accessing your home LAN
 
 ## Install Pi-hole
