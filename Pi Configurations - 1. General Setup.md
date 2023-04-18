@@ -959,7 +959,7 @@ $ sudo find /etc/wireguard/clients/ -type f -name "*.conf" -exec sed -i '/^Allow
 Simply edit the client's `.conf` file (**NOT the server's one**) and add the default route (`0.0.0.0/0` for IPv4 and `::/0` for IPv6) to the `AllowedIPs` in the [Peer] section.
 
 ```ini
-# you can remove all other IPs, since the defa
+# you can remove all other IPs, since the  default route 
 AllowedIPs = 0.0.0.0/0, ::/0
 ```
 
