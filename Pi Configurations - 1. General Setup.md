@@ -904,7 +904,7 @@ We will use the Wireguard `PostUp` and `PreDown` configuration settings. The `Po
 3. Stop the `wg0` interface
 
     ```bash
-    $ sudo systemctl stop wg-quick@wg0.service
+    $ sudo systemctl start wg-quick@wg0.service
     ```
 
 >💡 Some details about the lines we have added to the configuration file:
