@@ -889,7 +889,6 @@ PostUp = ufw route allow in on wg0 out on eth0
 PostUp = nft add table ip wireguard; nft add chain ip wireguard wireguard_chain {type nat hook postrouting priority srcnat\; policy accept\;}; nft add rule>PostUp = nft add table ip6 wireguard; nft add chain ip6 wireguard wireguard_chain {type nat hook postrouting priority srcnat\; policy accept\;}; nft add ru>PreDown = ufw route delete allow in on wg0 out on eth0
 PreDown = nft delete table ip wireguard
 PreDown = nft delete table ip6 wireguard
-
     ```
 
 #### Accessing your home LAN
