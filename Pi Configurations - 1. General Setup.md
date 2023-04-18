@@ -857,6 +857,8 @@ We need to change some roules on the server's firewall to allow the packets forw
 #### Enable IP forwarding on the server
 1. Edit the file `/etc/sysctl.d/99-sysctl.conf` and uncomment the lines
 
+
+
 #### Accessing your home LAN
 
 ## Install Pi-hole
