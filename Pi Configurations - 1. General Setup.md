@@ -970,7 +970,7 @@ With this configuration, all packets sent by the client will be intercepted by t
 Use this command to quickly create a copy of a client's `.conf` file, with the `AllowedIPs` setting edited to route all packets through the tunnel:
 
 ```bash
-$ sudo sed '/AllowedIPs =/c\AllowedIPs = 0.0.0.0/0, ::/0' /etc/wireguard/clients/CLIENT-CONF.conf > /etc/wireguard/clients/CLIENTS-CONF-full.conf
+$ sudo sed '/AllowedIPs =/c\AllowedIPs = 0.0.0.0/0, ::/0' /etc/wireguard/clients/CLIENT-CONF.conf > /etc/wireguard/clients/CLIENT-CONF-full.conf
 ```
 
 For example, if you have a `vincenzo-laptop.conf`:
