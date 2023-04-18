@@ -970,7 +970,7 @@ With this configuration, all packets sent by the client will be intercepted by t
 Use this command to quickly create a copy of a client's `.conf` file, with the `AllowedIPs` setting edited to route all packets through the tunnel:
 
 ```bash
-$
+$ 
 ```
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
