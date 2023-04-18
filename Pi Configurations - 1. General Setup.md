@@ -846,7 +846,7 @@ peer: XYZ123456ABC=   ⬅ Your peer's public key will be different
 ```
 
 ### Split Tunnel vs Full Tunnel
-In the steps above we have configured a *split tunnel*. In this configuration, only DNS packets are routed through the tunnel, while the internet trafic remains free.
+In the steps above we have configured a *split tunnel*. In this configuration, only DNS packets are routed through the tunnel, while the internet trafic remains free. Instead 
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
