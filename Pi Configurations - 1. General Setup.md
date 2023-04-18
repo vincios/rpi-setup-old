@@ -972,6 +972,8 @@ Use this command to quickly create a copy of a client's `.conf` file, with the `
 ```bash
 $ sudo sed '/AllowedIPs =/c\AllowedIPs = 0.0.0.0/0, ::/0' CLIENTS_CONF_FILE_PATH > NEW_CLIENTS_CONF_FILE_PATH
 ```
+
+
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
