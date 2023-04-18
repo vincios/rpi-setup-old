@@ -846,7 +846,7 @@ peer: XYZ123456ABC=   ⬅ Your peer's public key will be different
 ```
 
 ### (Optional) Route all internet traffic through the VPN Tunnel
->💡 This section is optional: if you want to route DNS queries through the VPN, you can skip this part
+>💡 This section is optional: if you want to route only the DNS queries through the VPN, you can skip this part
 
 #### Split Tunnel vs Full Tunnel
 In the steps above we have configured a *split tunnel*. In this configuration, only DNS packets are routed through the tunnel, while the internet trafic still remains free. Instead, in a *full tunnel* all the internet traffic is routed through the tunnel.
