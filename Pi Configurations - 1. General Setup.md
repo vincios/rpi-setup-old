@@ -886,6 +886,10 @@ We will use the Wireguard `PostUp` and `PreDown` configuration settings. The `Po
 
 1. Stop the `wg0` interface
 
+    ```bash
+    $ sudo systemctl stop wg-quick@wg0.service
+    ```
+
 2. Edit the `/etc/wireguard/wg0.conf` file and add these lines under the `[Interface]` section
 
     ```bash
