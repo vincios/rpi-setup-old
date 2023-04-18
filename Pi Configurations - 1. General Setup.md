@@ -845,7 +845,7 @@ peer: XYZ123456ABC=   ⬅ Your peer's public key will be different
   transfer: 3.43 KiB received, 188 B sent
 ```
 
-### (Optional) 
+### (Optional) Route all internet traffic 
 #### Split Tunnel vs Full Tunnel
 >💡 This section is optional: if you are ok with a split tunnel, you can skip this part
 
