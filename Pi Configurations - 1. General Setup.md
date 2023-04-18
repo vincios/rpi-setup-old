@@ -846,7 +846,7 @@ peer: XYZ123456ABC=   ⬅ Your peer's public key will be different
 ```
 
 ### Split Tunnel vs Full Tunnel
->💡 This section is are optionals: if you are ok with a split tunnel, you can skip this part
+>💡 This section is optional: if you are ok with a split tunnel, you can skip this part
 
 In the steps above we have configured a *split tunnel*. In this configuration, only DNS packets are routed through the tunnel, while the internet trafic still remains free. Instead, in a *full tunnel* all the internet traffic is routed through the tunnel.
 
