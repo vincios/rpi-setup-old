@@ -849,6 +849,7 @@ peer: XYZ123456ABC=   ⬅ Your peer's public key will be different
 In the steps above we have configured a *split tunnel*. In this configuration, only DNS packets are routed through the tunnel, while the internet trafic still remains free. Instead, in a *full tunnel* all the internet traffic is routed through the tunnel.
 
 That's mainly configured by the `AllowedIPs` setting, on the client `.conf` file. 
+
 The `AllowedIPs` setting acts as a routing table when sending packets, and an ACL when receiving packets. When a peer tries to send a packet to an IP, it will check `AllowedIPs`, and if that IP appears in the list, it will send it through the WireGuard interface. When it receives a packet over the interface, it will check `AllowedIPs` again, and if the packet’s source address is not in the list, it will be dropped.
 
 ## Install Pi-hole
