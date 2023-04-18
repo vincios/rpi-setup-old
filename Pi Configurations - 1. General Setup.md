@@ -918,7 +918,7 @@ We will use the Wireguard `PostUp` and `PreDown` configuration settings. The `Po
 #### Accessing your home LAN
 >⚠️ The following assumes you have already prepared your server for [IP forwarding](#enable-ip-forwarding-on-the-server) and [enabled NAT](#enable-nat-on-the-server).
 
-Simply edit the client's `.conf` file (**NOT the server's one**) and add your home network IP (generally, `192.168.1.0/24`) to the `AllowedIPs` setting.
+Simply edit the client's `.conf` file (**NOT the server's one**) and add your home network IP (generally, `192.168.1.0/24`) to the `AllowedIPs` setting int.
 
 Example of a client's `.conf` file configured with LAN access. Note the `AllowedIPs` setting:
 ```ini
