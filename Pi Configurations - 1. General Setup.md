@@ -885,7 +885,7 @@ Now we have to edit the Wireguard server’s firewall to add rules that will ens
 1. Edit the `/etc/wireguard/wg0.conf` file and add these lines under the `[Interface]` section
 
     ```ini
-
+/etc/wireguard/wg0.conf
 
     ```
 
