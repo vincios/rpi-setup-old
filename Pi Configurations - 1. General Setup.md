@@ -928,7 +928,7 @@ DNS = 10.100.0.1
 PrivateKey = XYZ123456ABC=
 
 [Peer]
-AllowedIPs = 10.100.0.1/32, fd08:4711::1/128
+AllowedIPs = 10.100.0.1/32, fd08:4711::1/128, 192.168.1.0
 Endpoint = [your public IP or domain]:47111
 PersistentKeepalive = 25
 PublicKey = XYZ123456ABC=
