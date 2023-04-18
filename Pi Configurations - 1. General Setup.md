@@ -846,8 +846,9 @@ peer: XYZ123456ABC=   ⬅ Your peer's public key will be different
 ```
 
 ### (Optional) Route all internet traffic through the VPN Tunnel
-#### Split Tunnel vs Full Tunnel
+>💡 This section is optional: if you are ok with a split tunnel, you can skip this part
 
+#### Split Tunnel vs Full Tunnel
 In the steps above we have configured a *split tunnel*. In this configuration, only DNS packets are routed through the tunnel, while the internet trafic still remains free. Instead, in a *full tunnel* all the internet traffic is routed through the tunnel.
 
 That's mainly configured by the `AllowedIPs` setting, on the client `.conf` file. 
