@@ -944,6 +944,8 @@ Use this command to quickly edit the `AllowedIPs` setting of a client's `.conf`f
 ```bash
 $ 
 ```
+
+Or, use this command to quickly 
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
