@@ -887,7 +887,7 @@ Now we have to edit the Wireguard server’s firewall to add rules that will ens
     ```ini
 
 
-    
+    ```
 
 #### Accessing your home LAN
 
