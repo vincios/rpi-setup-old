@@ -967,7 +967,7 @@ With this configuration, all packets sent by the client will be intercepted by t
 
 >💡 Instead of editing your existing client's configuration, you can create a copy with the modified `AllowedIPs` line as above. This will give you two VPN profiles and you can decide - at any time from mobile - which variant you want. 
 
-Use this command to quickly create a copy of a 
+Use this command to quickly create a copy of a client's `.conf` file
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
