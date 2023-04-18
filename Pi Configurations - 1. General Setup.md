@@ -923,7 +923,7 @@ Simply edit the client's `.conf` file (**NOT the server's one**) and add your ho
 Example:
 ```ini
 [Peer]
-AllowedIPs = 10.0.0.0/24, fd08:4711::/64, 192.168.1.0/24
+AllowedIPs = 10.0.0.0/24, fd08:4711::/64, **192.168.1.0/24*
 # ... other Peer settings
 ```
 
