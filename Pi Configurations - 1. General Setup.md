@@ -855,6 +855,7 @@ The `AllowedIPs` setting acts as [a routing table when sending packets, and an A
 We need to change some roules on the server's firewall to allow the packets forwarding, but basically to route the packets trough the tunnel we need simply edit the client's `AllowedIPs` setting.
 
 #### Accessing your home LAN
+
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
