@@ -855,7 +855,7 @@ The `AllowedIPs` setting acts as [a routing table when sending packets, and an A
 We need to change some roules on the server's firewall to allow the packets forwarding, but basically to route the packets trough the tunnel we need simply to edit the client's `AllowedIPs` setting.
 
 #### Enable IP forwarding on the server
->💡 The following sections are optionals: if you are ok with a split tunnel, you can skip this part
+>💡 This section is are optionals: if you are ok with a split tunnel, you can skip this part
 
 1. Edit the file `/etc/sysctl.d/99-sysctl.conf` and uncomment the lines
 
