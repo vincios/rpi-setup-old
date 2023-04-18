@@ -865,7 +865,10 @@ We need to change some roules on the server's firewall to allow the packets forw
 2. Save the file and apply the new options
 
     ```bash
-    
+    $ sudo sysctl -p
+    ```
+
+
 #### Accessing your home LAN
 
 ## Install Pi-hole
