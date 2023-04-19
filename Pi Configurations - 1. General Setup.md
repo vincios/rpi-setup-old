@@ -755,7 +755,7 @@ So, to create a connection between our server and client we have make two config
     ```ini
     [Peer]
     AllowedIPs = 10.100.0.1/32, fd08:4711::1/128  # ⬅ Allows only comunication with the server
-    # OR AllowedIPs = 10.100.0.0/24, fd08:4711::1/64 ⬅ Allows comunication between all peers wireguard's 
+    # OR AllowedIPs = 10.100.0.0/24, fd08:4711::1/64 ⬅ Allows comunication between all peers in the wireguard's network
     Endpoint = [your public IP or domain]:47111
     PersistentKeepalive = 25
     ```
