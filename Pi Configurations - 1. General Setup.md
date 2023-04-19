@@ -791,7 +791,6 @@ PresharedKey = XYZ123456ABC=
 9. Now we have to add a new `[Peer]` section in the server's `.conf` file with the client's connection parameters
 
     ```bash
-    $ echo "" >> /etc/wireguard/wg0.conf
     $ echo "# ${name}" >> /etc/wireguard/wg0.conf
     $ echo "[Peer]" >> /etc/wireguard/wg0.conf
     $ echo "PublicKey = $(cat "/etc/wireguard/clients/${name}.pub")" >> /etc/wireguard/wg0.conf
