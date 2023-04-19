@@ -658,7 +658,7 @@ We will follow the official Pi-hole guide for setup Wireguard. All the necessary
 
     💡 In the `[Interface]` section of the config file we configure the peer's wireguard network interface. We assign a static IP address to the interface, so `10.100.0.1` will be our server IP address (where `10.100.0` is the network part). To the other peers we will assign different IPs.
 
-    ⚠️ Don't forget to open the 
+    ⚠️ Don't forget to open the `
 
 4. Add the server's private key (written in the `server.key` file) to the config file, then exit the sudo session
 
