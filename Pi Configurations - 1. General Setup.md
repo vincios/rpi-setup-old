@@ -799,7 +799,7 @@ PresharedKey = XYZ123456ABC=
     $ echo "" >> /etc/wireguard/wg0.conf
     ```
 
-    ⚠️ Don't forget to replace the `[X]` part of the `AllowedIPs` command with the client's IP address set in step 5
+    ⚠️ Don't forget to replace the `[X]` part of the `AllowedIPs` setting with the client's IP address set in step 5
 
 The server's `.conf` file (i.e. `/etc/wireguard/wg0.conf`) should look like this
 
