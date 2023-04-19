@@ -796,6 +796,7 @@ PresharedKey = XYZ123456ABC=
     $ echo "PublicKey = $(cat "/etc/wireguard/clients/${name}.pub")" >> /etc/wireguard/wg0.conf
     $ echo "PresharedKey = $(cat "/etc/wireguard/clients/${name}.psk")" >> /etc/wireguard/wg0.conf
     $ echo "AllowedIPs = 10.100.0.[X]/32, fd08:4711::[X]/128" >> /etc/wireguard/wg0.conf
+    $ echo "" >> /etc/wireguard/wg0.conf
     ```
 
     ⚠️ Don't forget to replace the `[X]` part of the last command with the client's IP address set in step 5
