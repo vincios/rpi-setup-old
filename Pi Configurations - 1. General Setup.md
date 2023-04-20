@@ -311,6 +311,7 @@ We configure Traefik to [automatic renew](https://doc.traefik.io/traefik/https/a
     
     <details>
     <summary>Open to see the code</summary>
+    
     ```yml
     entryPoints:
       web:
