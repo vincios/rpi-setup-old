@@ -2,6 +2,7 @@
 ⚠️ Please read before [First operations](#first-operations).
 
 💡 Services with the duck [🦆] 
+
 Index
 - [General Setup](#general-setup)
   - [First operations](#first-operations)
