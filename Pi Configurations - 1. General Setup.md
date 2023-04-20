@@ -664,7 +664,7 @@ Update Traefik is simple as replace the binary file with the updated one
 3. Start the nginx service
 
     ```
-    $ sudo systemctl stop nginx.service
+    $ sudo systemctl start nginx.service
     ```
 
 
