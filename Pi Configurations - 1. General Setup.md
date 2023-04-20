@@ -1,7 +1,7 @@
 # General Setup
 ⚠️ Please read before [First operations](#first-operations).
 
-💡 Services with the duck [🦆] symbol have your duckdns domain hardcoded in some configuration files. You may need to reconfigure them if 
+💡 Services with the duck [🦆] symbol have your duckdns domain hardcoded in some configuration files. You may need to reconfigure them if you change your 
 
 Index
 - [General Setup](#general-setup)
