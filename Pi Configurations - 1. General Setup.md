@@ -1238,7 +1238,10 @@ fi
 
 To install, create a file `wg-add.sh` elsewhere, then
 
-```s
+```bash
+
+```
+
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
