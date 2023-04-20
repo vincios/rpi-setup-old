@@ -652,7 +652,7 @@ Update Traefik is simple as replace the binary file with the updated one
 
     💡 To enable php, nginx only needs the `php-fpm` module, but you may need to install other php modules according to each project requirements
 
-3. Change the 
+3. Change the default site configuration
 
     - Edit the file `/etc/nginx/sites-available/default`
     - Change the lines
