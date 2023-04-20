@@ -1242,7 +1242,7 @@ To install, create a file `wg-add.sh` elsewhere, then
 $ sudo chmod +x wg-add.sh
 $ sudo cp wg-add.sh /usr/local/bin/wg-add
 $ sudo chown root:root /usr/local/bin/wg-add
-raspi@raspberrypi:~/Desktop $ sudo chmod 755 /usr/local/bin/wg-add
+$ sudo chmod 755 /usr/local/bin/wg-add
 ```
 
 ## Install Pi-hole
