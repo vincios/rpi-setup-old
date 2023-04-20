@@ -11,7 +11,7 @@ Index
   - [Samba shares](#samba-shares)
     - [Note for Windows users](#note-for-windows-users)
   - [Duckdns cron configuration \[🦆\]](#duckdns-cron-configuration-)
-  - [Traefik \[\]](#traefik-)
+  - [Traefik \[🦆\]](#traefik-)
     - [Install Traefik](#install-traefik)
     - [Configure Traefik (static configuration)](#configure-traefik-static-configuration)
     - [Configure Services (dynamic configuration)](#configure-services-dynamic-configuration)
@@ -244,7 +244,7 @@ Adapted from [here](https://www.duckdns.org/install.jsp?tab=pi).
     $ sudo service cron start
     ```
 
-## Traefik []
+## Traefik [🦆]
 Traefik is designed to run in docker and auto discover the services by its [providers](https://doc.traefik.io/traefik/providers/overview/) (like the [docker](https://doc.traefik.io/traefik/providers/docker/) one). But in this setup, we will install it locally and use the [file provider](https://doc.traefik.io/traefik/providers/file/) to define the dynamic configuration (i.e. Routers, Services and Middlewares).
 
 Starting from [this](https://adapttive.com/blog/deploying-node-js-app-with-pm-2-and-traefik/) guide, we will skip the node part and change the acme configuration to work with Duckdns.
