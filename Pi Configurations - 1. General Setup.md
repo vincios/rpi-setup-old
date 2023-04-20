@@ -1206,7 +1206,7 @@ echo -e "  Full Tunnel configuration file: ${clientfullconf}"
 echo -e "  "
 
 # Print QR code scannable by the Wireguard mobile app on screen
-read -p "Print scannable QR codes [y/n]? " -n 1 -r CONT
+read -p "Print shareable QR codes [y/n]? " -n 1 -r CONT
 echo
 if [[ $CONT =~ ^[Yy]$ ]]
 then
