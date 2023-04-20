@@ -622,7 +622,7 @@ Update Traefik is simple as replace the binary file with the updated one
         ```
 
         </details>
-        
+      
 
     3. Set file permissions
 
