@@ -1,6 +1,6 @@
 # General Setup
 
-**NOTE:** Please read before [First operations](#first-operations).
+ Please read before [First operations](#first-operations).
 
 Index
 - [General Setup](#general-setup)
@@ -622,7 +622,7 @@ Update Traefik is simple as replace the binary file with the updated one
         ```
 
         💡 For an example, see the file `/etc/traefik/dynamic/dashboard.yml` 
-        
+
         </details>
 
     3. Set file permissions
