@@ -370,7 +370,6 @@ We configure Traefik to [automatic renew](https://doc.traefik.io/traefik/https/a
 
     ⚠️ Don't forget to edit the `<YOUR_EMAIL>` field
     
-    💡 For the first times, you may want to set the log level to `DEBUG` to troubleshoot (eventual) errors
 
 2. Set file permissions
 
