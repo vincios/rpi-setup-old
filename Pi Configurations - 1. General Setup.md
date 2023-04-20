@@ -208,7 +208,7 @@ Adapted from [here](https://www.duckdns.org/install.jsp?tab=pi).
 
     ⚠️ Don't forget to edit the `<YOUR_DUCKDNS_DOMAINS>` and `<YOUR_DUCKDNS_TOKEN>` fields. No quotes needed. 
     
-    ⚠️ `<YOUR_DUCKDNS_DOMAINS>` can be a comma separated (**NO spaces**) list of domains
+     `<YOUR_DUCKDNS_DOMAINS>` can be a comma separated (**NO spaces**) list of domains
 
 4. Make the script executable
 
