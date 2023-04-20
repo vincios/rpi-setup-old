@@ -1232,7 +1232,6 @@ then
   echo -e "  "
   echo -e "Scan them with the Wireguard mobile app"
 fi
-
 ```
 
 </details>
