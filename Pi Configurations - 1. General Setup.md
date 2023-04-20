@@ -669,6 +669,9 @@ Update Traefik is simple as replace the binary file with the updated one
       ```ini
       # From
       index index.html index.htm index.nginx-debian.html;
+
+      # To
+      
       ```
 
     - Find the line
