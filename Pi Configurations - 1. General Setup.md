@@ -657,7 +657,7 @@ Update Traefik is simple as replace the binary file with the updated one
     - Edit the file `/etc/nginx/sites-available/default`
     - Replaces the following lines
 
-      ```ini
+      ```ngin
       # From
       listen 80 default_server;
       listen [::]:80 default_server;
@@ -666,7 +666,7 @@ Update Traefik is simple as replace the binary file with the updated one
       listen 8080 default_server;
       listen [::]:8080 default_server;
       ```
-      ```
+      ```nginx
       # From
       index index.html index.htm index.nginx-debian.html;
 
