@@ -645,8 +645,9 @@ Update Traefik is simple as replace the binary file with the updated one
     💡 Since we should have Traefik listening on the port `80` we stop the nginx service to prevent conflicts
 
 2. Install php
-3. 
-4. Change the listening port of the default site to `8080`
+
+    ```bash
+3. Change the listening port of the default site to `8080`
 
     - Edit the file `/etc/nginx/sites-available/default`
     - Change the lines
@@ -663,13 +664,13 @@ Update Traefik is simple as replace the binary file with the updated one
       listen [::]:8080 default_server;
       ```
 
-5. Start the nginx service
+4. Start the nginx service
 
     ```
     $ sudo systemctl start nginx.service
     ```
 
-6. Test it
+5. Test it
 
     ```
     http://<YOUR PI's IP ADDRESS>:8080
