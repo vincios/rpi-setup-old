@@ -1278,6 +1278,7 @@ Notes:
 
 
 ### Change the lighttpd port
+
 - Edit the `lighttpd.conf` file
 
  ```bash
