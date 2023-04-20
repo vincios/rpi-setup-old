@@ -1,7 +1,7 @@
 # General Setup
 ⚠️ Please read before [First operations](#first-operations).
 
-💡 Services with the duck [🦆] simbol
+💡 Services with the duck [🦆] symbol 
 
 Index
 - [General Setup](#general-setup)
