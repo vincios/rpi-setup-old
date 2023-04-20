@@ -1253,7 +1253,7 @@ $ wg-add id "name" "domain"
 ```
 
 ## Install Pi-hole
-1. Make sure 
+1. Make sure that 
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
     ```bash
