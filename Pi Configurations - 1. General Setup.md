@@ -644,6 +644,7 @@ Update Traefik is simple as replace the binary file with the updated one
 
     💡 Since we should have Traefik listening on the port `80` we stop the nginx service to prevent conflicts
 
+2. Install php
 2. Change the listening port of the default site to `8080`
 
     - Edit the file `/etc/nginx/sites-available/default`
