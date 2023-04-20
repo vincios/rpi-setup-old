@@ -443,7 +443,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
 1. Create the file `/etc/systemd/system/traefik.service` with the following content
 
     <details>
-    <summary>💡 Click to see the code</summary>
+    <summary> Click to see the code</summary>
 
     ```ini
     [Unit]
