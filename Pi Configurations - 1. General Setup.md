@@ -1278,7 +1278,7 @@ Notes:
 
 
 ### Change the lighttpd port
-The Pi-hole admin dashboard is served by a `ligh
+The Pi-hole admin dashboard is served by a `lighttpd`
 - Edit the `lighttpd.conf` file
 
  ```bash
