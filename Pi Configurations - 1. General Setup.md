@@ -1262,7 +1262,7 @@ $ wg-add id "name" "domain"
 
    **NB**: Take note of the admin password (shown at installation end).
    
-3. ()
+3. [Change the lighttpd port](#change-the-lighttpd-port)
 
 4. Install [whitelist](https://github.com/anudeepND/whitelist)
 
