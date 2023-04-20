@@ -310,7 +310,7 @@ We configure Traefik to [automatic renew](https://doc.traefik.io/traefik/https/a
 1. Create the file `/etc/traefik/traefik.yml` with the following content:
     
     <details>
-    <summary>Click to see the code</summary>
+    <summary>💡 Click to see the code</summary>
 
     ```yml
     entryPoints:
