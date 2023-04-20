@@ -1,7 +1,7 @@
 # General Setup
 ⚠️ Please read before [First operations](#first-operations).
 
-💡 Services with the duck [🦆] symbol have t
+💡 Services with the duck [🦆] symbol have your duckdns 
 
 Index
 - [General Setup](#general-setup)
