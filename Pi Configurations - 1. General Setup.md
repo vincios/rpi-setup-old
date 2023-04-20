@@ -674,6 +674,7 @@ Update Traefik is simple as replace the binary file with the updated one
       index index.php index.html index.htm index.nginx-debian.html;
       ```
       ```
+        
         # pass PHP scripts to FastCGI server
         #
         #location ~ \.php$ {
