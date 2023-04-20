@@ -1021,6 +1021,7 @@ Use this script to add new clients with a single command
 ```bash
 
 ```
+
 </details>
 
 ## Install Pi-hole
