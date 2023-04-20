@@ -672,7 +672,7 @@ Update Traefik is simple as replace the binary file with the updated one
     - Find the line
 
       ```
-index index.html index.htm index.nginx-debian.html;
+      index index.html index.htm index.nginx-debian.html;
       ```
 4. Start the nginx service
 
