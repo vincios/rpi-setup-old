@@ -576,7 +576,7 @@ Update Traefik is simple as replace the binary file with the updated one
 
         <details>
         <summary>💡 Click to see the code</summary>
-        
+
         ```yaml
         http:
           routers:
@@ -621,6 +621,7 @@ Update Traefik is simple as replace the binary file with the updated one
                 prefix: "/foo"
         ```
 
+        <>
         💡 For an example, see the file `/etc/traefik/dynamic/dashboard.yml` 
 
     3. Set file permissions
