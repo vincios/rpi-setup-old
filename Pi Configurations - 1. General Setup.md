@@ -633,7 +633,8 @@ Update Traefik is simple as replace the binary file with the updated one
         $ sudo chmod 644 /etc/traefik/dynamic/service_name.yml
         ```
 
-## 
+## Ngnix and PHP
+
 ## Wireguard VPN [🦆]
 At its core, all WireGuard does is create an interface from one computer to another. It doesn’t really let you access other computers on either end of the network, or forward all your traffic through the VPN server, or anything like that. It just connects two computers, directly, quickly and securely.
 
