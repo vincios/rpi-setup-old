@@ -639,6 +639,7 @@ Update Traefik is simple as replace the binary file with the updated one
     ```bash
     $ sudo apt update
     $ sudo apt install nginx
+    
     ```
 
 
