@@ -1248,7 +1248,7 @@ $ sudo chmod 755 /usr/local/bin/wg-add
 Then, use it in a `sudo -i` session
 
 ```bash
-
+$ wg-add 2 "vincenzo-pixel7" "cclouds.duckdns.org"
 ```
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
