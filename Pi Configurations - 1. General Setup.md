@@ -1013,7 +1013,11 @@ sudo sed '/AllowedIPs =/c\AllowedIPs = 0.0.0.0/0, ::/0' /etc/wireguard/clients/v
 >⚠️ Don't forget to share the edited `.conf` file with your client
 
 ### Bonus: Add new clients with a single command
-Use this script to add new clients 
+Use this script to add new clients with a single command
+
+<details>
+<summary>
+</details>
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
