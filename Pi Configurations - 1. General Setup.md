@@ -668,6 +668,7 @@ Update Traefik is simple as replace the binary file with the updated one
       ```
       ```ini
       # From
+      
       ```
 
     - Find the line
