@@ -1274,7 +1274,10 @@ $ wg-add id "name" "domain"
 Notes: 
 - Current block lists are taken from [here](https://www.andreadraghetti.it/block-list-e-white-list-per-pi-hole-e-ad-blocker/).
 
-##
+### Update
+
+
+
 
 ## Build TOR
 **NEW** (but not tested yet):
