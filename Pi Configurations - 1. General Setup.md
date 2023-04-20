@@ -1017,6 +1017,8 @@ Use this script to add new clients with a single command
 
 <details>
 <summary>✨ Click to see the code</summary>
+
+
 </details>
 
 ## Install Pi-hole
