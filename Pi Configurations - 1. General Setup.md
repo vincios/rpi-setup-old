@@ -1278,17 +1278,17 @@ Notes:
 
 
 ### Change the lighttpd port
-    - Edit the `lighttpd.conf` file
-	
-	    ```bash
-		$ sudo nano /etc/lighttpd/lighttpd.conf
-		```
-	
-	- Restart the service
-	
-	    ```bash
-		$ sudo service lighttpd restart
-		```
+- Edit the `lighttpd.conf` file
+
+ ```bash
+$ sudo nano /etc/lighttpd/lighttpd.conf
+```
+
+- Restart the service
+
+ ```bash
+$ sudo service lighttpd restart
+```
 
 ## Build TOR
 **NEW** (but not tested yet):
