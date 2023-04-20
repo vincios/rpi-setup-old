@@ -1262,7 +1262,7 @@ $ wg-add id "name" "domain"
 
    **NB**: Take note of the admin password (shown at installation end).
    
-- Change the lighttpd port
+3. Change the lighttpd port
     - Edit the `lighttpd.conf` file
 	
 	    ```bash
