@@ -443,7 +443,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
 
     <details>
     <summary>💡 Click to see the code</summary>
-    
+
     ```ini
     [Unit]
     Description=traefik proxy
@@ -483,6 +483,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
     WantedBy=multi-user.target
     ```
 
+    </details>
 2. Create the file `/etc/traefik/traefik.conf` with the following content
 
     ```env
