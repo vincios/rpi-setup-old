@@ -1278,7 +1278,7 @@ Notes:
 
 
 ### Change the lighttpd port
-The Pi-hole admin page is 
+The Pi-hole admin page is served 
 - Edit the `lighttpd.conf` file
 
  ```bash
