@@ -1264,7 +1264,7 @@ $ wg-add id "name" "domain"
    
 3. 
 
-- Install [whitelist](https://github.com/anudeepND/whitelist)
+4. Install [whitelist](https://github.com/anudeepND/whitelist)
 
     ```bash
 	$ git clone https://github.com/anudeepND/whitelist.git
