@@ -1274,7 +1274,7 @@ $ wg-add id "name" "domain"
 Notes: 
 - Current block lists are taken from [here](https://www.andreadraghetti.it/block-list-e-white-list-per-pi-hole-e-ad-blocker/).
 
-### Update
+### Update Pi-hole
 
 
 ### Change the lighttpd port
