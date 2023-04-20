@@ -677,7 +677,6 @@ Update Traefik is simple as replace the binary file with the updated one
       # From
 
       # pass PHP scripts to FastCGI server
-      #
       #location ~ \.php$ {
       #       include snippets/fastcgi-php.conf;
       #
