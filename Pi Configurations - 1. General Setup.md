@@ -1,7 +1,7 @@
 # General Setup
 ⚠️ Please read before [First operations](#first-operations).
 
-💡 Services with the 
+💡 Services with the 🦆
 Index
 - [General Setup](#general-setup)
   - [First operations](#first-operations)
