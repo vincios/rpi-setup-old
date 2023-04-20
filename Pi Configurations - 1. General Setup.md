@@ -368,9 +368,6 @@ We configure Traefik to [automatic renew](https://doc.traefik.io/traefik/https/a
 
     </details>
 
-    ⚠️ Don't forget to edit the `<YOUR_EMAIL>` field
-    
-
 2. Set file permissions
 
     ```bash
