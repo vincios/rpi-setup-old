@@ -1249,7 +1249,7 @@ Then, use it in a `sudo -i` session
 
 ```bash
 $ sudo -i
-$ wg-add id "vincenzo-pixel7" "cclouds.duckdns.org"
+$ wg-add id "name" "cclouds.duckdns.org"
 ```
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
