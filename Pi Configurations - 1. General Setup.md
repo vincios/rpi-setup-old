@@ -1278,7 +1278,7 @@ Notes:
 
 
 ### Change the lighttpd port
-The Pi-hole admin dashboard is served by a `lighttpd` web server on the port `80`. So have to change the `light
+The Pi-hole admin dashboard is served by a `lighttpd` web server on the port `80`. So have to change the `lighth
 - Edit the `lighttpd.conf` file
 
  ```bash
