@@ -10,7 +10,7 @@ Index
   - [AutoMount Nas folders](#automount-nas-folders)
   - [Samba shares](#samba-shares)
     - [Note for Windows users](#note-for-windows-users)
-  - [Duckdns cron configuration](#duckdns-cron-configuration)
+  - [Duckdns cron configuration 🦆](#duckdns-cron-configuration-)
   - [Traefik](#traefik)
     - [Install Traefik](#install-traefik)
     - [Configure Traefik (static configuration)](#configure-traefik-static-configuration)
@@ -183,7 +183,7 @@ If the network folder is not visible or is not writeable, try this solutions (on
 
 - On the raspberry, try this command `sudo pdbedit -a -u raspi`
 
-## Duckdns cron configuration 
+## Duckdns cron configuration 🦆
 Adapted from [here](https://www.duckdns.org/install.jsp?tab=pi).
 
 1. Create a `.duckdns` folder in your home directory
