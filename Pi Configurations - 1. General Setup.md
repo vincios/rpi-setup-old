@@ -663,14 +663,14 @@ Update Traefik is simple as replace the binary file with the updated one
       listen [::]:80 default_server;
 
       # To
-      
+      listen 8080 default_server;
+      listen [::]:8080 default_server;
       ```
 
       Replace with
 
       ```
-      listen 8080 default_server;
-      listen [::]:8080 default_server;
+
       ```
 
     - Find the line
