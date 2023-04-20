@@ -1236,6 +1236,7 @@ fi
 
 </details>
 
+To install:
 
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
