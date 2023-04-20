@@ -669,7 +669,9 @@ Update Traefik is simple as replace the binary file with the updated one
       listen [::]:8080 default_server;
       ```
 
-    - 
+    - Find the lines
+
+      ```
 4. Start the nginx service
 
     ```
