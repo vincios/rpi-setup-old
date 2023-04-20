@@ -1239,7 +1239,10 @@ fi
 To install, create a file `wg-add.sh` elsewhere, then
 
 ```bash
-
+$ sudo chmod +x wg-add.sh
+raspi@raspberrypi:~/Desktop $ sudo cp wg-add.sh /usr/local/bin/wg-add
+raspi@raspberrypi:~/Desktop $ sudo chown root:root /usr/local/bin/wg-add
+raspi@raspberrypi:~/Desktop $ sudo chmod 755 /usr/local/bin/wg-add
 ```
 
 ## Install Pi-hole
