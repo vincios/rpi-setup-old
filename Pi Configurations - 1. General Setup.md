@@ -1,6 +1,5 @@
 # General Setup
-
- Please read before [First operations](#first-operations).
+⚠️ Please read before [First operations](#first-operations).
 
 Index
 - [General Setup](#general-setup)
