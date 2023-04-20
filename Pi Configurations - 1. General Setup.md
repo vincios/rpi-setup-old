@@ -634,7 +634,7 @@ Update Traefik is simple as replace the binary file with the updated one
         ```
 
 ## Ngnix and PHP
-1. Install 
+1. Install n
 ## Wireguard VPN [🦆]
 At its core, all WireGuard does is create an interface from one computer to another. It doesn’t really let you access other computers on either end of the network, or forward all your traffic through the VPN server, or anything like that. It just connects two computers, directly, quickly and securely.
 
