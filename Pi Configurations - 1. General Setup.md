@@ -1236,7 +1236,7 @@ fi
 
 </details>
 
-To install, paste the content  `wg-add.sh` elsewhere, then
+To install, paste the content of the script above in a `wg-add.sh` elsewhere, then
 
 ```bash
 $ sudo chmod +x wg-add.sh
