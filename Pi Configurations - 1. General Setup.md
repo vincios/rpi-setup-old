@@ -565,7 +565,6 @@ Update Traefik is simple as replace the binary file with the updated one
     
         Use the following template as reference
 
-      
         ```yaml
         http:
           routers:
