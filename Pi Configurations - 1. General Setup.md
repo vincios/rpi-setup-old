@@ -1251,6 +1251,7 @@ Then, use it in a `sudo -i` session
 $ sudo -i
 $ wg-add id "name" "domain"
 ```
+
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
