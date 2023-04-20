@@ -1262,18 +1262,7 @@ $ wg-add id "name" "domain"
 
    **NB**: Take note of the admin password (shown at installation end).
    
-3. Change the lighttpd port
-    - Edit the `lighttpd.conf` file
-	
-	    ```bash
-		$ sudo nano /etc/lighttpd/lighttpd.conf
-		```
-	
-	- Restart the service
-	
-	    ```bash
-		$ sudo service lighttpd restart
-		```
+3. 
 
 - Install [whitelist](https://github.com/anudeepND/whitelist)
 
