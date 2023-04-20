@@ -652,7 +652,7 @@ Update Traefik is simple as replace the binary file with the updated one
 
     💡 To enable php, nginx only needs the `php-fpm` module, but you may need to install other php modules according to each project requirements
 
-3. Change the listening port of the default site to `8080`
+3. Change the 
 
     - Edit the file `/etc/nginx/sites-available/default`
     - Change the lines
