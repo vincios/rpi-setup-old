@@ -1245,6 +1245,7 @@ $ sudo chown root:root /usr/local/bin/wg-add
 $ sudo chmod 755 /usr/local/bin/wg-add
 ```
 
+The
 ## Install Pi-hole
 - Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
