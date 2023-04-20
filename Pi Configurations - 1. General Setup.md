@@ -644,7 +644,7 @@ Update Traefik is simple as replace the binary file with the updated one
 
     💡 Since we should have Traefik listening on the port `80` we stop the nginx service to prevent conflicts
 
-2. Install php
+2. Install PHP
 
     ```bash
     $ sudo apt install php-fpm
