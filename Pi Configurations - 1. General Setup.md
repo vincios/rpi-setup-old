@@ -621,7 +621,7 @@ Update Traefik is simple as replace the binary file with the updated one
                 prefix: "/foo"
         ```
 
-        <>
+        </details>
         💡 For an example, see the file `/etc/traefik/dynamic/dashboard.yml` 
 
     3. Set file permissions
