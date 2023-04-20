@@ -693,7 +693,7 @@ Update Traefik is simple as replace the binary file with the updated one
       }
       ```
 
-4. Create the file `
+4. Create the file `sudo nano /var/www/html/index.php
 4. Start the nginx service
 
     ```
