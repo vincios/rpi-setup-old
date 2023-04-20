@@ -647,7 +647,7 @@ Update Traefik is simple as replace the binary file with the updated one
 2. Install php
 
     ```bash
-    $
+    $ 
     ```
 
 3. Change the listening port of the default site to `8080`
