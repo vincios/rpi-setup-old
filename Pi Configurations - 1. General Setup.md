@@ -649,6 +649,7 @@ Update Traefik is simple as replace the binary file with the updated one
     ```bash
 
     ```
+    
 3. Change the listening port of the default site to `8080`
 
     - Edit the file `/etc/nginx/sites-available/default`
