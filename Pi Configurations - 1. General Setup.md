@@ -672,6 +672,8 @@ Update Traefik is simple as replace the binary file with the updated one
     - Find the lines
 
       ```
+
+      ```
 4. Start the nginx service
 
     ```
