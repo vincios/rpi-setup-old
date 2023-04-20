@@ -19,7 +19,7 @@ Index
     - [Configure log rotation](#configure-log-rotation)
     - [Update Traefik](#update-traefik)
     - [Annex: Add custom dynamic configuration](#annex-add-custom-dynamic-configuration)
-  - [Wireguard VPN \[\]](#wireguard-vpn-)
+  - [Wireguard VPN \[🦆\]](#wireguard-vpn-)
     - [Install Wireguard](#install-wireguard)
     - [Add clients](#add-clients)
       - [Setup the configuration environment](#setup-the-configuration-environment)
@@ -633,7 +633,7 @@ Update Traefik is simple as replace the binary file with the updated one
         $ sudo chmod 644 /etc/traefik/dynamic/service_name.yml
         ```
 
-## Wireguard VPN []
+## Wireguard VPN [🦆]
 At its core, all WireGuard does is create an interface from one computer to another. It doesn’t really let you access other computers on either end of the network, or forward all your traffic through the VPN server, or anything like that. It just connects two computers, directly, quickly and securely.
 
 Basically, for each computer (peer) we have to configure an interface, with an IP address, a private key and a listening port. Then we have to list the public keys of all the peers we wants to connect.
