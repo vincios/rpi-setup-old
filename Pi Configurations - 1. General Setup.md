@@ -698,6 +698,7 @@ Update Traefik is simple as replace the binary file with the updated one
     ```php
     <?php phpinfo(); ?>
     ```
+
 5. Start the nginx service
 
     ```
