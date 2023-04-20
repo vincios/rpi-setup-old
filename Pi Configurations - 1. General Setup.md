@@ -655,7 +655,7 @@ Update Traefik is simple as replace the binary file with the updated one
 3. Change the default site configuration
 
     - Edit the file `/etc/nginx/sites-available/default`
-    - Find the lines
+    - Replaces 
 
       ```
       listen 80 default_server;
