@@ -671,7 +671,7 @@ Update Traefik is simple as replace the binary file with the updated one
       index index.html index.htm index.nginx-debian.html;
 
       # To
-      index index.html index.htm index.nginx-debian.html;
+      index index.php index.html index.htm index.nginx-debian.html;
       ```
 
     - Find the line
