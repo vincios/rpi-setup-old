@@ -423,6 +423,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
     ```
 
     </details>
+    
     > 💡 Using this configuration the dashboard will be available at the address
     >
     >> https://traefik.DUCKDNS_DOMAIN.duckdns.org/dashboard/
