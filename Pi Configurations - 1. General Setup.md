@@ -35,7 +35,7 @@ Index
       - [Route the entire Internet traffic through the WireGuard tunnel](#route-the-entire-internet-traffic-through-the-wireguard-tunnel)
     - [Bonus: Add new clients with a single command](#bonus-add-new-clients-with-a-single-command)
   - [Install Pi-hole](#install-pi-hole)
-  - [Nginx as web server](#nginx-as-web-server)
+    - [Nginx as web server](#nginx-as-web-server)
     - [(lihgttpd only) Change the lighttpd port](#lihgttpd-only-change-the-lighttpd-port)
   - [Build TOR](#build-tor)
   - [Run BridTools](#run-bridtools)
@@ -1362,7 +1362,7 @@ Notes:
 - Current block lists are taken from [here](https://www.andreadraghetti.it/block-list-e-white-list-per-pi-hole-e-ad-blocker/).
 
 
-## Nginx as web server
+### Nginx as web server
 0. The Pi-hole web interface needs of the following php modules to work. Make sure you have installed them on your system
 
     ```bash
