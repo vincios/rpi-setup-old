@@ -715,7 +715,7 @@ Update Traefik is simple as replace the binary file with the updated one
     http://<YOUR PI's IP ADDRESS>:8080
     ```
 
->💡 Now you can also remove the `default` site from the enabled sites
+> 💡 Now you can also remove the `default` site from the enabled sites
 >
 >```bash
 >$ sudo rm -f /etc/nginx/sites-enabled/default
