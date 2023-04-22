@@ -1430,7 +1430,9 @@ Notes:
     $ sudo chmod 755 /var/www/html/admin/
     ```
 
-4. Add the `
+4. Add the group to the `pihole` user
+
+
 
 
 ### (lihgttpd only) Change the lighttpd port
