@@ -1430,7 +1430,7 @@ Notes:
     $ sudo chmod 755 /var/www/html/admin/
     ```
 
-4. 
+4. Add the `
 
 
 ### (lihgttpd only) Change the lighttpd port
