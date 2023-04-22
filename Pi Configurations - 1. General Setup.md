@@ -1430,7 +1430,7 @@ Notes:
     $ sudo chmod 755 /var/www/html/admin/
     ```
 
-4. Add the group `pihole` to the `pihole` user
+4. Add the group `pihole` to the `www-data` user
 
     We need to add the group pihole to the www-data since it will be needed by the interface to work with the database
 
