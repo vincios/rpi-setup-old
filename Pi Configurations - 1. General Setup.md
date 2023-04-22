@@ -1370,7 +1370,11 @@ Notes:
     $ sudo apt install php-cgi php-xml php-sqlite3 php-intl
     ```
 
-1. Stop and disable the default `ligth
+1. Stop and disable the default `lighttpd` (if necessary)
+
+```bash
+
+```
 
 ### (lihgttpd only) Change the lighttpd port
 The Pi-hole admin dashboard is served by a `lighttpd` web server on the port `80`, that we have to change
