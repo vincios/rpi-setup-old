@@ -1417,7 +1417,11 @@ Notes:
     $ systemctl disable lighttpd
     ```
 
-2. Create the configuration file `/etc/nginx/sites-available/pihole` with the following 
+2. Create the configuration file `/etc/nginx/sites-available/pihole` with the following code
+
+    ```nginx
+
+    ```
 
 3. Change the web folder's directory permissions
 
