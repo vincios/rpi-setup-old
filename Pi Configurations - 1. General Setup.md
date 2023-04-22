@@ -1478,7 +1478,7 @@ Notes:
 5. Restart the `nginx` service
 
 ### (lighttpd only) Change the lighttpd port
-The Pi-hole admin dashboard is served by a `lighttpd` web server on the port `80`, that we have to change to 
+The Pi-hole admin dashboard is served by a `lighttpd` web server on the port `80`, that we have to change to `8088`
 
 - Edit the `lighttpd.conf` file
 
