@@ -1344,6 +1344,7 @@ $ wg-add id "name" "domain"
     $ curl -sSL https://install.pi-hole.net | bash
     ```
 
+
 3. Install [whitelist](https://github.com/anudeepND/whitelist)
 
     ```bash
