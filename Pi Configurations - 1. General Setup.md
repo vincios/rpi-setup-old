@@ -1474,7 +1474,7 @@ Notes:
     $ sudo usermod -aG pihole www-data
     ```
 
-5. Restart the 
+5. Restart the `nginx` service
 
 ### (lihgttpd only) Change the lighttpd port
 The Pi-hole admin dashboard is served by a `lighttpd` web server on the port `80`, that we have to change
