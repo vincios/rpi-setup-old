@@ -20,7 +20,7 @@ Index
     - [Update Traefik](#update-traefik)
     - [Annex: Add custom dynamic configuration](#annex-add-custom-dynamic-configuration)
   - [Ngnix and PHP](#ngnix-and-php)
-- [](#)
+    - [Create a site](#create-a-site)
   - [Wireguard VPN \[🦆\]](#wireguard-vpn-)
     - [Install Wireguard](#install-wireguard)
     - [Add clients](#add-clients)
@@ -724,7 +724,9 @@ Update Traefik is simple as replace the binary file with the updated one
 >
 > and just use the `/etc/nginx/sites-available/default` as template for your sites.
 
-##
+### Create a site
+
+
 Remember that in nginx the configuration file of  must be placed in the `/etc/nginx/sites-available/` folder and then enabled, linking it in the ``/etc/nginx/sites-enabled/` folder.
 
 ```bash
