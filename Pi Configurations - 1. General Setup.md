@@ -723,7 +723,11 @@ Update Traefik is simple as replace the binary file with the updated one
 >
 > and just use the `/etc/nginx/sites-available/default` as template for your sites.
 
-Remember that in nginx the configuration file of each site must be placed in the `/etc/nginx/sites-available/` folder and then enabled, linking them in the ``/etc/nginx/sites-enabled/`
+Remember that in nginx the configuration file of each site must be placed in the `/etc/nginx/sites-available/` folder and then enabled, linking them in the ``/etc/nginx/sites-enabled/` folder.
+
+```bash
+$ 
+```
 ## Wireguard VPN [🦆]
 At its core, all WireGuard does is create an interface from one computer to another. It doesn’t really let you access other computers on either end of the network, or forward all your traffic through the VPN server, or anything like that. It just connects two computers, directly, quickly and securely.
 
