@@ -747,8 +747,7 @@ Update Traefik is simple as replace the binary file with the updated one
 
 ```bash
 $ sudo ln -s /etc/nginx/sites-available/your.site /etc/nginx/sites-enabled/your.site 
-$ sudo nginx -t # checks the configuration files syntax
-$ sudo systemctl reload nginx
+
 ```
 
 
