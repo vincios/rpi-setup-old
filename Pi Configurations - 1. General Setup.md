@@ -1423,7 +1423,7 @@ Notes:
 
     ```
 
-3. Give the right permission to the Pi-holeweb folder's directory permissions
+3. Give the right permission to the Pi-hole web folder's directory permissions
 
     ```bash
     $ sudo chown -R www-data:www-data /var/www/html/admin/
