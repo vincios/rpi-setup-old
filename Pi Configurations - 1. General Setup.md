@@ -38,7 +38,7 @@ Index
   - [Install Pi-hole](#install-pi-hole)
     - [Nginx as web server](#nginx-as-web-server)
     - [(lighttpd only) Change the lighttpd port](#lighttpd-only-change-the-lighttpd-port)
-- [](#)
+  - [](#)
   - [Build TOR](#build-tor)
   - [Run BridTools](#run-bridtools)
   - [Install jDownloader in headless mode](#install-jdownloader-in-headless-mode)
@@ -1492,7 +1492,7 @@ $ sudo nano /etc/lighttpd/lighttpd.conf
 $ sudo service lighttpd restart
 ```
 
-#
+##
 ## Build TOR
 **NEW** (but not tested yet):
 
