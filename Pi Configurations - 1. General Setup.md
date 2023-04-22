@@ -1343,7 +1343,7 @@ $ wg-add id "name" "domain"
 
       - Do you want to install the web admin interface? `Yes`
       - Do you want to install the `lighttpd` web server? `No`
-      - 
+
     ```bash
     $ curl -sSL https://install.pi-hole.net | bash
     ```
