@@ -1432,7 +1432,7 @@ Notes:
 
 4. Add the group `pihole` to the `www-data` user
 
-    We need to add the group `pihole` to the www-data since it will be needed by the interface to work with the database
+    We need to add the group `pihole` to the `www-data` since it will be needed by the interface to work with the database
 
     ```bash
     $ sudo usermod -aG pihole www-data
