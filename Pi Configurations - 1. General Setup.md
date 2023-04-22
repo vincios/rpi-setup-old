@@ -37,7 +37,7 @@ Index
     - [Bonus: Add new clients with a single command](#bonus-add-new-clients-with-a-single-command)
   - [Install Pi-hole](#install-pi-hole)
     - [Nginx as web server](#nginx-as-web-server)
-    - [(li only) Change the lighttpd port](#li-only-change-the-lighttpd-port)
+    - [(lighttpd only) Change the lighttpd port](#lighttpd-only-change-the-lighttpd-port)
   - [Build TOR](#build-tor)
   - [Run BridTools](#run-bridtools)
   - [Install jDownloader in headless mode](#install-jdownloader-in-headless-mode)
@@ -1476,7 +1476,7 @@ Notes:
 
 5. Restart the `nginx` service
 
-### (li only) Change the lighttpd port
+### (lighttpd only) Change the lighttpd port
 The Pi-hole admin dashboard is served by a `lighttpd` web server on the port `80`, that we have to change to 
 
 - Edit the `lighttpd.conf` file
