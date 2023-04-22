@@ -1457,6 +1457,7 @@ Notes:
     }
     ```
 
+    
 3. Give the right permission to the Pi-hole web folder
 
     ```bash
