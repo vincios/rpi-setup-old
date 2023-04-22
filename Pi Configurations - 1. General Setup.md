@@ -714,9 +714,9 @@ Update Traefik is simple as replace the binary file with the updated one
     ```
 
 >💡 Now you can also remove the `default` site from the enabled sites
-
+>
 >```bash
-$ sudo rm -f /etc/nginx/sites-enabled/default
+>$ sudo rm -f /etc/nginx/sites-enabled/default
 ```
 
 and use the `/etc/nginx/sites-available/default` just as template for your sites.
