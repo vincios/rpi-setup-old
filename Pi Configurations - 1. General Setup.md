@@ -1373,7 +1373,8 @@ Notes:
 1. Stop and disable the default `lighttpd` (if necessary)
 
 ```bash
-$ 
+
+$ systemctl disable lighttpd
 ```
 
 ### (lihgttpd only) Change the lighttpd port
