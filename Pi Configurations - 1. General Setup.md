@@ -639,6 +639,7 @@ Update Traefik is simple as replace the binary file with the updated one
         $ sudo chmod 644 /etc/traefik/dynamic/service_name.yml
         ```
 
+    4. Restart the Traefik service
 ## Ngnix and PHP
 1. Install ngnix
 
