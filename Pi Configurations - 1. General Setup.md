@@ -745,7 +745,7 @@ Update Traefik is simple as replace the binary file with the updated one
     $ sudo ln -s /etc/nginx/sites-available/your-site /etc/nginx/sites-enabled/your-site 
     ```
 
-6. 
+6. Test the configuration and restart the service
 
 
 ## Wireguard VPN [🦆]
