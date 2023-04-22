@@ -735,6 +735,8 @@ Update Traefik is simple as replace the binary file with the updated one
     $ sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/your-site
     ```
 
+    
+
 4. Edit the configuration
 
 5. Enable the site, linking the configuration file 
