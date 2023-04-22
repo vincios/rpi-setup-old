@@ -1366,7 +1366,7 @@ Notes:
 0. The Pi-hole web interface needs of the following php modules to work. Make sure you have installed them on your system
 
     ```bash
-    
+    $ sudo 
 ### (lihgttpd only) Change the lighttpd port
 The Pi-hole admin dashboard is served by a `lighttpd` web server on the port `80`, that we have to change
 
