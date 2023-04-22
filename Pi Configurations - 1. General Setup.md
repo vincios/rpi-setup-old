@@ -20,8 +20,6 @@ Index
     - [Update Traefik](#update-traefik)
     - [Annex: Add custom dynamic configuration](#annex-add-custom-dynamic-configuration)
   - [Ngnix and PHP](#ngnix-and-php)
-  - [Wireguard VPN \[🦆\]](#wireguard-vpn-)
-    - [Install Wireguard](#install-wireguard)
     - [Add clients](#add-clients)
       - [Setup the configuration environment](#setup-the-configuration-environment)
       - [Create the client's `.conf` file](#create-the-clients-conf-file)
@@ -717,7 +715,7 @@ Update Traefik is simple as replace the binary file with the updated one
 
 >💡 Now you can also remove the `default` site from the enabled sites
 
-```bash
+>```bash
 $ sudo rm -f /etc/nginx/sites-enabled/default
 ```
 
