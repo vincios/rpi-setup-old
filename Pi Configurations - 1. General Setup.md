@@ -730,6 +730,8 @@ $ sudo ln -s /etc/nginx/sites-available/your.site /etc/nginx/sites-enabled/your.
 $ sudo nginx -t # checks the configuration files syntax
 $ sudo systemctl reload nginx
 ```
+
+
 ## Wireguard VPN [🦆]
 At its core, all WireGuard does is create an interface from one computer to another. It doesn’t really let you access other computers on either end of the network, or forward all your traffic through the VPN server, or anything like that. It just connects two computers, directly, quickly and securely.
 
