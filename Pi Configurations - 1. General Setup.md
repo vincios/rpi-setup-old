@@ -640,7 +640,6 @@ Update Traefik is simple as replace the binary file with the updated one
         ```
 
     4. Restart the Traefik service
-    5. 
 ## Ngnix and PHP
 1. Install ngnix
 
