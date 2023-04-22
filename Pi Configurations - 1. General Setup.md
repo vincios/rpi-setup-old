@@ -725,10 +725,9 @@ Update Traefik is simple as replace the binary file with the updated one
 > and just use the `/etc/nginx/sites-available/default` as template for your sites.
 
 ### Create a site
-1. Your site's web files must be in the `/var/www/html/your.site` folder
+1. Your site's web files must be in the `/var/www/html/your.site` folder, giving the ownership to the `` user
 
-    
-    ```
+    ```bash
 
     ```
 2. Create the configuration file in the `/etc/nginx/sites-available/` 
@@ -741,15 +740,15 @@ Update Traefik is simple as replace the binary file with the updated one
 
     💡 Don't forget to edit the root folder
 
-4. Edit the configuration
+3. Edit the configuration
 
-5. Enable the site linking the configuration file to the `/etc/nginx/sites-enabled/` folder
+4. Enable the site linking the configuration file to the `/etc/nginx/sites-enabled/` folder
 
     ```bash
     $ sudo ln -s /etc/nginx/sites-available/your-site /etc/nginx/sites-enabled/your-site 
     ```
 
-6. Test the configuration and restart the service
+5. Test the configuration and restart the service
 
     ```bash
     $ sudo nginx -t # checks the configuration files syntax
