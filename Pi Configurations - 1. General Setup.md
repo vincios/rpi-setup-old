@@ -725,7 +725,7 @@ Update Traefik is simple as replace the binary file with the updated one
 > and just use the `/etc/nginx/sites-available/default` as template for your sites.
 
 ### Create a site
-1. Your site's web files must be in the `/var/www/html/your.site` folder, giving the ownership to the `` user
+1. Your site's web files must be in the `/var/www/html/your.site` folder, giving the ownership to the `www-data` user
 
     ```bash
     $ chown -R www-data:www-data /var/www/html
