@@ -35,7 +35,6 @@ Index
       - [Route the entire Internet traffic through the WireGuard tunnel](#route-the-entire-internet-traffic-through-the-wireguard-tunnel)
     - [Bonus: Add new clients with a single command](#bonus-add-new-clients-with-a-single-command)
   - [Install Pi-hole](#install-pi-hole)
-    - [Update Pi-hole](#update-pi-hole)
     - [(lihgttpd only) Change the lighttpd port](#lihgttpd-only-change-the-lighttpd-port)
   - [Build TOR](#build-tor)
   - [Run BridTools](#run-bridtools)
@@ -1362,11 +1361,6 @@ Notes:
 - Current block lists are taken from [here](https://www.andreadraghetti.it/block-list-e-white-list-per-pi-hole-e-ad-blocker/).
 
 
-
-### Update Pi-hole
-1.
-
-2. [Change the lighttpd port](#change-the-lighttpd-port)
 
 ### (lihgttpd only) Change the lighttpd port
 The Pi-hole admin dashboard is served by a `lighttpd` web server on the port `80`, that we have to change
