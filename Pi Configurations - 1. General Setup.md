@@ -1417,7 +1417,7 @@ Notes:
     $ systemctl disable lighttpd
     ```
 
-
+2.
 
 3. Change the web folder's directory permissions
 
