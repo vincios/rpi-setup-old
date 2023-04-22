@@ -1341,7 +1341,7 @@ $ wg-add id "name" "domain"
 
     ⚠️ If you want to use [nginx](#ngnix-and-php) as web server for the web inteface, during the installation wizard, install the web interface **without** the default `lighttpd` web server:
 
-      - Do you want to install the web admin interface? `
+      - Do you want to install the web admin interface? `YES`
     ```bash
     $ curl -sSL https://install.pi-hole.net | bash
     ```
