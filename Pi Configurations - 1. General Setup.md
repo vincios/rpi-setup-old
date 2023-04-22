@@ -1422,7 +1422,7 @@ $ systemctl disable lighttpd
 3. Change the web folder's directory permissions
 
     ```bash
-sudo chown -R www-data:www-data /var/www/html/admin/
+    $ sudo chown -R www-data:www-data /var/www/html/admin/
 $ sudo chmod 755 /var/www/html/admin/
     ```
 
