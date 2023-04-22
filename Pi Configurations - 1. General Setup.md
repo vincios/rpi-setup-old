@@ -730,7 +730,7 @@ Update Traefik is simple as replace the binary file with the updated one
     💡 You can use the `/etc/nginx/sites-available/default` as template
 
     ```bash
-    $ sudo cp /etc/nginx/sites-available/
+    $ sudo cp /etc/nginx/sites-available/default `/etc/nginx/sites-available/`
     ```
 Remember that in nginx the configuration file of  must be placed in the  folder and then enabled, linking it in the ``/etc/nginx/sites-enabled/` folder.
 
