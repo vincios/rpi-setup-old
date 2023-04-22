@@ -35,8 +35,6 @@ Index
       - [Route the entire Internet traffic through the WireGuard tunnel](#route-the-entire-internet-traffic-through-the-wireguard-tunnel)
     - [Bonus: Add new clients with a single command](#bonus-add-new-clients-with-a-single-command)
   - [Install Pi-hole](#install-pi-hole)
-    - [Update Pi-hole](#update-pi-hole)
-    - [Change the lighttpd port](#change-the-lighttpd-port)
   - [Build TOR](#build-tor)
   - [Run BridTools](#run-bridtools)
   - [Install jDownloader in headless mode](#install-jdownloader-in-headless-mode)
@@ -1339,7 +1337,7 @@ $ wg-add id "name" "domain"
 1. Make sure that your system is fully updated (with `apt`)
 2. Install Pi-hole (from official [guide](https://docs.pi-hole.net/main/basic-install/))
 
-    ```bash
+  ```bash
 	$ curl -sSL https://install.pi-hole.net | bash
 	```
 
