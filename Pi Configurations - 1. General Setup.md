@@ -1432,7 +1432,9 @@ Notes:
 
 4. Add the group to the `pihole` user
 
-
+```bash
+$ sudo usermod -aG pihole www-data
+```
 
 
 ### (lihgttpd only) Change the lighttpd port
