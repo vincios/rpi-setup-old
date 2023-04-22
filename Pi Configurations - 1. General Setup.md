@@ -1423,7 +1423,7 @@ $ systemctl disable lighttpd
 
     ```bash
 sudo chown -R www-data:www-data /var/www/html/admin/
-
+$ sudo chmod 755 /var/www/html/admin/
     ```
 
 ### (lihgttpd only) Change the lighttpd port
