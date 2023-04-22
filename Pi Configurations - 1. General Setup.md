@@ -37,6 +37,7 @@ Index
     - [Bonus: Add new clients with a single command](#bonus-add-new-clients-with-a-single-command)
   - [Install Pi-hole](#install-pi-hole)
     - [Nginx as web server](#nginx-as-web-server)
+- [server\_name \_;](#server_name-_)
     - [(lihgttpd only) Change the lighttpd port](#lihgttpd-only-change-the-lighttpd-port)
   - [Build TOR](#build-tor)
   - [Run BridTools](#run-bridtools)
@@ -1420,7 +1421,41 @@ Notes:
 2. Create the configuration file `/etc/nginx/sites-available/pihole` with the following code
 
     ```nginx
+server {
+    listen 8088;
+    listen [::]:8088;
 
+    root /var/www/html;
+#    server_name _;
+    autoindex off;
+
+    index index.php index.html index.htm;
+
+    location / {
+        expires max;
+        try_files $uri $uri/ =404;
+    }
+
+    location ~ \.php$ {
+        include fastcgi_params;
+        fastcgi_param SCRIPT_FILENAME $document_root/$fastcgi_script_name;
+        fastcgi_pass unix:/run/php/php7.4-fpm.sock;
+        fastcgi_param FQDN true;
+    }
+
+    location /*.js {
+        index admin/index.js;
+    }
+
+    location /admin {
+        root /var/www/html;
+        index index.php index.html index.htm;
+    }
+
+    location ~ /\.ht {
+        deny all;
+    }
+}
     ```
 
 3. Give the right permission to the Pi-hole web folder
