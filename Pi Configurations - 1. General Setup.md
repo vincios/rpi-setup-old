@@ -1339,7 +1339,7 @@ $ wg-add id "name" "domain"
 1. Make sure that your system is fully updated (with `apt`)
 2. [Install Pi-hole](https://docs.pi-hole.net/main/basic-install/)
 
-    ⚠️ If you want to use [nginx](#ngnix-and-php)
+    ⚠️ If you want to use [nginx](#ngnix-and-php) 
     ```bash
     $ curl -sSL https://install.pi-hole.net | bash
     ```
