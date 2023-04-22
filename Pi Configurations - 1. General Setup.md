@@ -728,7 +728,7 @@ Update Traefik is simple as replace the binary file with the updated one
 1. Your site's web files must be in the `/var/www/html/your.site` folder, giving the ownership to the `` user
 
     ```bash
-chown -R www-data:www-data /var/www/html
+$ chown -R www-data:www-data /var/www/html
 chmod -R 755 /var/www/html
     ```
 2. Create the configuration file in the `/etc/nginx/sites-available/` 
