@@ -697,7 +697,7 @@ Update Traefik is simple as replace the binary file with the updated one
       }
       ```
 
-4. Create the file `sudo nano /var/www/html/index.php`
+4. Create the file `/var/www/html/index.php`
 
     ```php
     <?php phpinfo(); ?>
