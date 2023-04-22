@@ -1357,7 +1357,8 @@ $ wg-add id "name" "domain"
     $ sudo python3 whitelist/scripts/whitelist.py
 	```
 
-4.  If you don't have installed the default `lighttpd` web server, you must follow `
+4.  If you don't have installed the default `lighttpd` web server, you must follow [Nginx as web server](#nginx-as-web-server)
+
 Notes: 
 - Current block lists are taken from [here](https://www.andreadraghetti.it/block-list-e-white-list-per-pi-hole-e-ad-blocker/).
 
