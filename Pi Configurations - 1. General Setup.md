@@ -715,7 +715,7 @@ Update Traefik is simple as replace the binary file with the updated one
     http://<YOUR PI's IP ADDRESS>:8080
     ```
 
-💡 Now you can also remove the `default` site from the 
+💡 Now you can also remove the `default` site from the enabled sites and us
 
 ## Wireguard VPN [🦆]
 At its core, all WireGuard does is create an interface from one computer to another. It doesn’t really let you access other computers on either end of the network, or forward all your traffic through the VPN server, or anything like that. It just connects two computers, directly, quickly and securely.
