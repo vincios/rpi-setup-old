@@ -1419,7 +1419,7 @@ $ systemctl disable lighttpd
 
 
 
-3. Gi
+3. Changhe the 
 
 ### (lihgttpd only) Change the lighttpd port
 The Pi-hole admin dashboard is served by a `lighttpd` web server on the port `80`, that we have to change
