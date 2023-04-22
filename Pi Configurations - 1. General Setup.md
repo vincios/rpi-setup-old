@@ -1366,7 +1366,7 @@ Notes:
 0. The Pi-hole web interface needs of the following php modules to work. Make sure you have installed them on your system
 
     ```bash
-    $ sudo apt php7.3-cgi php7.3-xml php7.3-sqlite3 php7.3-intl
+    $ sudo apt php-cgi php7.3-xml php7.3-sqlite3 php7.3-intl
     ```
 
 1
