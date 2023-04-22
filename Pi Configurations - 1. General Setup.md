@@ -1349,6 +1349,7 @@ $ wg-add id "name" "domain"
     ```
 
     ⚠️ Make note of the admin password
+
 3. Install [whitelist](https://github.com/anudeepND/whitelist)
 
     ```bash
