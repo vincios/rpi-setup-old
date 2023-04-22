@@ -729,9 +729,6 @@ Update Traefik is simple as replace the binary file with the updated one
 
     ```bash
 chown -R www-data:www-data /var/www/html
-
-Make sure the html directory is writable
-
 chmod -R 755 /var/www/html
     ```
 2. Create the configuration file in the `/etc/nginx/sites-available/` 
