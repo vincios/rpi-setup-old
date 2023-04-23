@@ -580,10 +580,6 @@ Update Traefik is simple as replace the binary file with the updated one
     2. Configure into this file the Service's [Router](https://doc.traefik.io/traefik/routing/routers/) and [Service](https://doc.traefik.io/traefik/routing/services/) (and, eventually, local Middlewares)
     
         Use the following template as reference
-
-        <details>
-        <summary>✨ Click to see the code</summary>
-
         ```yaml
         http:
           routers:
