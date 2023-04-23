@@ -646,7 +646,7 @@ Update Traefik is simple as replace the binary file with the updated one
         replacement: "https://${1}/path/"
     ```
 
-    Redirects `
+    Redirects `subdoma
 ## Ngnix and PHP
 1. Install ngnix
 
