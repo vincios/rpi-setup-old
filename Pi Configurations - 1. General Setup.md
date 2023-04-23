@@ -641,10 +641,10 @@ Update Traefik is simple as replace the binary file with the updated one
 
     ```yml
     middlewares:
-    redirect-to-path:
-      redirectRegex:
-        regex: "^https://([^/]+)/?$"
-        replacement: "https://${1}/path/"
+      redirect-to-path:
+        redirectRegex:
+          regex: "^https://([^/]+)/?$"
+          replacement: "https://${1}/path/"
     ```
 
     💡 Redirects `https://domain.example.com` to `https://domain.example.com/path/`
