@@ -1495,7 +1495,7 @@ $ sudo service lighttpd restart
 ```
 
 ### Traefik configuration
-- Follow [()](#annex-add-custom-dynamic-configuration)
+- Follow [Annex](#annex-add-custom-dynamic-configuration)
 ```yml
 http:
   routers:
