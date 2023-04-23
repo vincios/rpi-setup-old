@@ -1490,7 +1490,7 @@ $ sudo service lighttpd restart
 ```
 
 ### Traefik configuration
-- Follow [Annex: Add custom dynamic configuration](#annex-add-custom-dynamic-configuration), use the following configu
+- Follow [Annex: Add custom dynamic configuration](#annex-add-custom-dynamic-configuration), use the following configuation
 
     ```yml
     http:
