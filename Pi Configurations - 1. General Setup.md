@@ -1415,7 +1415,7 @@ Notes:
 - Current block lists are taken from [here](https://www.andreadraghetti.it/block-list-e-white-list-per-pi-hole-e-ad-blocker/).
 
 
-### Nginx as web server
+### Nginx as web server 
 0. The Pi-hole web interface needs of the following php modules to work. Make sure you have installed them on your system
 
     ```bash
