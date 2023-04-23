@@ -640,7 +640,10 @@ Update Traefik is simple as replace the binary file with the updated one
 - Redirect base or root path to a subpath
 
     ```yml
-
+    redirect-to-admin:
+      redirectRegex:
+        regex: "^https://([^/]+)/?$"
+        replacement: "https://${1}/admin/"
     ```
 
 ## Ngnix and PHP
