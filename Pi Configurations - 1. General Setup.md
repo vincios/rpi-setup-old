@@ -638,6 +638,11 @@ Update Traefik is simple as replace the binary file with the updated one
 
 ### Annex: tips and tricks
 - Redirect base or root path to a subpath
+
+    ```yml
+
+    ```
+
 ## Ngnix and PHP
 1. Install ngnix
 
