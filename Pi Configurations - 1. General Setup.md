@@ -643,7 +643,7 @@ Update Traefik is simple as replace the binary file with the updated one
     redirect-to-x:
       redirectRegex:
         regex: "^https://([^/]+)/?$"
-        replacement: "https://${1}/admin/"
+        replacement: "https://${1}/x/"
     ```
 
 ## Ngnix and PHP
