@@ -1492,41 +1492,41 @@ $ sudo service lighttpd restart
 ### Traefik configuration
 - Follow [Annex: Add custom dynamic configuration](#annex-add-custom-dynamic-configuration)
 
-```yml
-http:
-  routers:
-    pi-hole:
-      rule: Host(`pihole.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org`)
-      service: "pi-hole"
+    ```yml
+    http:
+      routers:
+        pi-hole:
+          rule: Host(`pihole.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org`)
+          service: "pi-hole"
 
-      # Middlewares to which the request will be forwarded when the route is activated
-      # Optional
+          # Middlewares to which the request will be forwarded when the route is activated
+          # Optional
+          middlewares:
+            - redirect-to-admin
+            - authentication
+
+          # Enable the TLS encryption
+          # Normally, you should not need to edit this section
+          tls:
+            certResolver: "duckdnsResolver"
+            domains:
+              - main: "{{ env "DUCKDNS_DOMAIN"}}.duckdns.org"
+                sans:
+                  - "*.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org"
+
       middlewares:
-        - redirect-to-admin
-        - authentication
+        redirect-to-admin:
+          redirectRegex:
+            regex: "^https://([^/]+)/?$"
+            replacement: "https://${1}/admin/"
 
-      # Enable the TLS encryption
-      # Normally, you should not need to edit this section
-      tls:
-        certResolver: "duckdnsResolver"
-        domains:
-          - main: "{{ env "DUCKDNS_DOMAIN"}}.duckdns.org"
-            sans:
-              - "*.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org"
-
-  middlewares:
-    redirect-to-admin:
-      redirectRegex:
-        regex: "^https://([^/]+)/?$"
-        replacement: "https://${1}/admin/"
-
-  # Service's urls where the request will be forwarded
-  services:
-    pi-hole:
-      loadBalancer:
-        servers:
-        - url: "http://127.0.0.1:8088/admin/"
-```
+      # Service's urls where the request will be forwarded
+      services:
+        pi-hole:
+          loadBalancer:
+            servers:
+            - url: "http://127.0.0.1:8088/admin/"
+    ```
 
 ## Build TOR
 **NEW** (but not tested yet):
