@@ -637,7 +637,7 @@ Update Traefik is simple as replace the binary file with the updated one
     4. Restart the Traefik service
 
 ### Annex: tips and tricks
-- Middleware to redirect a 
+- Middleware to add a path 
 ## Ngnix and PHP
 1. Install ngnix
 
