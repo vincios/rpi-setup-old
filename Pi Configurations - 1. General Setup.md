@@ -1495,7 +1495,7 @@ $ sudo service lighttpd restart
 ```
 
 ### Traefik configuration
-
+```
 ## Build TOR
 **NEW** (but not tested yet):
 
