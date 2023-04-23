@@ -1494,7 +1494,7 @@ $ sudo service lighttpd restart
 
     <details>
     <summary>✨ Click to see the code</summary>
-    
+
     ```yml
     http:
       routers:
@@ -1530,6 +1530,8 @@ $ sudo service lighttpd restart
             servers:
             - url: "http://127.0.0.1:8088/admin/"
     ```
+
+    </details>
 
 ## Build TOR
 **NEW** (but not tested yet):
