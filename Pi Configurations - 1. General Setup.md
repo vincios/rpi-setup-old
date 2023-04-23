@@ -415,7 +415,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
         api:
           # The rule matches http://example.com/api/ or http://example.com/dashboard/
           # but does not match http://example.com/hello
-          rule: Host(`traefik.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org`) && (PathPrefix(`/api`) || PathPrefix(`/dashboard`))
+          rule: Host(`traefik.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org`)
           entrypoints:
             - web
             - websecure
@@ -1500,7 +1500,7 @@ $ sudo service lighttpd restart
 **NEW** (but not tested yet):
 
 Build from git. See [here](https://tor.stackexchange.com/questions/75/how-can-i-install-tor-from-the-source-code-in-the-git-repository).
- && (PathPrefix(`/api`) || PathPrefix(`/dashboard`))
+
 **OLD** (tested):
 
 - `sudo apt install libevent-dev`
