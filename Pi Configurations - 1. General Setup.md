@@ -1500,7 +1500,7 @@ $ sudo service lighttpd restart
 **NEW** (but not tested yet):
 
 Build from git. See [here](https://tor.stackexchange.com/questions/75/how-can-i-install-tor-from-the-source-code-in-the-git-repository).
-
+ && (PathPrefix(`/api`) || PathPrefix(`/dashboard`))
 **OLD** (tested):
 
 - `sudo apt install libevent-dev`
