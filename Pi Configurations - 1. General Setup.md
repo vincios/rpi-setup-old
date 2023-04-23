@@ -1471,7 +1471,7 @@ Notes:
 
     ⚠️ Edit the line `fastcgi_pass unix:/run/php/php7.4-fpm.sock;` with your php version
 
-    ⚠️ 
+    ⚠️ Edit the line `
 
 3. Give the right permission to the Pi-hole web folder
 
