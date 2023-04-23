@@ -1428,7 +1428,7 @@ Notes:
         listen [::]:8088;
 
         root /var/www/html;
-    #    server_name _;
+        server_name _;
         autoindex off;
 
         index index.php index.html index.htm;
