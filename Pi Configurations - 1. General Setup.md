@@ -1432,41 +1432,41 @@ Notes:
 2. Create the configuration file `/etc/nginx/sites-available/pihole` with the following code
 
     ```nginx
-    server {
-        listen 8088;
-        listen [::]:8088;
+server {
+    listen 8088;
+    listen [::]:8088;
 
-        root /var/www/html;
-        server_name _;
-        autoindex off;
+    root /var/www/html;
+    server_name pihole.cclouds.duckdns.org;
+    autoindex off;
 
-        index index.php index.html index.htm;
+    index index.php index.html index.htm;
 
-        location / {
-            expires max;
-            try_files $uri $uri/ =404;
-        }
-
-        location ~ \.php$ {
-            include fastcgi_params;
-            fastcgi_param SCRIPT_FILENAME $document_root/$fastcgi_script_name;
-            fastcgi_pass unix:/run/php/php7.4-fpm.sock;
-            fastcgi_param FQDN true;
-        }
-
-        location /*.js {
-            index admin/index.js;
-        }
-
-        location /admin {
-            root /var/www/html;
-            index index.php index.html index.htm;
-        }
-
-        location ~ /\.ht {
-            deny all;
-        }
+    location / {
+        expires max;
+        try_files $uri $uri/ =404;
     }
+
+    location ~ \.php$ {
+        include fastcgi_params;
+        fastcgi_param SCRIPT_FILENAME $document_root/$fastcgi_script_name;
+        fastcgi_pass unix:/run/php/php7.4-fpm.sock;
+        fastcgi_param FQDN true;
+    }
+
+    location /*.js {
+        index admin/index.js;
+    }
+
+    location /admin {
+        root /var/www/html;
+        index index.php index.html index.htm;
+    }
+
+    location ~ /\.ht {
+        deny all;
+    }
+}
     ```
 
     ⚠️ Edit the line `fastcgi_pass unix:/run/php/php7.4-fpm.sock;` with your php version
