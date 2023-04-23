@@ -1437,7 +1437,7 @@ Notes:
         listen [::]:8088;
 
         root /var/www/html;
-        server_name pihole.cclouds.duckdns.org;
+        server_name pihole.<.duckdns.org;
         autoindex off;
 
         index index.php index.html index.htm;
@@ -1470,7 +1470,7 @@ Notes:
     ```
 
     ⚠️ Edit the line `fastcgi_pass unix:/run/php/php7.4-fpm.sock;` with your php version
-    
+
 
 3. Give the right permission to the Pi-hole web folder
 
