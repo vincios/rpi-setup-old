@@ -19,6 +19,7 @@ Index
     - [Configure log rotation](#configure-log-rotation)
     - [Update Traefik](#update-traefik)
     - [Annex: Add custom dynamic configuration](#annex-add-custom-dynamic-configuration)
+    - [Annex: tips and tricks](#annex-tips-and-tricks)
   - [Ngnix and PHP](#ngnix-and-php)
     - [Create a site](#create-a-site)
   - [Wireguard VPN \[🦆\]](#wireguard-vpn-)
