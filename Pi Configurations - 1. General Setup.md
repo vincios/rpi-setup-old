@@ -640,6 +640,7 @@ Update Traefik is simple as replace the binary file with the updated one
 - Redirect base or root path to a subpath
 
     ```yml
+    middlewares:
     redirect-to-path:
       redirectRegex:
         regex: "^https://([^/]+)/?$"
