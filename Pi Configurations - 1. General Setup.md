@@ -1493,7 +1493,7 @@ $ sudo service lighttpd restart
 - Follow [Annex: Add custom dynamic configuration](#annex-add-custom-dynamic-configuration), use the following configuation
 
     <details>
-    <>
+    <s>
     ```yml
     http:
       routers:
