@@ -1495,6 +1495,7 @@ $ sudo service lighttpd restart
 ```
 
 ### Traefik configuration
+- Follow ()
 ```yml
 http:
   routers:
