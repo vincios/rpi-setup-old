@@ -1494,6 +1494,7 @@ $ sudo service lighttpd restart
 
     <details>
     <summary>✨ Click to see the code</summary>
+    
     ```yml
     http:
       routers:
