@@ -437,7 +437,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
     >
     > ⚠️ Note the trailing `/`: without it you should receive a _404 Not found_ error
 
-  1. Set file permissions
+ 3. Set file permissions
   
       ```bash
       $ sudo chown -R traefik:traefik /etc/traefik/dynamic
