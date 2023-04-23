@@ -646,6 +646,7 @@ Update Traefik is simple as replace the binary file with the updated one
         replacement: "https://${1}/path/"
     ```
 
+    
 ## Ngnix and PHP
 1. Install ngnix
 
