@@ -1437,7 +1437,7 @@ Notes:
         listen [::]:8088;
 
         root /var/www/html;
-        server_name pihole.cclouds.duckdns.org;
+        server_name pihole.<YOUR_DUCKDNS_DOMAIN>.duckdns.org;
         autoindex on;
         port_in_redirect off;
 
