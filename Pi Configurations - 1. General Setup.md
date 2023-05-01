@@ -1792,6 +1792,7 @@ $ python3.X --version
 ```
 
 6. Now you can clean up downloaded files
+  
   ```bash
   $ cd ..
   $ sudo rm -rf Python-3.10.0.tar.xz
