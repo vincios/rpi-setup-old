@@ -1746,7 +1746,7 @@ Don't forget to add the alias in the `.bash_aliases` file.
 ## Install Python 3
 Apt's Python 3 version is always out-of-date, so we have to build it from scratch.
 
-1 Start by installing the packages necessary to build Python source:
+1. Start by installing the packages necessary to build Python source:
 
   ```bash
   $ sudo apt update
