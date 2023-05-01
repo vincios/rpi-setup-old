@@ -1771,10 +1771,10 @@ Apt's Python 3 version is always out-of-date, so we have to build it from scratc
 
 - Run `make` to start the build process:
 
-```bash
-$ make -j 4
-```
-The `-j` to correspond to the number of cores in your processor.
+  ```bash
+  $ make -j 4
+  ```
+  The `-j` to correspond to the number of cores in your processor.
 
 - Once the build is done, install the Python binaries by running the following command as a user with sudo access:
 ```bash
