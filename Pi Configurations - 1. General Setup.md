@@ -1791,7 +1791,7 @@ Now Python 3 is installed. To use it instead of the system default 3.7 **you hav
 $ python3.X --version
 ```
 
-- Now you can clean up downloaded files
+6. Now you can clean up downloaded files
   ```bash
   $ cd ..
   $ sudo rm -rf Python-3.10.0.tar.xz
