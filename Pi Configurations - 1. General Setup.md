@@ -1771,9 +1771,9 @@ Apt's Python 3 version is always out-of-date, so we have to build it from scratc
 
 4. Run `make` to start the build process:
 
-  ```bash
-  $ make -j 4
-  ```
+    ```bash
+    $ make -j 4
+    ```
 
   💡 Pass to the `-j` argument the number of cores in your CPU (4 for Raspberry Pi 4)
 
