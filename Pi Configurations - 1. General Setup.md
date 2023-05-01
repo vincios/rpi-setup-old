@@ -1753,7 +1753,9 @@ Apt's Python 3 version is always out-of-date, so we have to build it from scratc
     $ sudo apt install build-essential tk-dev libncurses5-dev libncursesw5-dev libreadline6-dev libdb5.3-dev libgdbm-dev libsqlite3-dev libssl-dev libbz2-dev libexpat1-dev liblzma-dev zlib1g-dev libffi-dev
     ```
 
-- Download the latest release’s source code from the Python [download page](https://www.python.org/downloads/) with `wget` or `curl`. For example, for the version `3.10.0`:
+- Download the latest release’s source code from the Python [download page](https://www.python.org/downloads/) with `wget` or `curl`. 
+- 
+- For example, for the version `3.10.0`:
 
   ```bash
   wget https://www.python.org/ftp/python/3.10.0/Python-3.10.0.tar.xz
