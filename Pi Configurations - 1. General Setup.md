@@ -1744,7 +1744,7 @@ Don't forget to add the alias in the `.bash_aliases` file.
 
 
 ## Install Python 3
-Apt's  is not on Debian repository so we have to build it from scratch.
+Apt's Python 3 version is always  is not on Debian repository so we have to build it from scratch.
 
 - Start by installing the packages necessary to build Python source:
 
