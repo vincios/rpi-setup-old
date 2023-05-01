@@ -1554,6 +1554,7 @@ $ sudo service lighttpd restart
 ## Jellyfin
 Follow the [official guide](https://jellyfin.org/docs/general/installation/linux#debian)
 
+
 ## Build TOR
 **NEW** (but not tested yet):
 
