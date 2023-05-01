@@ -1740,12 +1740,6 @@ See [here](https://pimylifeup.com/raspberry-pi-deluge).<br>
 Do not follow the last part ("Setting up Deluge as a service").<br>
 Don't forget to add the alias in the `.bash_aliases` file.
 
-
-
-
-
-
-
 # Useful commands
 ## List active processes
 Simple
