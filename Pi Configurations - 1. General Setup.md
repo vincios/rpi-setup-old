@@ -1778,10 +1778,10 @@ Apt's Python 3 version is always out-of-date, so we have to build it from scratc
   💡 Pass to the `-j` argument the number of cores in your CPU (4 for Raspberry Pi 4)
 
 - Once the build is done, install the Python binaries by running the following command as a user with sudo access:
-```bash
-$ sudo make altinstall
-```
-**NB:** Do not use the standard make install as it will overwrite the default system python3 binary. <br> 
+  ```bash
+  $ sudo make altinstall
+  ```
+  **NB:** Do not use the standard make install as it will overwrite the default system python3 binary. <br> 
 
 Now Python3.10 is installed. To use it instead of the system default 3.7 **you have to explicity run `python3.10`**, such as:
 ```bash
