@@ -1785,6 +1785,13 @@ Apt's Python 3 version is always out-of-date, so we have to build it from scratc
 
   ⚠️ Do not use the standard `make install` as it will overwrite the default system python3 binary
 
+6. Now you can clean up downloaded files
+  
+    ```bash
+    $ cd ..
+    $ sudo rm -rf Python-3.10.0.tar.xz
+    $ sudo rm -rf Python-3.10.0
+    ```
 Now Python 3 is installed. To use it instead of the system default 3.7 **you have to explicity run `python3.X`**, such as:
 
 ```bash
