@@ -43,9 +43,6 @@ Index
   - [Jellyfin](#jellyfin)
     - [Traefik configuration](#traefik-configuration-1)
 - [Service's urls where the request will be forwarded](#services-urls-where-the-request-will-be-forwarded)
-  - [Build TOR](#build-tor)
-  - [Run BridTools](#run-bridtools)
-  - [Install jDownloader in headless mode](#install-jdownloader-in-headless-mode)
   - [JDownloader RAR5 support](#jdownloader-rar5-support)
   - [Update Node and npm](#update-node-and-npm)
   - [Install Deluge torrent client with web interface](#install-deluge-torrent-client-with-web-interface)
@@ -1592,7 +1589,7 @@ http:
       loadBalancer:
         servers:
         - url: "http://127.0.0.1:8096"
-
+```
 
     </details>
 
