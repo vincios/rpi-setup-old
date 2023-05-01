@@ -42,6 +42,7 @@ Index
     - [Traefik configuration](#traefik-configuration)
   - [Jellyfin](#jellyfin)
     - [Traefik configuration](#traefik-configuration-1)
+- [Service's urls where the request will be forwarded](#services-urls-where-the-request-will-be-forwarded)
   - [Build TOR](#build-tor)
   - [Run BridTools](#run-bridtools)
   - [Install jDownloader in headless mode](#install-jdownloader-in-headless-mode)
@@ -1562,7 +1563,36 @@ Follow the [official guide](https://jellyfin.org/docs/general/installation/linux
     <details>
     <summary>✨ Click to see the code</summary>
 
-    
+    ```yml
+http:
+  routers:
+    jellyfin:
+      rule: Host(`jellyfin.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org`)
+      # OR rule: (Host(`{{ env "DUCKDNS_DOMAIN"}}.duckdns.org`) && PathPrefix(`/new-service`))
+
+      # If no entryPoints specified, the router will accept requests from all defined entry points.
+      # If you want to limit the router scope only to some entry points, uncomment these lines
+      # entryPoints:
+      #  - "websecure"
+
+      service: jellyfin
+
+      # Enable the TLS encryption
+      # Normally, you should not need to edit this section
+      tls:
+        certResolver: "duckdnsResolver"
+        domains:
+          - main: "{{ env "DUCKDNS_DOMAIN"}}.duckdns.org"
+            sans:
+              - "*.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org"
+
+  # Service's urls where the request will be forwarded
+  services:
+    jellyfin:
+      loadBalancer:
+        servers:
+        - url: "http://127.0.0.1:8096"
+
 
     </details>
 
