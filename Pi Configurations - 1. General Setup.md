@@ -1560,7 +1560,6 @@ Follow the [official guide](https://jellyfin.org/docs/general/installation/linux
     <details>
     <summary>✨ Click to see the code</summary>
 
-    ```yml
     
 
     </details>
