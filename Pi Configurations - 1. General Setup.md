@@ -1770,6 +1770,7 @@ Apt's Python 3 version is always out-of-date, so we have to build it from scratc
   💡 The script performs a number of checks to make sure all of the dependencies on your system are present. The `--enable-optimizations` option will optimize the Python binary by running multiple tests, which will make the build process slower
 
 - Run `make` to start the build process:
+
 ```bash
 $ make -j 4
 ```
