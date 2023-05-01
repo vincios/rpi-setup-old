@@ -1569,11 +1569,6 @@ Follow the [official guide](https://jellyfin.org/docs/general/installation/linux
           rule: Host(`jellyfin.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org`)
           # OR rule: (Host(`{{ env "DUCKDNS_DOMAIN"}}.duckdns.org`) && PathPrefix(`/new-service`))
 
-          # If no entryPoints specified, the router will accept requests from all defined entry points.
-          # If you want to limit the router scope only to some entry points, uncomment these lines
-          # entryPoints:
-          #  - "websecure"
-
           service: jellyfin
 
           # Enable the TLS encryption
