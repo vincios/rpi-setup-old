@@ -48,7 +48,6 @@ Index
   - [JDownloader RAR5 support](#jdownloader-rar5-support)
   - [Update Node and npm](#update-node-and-npm)
   - [Install Deluge torrent client with web interface](#install-deluge-torrent-client-with-web-interface)
-  - [Install Python 3](#install-python-3)
 - [Useful commands](#useful-commands)
   - [List active processes](#list-active-processes)
 - [.bash\_aliases](#bash_aliases)
@@ -1743,61 +1742,7 @@ Don't forget to add the alias in the `.bash_aliases` file.
 
 
 
-## Install Python 3
-Apt's Python 3 version is always out-of-date, so we have to build it from scratch.
 
-1. Start by installing the packages necessary to build Python source
-
-    ```bash
-    $ sudo apt update
-    $ sudo apt install build-essential tk-dev libncurses5-dev libncursesw5-dev libreadline6-dev libdb5.3-dev libgdbm-dev libsqlite3-dev libssl-dev libbz2-dev libexpat1-dev liblzma-dev zlib1g-dev libffi-dev
-    ```
-
-2. Download the latest release’s XZ compressed source tarball from the Python [download page](https://www.python.org/downloads/) with `wget` or `curl`
-
-    ```bash
-    $ wget https://www.python.org/ftp/python/3.X.Y/Python-3.X.Y.tar.xz
-    ```
-
-3. When the download is complete, extract the tarball, navigate to the Python source directory and run the configure script
-
-    ```bash
-    $ tar -xf Python-3.X.Y.tar.xz
-    $ cd Python-3.X.Y
-    $ ./configure --enable-optimizations
-    ```
-
-    💡 The script performs a number of checks to make sure all of the dependencies on your system are present. The `--enable-optimizations` option will optimize the Python binary by running multiple tests, which will make the build process slower
-
-4. Run `make` to start the build process
-
-    ```bash
-    $ make -j 4
-    ```
-
-    💡 Pass to the `-j` argument the number of cores in your CPU (4 for Raspberry Pi 4)
-
-5. Once the build is done, install the Python binaries by running the following command as a user with sudo access
-
-    ```bash
-    $ sudo make altinstall
-    ```
-
-    ⚠️ Do not use the standard `make install` as it will overwrite the default system python3 binary
-
-6. Clean up downloaded files
-  
-    ```bash
-    $ cd ..
-    $ sudo rm -rf Python-3.X.Y.tar.xz
-    $ sudo rm -rf Python-3.X.Y
-    ```
-
-Now Python 3 is installed. To use it instead of the system default 3.7 **you have to explicity run `python3.X`**, such as
-
-```bash
-$ python3.X --version
-```
 
 
 
