@@ -1551,7 +1551,8 @@ $ sudo service lighttpd restart
     </details>
 
 
-## 
+## Jellyfin
+
 ## Build TOR
 **NEW** (but not tested yet):
 
