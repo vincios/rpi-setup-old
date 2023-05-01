@@ -1759,7 +1759,7 @@ Apt's Python 3 version is always out-of-date, so we have to build it from scratc
   $ wget https://www.python.org/ftp/python/3.X.Y/Python-3.X.Y.tar.xz
   ```
 
-- When the download is complete, extract the tarball, navigate to the Python source directory and run the configure script:
+3. When the download is complete, extract the tarball, navigate to the Python source directory and run the configure script:
 
   ```bash
   $ tar -xf Python-3.X.Y.tar.xz
