@@ -1779,9 +1779,9 @@ Apt's Python 3 version is always out-of-date, so we have to build it from scratc
 
 5. Once the build is done, install the Python binaries by running the following command as a user with sudo access:
 
-  ```bash
-  $ sudo make altinstall
-  ```
+    ```bash
+    $ sudo make altinstall
+    ```
 
   ⚠️ Do not use the standard `make install` as it will overwrite the default system python3 binary
 
