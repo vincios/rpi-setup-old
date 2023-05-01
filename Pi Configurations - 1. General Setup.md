@@ -1567,8 +1567,6 @@ Follow the [official guide](https://jellyfin.org/docs/general/installation/linux
       routers:
         jellyfin:
           rule: Host(`jellyfin.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org`)
-          # OR rule: (Host(`{{ env "DUCKDNS_DOMAIN"}}.duckdns.org`) && PathPrefix(`/new-service`))
-
           service: jellyfin
 
           # Enable the TLS encryption
