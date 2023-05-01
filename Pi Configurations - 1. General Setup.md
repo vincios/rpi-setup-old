@@ -1748,10 +1748,10 @@ Apt's Python 3 version is always out-of-date, so we have to build it from scratc
 
 1. Start by installing the packages necessary to build Python source:
 
-  ```bash
-  $ sudo apt update
-  $ sudo apt install build-essential tk-dev libncurses5-dev libncursesw5-dev libreadline6-dev libdb5.3-dev libgdbm-dev libsqlite3-dev libssl-dev libbz2-dev libexpat1-dev liblzma-dev zlib1g-dev libffi-dev
-  ```
+    ```bash
+    $ sudo apt update
+    $ sudo apt install build-essential tk-dev libncurses5-dev libncursesw5-dev libreadline6-dev libdb5.3-dev libgdbm-dev libsqlite3-dev libssl-dev libbz2-dev libexpat1-dev liblzma-dev zlib1g-dev libffi-dev
+    ```
 
 2. Download the latest release’s XZ compressed source tarball from the Python [download page](https://www.python.org/downloads/) with `wget` or `curl`. 
 
