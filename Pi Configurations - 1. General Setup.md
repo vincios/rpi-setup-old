@@ -1787,7 +1787,7 @@ Apt's Python 3 version is always out-of-date, so we have to build it from scratc
 
 Now Python 3 is installed. To use it instead of the system default 3.7 **you have to explicity run `python3.X`**, such as:
 ```bash
-$ python3.10 --version
+$ python3.X --version
 ```
 
 - Now you can clean up downloaded files
