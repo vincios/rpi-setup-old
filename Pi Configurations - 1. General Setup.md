@@ -1755,9 +1755,9 @@ Apt's Python 3 version is always out-of-date, so we have to build it from scratc
 
 2. Download the latest release’s XZ compressed source tarball from the Python [download page](https://www.python.org/downloads/) with `wget` or `curl`. 
 
-  ```bash
-  $ wget https://www.python.org/ftp/python/3.X.Y/Python-3.X.Y.tar.xz
-  ```
+    ```bash
+    $ wget https://www.python.org/ftp/python/3.X.Y/Python-3.X.Y.tar.xz
+    ```
 
 3. When the download is complete, extract the tarball, navigate to the Python source directory and run the configure script:
 
