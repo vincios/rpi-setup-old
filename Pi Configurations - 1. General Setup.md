@@ -1753,7 +1753,7 @@ Apt's Python 3 version is always out-of-date, so we have to build it from scratc
     $ sudo apt install build-essential tk-dev libncurses5-dev libncursesw5-dev libreadline6-dev libdb5.3-dev libgdbm-dev libsqlite3-dev libssl-dev libbz2-dev libexpat1-dev liblzma-dev zlib1g-dev libffi-dev
     ```
 
-2. Download the latest release’s XZ compressed source tarball from the Python [download page](https://www.python.org/downloads/) with `wget` or `curl`. 
+2. Download the latest release’s XZ compressed source tarball from the Python [download page](https://www.python.org/downloads/) with `wget` or `curl`
 
     ```bash
     $ wget https://www.python.org/ftp/python/3.X.Y/Python-3.X.Y.tar.xz
