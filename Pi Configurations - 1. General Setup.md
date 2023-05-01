@@ -40,6 +40,8 @@ Index
     - [Nginx as web server \[🦆\]](#nginx-as-web-server-)
     - [(lighttpd only) Change the lighttpd port](#lighttpd-only-change-the-lighttpd-port)
     - [Traefik configuration](#traefik-configuration)
+  - [Jellyfin](#jellyfin)
+    - [Traefik configuration](#traefik-configuration-1)
   - [Build TOR](#build-tor)
   - [Run BridTools](#run-bridtools)
   - [Install jDownloader in headless mode](#install-jdownloader-in-headless-mode)
