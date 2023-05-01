@@ -1762,7 +1762,7 @@ Apt's Python 3 version is always out-of-date, so we have to build it from scratc
 - When the download is complete, extract the tarball, navigate to the Python source directory and run the configure script:
 
 ```bash
-$ tar -xf Python-3.10.0.tar.xz
+$ tar -xf Python-3.x.0.tar.xz
 $ cd Python-3.10.0
 $ ./configure --enable-optimizations
 ```
