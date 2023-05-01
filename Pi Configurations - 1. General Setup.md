@@ -1763,7 +1763,7 @@ Apt's Python 3 version is always out-of-date, so we have to build it from scratc
 
 ```bash
 $ tar -xf Python-3.x.y.tar.xz
-$ cd Python-3.10.0
+$ cd Python-3.x.y
 $ ./configure --enable-optimizations
 ```
 
