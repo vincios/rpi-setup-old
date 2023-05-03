@@ -1632,7 +1632,7 @@ Apt's Python 3 version is always out-of-date, so we have to build it from scratc
     $ sudo ldconfig /usr/local/lib 
     ```
 
-    💡 Use the `ldconfig` utility is equ
+    💡 Use the `ldconfig` utility is like to 
 7. Clean up downloaded files
   
     ```bash
