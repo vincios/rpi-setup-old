@@ -1616,7 +1616,7 @@ Apt's Python 3 version is always out-of-date, so we have to build it from scratc
     $ make -j 4
     ```
 
-    💡 Pass to the `-j` argument the number of cores in your CPU (4 for Raspberry Pi 4)
+    💡 Pass to the `-j` argument the number of cores in your CPU (4 for Raspberry Pi 4). You can check this with the command `nproc`
 
 5. Once the build is done, install the Python binaries by running the following command as a user with sudo access
 
