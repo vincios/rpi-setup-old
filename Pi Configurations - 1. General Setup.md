@@ -1626,7 +1626,7 @@ Apt's Python 3 version is always out-of-date, so we have to build it from scratc
 
     ⚠️ Do not use the standard `make install` as it will overwrite the default system python3 binary
 
-
+6. 
 6. Clean up downloaded files
   
     ```bash
