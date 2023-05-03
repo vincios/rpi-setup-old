@@ -1626,12 +1626,13 @@ Apt's Python 3 version is always out-of-date, so we have to build it from scratc
 
     ⚠️ Do not use the standard `make install` as it will overwrite the default system python3 binary
 
-6. (OPTIONAL) Ifx you have launched the command `./configure` with the `--enable-shared` option, you must add the python shared libraries to the dynamic linker
+6. (OPTIONAL) If you have launched the command `./configure` with the `--enable-shared` option, you must add the python shared libraries to the dynamic linker
 
     ```bash
     $ sudo ldconfig /usr/local/lib 
     ```
 
+  
 7. Clean up downloaded files
   
     ```bash
