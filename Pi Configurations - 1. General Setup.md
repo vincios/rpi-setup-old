@@ -1603,7 +1603,7 @@ Apt's Python 3 version is always out-of-date, so we have to build it from scratc
     ```bash
     $ tar -xf Python-3.X.Y.tar.xz
     $ cd Python-3.X.Y
-    $ $ ./configure --enable-shared --enable-optimizations
+    $ ./configure --enable-shared --enable-optimizations
     ```
 
     💡 The script performs a number of checks to make sure all of the dependencies on your system are present. The `--enable-optimizations` option will optimize the Python binary by running multiple tests, which will make the build process slower
