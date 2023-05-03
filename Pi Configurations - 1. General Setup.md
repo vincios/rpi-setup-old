@@ -1629,7 +1629,7 @@ Apt's Python 3 version is always out-of-date, so we have to build it from scratc
 6. (OPTIONAL) If you have launched the command `./configure` with the `--enable-shared` option, you must add the python shared libraries to the dynamic linker
 
     ```bash
-    $ sudo ldconfig /usr/local/lib 
+    $ sudo ldconfig -v /usr/local/lib 
     ```
 
     > 💡 Use the `ldconfig` utility is equivalent to add the `/usr/local/lib` line to the `LD_LIBRARY_PATH` environment variable. But the `LD_LIBRARY_PATH` environment variable should be set on each shell login (and is ignored by system )
