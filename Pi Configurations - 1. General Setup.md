@@ -1642,7 +1642,7 @@ Apt's Python 3 version is always out-of-date, so we have to build it from scratc
     $ sudo rm -rf Python-3.X.Y
     ```
 
-Now Python 3 is installed. To use it instead of the system default 3.9 **you have to explicity run `python3.X`**, such as
+Now Python 3 is installed. To use it instead of the system default **you have to explicity run `python3.X`**, such as
 
 ```bash
 $ python3.X --version
