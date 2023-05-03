@@ -29,7 +29,7 @@
 - [Install Python 3](#install-python-3)
 - Follow the official [guide](https://www.home-assistant.io/docs/installation/raspberry-pi/)
 
-	 After `Create an account` part and before `Create the virtual environment` part of the guide, [it may be necessary](#disclaimer) install Rust. 
+	⚠️ After `Create an account` part and before `Create the virtual environment` part of the guide, [it may be necessary](#disclaimer) install Rust. 
 	In this case, [switch to homeassistant user](#switch-to-homeassistant-user) and [install Rust](#install-rust)
 	
     **NB2**: For first launch use `hass -v` and wait until log scroll stops.
