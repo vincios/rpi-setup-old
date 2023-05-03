@@ -1632,7 +1632,8 @@ Apt's Python 3 version is always out-of-date, so we have to build it from scratc
     $ sudo ldconfig -v /usr/local/lib 
     ```
 
-    > 💡 Use the `ldconfig` utility is equivalent to add the `/usr/local/lib` line to the `LD_LIBRARY_PATH` environment variable. But the `LD_LIBRARY_PATH` environment variable should be set on each shell login (and is ignored by system )
+    > 💡 Use the `ldconfig` utility is equivalent to add the `/usr/local/lib` line to the `LD_LIBRARY_PATH` environment variable. But the `LD_LIBRARY_PATH` environment variable should be set on each shell login (and is ignored by system services)
+
 7. Clean up downloaded files
   
     ```bash
