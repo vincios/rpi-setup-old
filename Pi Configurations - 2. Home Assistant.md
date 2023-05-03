@@ -32,7 +32,7 @@
 	⚠️ After `Create an account` part and before `Create the virtual environment` part of the guide, [it may be necessary](#disclaimer) install Rust. 
 	In this case, [switch to homeassistant user](#switch-to-homeassistant-user) and [install Rust](#install-rust)
 	
-     For first launch use `hass -v` and wait until log scroll stops.
+    ⚠️ For first launch use `hass -v` and wait until log scroll stops.
 
 - If necessary, [uninstall Rust](#uninstall-rust)
 - Create the [service](#service-creation)
