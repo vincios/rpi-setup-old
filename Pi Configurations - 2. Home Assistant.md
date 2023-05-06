@@ -38,7 +38,7 @@
 - Create the [service](#service-creation)
 
 ## Service creation
-**NB:** Run this steps as `raspi` user! 
+ Run this steps as `raspi` user! 
 - Create systemd service
 
 	```bash
