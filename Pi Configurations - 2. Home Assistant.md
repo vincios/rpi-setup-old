@@ -45,7 +45,7 @@
 	```bash
 	$ sudo nano -w /etc/systemd/system/home-assistant@homeassistant.service
 	```
-- Paste following text
+2. Paste following text
 
 	```sh
 	[Unit]
