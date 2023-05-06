@@ -47,7 +47,7 @@
 	```
 2. Paste following text
 
-	```sh
+	```ini
 	[Unit]
 	Description=Home Assistant
 	After=network-online.target
