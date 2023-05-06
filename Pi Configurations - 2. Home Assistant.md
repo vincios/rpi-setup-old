@@ -40,7 +40,7 @@
 ## Service creation
 ⚠️ Run this steps as `raspi` user! 
 
-1 Create systemd service
+1. Create systemd service
 
 	```bash
 	$ sudo nano -w /etc/systemd/system/home-assistant@homeassistant.service
