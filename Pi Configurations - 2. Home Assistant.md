@@ -406,6 +406,7 @@ Home Assistant is now configured to use ssl connection. You can connect to it wi
 In the latter case, you should see a security error, this is normal because the certificate is signed for the external URL.
 
 </details>
+
 ## Install HACS
 From [here](https://hacs.xyz/docs/installation/prerequisites) (With some modifications).
 
