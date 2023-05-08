@@ -432,7 +432,7 @@ Follow the [official](https://hacs.xyz/docs/installation/prerequisites) guide.
 	```
 	
 	> 💡 The file should look like this:
-    
+    >
 	> ```
 	> # Place your local configuration in /etc/mosquitto/conf.d/
     > #
