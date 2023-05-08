@@ -218,7 +218,7 @@ To edit the `configuration.yaml` file you have to [switch to homeassistant user]
         - fe00::/64
         - fd00::/64
     ```
-
+H
 3. Add the external url to the Home Assistant network configuration `Settings` > `System` > `Network` > `)
 
 ## [DEPRECATED] Create ssl certificate
