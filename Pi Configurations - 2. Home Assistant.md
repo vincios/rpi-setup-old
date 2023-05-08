@@ -410,8 +410,6 @@ In the latter case, you should see a security error, this is normal because the 
 ## Install HACS
 Adapted from [here](https://hacs.xyz/docs/installation/prerequisites).
 
-- Follow [this](https://hacs.xyz/docs/configuration/start) configuration steps.
-
 ## Mosquitto installation and configuration
 - Install Mosquitto
     
