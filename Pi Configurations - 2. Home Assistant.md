@@ -408,7 +408,7 @@ In the latter case, you should see a security error, this is normal because the 
 </details>
 
 ## Install HACS
-From [here](https://hacs.xyz/docs/installation/prerequisites)
+Adapted from [here](https://hacs.xyz/docs/installation/prerequisites).
 
 - Create `custom_components` folder into the `.homeassistant` folder.
 
