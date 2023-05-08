@@ -226,6 +226,7 @@ To edit the `configuration.yaml` file you have to [switch to homeassistant user]
 
 <details>
 
+<summary> Click to open the guide </summary>
 From [this](https://indomus.it/guide/collegarsi-da-remoto-a-home-assistant-installato-su-raspberry-raspbian/) guide. <br>
 
 **NOTE**: This guide assume a configured duckdns domain `cclouds.duckdns.org`. If you use a different domain, change scripts when indicated.
