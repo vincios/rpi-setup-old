@@ -431,25 +431,25 @@ Follow the [official](https://hacs.xyz/docs/installation/prerequisites) guide.
     password_file /etc/mosquitto/passwords
 	```
 	
-	💡 The file should look like this:
-	```
-	# Place your local configuration in /etc/mosquitto/conf.d/
-    #
-    # A full description of the configuration file is at
-    # /usr/share/doc/mosquitto/examples/mosquitto.conf.example
-    
-    pid_file /var/run/mosquitto.pid
-    
-    persistence true
-    persistence_location /var/lib/mosquitto/
-    
-    log_dest file /var/log/mosquitto/mosquitto.log
-    
-    allow_anonymous false
-    password_file /etc/mosquitto/passwords
-    
-    include_dir /etc/mosquitto/conf.d
-	```
+	> 💡 The file should look like this:
+	> ```
+	> # Place your local configuration in /etc/mosquitto/conf.d/
+    > #
+    > # A full description of the configuration file is at
+    > # /usr/share/doc/mosquitto/examples/mosquitto.conf.example
+    > 
+    > pid_file /var/run/mosquitto.pid
+    > 
+    > persistence true
+    > persistence_location /var/lib/mosquitto/
+    > 
+    > log_dest file /var/log/mosquitto/mosquitto.log
+    > 
+    > allow_anonymous false
+    > password_file /etc/mosquitto/passwords
+    > 
+    > include_dir /etc/mosquitto/conf.d
+	> ```
 	
 	Then save and close the file
 	
