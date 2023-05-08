@@ -408,7 +408,7 @@ In the latter case, you should see a security error, this is normal because the 
 </details>
 
 ## Install HACS
-Adapted from [here](https://hacs.xyz/docs/installation/prerequisites).
+Follow the [official](https://hacs.xyz/docs/installation/prerequisites).
 
 ## Mosquitto installation and configuration
 - Install Mosquitto
