@@ -424,7 +424,7 @@ Follow the [official](https://hacs.xyz/docs/installation/prerequisites) guide.
 	$ sudo /etc/init.d/mosquitto stop
 	```
 	
-3. Add these lines to the file `/etc/mosquitto/mosquitto.conf`
+3. Add these lines to the configuration file `/etc/mosquitto/mosquitto.conf`
 
     ```
 	allow_anonymous false
