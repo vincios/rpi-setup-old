@@ -455,7 +455,7 @@ Follow the [official](https://hacs.xyz/docs/installation/prerequisites) guide.
 4. Create the password file and the user `mqtt_usr`. For this purpose, we'll use the `mosquitto_passwd` tool that execute both operations in a single line
 
     ``` bash
-	$ sudo mosquitto_passwd -c /etc/mosquitto/passwords mqtt_usr
+	$ sudo mosquitto_passwd -c /etc/mosquitto/passwd mqtt_usr
 	```
 	
 	💡 You can also change the user username as you like. In this case remember to change the username also in the rest of this guide
