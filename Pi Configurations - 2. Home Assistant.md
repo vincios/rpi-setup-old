@@ -425,7 +425,7 @@ Follow the [official](https://hacs.xyz/docs/installation/prerequisites) guide.
 	$ sudo nano /etc/mosquitto/mosquitto.conf
 	```
 	
-- Add these lines to the file
+3. Add these lines to the file
 
     ```
 	allow_anonymous false
