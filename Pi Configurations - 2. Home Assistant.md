@@ -219,6 +219,8 @@ To edit the `configuration.yaml` file you have to [switch to homeassistant user]
         - fd00::/64
     ```
 
+3. 
+
 ## [DEPRECATED] Create ssl certificate
 ⚠️ This guide is deprecated if you configure [Traefik for external access](#traefik-configuration).
 
