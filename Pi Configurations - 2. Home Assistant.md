@@ -464,7 +464,7 @@ Follow the [official](https://hacs.xyz/docs/installation/prerequisites) guide.
 
 6. Start the MQTT service
 
-    ``` bash
+    ```bash
 	$ sudo systemctl enable mosquitto
     $ sudo systemctl start mosquitto
 	```
