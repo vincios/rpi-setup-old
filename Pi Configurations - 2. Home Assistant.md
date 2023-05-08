@@ -402,6 +402,7 @@ Now we have to add the certificate and the key to Home Assistant configuration f
 Home Assistant is now configured to use ssl connection. You can connect to it with the external URL `https://cclouds.duckdns.org:8123` or the internal URL `https://RASPI_IP:8123`.
 In the latter case, you should see a security error, this is normal because the certificate is signed for the external URL.
 
+
 ## Install HACS
 From [here](https://hacs.xyz/docs/installation/prerequisites) (With some modifications).
 
