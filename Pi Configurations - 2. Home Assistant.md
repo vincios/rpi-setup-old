@@ -431,7 +431,7 @@ Follow the [official](https://hacs.xyz/docs/installation/prerequisites) guide.
     password_file /etc/mosquitto/passwords
 	```
 	
-	The file should be like this:
+	💡 The file should be like this:
 	```
 	# Place your local configuration in /etc/mosquitto/conf.d/
     #
