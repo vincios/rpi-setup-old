@@ -422,7 +422,6 @@ Follow the [official](https://hacs.xyz/docs/installation/prerequisites) guide.
 
     ```bash
 	$ sudo /etc/init.d/mosquitto stop
-	$ sudo nano 
 	```
 	
 3. Add these lines to the file
