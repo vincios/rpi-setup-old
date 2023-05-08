@@ -418,7 +418,7 @@ Follow the [official](https://hacs.xyz/docs/installation/prerequisites) guide.
 	$ sudo apt install mosquitto mosquitto-clients
 	```
 
-- Stop service and edit configuration 
+2. Stop service and edit configuration 
 
     ```bash
 	$ sudo /etc/init.d/mosquitto stop
