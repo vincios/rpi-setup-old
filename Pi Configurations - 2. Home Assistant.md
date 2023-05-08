@@ -8,12 +8,13 @@
     - [Install Rust](#install-rust)
     - [Uninstall Rust](#uninstall-rust)
   - [Switch to homeassistant user](#switch-to-homeassistant-user)
-  - [Updating](#updating)
+  - [Update](#update)
     - [Application](#application)
     - [Virtual Envrionment](#virtual-envrionment)
   - [Activate Advanced Mode](#activate-advanced-mode)
   - [Edit configuration.yaml file](#edit-configurationyaml-file)
-  - [Create ssl certificate](#create-ssl-certificate)
+  - [Traefik configuration](#traefik-configuration)
+  - [\[DEPRECATED\] Create ssl certificate](#deprecated-create-ssl-certificate)
   - [Install HACS](#install-hacs)
   - [Mosquitto installation and configuration](#mosquitto-installation-and-configuration)
   - [Enable Alexa integration](#enable-alexa-integration)
@@ -38,7 +39,9 @@
 - Create the [service](#service-creation)
 
 ## Service creation
-⚠️ Run this steps as `raspi` user! 
+Adapted from [here](https://home-assistant-china.github.io/docs/autostart/systemd/).
+
+⚠️ Run these steps as `raspi` user! 
 
 1. Create systemd service
 
@@ -63,7 +66,7 @@
 	WantedBy=multi-user.target
 	```
 
-- Restart Systemd and load new service
+3. Restart Systemd and load new service
 
 	```bash
 	$ sudo systemctl --system daemon-reload
@@ -71,47 +74,14 @@
 	$ sudo systemctl start home-assistant@homeassistant
 	```
 
-- Add these lines to `bash_aliases`
+4. Add these lines to `bash_aliases`
 
-	```sh
-	alias ha-start="sudo systemctl start home-assistant@homeassistant"
-	alias ha-stop="sudo systemctl stop home-assistant@homeassistant"
-	alias ha-restart="sudo systemctl restart home-assistant@homeassistant"
-	alias ha-restartlog="sudo systemctl restart home-assistant@homeassistant && sudo journalctl -f -u home-assistant@homeassistant"
-	```
-
-## Install/Uninstall Rust
-
-### Disclaimer
-Python `cryptography` package (required by Home Assistant) requires [Rust toolchain](https://www.rust-lang.org/tools/install) to build the package.
-So, to install or upgrade Home Assistant we have to install Rust. After that, Rust can also safely uninstalled.
-
-In theory, pip should be able to handle this requirement automatically (using a pre-built wheel package). 
-Unfortunately, for now (raspbian ?) pip does't have this wheel, so it tries to build cryptography package from scratch, returning an error `error: can't find Rust compiler`.
-So, in a near future, with a new pip version, installing Rust may be not necesary to install/upgrade Home Assistant.
-
-So, sometime, try to make an Home Assistant upgrade without install Rust. If the upgrade command ends successfully, you don't need Rust anymore.
-Otherwise, install Rust and retry to upgrade.
-
-### Install Rust
-Rust toolchain installation is very simple via `rustup`. Simply run this command **from `homeassistant`'s user shell**:
-
-```
-$ curl https://sh.rustup.rs -sSf | sh
-```
-
-And choose option 1.
-
-
-⚠️ **RUST MUST BE INSTALLED ON THE `homeassistant` USER!!**
-
-
-### Uninstall Rust
-After Home Assistant installation/upgrade is done, Rust is [no more necessary](https://github.com/pyca/cryptography/blob/main/docs/installation.rst#rust) and can be deleted with this command:
-
-```sh
-$ rustup self uninstall
-```
+    ```sh
+    alias ha-start="sudo systemctl start home-assistant@homeassistant"
+    alias ha-stop="sudo systemctl stop home-assistant@homeassistant"
+    alias ha-restart="sudo systemctl restart home-assistant@homeassistant"
+    alias ha-restartlog="sudo systemctl restart home-assistant@homeassistant && sudo journalctl -f -u home-assistant@homeassistant"
+    ```
 
 ## Switch to homeassistant user
 To do some configuration operations (edit configuration files, updating application, etc.) you have to switch to the `homeassistant` user using the following command
@@ -124,7 +94,7 @@ You can also automate this operation adding the command above in the `bash_alias
 alias ha-login="cd /home/homeassistant && sudo -u homeassistant -H -s"
 ```
 
-## Updating
+## Update
 ### Application
 To update to the latest version of Home Assistant Core follow these simple steps:
 
@@ -201,9 +171,58 @@ After a Python update, if you want to update the Home Assistant virtual environm
 You can activate Advanced Mode under user profile page (click on the user's name at the bottom of the left sidebar).
 
 ## Edit configuration.yaml file
-To edit the ***configuration.yaml*** file you have to [switch to homeassistant user](#switch-to-homeassistant-user)
+To edit the `configuration.yaml` file you have to [switch to homeassistant user](#switch-to-homeassistant-user)
 
-## Create ssl certificate
+## Traefik configuration
+1. Follow [Annex: Add custom dynamic configuration](#annex-add-custom-dynamic-configuration), use the following configuration:
+
+    <details>
+    <summary>✨ Click to see the code</summary>
+
+    ```yml
+    http:
+    routers:
+        homeassistant:
+        rule: Host(`hass.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org`)
+        service: "homeassistant"
+
+        # Enable the TLS encryption
+        # Normally, you should not need to edit this section
+        tls:
+            certResolver: "duckdnsResolver"
+            domains:
+            - main: "{{ env "DUCKDNS_DOMAIN"}}.duckdns.org"
+                sans:
+                - "*.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org"
+
+    # Service's urls where the request will be forwarded
+    services:
+        homeassistant:
+        loadBalancer:
+            servers:
+              - url: "http://127.0.0.1:8123"
+    ```
+
+    </details>
+
+2. Add the following lines to the `configuration.yaml` file
+
+    ```yaml
+    http:
+      use_x_forwarded_for: true
+      trusted_proxies:
+        - 192.168.1.0/24
+        - 127.0.0.1
+        - ::1
+        - fe80::/64
+        - fe00::/64
+        - fd00::/64
+    ```
+
+## [DEPRECATED] Create ssl certificate
+⚠️ This guide is deprecated if you configure [Traefik for external access](#traefik-configuration).
+
+
 From [this](https://indomus.it/guide/collegarsi-da-remoto-a-home-assistant-installato-su-raspberry-raspbian/) guide. <br>
 
 **NOTE**: This guide assume a configured duckdns domain `cclouds.duckdns.org`. If you use a different domain, change scripts when indicated.
@@ -722,6 +741,39 @@ From these two guides: [guide 1](https://www.home-assistant.io/integrations/goog
 	- Congratulations! Now configure them
 	
 11. **BONUS**: If you want to allow other household users to add this action to theirs accounts and control the devices, follow this [guide](https://www.home-assistant.io/integrations/google_assistant/#allow-other-users).
+
+## Install/Uninstall Rust
+
+### Disclaimer
+Python `cryptography` package (required by Home Assistant) requires [Rust toolchain](https://www.rust-lang.org/tools/install) to build the package.
+So, to install or upgrade Home Assistant we have to install Rust. After that, Rust can also safely uninstalled.
+
+In theory, pip should be able to handle this requirement automatically (using a pre-built wheel package). 
+Unfortunately, for now (raspbian ?) pip does't have this wheel, so it tries to build cryptography package from scratch, returning an error `error: can't find Rust compiler`.
+So, in a near future, with a new pip version, installing Rust may be not necesary to install/upgrade Home Assistant.
+
+So, sometime, try to make an Home Assistant upgrade without install Rust. If the upgrade command ends successfully, you don't need Rust anymore.
+Otherwise, install Rust and retry to upgrade.
+
+### Install Rust
+Rust toolchain installation is very simple via `rustup`. Simply run this command **from `homeassistant`'s user shell**:
+
+```
+$ curl https://sh.rustup.rs -sSf | sh
+```
+
+And choose option 1.
+
+
+⚠️ **RUST MUST BE INSTALLED ON THE `homeassistant` USER!!**
+
+
+### Uninstall Rust
+After Home Assistant installation/upgrade is done, Rust is [no more necessary](https://github.com/pyca/cryptography/blob/main/docs/installation.rst#rust) and can be deleted with this command:
+
+```sh
+$ rustup self uninstall
+```
 
 ## Create a reload integration rest command
 See [here](https://community.home-assistant.io/t/add-service-integration-reload/231940/52).
