@@ -414,6 +414,7 @@ Follow the [official](https://hacs.xyz/docs/installation/prerequisites) guide.
 - Install Mosquitto
     
 	```bash
+    
 	$ sudo apt-get install mosquitto mosquitto-clients
 	```
 
