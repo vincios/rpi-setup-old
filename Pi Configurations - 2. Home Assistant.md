@@ -411,7 +411,7 @@ In the latter case, you should see a security error, this is normal because the 
 Follow the [official](https://hacs.xyz/docs/installation/prerequisites) guide.
 
 ## Mosquitto installation and configuration
-- Install Mosquitto
+1. Install Mosquitto
     
 	```bash
     $ sudo apt update
