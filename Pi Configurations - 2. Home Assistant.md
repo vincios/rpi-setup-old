@@ -462,7 +462,7 @@ Follow the [official](https://hacs.xyz/docs/installation/prerequisites) guide.
 	
 5. The tool will prompt you to set a password. Type it
 
-- Start the MQTT service
+6. Start the MQTT service
     ``` bash
 	$ sudo systemctl enable mosquitto
     $ sudo systemctl start mosquitto
