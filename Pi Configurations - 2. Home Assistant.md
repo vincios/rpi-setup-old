@@ -460,7 +460,7 @@ Follow the [official](https://hacs.xyz/docs/installation/prerequisites) guide.
 	$ sudo mosquitto_passwd -c /etc/mosquitto/passwords mqtt_usr
 	```
 	
-	💡 You can also change the user username as you like. In this case remember to change the username also in the rest of this guide as well.
+	💡 You can also change the user username as you like. In this case remember to change the username also in the rest of this guide
 	
 - The tools will prompt you to set a password. Type it
 
