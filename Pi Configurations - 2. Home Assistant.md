@@ -428,7 +428,7 @@ Follow the [official](https://hacs.xyz/docs/installation/prerequisites) guide.
 
     ```
 	allow_anonymous false
-    password_file /etc/mosquitto/passwords
+    password_file /etc/mosquitto/passwd
 	```
 	
 	> 💡 The file should look like this:
