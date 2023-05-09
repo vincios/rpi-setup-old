@@ -473,9 +473,9 @@ Follow the [official](https://hacs.xyz/docs/installation/prerequisites) guide.
 
 - Now the MQTT borker il listening to the 1883 port. We can test it subscribing to a topic with the `mosquitto_sub` tool
 
-``` bash
-$ mosquitto_sub -d -u [MQTT_USERNAME] -P [MQTT_PASSWORD] -t [TOPC]
-```
+    ``` bash
+    $ mosquitto_sub -d -u [MQTT_USERNAME] -P [MQTT_PASSWORD] -t [TOPC]
+    ```
 
 Change `[MQTT_USERNAME]`, `[MQTT_PASSWORD]` and `[TOPC]` as well.
 
