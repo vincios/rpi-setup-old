@@ -506,7 +506,7 @@ To test the configuration we can subscribe to the `homeassistant/status` topic
 $ mosquitto_sub -d -u mqtt_usr -P [MQTT_PASSWORD] -t homeassistant/status
 ```
    
-- Restart Home Assistant
+ Restart Home Assistant
 
 	You should receive a message like this:
 	```
