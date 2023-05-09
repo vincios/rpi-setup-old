@@ -479,7 +479,7 @@ $ mosquitto_sub -d -u [MQTT_USERNAME] -P [MQTT_PASSWORD] -t [TOPC]
 
 Change `[MQTT_USERNAME]`, `[MQTT_PASSWORD]` and `[TOPC]` as well.
 
-Now we have to configure Home Assistant to connect to the broker.
+Now add 
 
 
 To test the configuration we can subscribe to the `homeassistant/status` topic
