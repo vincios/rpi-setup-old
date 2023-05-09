@@ -427,9 +427,9 @@ Follow the [official](https://hacs.xyz/docs/installation/prerequisites) guide.
 3. Add these lines to the configuration file `/etc/mosquitto/mosquitto.conf`
 
     ```
-listener 1883
-allow_anonymous false
-password_file /etc/mosquitto/passwd
+    listener 1883
+    allow_anonymous false
+    password_file /etc/mosquitto/passwd
 	```
 	
 	> 💡 The file should look like this:
