@@ -481,7 +481,6 @@ Change `[MQTT_USERNAME]`, `[MQTT_PASSWORD]` and `[TOPC]` as well.
 
 Now we have to configure Home Assistant to connect to the broker.
 
-
 To test the configuration we can subscribe to the `homeassistant/status` topic
 
 ```bash
