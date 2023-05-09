@@ -479,7 +479,7 @@ $ mosquitto_sub -d -u [MQTT_USERNAME] -P [MQTT_PASSWORD] -t [TOPC]
 
 Change `[MQTT_USERNAME]`, `[MQTT_PASSWORD]` and `[TOPC]` as well.
 
-Now add the `MQTT` integration to Home Assistant (via the user inter)
+Now add the `MQTT` integration to Home Assistant (via the user interface - )
 
 
 To test the configuration we can subscribe to the `homeassistant/status` topic
