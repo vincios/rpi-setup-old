@@ -479,7 +479,8 @@ Change `[MQTT_USERNAME]`, `[MQTT_PASSWORD]` and `[TOPC]` as well.
 
 Now we have to configure Home Assistant to connect to the broker.
 
- Add these lines to the `configuration.yaml` file
+1. Add these lines to the `configuration.yaml` file
+
     ```yaml
     mqtt:
       broker: 127.0.0.1
