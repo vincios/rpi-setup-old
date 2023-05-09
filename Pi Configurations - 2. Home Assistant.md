@@ -497,7 +497,7 @@ Now we have to configure Home Assistant to connect to the broker.
 	mqtt_password: [MQTT_PASSWORD]
 	```
 	
-	Change `[MQTT_PASSWORD]` as well
+	💡Change `[MQTT_PASSWORD]` as well
 
 - To test the configuration we can subscribe to the `homeassistant/status` topic
     ```bash
