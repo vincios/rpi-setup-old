@@ -477,7 +477,7 @@ Follow the [official](https://hacs.xyz/docs/installation/prerequisites) guide.
     $ mosquitto_sub -d -u [MQTT_USERNAME] -P [MQTT_PASSWORD] -t [TOPC]
     ```
 
-    Change `[MQTT_USERNAME]`, `[MQTT_PASSWORD]` and `[TOPC]` as well.
+    💡 Change `[MQTT_USERNAME]`, `[MQTT_PASSWORD]` and `[TOPC]` as well.
 
 7. Add the `MQTT` integration to Home Assistant (via the user interface - the yaml configuration is not supported anymore).
 
