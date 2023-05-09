@@ -435,24 +435,24 @@ Follow the [official](https://hacs.xyz/docs/installation/prerequisites) guide.
 	> 💡 The file should look like this:
     >
 	> ```
-# Place your local configuration in /etc/mosquitto/conf.d/
-#
-# A full description of the configuration file is at
-# /usr/share/doc/mosquitto/examples/mosquitto.conf.example
-
-pid_file /run/mosquitto/mosquitto.pid
-
-persistence true
-persistence_location /var/lib/mosquitto/
-
-log_dest file /var/log/mosquitto/mosquitto.log
-
-listener 1883
-allow_anonymous false
-password_file /etc/mosquitto/passwd
-
-include_dir /etc/mosquitto/conf.d
-
+> # Place your local configuration in /etc/mosquitto/conf.d/
+> #
+> # A full description of the configuration file is at
+> # /usr/share/doc/mosquitto/examples/mosquitto.conf.example
+> 
+> pid_file /run/mosquitto/mosquitto.pid
+> 
+> persistence true
+> persistence_location /var/lib/mosquitto/
+> 
+> log_dest file /var/log/mosquitto/mosquitto.log
+> 
+> listener 1883
+> allow_anonymous false
+> password_file /etc/mosquitto/passwd
+> 
+> include_dir /etc/mosquitto/conf.d
+> 
 	> ```
 	
 4. Create the password file and the user `mqtt_usr`. For this purpose, we'll use the `mosquitto_passwd` tool that execute both operations in a single line
