@@ -479,7 +479,7 @@ Follow the [official](https://hacs.xyz/docs/installation/prerequisites) guide.
 
     💡 Change `[MQTT_USERNAME]`, `[MQTT_PASSWORD]` and `[TOPC]` as well.
 
-7. Add the `MQTT` integration to Home Assistant (via the user interface - the yaml configuration is not supported anymore).
+7. Add the []`MQTT` integration to Home Assistant (via the user interface - the yaml configuration is not supported anymore).
 
 
 To test the configuration we can subscribe to the `homeassistant/status` topic
