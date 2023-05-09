@@ -506,9 +506,7 @@ To test the configuration we can subscribe to the `homeassistant/status` topic
 $ mosquitto_sub -d -u mqtt_usr -P [MQTT_PASSWORD] -t homeassistant/status
 ```
    
-Restart Home Assistant
-
-	You should receive a message like this:
+Restart Home Assistant. You should receive a message like this:
 	```
 	Client mosqsub|20681-raspberry received PUBLISH (d0, q0, r0, m0, 'homeassistant/status', ... (6 bytes))
     online
