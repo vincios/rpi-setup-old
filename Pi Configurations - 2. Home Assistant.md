@@ -492,6 +492,7 @@ Now we have to configure Home Assistant to connect to the broker.
     ```
 
 2. Add the password entry into `secrets.yaml` file
+
     ```yaml
 	mqtt_password: [MQTT_PASSWORD]
 	```
