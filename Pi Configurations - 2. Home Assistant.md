@@ -499,7 +499,7 @@ Now we have to configure Home Assistant to connect to the broker.
 	
 	💡 Change `[MQTT_PASSWORD]` as well
 
-- To test the configuration we can subscribe to the `homeassistant/status` topic
+3. To test the configuration we can subscribe to the `homeassistant/status` topic
     ```bash
 	$ mosquitto_sub -d -u mqtt_usr -P [MQTT_PASSWORD] -t homeassistant/status
     ```
