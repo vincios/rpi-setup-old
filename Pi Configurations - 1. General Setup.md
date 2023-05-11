@@ -1655,7 +1655,7 @@ $ python3.X --version
 
 ## Build TOR
 
-1. Download the latest release from the s
+1. Download the latest release from the so
 **NEW** (but not tested yet):
 
 Build from git. See [here](https://tor.stackexchange.com/questions/75/how-can-i-install-tor-from-the-source-code-in-the-git-repository).
