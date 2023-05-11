@@ -1672,7 +1672,7 @@ $ python3.X --version
 2. Build
 
     ```bash
-    $ /
+    $ ./configure
     ```
 **NEW** (but not tested yet):
 
