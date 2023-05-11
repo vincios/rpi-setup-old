@@ -1662,7 +1662,7 @@ $ python3.X --version
 
 
     ```bash
-    $ wget https://github.com/traefik/traefik/releases/download/${traefik_version}/traefik_${traefik_version}_linux_arm64.tar.gz
+    $ wget 
     $ tar -zxvf traefik_${traefik_version}_linux_arm64.tar.gz
     ```
 
