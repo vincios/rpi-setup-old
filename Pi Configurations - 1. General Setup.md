@@ -1655,7 +1655,9 @@ $ python3.X --version
 
 ## Build TOR
 
-0. Check that the pre
+0. Install the build prerequisites
+
+
 1. Download the latest release from the so
 **NEW** (but not tested yet):
 
