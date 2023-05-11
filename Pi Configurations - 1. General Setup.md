@@ -1658,7 +1658,7 @@ $ python3.X --version
 0. Install the build prerequisites
 
 
-1. Download the latest release from the so
+1. Download the latest release from the official repository
 **NEW** (but not tested yet):
 
 Build from git. See [here](https://tor.stackexchange.com/questions/75/how-can-i-install-tor-from-the-source-code-in-the-git-repository).
