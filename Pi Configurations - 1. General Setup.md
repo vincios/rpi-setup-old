@@ -1663,7 +1663,7 @@ $ python3.X --version
 
     ```bash
     $ wget https://dist.torproject.org/tor-${torversion}.tar.gz
-    $ tar -zxvf .tar.gz
+    $ tar -zxvf tor-${torversion}.tar.gz
     ```
 
 **NEW** (but not tested yet):
