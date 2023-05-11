@@ -1655,7 +1655,7 @@ $ python3.X --version
 
 ## Build TOR
 
-0. Check that the 
+0. Check that the pre
 1. Download the latest release from the so
 **NEW** (but not tested yet):
 
