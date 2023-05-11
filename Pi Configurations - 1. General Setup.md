@@ -1661,6 +1661,11 @@ $ python3.X --version
 1. Download the latest release from the official repository
 
 
+    ```bash
+    $ wget https://github.com/traefik/traefik/releases/download/${traefik_version}/traefik_${traefik_version}_linux_arm64.tar.gz
+    $ tar -zxvf traefik_${traefik_version}_linux_arm64.tar.gz
+    ```
+
 **NEW** (but not tested yet):
 
 Build from git. See [here](https://tor.stackexchange.com/questions/75/how-can-i-install-tor-from-the-source-code-in-the-git-repository).
