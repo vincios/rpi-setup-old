@@ -1663,7 +1663,7 @@ $ python3.X --version
 
     ```bash
     $ wget https://dist.torproject.org/${tor}.tar.gz
-    $ tar -zxvf traefik_${traefik_version}_linux_arm64.tar.gz
+    $ tar -zxvf .tar.gz
     ```
 
 **NEW** (but not tested yet):
