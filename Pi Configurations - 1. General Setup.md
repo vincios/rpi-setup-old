@@ -1657,7 +1657,7 @@ $ python3.X --version
 
 0. Install the build prerequisites
 
-
+  
 1. Download the latest release from the official [source](https://www.torproject.org/download/tor/)
 
 
