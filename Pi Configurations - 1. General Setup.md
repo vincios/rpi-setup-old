@@ -1658,7 +1658,7 @@ $ python3.X --version
 0. Install the build prerequisites
 
     ```bash
-    $ 
+    $  sudo apt-get install git build-essential automake libevent-dev libssl-dev zlib1g-dev
 1. Download the latest release from the official [source](https://www.torproject.org/download/tor/)
 
 
