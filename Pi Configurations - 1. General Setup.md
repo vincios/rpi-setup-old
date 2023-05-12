@@ -1804,7 +1804,6 @@ Follow the [official](https://support.jdownloader.org/Knowledgebase/Article/View
     ```bash
     $ java -Djava.awt.headless=true -jar JDownloader.jar >/dev/null 2>/dev/null &
     ```
-- Run in headless mode with ``
 
 To open the GUI:
 - ` wget -O /home/raspi/[JD_Install_dir]/jDownloader.png http://jdownloader.org/_media/knowledge/wiki/jdownloader.png`
