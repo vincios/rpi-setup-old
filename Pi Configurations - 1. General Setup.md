@@ -1807,7 +1807,7 @@ OR, to hide any output from the terminal
 $ java -Djava.awt.headless=true -jar JDownloader.jar >/dev/null 2>/dev/null &
 ```
 
-To open the GUI:
+To open the GUI, we simple m:
 1. Download a JDownloader icon ` wget -O [JD_Install_dir]/jDownloader.png http://jdownloader.org/_media/knowledge/wiki/jdownloader.png`
 
 - Go to desktop
