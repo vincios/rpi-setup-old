@@ -1739,7 +1739,7 @@ $ python3.X --version
     $ cd obfs4proxy
     ```
 
-2. Build the
+2. Build tje
 
     ```bash
     $ export GO111MODULE="on"
