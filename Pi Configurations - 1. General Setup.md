@@ -1692,7 +1692,7 @@ $ python3.X --version
     $ tar -xzvf go${goversion}.linux-arm64.tar.gz
     $ GOPATH=$HOME/go
     $ export PATH=<GO-LOCATION-PATH>/go/bin:$PATH
-    $ go version # check 
+    $ go version # test it
     ```
 
 
