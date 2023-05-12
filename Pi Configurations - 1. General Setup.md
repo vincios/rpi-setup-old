@@ -1796,7 +1796,7 @@ Follow the [official](https://support.jdownloader.org/Knowledgebase/Article/View
 - Run in headless mode with 
 
   ```bash
-  $ `java -jar JDownloader.jar &
+  $ java -jar JDownloader.jar &
 
 
 OR, to hide any output from the terminal
