@@ -1708,6 +1708,7 @@ $ python3.X --version
     ```bash
     $ go get
     $ go build
+    $ sudo cp proxy /usr/local/bin/snowflake-proxy
     ```
 
 3. Install
