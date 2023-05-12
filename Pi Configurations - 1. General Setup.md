@@ -1805,6 +1805,7 @@ Shows a lot of outputs to the terminal. To prevent this, use instead
 $ java -Djava.awt.headless=true -jar JDownloader.jar >/dev/null 2>/dev/null &
 ```
 
+
 To open the GUI, we simple make a executable shortuct on the desktop:
 1. Download a JDownloader icon 
 
