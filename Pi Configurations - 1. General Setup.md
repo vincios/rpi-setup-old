@@ -1757,7 +1757,6 @@ $ python3.X --version
     $ sudo cp client /usr/local/bin/snowflake-client
     ```
 
-
 ## Run BridTools
 First install *TOR* and *obfs4proxy* (See [Build Tor](#build-tor)).
 
