@@ -1681,6 +1681,7 @@ $ python3.X --version
     $ sudo make install
     ```
 
+
 ### obfs4proxy
 0. Download Go complier
 
@@ -1700,48 +1701,10 @@ $ python3.X --version
 
     ```bash
     $ git clone https://salsa.debian.org/pkg-privacy-team/obfs4proxy.git
-    $ export GO111MODULE="on"
-    ```
-
-2. Move to the `snowflake/proxy/` folder, build and install
-
-    ```bash
-    $ go get
-    $ go build
-    $ sudo cp proxy /usr/local/bin/snowflake-proxy
-    ```
-
-3. Move to the `snowflake/client/` folder, build and install
-
-    ```bash
-    $ go get
-    $ go build
-    $ sudo cp client /usr/local/bin/snowflake-client
-    ```
-
-### snowflake
-0. Download Go complier
-
-    To build snowflake we need a Go compiler. We don't need to install it permanentely. Just download the latest `linux-arm64` version from the [official](https://go.dev/dl/) page, extract and add it to the path
-
-    ```bash
-    $ wget https://go.dev/dl/go${goversion}.linux-arm64.tar.gz
-    $ tar -xzvf go${goversion}.linux-arm64.tar.gz
-    $ GOPATH=$HOME/go
-    $ export PATH=<GO-LOCATION-PATH>/go/bin:$PATH
-    $ go version # test it
-    ```
-
-    💡 At the end we can then delete the extracted `go` and the `$HOME/go` folders
-
-1. Clone the repository
-
-    ```bash
-    $ git clone https://github.com/tgragnato/snowflake
     $ cd obfs4proxy
     ```
 
-2. Build the proxy
+2. Build obfs4proxy
 
     ```bash
     $ export GO111MODULE="on"
@@ -1750,9 +1713,7 @@ $ python3.X --version
 
 3. Install
 
-    ```bash
-    $ sudo cp ./obfs4proxy/obfs4proxy /usr/local/bin
-    ```
+    ```bas
 
 ## Run BridTools
 First install *TOR* and *obfs4proxy* (See [Build Tor](#build-tor)).
