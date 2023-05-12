@@ -1683,7 +1683,7 @@ $ python3.X --version
 
 
 ### obfs4proxy
-0. Download go
+0. Download Go 
 
 
 ## Run BridTools
