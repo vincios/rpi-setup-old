@@ -1673,6 +1673,7 @@ $ python3.X --version
 
     ```bash
     $ ./configure
+    <<<<>>>
     ```
 **NEW** (but not tested yet):
 
