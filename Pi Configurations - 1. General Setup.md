@@ -1717,6 +1717,41 @@ $ python3.X --version
     $ sudo cp ./obfs4proxy/obfs4proxy /usr/local/bin
     ```
 
+### obfs4proxy
+0. Download Go complier
+
+    To build obfs4proxy we need a Go compiler. We don't need to install it permanentely. Just download the latest `linux-arm64` version from the [official](https://go.dev/dl/) page, extract and add it to the path
+
+    ```bash
+    $ wget https://go.dev/dl/go${goversion}.linux-arm64.tar.gz
+    $ tar -xzvf go${goversion}.linux-arm64.tar.gz
+    $ GOPATH=$HOME/go
+    $ export PATH=<GO-LOCATION-PATH>/go/bin:$PATH
+    $ go version # test it
+    ```
+
+    💡 At the end we can then delete the extracted `go` and the `$HOME/go` folders
+
+1. Clone the repository
+
+    ```bash
+    $ git clone https://salsa.debian.org/pkg-privacy-team/obfs4proxy.git
+    $ cd obfs4proxy
+    ```
+
+2. Build obfs4proxy
+
+    ```bash
+    $ export GO111MODULE="on"
+    $ go build -o obfs4proxy/obfs4proxy ./obfs4proxy
+    ```
+
+3. Install
+
+    ```bash
+    $ sudo cp ./obfs4proxy/obfs4proxy /usr/local/bin
+    ```
+    
 ## Run BridTools
 First install *TOR* and *obfs4proxy* (See [Build Tor](#build-tor)).
 
