@@ -1831,7 +1831,7 @@ To open the GUI, we simple make a executable shortuct on the desktop.
     Categories=GTK;Utility;
     ```
 
-    ⚠️ Don't forget to edit the `Exec` parameter wiht yuour JD install path
+    ⚠️ Don't forget to edit the `Exec` and the `Icon` parameter wiht yuour JD install path
 
 3. Make it executable
 
