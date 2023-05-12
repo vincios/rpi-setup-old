@@ -1799,7 +1799,7 @@ The headless command listed in the guide
 $ java -jar JDownloader.jar &
 ```
 
-Shows a lot of  output from the terminal
+Shows a lot of outputs from the terminal
 
 ```bash
 $ java -Djava.awt.headless=true -jar JDownloader.jar >/dev/null 2>/dev/null &
