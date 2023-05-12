@@ -1687,7 +1687,9 @@ $ python3.X --version
 
     To build obfs4proxy we need a Go compiler. We don't need to install it permanentely. Just download the latest `arm64` version from the [official](https://go.dev/dl/) page, extract and add it to the path
 
-    
+    ```bash
+
+    ```
 
 
 ## Run BridTools
