@@ -1749,7 +1749,7 @@ $ python3.X --version
     $ sudo cp proxy /usr/local/bin/snowflake-proxy
     ```
 
-3. Move to the `snowflake/client/` folder, build and install
+3. Open to the `snowflake/client/` folder, build and install
 
     ```bash
     $ go get
