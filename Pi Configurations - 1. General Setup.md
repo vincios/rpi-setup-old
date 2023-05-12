@@ -1816,10 +1816,6 @@ To open the GUI, we simple make a executable shortuct on the desktop:
 
 - Create a `jDownloader.desktop` file on the raspi desktop with the following content
 
-- `nano `
-
-- Paste this:
-
 ``` bash
 [Desktop Entry]
 Encoding=UTF-8
