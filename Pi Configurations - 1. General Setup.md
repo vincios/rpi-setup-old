@@ -1713,7 +1713,8 @@ $ python3.X --version
 
 3. Install
 
-    ```
+    ```bash
+    
 
 ## Run BridTools
 First install *TOR* and *obfs4proxy* (See [Build Tor](#build-tor)).
