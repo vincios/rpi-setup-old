@@ -1713,7 +1713,7 @@ $ python3.X --version
 3. Install
 
     ```bash
-    $ 
+    $ sudo cp proxy /usr/bin/snowflake-proxy
     $ sudo cp ./obfs4proxy/obfs4proxy /usr/local/bin
     ```
 
