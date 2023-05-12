@@ -1811,7 +1811,7 @@ To open the GUI, we simple make a executable shortuct on the desktop:
 1. Download a JDownloader icon 
 
   ```bash
-  $` wget -O [JD_Install_dir]/jDownloader.png http://jdownloader.org/_media/knowledge/wiki/jdownloader.png`
+  $ wget -O [JD_Install_dir]/jDownloader.png http://jdownloader.org/_media/knowledge/wiki/jdownloader.png
   ```
 
 - Go to desktop
