@@ -1699,7 +1699,7 @@ Build from git. See [here](https://tor.stackexchange.com/questions/75/how-can-i-
 - `sudo make install`
 
 
-Now install obfs4proxy (**for both OLD and NEW**):
+Now install  (**for both OLD and NEW**):
 
 - `sudo apt install obfs4proxy`
 
