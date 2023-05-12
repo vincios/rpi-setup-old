@@ -1685,7 +1685,7 @@ $ python3.X --version
 ### obfs4proxy
 0. Download Go complier
 
-    To build we need a Go compiler. We don't need to install it permanentely, 
+    To build we need a Go compiler. We don't need to install it permanentely. Just download 
 
 
 ## Run BridTools
