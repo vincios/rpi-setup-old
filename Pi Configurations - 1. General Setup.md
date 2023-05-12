@@ -1797,7 +1797,7 @@ Follow the [official](https://support.jdownloader.org/Knowledgebase/Article/View
 
   ```bash
   $ java -jar JDownloader.jar &
-
+  ```
 
     OR, to hide any output from the terminal
 
