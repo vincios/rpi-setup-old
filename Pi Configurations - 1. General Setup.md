@@ -1795,7 +1795,7 @@ Follow the [official](https://support.jdownloader.org/Knowledgebase/Article/View
 
 - Run in headless mode with 
 
-  
+  ```
 
 
 OR, to hide any output from the terminal
