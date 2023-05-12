@@ -1707,7 +1707,7 @@ $ python3.X --version
 
     ```bash
     $ go get
-    $ go build -o obfs4proxy/obfs4proxy ./obfs4proxy
+    $ go build
     ```
 
 3. Install
