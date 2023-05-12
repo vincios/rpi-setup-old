@@ -1816,7 +1816,7 @@ To open the GUI, we simple make a executable shortuct on the desktop:
 
 2. Create a `jDownloader.desktop` file on the raspi desktop with the following content
 
-    ``` bash
+    ```ini
     [Desktop Entry]
     Encoding=UTF-8
     Name=jDownloader2
