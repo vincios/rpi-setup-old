@@ -1799,7 +1799,7 @@ The headless command listed in the guide
 $ java -jar JDownloader.jar &
 ```
 
-Shows a lot of outputs to the terminal. To prevent this, use instead the 
+Shows a lot of outputs to the terminal. To prevent this, use instead
 
 ```bash
 $ java -Djava.awt.headless=true -jar JDownloader.jar >/dev/null 2>/dev/null &
