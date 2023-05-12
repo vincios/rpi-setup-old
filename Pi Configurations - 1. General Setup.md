@@ -1697,6 +1697,7 @@ $ python3.X --version
 
     💡 At the end we can then delete the extracted `go` and the `$HOME/go` folders
 
+1. 
 ## Run BridTools
 First install *TOR* and *obfs4proxy* (See [Build Tor](#build-tor)).
 
