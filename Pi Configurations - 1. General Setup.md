@@ -1706,7 +1706,7 @@ $ python3.X --version
 2. Build obfs4proxy
 
     ```bash
-    $ export GO111MODULE="on"
+    $ 
     $ go build -o obfs4proxy/obfs4proxy ./obfs4proxy
     ```
 
