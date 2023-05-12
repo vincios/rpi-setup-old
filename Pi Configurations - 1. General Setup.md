@@ -1714,7 +1714,6 @@ $ python3.X --version
 
     ```bash
     $ sudo cp proxy /usr/bin/snowflake-proxy
-    $ sudo cp ./obfs4proxy/obfs4proxy /usr/local/bin
     ```
 
 ### snowflake
