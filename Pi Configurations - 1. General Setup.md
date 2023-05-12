@@ -1739,7 +1739,6 @@ $ python3.X --version
 
     ```bash
     $ git clone https://github.com/tgragnato/snowflake
-    $ cd obfs4proxy
     ```
 
 2. Move to the `snowflake/proxy/` folder, build and install
