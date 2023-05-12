@@ -1808,7 +1808,8 @@ $ java -Djava.awt.headless=true -jar JDownloader.jar >/dev/null 2>/dev/null &
 💡 Add it to the `.bash_aliases` file
 
 ### Run the GUI
-To open the GUI, we simple make a executable shortuct on the desktop:
+To open the GUI, we simple make a executable shortuct on the desktop.
+
 1. Download a JDownloader icon 
 
     ```bash
