@@ -1700,7 +1700,7 @@ $ python3.X --version
 
     ```bash
     $ git clone https://salsa.debian.org/pkg-privacy-team/obfs4proxy.git
-    $ cd obfs4proxy
+    $ export GO111MODULE="on"
     ```
 
 2. Build obfs4proxy
