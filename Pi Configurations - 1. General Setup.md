@@ -1828,6 +1828,7 @@ To open the GUI, we simple make a executable shortuct on the desktop:
     ```
 
     ⚠️ Don't forget to edit the `Exec` parameter wiht yuour JD install path
+
 - `chmod +x jDownloader.desktop`
 
 
