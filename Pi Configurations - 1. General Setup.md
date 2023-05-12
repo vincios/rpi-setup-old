@@ -1797,15 +1797,15 @@ Follow the [official](https://support.jdownloader.org/Knowledgebase/Article/View
 
 Run in headless mode with 
 
-    ```bash
-    $ java -jar JDownloader.jar &
-    ```
+  ```bash
+  $ java -jar JDownloader.jar &
+  ```
 
-    OR, to hide any output from the terminal
+  OR, to hide any output from the terminal
 
-    ```bash
-    $ java -Djava.awt.headless=true -jar JDownloader.jar >/dev/null 2>/dev/null &
-    ```
+  ```bash
+  $ java -Djava.awt.headless=true -jar JDownloader.jar >/dev/null 2>/dev/null &
+  ```
 
 To open the GUI:
 - ` wget -O [JD_Install_dir]/jDownloader.png http://jdownloader.org/_media/knowledge/wiki/jdownloader.png`
