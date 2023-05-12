@@ -1814,9 +1814,9 @@ To open the GUI, we simple make a executable shortuct on the desktop:
     $ wget -O [JD_Install_dir]/jDownloader.png http://jdownloader.org/_media/knowledge/wiki/jdownloader.png
     ```
 
-- Create a `jDown
+- Create a `jDownloader.desktop` file on the raspi desktop with the following 
 
-- `nano jDownloader.desktop`
+- `nano `
 
 - Paste this:
 
