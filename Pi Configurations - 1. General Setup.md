@@ -1706,7 +1706,7 @@ $ python3.X --version
 2. Move to the `snowflake/proxy/` folder and build
 
     ```bash
-    $ 
+    $ go get
     $ go build -o obfs4proxy/obfs4proxy ./obfs4proxy
     ```
 
