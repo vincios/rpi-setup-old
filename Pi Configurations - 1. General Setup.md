@@ -1735,7 +1735,7 @@ $ python3.X --version
 1. Clone the repository
 
     ```bash
-    $ git clone https://salsa.debian.org/pkg-privacy-team/obfs4proxy.git
+    $ git clone https://github.com/tgragnato/snowflake
     $ cd obfs4proxy
     ```
 
