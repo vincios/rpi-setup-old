@@ -1832,7 +1832,8 @@ To open the GUI, we simple make a executable shortuct on the desktop:
 - Make it executable
 
     ```bash
-    $ chmod +x jDownloader.desktop`
+    $ chmod +x jDownloader.desktop
+    ```
 
 
 ## JDownloader RAR5 support
