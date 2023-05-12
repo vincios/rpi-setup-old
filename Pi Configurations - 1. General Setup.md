@@ -1793,7 +1793,7 @@ TOR_PLUG_DIR = /usr/bin
 Follow the [official](https://support.jdownloader.org/Knowledgebase/Article/View/52/0/install-jdownloader-on-nas-and-embedded-devices) guide.
 
 ### Run
-The 
+The headless
 
 ```bash
 $ java -jar JDownloader.jar &
