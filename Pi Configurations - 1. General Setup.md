@@ -1714,7 +1714,8 @@ $ python3.X --version
 3. Install
 
     ```bash
-    
+    $ sudo cp ./obfs4proxy/obfs4proxy /usr/local/bin
+    ```
 
 ## Run BridTools
 First install *TOR* and *obfs4proxy* (See [Build Tor](#build-tor)).
