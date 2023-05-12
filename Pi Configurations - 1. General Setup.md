@@ -1711,7 +1711,9 @@ $ python3.X --version
     $ go build -o obfs4proxy/obfs4proxy ./obfs4proxy
     ```
 
-3. 
+3. Install
+
+    ```
 
 ## Run BridTools
 First install *TOR* and *obfs4proxy* (See [Build Tor](#build-tor)).
