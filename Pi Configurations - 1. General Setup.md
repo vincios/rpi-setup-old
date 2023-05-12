@@ -1703,7 +1703,7 @@ $ python3.X --version
     $ export GO111MODULE="on"
     ```
 
-2. Build obfs4proxy
+2. cd to the 
 
     ```bash
     $ 
