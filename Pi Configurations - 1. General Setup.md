@@ -1695,6 +1695,7 @@ $ python3.X --version
     $ go version # test it
     ```
 
+    At the end we can 
 
 ## Run BridTools
 First install *TOR* and *obfs4proxy* (See [Build Tor](#build-tor)).
