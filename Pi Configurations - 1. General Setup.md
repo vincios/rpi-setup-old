@@ -1801,6 +1801,8 @@ Follow the [official](https://support.jdownloader.org/Knowledgebase/Article/View
 
     OR, to hide any output from the terminal
 
+    
+
 - Run in headless mode with `java -Djava.awt.headless=true -jar JDownloader.jar >/dev/null 2>/dev/null &`
 
 To open the GUI:
