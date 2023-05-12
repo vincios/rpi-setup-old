@@ -1703,7 +1703,7 @@ $ python3.X --version
     $ export GO111MODULE="on"
     ```
 
-2. cd to the 
+2. Move to the 
 
     ```bash
     $ 
