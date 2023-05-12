@@ -1703,7 +1703,7 @@ $ python3.X --version
     $ export GO111MODULE="on"
     ```
 
-2. Move to the `snowflake/proxy/` folder and build
+2. Move to the `snowflake/proxy/` folder, build and install
 
     ```bash
     $ go get
