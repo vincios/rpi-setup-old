@@ -1739,18 +1739,20 @@ $ python3.X --version
     $ cd obfs4proxy
     ```
 
-2. Build tje
+2. Move to the `snowflake/proxy/` folder, build and install
 
     ```bash
-    $ export GO111MODULE="on"
-    $ go build -o obfs4proxy/obfs4proxy ./obfs4proxy
+    $ go get
+    $ go build
+    $ sudo cp proxy /usr/local/bin/snowflake-proxy
     ```
 
-3. Install
+3. Move to the `snowflake/client/` folder, build and install
 
     ```bash
-    $ sudo cp ./obfs4proxy/obfs4proxy /usr/local/bin
-    ```
+    $ go get
+    $ go build
+    $ sudo c
 
 ## Run BridTools
 First install *TOR* and *obfs4proxy* (See [Build Tor](#build-tor)).
