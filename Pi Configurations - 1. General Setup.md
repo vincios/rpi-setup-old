@@ -1688,7 +1688,7 @@ $ python3.X --version
     To build obfs4proxy we need a Go compiler. We don't need to install it permanentely. Just download the latest `linux-arm64` version from the [official](https://go.dev/dl/) page, extract and add it to the path
 
     ```bash
-    $ wget https://go.dev/dl/go${goversion}.linux-arm64.tar.gz -O
+    $ wget https://go.dev/dl/go${goversion}.linux-arm64.tar.gz
     $ tar -xzvf go${goversion}.linux-arm64.tar.gz
     $ export PATH=<GO-LOCATION-PATH>/go/bin:$PATH
     $ GOPATH=$HOME/go
