@@ -1741,7 +1741,7 @@ $ python3.X --version
     $ git clone https://github.com/tgragnato/snowflake
     ```
 
-2. Open to the `snowflake/proxy/` folder, build and install
+2. Open the `snowflake/proxy/` folder, build and install
 
     ```bash
     $ go get
