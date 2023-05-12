@@ -1703,6 +1703,8 @@ $ python3.X --version
     $ git clone https://salsa.debian.org/pkg-privacy-team/obfs4proxy.git
     $ cd obfs4proxy
     ```
+
+2. 
 ## Run BridTools
 First install *TOR* and *obfs4proxy* (See [Build Tor](#build-tor)).
 
