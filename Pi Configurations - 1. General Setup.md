@@ -1697,7 +1697,11 @@ $ python3.X --version
 
     💡 At the end we can then delete the extracted `go` and the `$HOME/go` folders
 
-1. 
+1. Clone the repository
+
+    ```bash
+    $ git clone https://salsa.debian.org/pkg-privacy-team/obfs4proxy.git
+    ```
 ## Run BridTools
 First install *TOR* and *obfs4proxy* (See [Build Tor](#build-tor)).
 
