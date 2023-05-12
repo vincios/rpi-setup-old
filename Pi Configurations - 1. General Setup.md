@@ -1682,26 +1682,7 @@ $ python3.X --version
     ```
 
 
-**NEW** (but not tested yet):
 
-Build from git. See [here](https://tor.stackexchange.com/questions/75/how-can-i-install-tor-from-the-source-code-in-the-git-repository).
-
-**OLD** (tested):
-
-- `sudo apt install libevent-dev`
-
-- Download tor source tar form [here](https://www.torproject.org/it/download/tor/)
-
-- `tar xzf tor-0.4.0.5.tar.gz; cd tor-0.4.0.5`
-
-- ` ./configure && make`
-
-- `sudo make install`
-
-
-Now install  (**for both OLD and NEW**):
-
-- `sudo apt install obfs4proxy`
 
 
 ## Run BridTools
