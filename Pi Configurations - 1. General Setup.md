@@ -1681,7 +1681,7 @@ $ python3.X --version
     $ sudo make install
     ```
 
-💡 For the built from source version, the `torrc` file should be located into the `/usr/local/etc/tor/` folder. You can check it running `tor`: the first few lines of the output should tell the exact location where tor will search the configuration file.
+💡 For the built from source version, the `torrc` file should be located into the `/usr/local/etc/tor/` folder. You can check it running `tor`: the first few lines of the output should tell the exact location where  the configuration file.
 ### obfs4proxy
 0. Download Go complier
 
