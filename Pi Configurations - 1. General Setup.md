@@ -1814,9 +1814,7 @@ To open the GUI, we simple make a executable shortuct on the desktop:
     $ wget -O [JD_Install_dir]/jDownloader.png http://jdownloader.org/_media/knowledge/wiki/jdownloader.png
     ```
 
-- Go to desktop
-
-- `nano jDownloader.desktop`
+2. Create a 
 
 - Paste this:
 
