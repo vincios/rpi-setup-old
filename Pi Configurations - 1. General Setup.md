@@ -1704,7 +1704,7 @@ $ python3.X --version
     $ cd obfs4proxy
     ```
 
-2. 
+2. Build 
 ## Run BridTools
 First install *TOR* and *obfs4proxy* (See [Build Tor](#build-tor)).
 
