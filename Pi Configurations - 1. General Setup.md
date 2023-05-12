@@ -1681,7 +1681,7 @@ $ python3.X --version
     $ sudo make install
     ```
 
-💡 The `tor
+💡 The `torrc` 
 ### obfs4proxy
 0. Download Go complier
 
