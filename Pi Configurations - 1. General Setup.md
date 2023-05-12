@@ -1826,7 +1826,7 @@ To open the GUI, we simple make a executable shortuct on the desktop.
     Name=jDownloader2
     Comment=jDownloader2
     Exec=bash -c "java -jar [JD_install_dir]/JDownloader.jar"
-    Icon=/home/raspi/[JD_install_dir]/jDownloader.png
+    Icon=[JD_install_dir]/jDownloader.png
     Type=Application
     Categories=GTK;Utility;
     ```
