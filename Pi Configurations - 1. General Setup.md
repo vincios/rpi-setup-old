@@ -1689,7 +1689,8 @@ $ python3.X --version
 
     ```bash
     $ wget https://go.dev/dl/go${goversion}.linux-arm64.tar.gz
-    $ tar -xzvf go1.20.4.linux-arm64.tar.gz
+    $ tar -xzvf go${goversion}.linux-arm64.tar.gz
+    
     ```
 
 
