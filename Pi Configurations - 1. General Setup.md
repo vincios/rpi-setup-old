@@ -44,6 +44,8 @@ Index
     - [Traefik configuration](#traefik-configuration-1)
   - [Install Python 3](#install-python-3)
   - [Build TOR](#build-tor)
+    - [obfs4proxy](#obfs4proxy)
+    - [snowflake](#snowflake)
   - [Run BridTools](#run-bridtools)
   - [Install jDownloader in headless mode](#install-jdownloader-in-headless-mode)
   - [JDownloader RAR5 support](#jdownloader-rar5-support)
