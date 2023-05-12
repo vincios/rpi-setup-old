@@ -1714,7 +1714,7 @@ $ python3.X --version
 3. Move to the `snowflake/client/` folder, build and install
 
     ```bash
-    $ sudo cp proxy /usr/local/bin/snowflake-proxy
+    $ sudo cp client /usr/bin/snowflake-client
     ```
 
 ### snowflake
