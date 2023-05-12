@@ -1827,7 +1827,7 @@ To open the GUI, we simple make a executable shortuct on the desktop:
     Categories=GTK;Utility;
     ```
 
-    
+    ⚠️ Don't forget to edit the `Exec` parameter wiht yuour JD install 
 - `chmod +x jDownloader.desktop`
 
 
