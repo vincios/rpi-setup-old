@@ -1690,8 +1690,8 @@ $ python3.X --version
     ```bash
     $ wget https://go.dev/dl/go${goversion}.linux-arm64.tar.gz
     $ tar -xzvf go${goversion}.linux-arm64.tar.gz
-    $ export PATH=<GO-LOCATION-PATH>/go/bin:$PATH
     $ GOPATH=$HOME/go
+    $ export PATH=<GO-LOCATION-PATH>/go/bin:$PATH
     ```
 
 
