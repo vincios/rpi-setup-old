@@ -1790,7 +1790,8 @@ TOR_PLUG_DIR = /usr/bin
 
 
 ## Install jDownloader in headless mode
-Follow the official gi
+Follow the official guide.
+
 See [here](https://support.jdownloader.org/Knowledgebase/Article/View/52/0/install-jdownloader-on-nas-and-embedded-devices). Then
 - Run in headless mode with `java -jar JDownloader.jar &` 
 
