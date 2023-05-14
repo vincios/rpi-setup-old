@@ -1658,7 +1658,7 @@ $ python3.X --version
 ```
 
 ## Build TOR
-Adapted from [1](https://tor.stackexchange.com/questions/75/how-can-i-install-tor-from-the-source-code-in-the-git-repository) and [2](https://www.torbox.ch/?page_id=205).
+Adapted from [1](https://tor.stackexchange.com/questions/75/how-can-i-install-tor-from-the-source-code-in-the-git-repository) and [2](https://www.torbox.ch/?page_id=205), we w.
 0. Install the build prerequisites
 
     ```bash
