@@ -1658,7 +1658,7 @@ $ python3.X --version
 ```
 
 ## Build TOR
-
+Adapted from 
 0. Install the build prerequisites
 
     ```bash
