@@ -638,7 +638,7 @@ From these two guides: [guide 1](https://www.home-assistant.io/integrations/goog
           cover.garage_msg100_main_channel:
             expose: false
 		```
-	    NB: `project_id` and `service_account` are required fields. Write, respectively, the project id noted into step 1 and the "Service Account Key" file (downloaded in step 4) path-
+	     `project_id` and `service_account` are required fields. Write, respectively, the project id noted into step 1 and the "Service Account Key" file (downloaded in step 4) path-
 
 7. Create the Auto Discovery automation
 
