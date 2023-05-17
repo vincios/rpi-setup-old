@@ -506,7 +506,7 @@ From these two guides: [guide 1](https://www.home-assistant.io/integrations/goog
 
     1. Open the [Actions on Google console](https://console.actions.google.com/)
 	
-    - Name the project `Home Assistant` and select language and country
+    2. Name the project `Home Assistant` and select language and country
   
     - Click on the `Smart Home` card, then click the `Start Building` button
   
