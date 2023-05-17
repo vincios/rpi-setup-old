@@ -1876,7 +1876,7 @@ To compile from source (adapted from [here](https://www.ixsystems.com/community/
 
     💡 You can change branch with the `git checkout [branch_name]` command.
 
-- Run CMake
+ Run CMake
 
 ``` bash
 $ cmake . -DJAVA_JDK=/usr/lib/jvm/java-8-openjdk-armhf`
