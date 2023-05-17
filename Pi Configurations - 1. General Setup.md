@@ -1874,7 +1874,7 @@ To compile from source (adapted from [here](https://www.ixsystems.com/community/
 
     ⚠️ It should be better to choose a branch between `bind_16.02` and `migrate-to-15.09-try2` but it should work also with `master` branch. So first try with `master` then, in case of failure, try `bind_16.02` and, as last chance, `migrate-to-15.09-try2`.
 
-    You can change branch with the `git checkout [branch_name]` command.
+    💡 You can change branch with the `git checkout [branch_name]` command.
 
 - Run CMake
 
