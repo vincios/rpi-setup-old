@@ -1859,7 +1859,7 @@ To compile from source (adapted from [here](https://www.ixsystems.com/community/
     $ sudo apt-get install openjdk8-jdk
     ```
 
-- Go to JD folder and make folders:
+2. Go to JD folder and make folders:
 
 ``` bash
 $ mkdir rar5
