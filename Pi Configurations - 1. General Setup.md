@@ -1866,7 +1866,7 @@ To compile from source (adapted from [here](https://www.ixsystems.com/community/
     $ cd rar5
     ```
 
-- Clone repository
+3. Clone repository
 
     ``` bash
     $ git clone https://github.com/borisbrodski/sevenzipjbinding.git sevenzipbinding
