@@ -1886,12 +1886,12 @@ To compile from source (adapted from [here](https://www.ixsystems.com/community/
 
 - Move jar library to JD lib folder
 
-``` bash
-$ unzip sevenzipjbinding-16.02-2.01beta-Linux-arm.zip
-$ cd sevenzipjbinding-16.02-2.01beta-Linux-arm/lib/
-$ mv sevenzipjbinding.jar [JD_install_dir]/libs/sevenzipjbinding1509.jar
-$ mv sevenzipjbinding-Linux-arm.jar [JD_Install_dir]/libs/sevenzipjbinding1509LinuxArmVersion.jar
-```
+    ``` bash
+    $ unzip sevenzipjbinding-16.02-2.01beta-Linux-arm.zip
+    $ cd sevenzipjbinding-16.02-2.01beta-Linux-arm/lib/
+    $ mv sevenzipjbinding.jar [JD_install_dir]/libs/sevenzipjbinding1509.jar
+    $ mv sevenzipjbinding-Linux-arm.jar [JD_Install_dir]/libs/sevenzipjbinding1509LinuxArmVersion.jar
+    ```
 
 **NB**: If you change branch, rename commands above with correct version numbers. But **DON'T** change destination filenames (*sevenzipjbinding1509.jar* and *sevenzipjbinding1509LinuxArmVersion.jar*)
 
