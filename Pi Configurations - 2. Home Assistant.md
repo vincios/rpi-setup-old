@@ -646,8 +646,8 @@ From these two guides: [guide 1](https://www.home-assistant.io/integrations/goog
 
 7. Create the Auto Discovery automation
 
-    > 💡 
-    
+    > 💡 If 
+
     ⚠️ From 2023: add the automation via the user interface and configure it like below.
 
     To synchronize Home Assistant devices with the Google Home app without unlinking and relinking an account, you have to call the `google_assistant.request_sync` service (or say "Ok Google, sync my devices") each time you add a new device in Home Assistant that you wish to control via the Google Assistant integration.
