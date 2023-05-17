@@ -1844,7 +1844,8 @@ To open the GUI, we simple make a executable shortuct on the desktop.
 ### RAR5 support
 We neeď a SevenZipBindings jar 
 
-You can
+You can either:
+
 - Download a precompiled jar files from [here](https://board.jdownloader.org/showpost.php?p=455292&postcount=583) and copy it in *[JD_Install_dir]/libs*
  **OR** compile it manually (better):
 
