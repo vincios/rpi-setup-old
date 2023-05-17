@@ -641,7 +641,9 @@ From these two guides: [guide 1](https://www.home-assistant.io/integrations/goog
     - Include the `google.yaml` file into the `configuration.yaml` file
 
         ```yaml
-        
+        google_assistant: !include google.yaml
+        ```
+
 7. Create the Auto Discovery automation
 
     ⚠️ From 2023: add the automation via the user interface and configure it like below.
