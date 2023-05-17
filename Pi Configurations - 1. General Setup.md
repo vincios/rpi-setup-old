@@ -1842,7 +1842,7 @@ To open the GUI, we simple make a executable shortuct on the desktop.
 
 
 ### RAR5 support
-We neeď a SevenZipBindings jar 
+We have to add the SevenZipBindings libra
 
 You can either:
 
