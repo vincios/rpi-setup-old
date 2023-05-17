@@ -674,7 +674,7 @@ From these two guides: [guide 1](https://www.home-assistant.io/integrations/goog
               agent_user_id: !secret google_agent_user_id
 	    ```
 
-8. Test your action
+8. Test your action to generate the draft version Test App
 
     - Open the [Actions on Google console](https://console.actions.google.com/) and select the Home Assistant project
 	
