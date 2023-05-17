@@ -1842,7 +1842,7 @@ To open the GUI, we simple make a executable shortuct on the desktop.
 
 
 ### RAR5 support
-We have to add the SevenZipBindings library to the JDownloader installation.
+We have to add the SevenZipBinding library to the JDownloader installation.
 
 You can either:
 
