@@ -636,6 +636,7 @@ From these two guides: [guide 1](https://www.home-assistant.io/integrations/goog
             expose: true
             room: Cucina
         ```
+        
 	    ⚠️ `project_id` and `service_account` are required fields. Write, respectively, the project id noted into step 1 and the "Service Account Key" file (downloaded in step 4) path-
 
     - Include the `google.yaml` file into the `configuration.yaml` file
