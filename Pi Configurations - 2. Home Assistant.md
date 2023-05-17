@@ -626,7 +626,7 @@ From these two guides: [guide 1](https://www.home-assistant.io/integrations/goog
 	- Add the `google_assistant` integration configuration in this file, following the [documentation](https://www.home-assistant.io/integrations/google_assistant/#configuration-variables). This is an example:
 	
         ```yaml
-        project_id: xxxx
+        project_id: xxxx-1234
         service_account: !include home-assistant-367e3-5b1e0ab2d7a7.json
         report_state: true
         expose_by_default: false
