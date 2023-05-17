@@ -1852,7 +1852,7 @@ You can either:
 
 To compile from source (adapted from [here](https://www.ixsystems.com/community/threads/guide-jdownloader2-in-11-1-release-iocage-with-rar5-working.74073/), or [here](https://board.jdownloader.org/showpost.php?p=446708&postcount=465)):
 
-1. Install cmake and openjdk8-jdk
+1. Install `cmake` and openjdk8-jdk
 
 ``` bash
 $ sudo apt-get install cmake
