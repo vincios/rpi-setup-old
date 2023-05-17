@@ -504,9 +504,9 @@ Follow these two guides:
 From these two guides: [guide 1](https://www.home-assistant.io/integrations/google_assistant/), [guide 2](https://indomus.it/guide/integrare-gratuitamente-google-home-assistant-con-home-assistant-via-gcp/).
 1. Create Create a new project in the Actions on Google console
 
-    1. Open the [Actions on Google console](https://console.actions.google.com/)
+    - Open the [Actions on Google console](https://console.actions.google.com/)
 	
-    2. Name the project `Home Assistant` and select language and country
+    - Name the project `Home Assistant` and select language and country
   
     - Click on the `Smart Home` card, then click the `Start Building` button
   
@@ -591,7 +591,7 @@ From these two guides: [guide 1](https://www.home-assistant.io/integrations/goog
 	
 	- Into `Service Account Name` insert `homeassistant`
 	
-	- Compile descritption field
+	- Compile description field
 	
 	- Click `CREATE`
 	
