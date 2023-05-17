@@ -1893,7 +1893,7 @@ To compile from source (adapted from [here](https://www.ixsystems.com/community/
     $ mv sevenzipjbinding-Linux-arm.jar [JD_Install_dir]/libs/sevenzipjbinding1509LinuxArmVersion.jar
     ```
 
-    ⚠️ If you change branch, rename commands above with correct version numbers. But **DON'T** change destination filenames (*sevenzipjbinding1509.jar* and *sevenzipjbinding1509LinuxArmVersion.jar*)
+    ⚠️ If you change branch, rename the commands above with correct version numbers. But **DON'T** change destination filenames (*sevenzipjbinding1509.jar* and *sevenzipjbinding1509LinuxArmVersion.jar*)
 
 
 ## Update Node and npm
