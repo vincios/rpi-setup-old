@@ -1854,10 +1854,10 @@ To compile from source (adapted from [here](https://www.ixsystems.com/community/
 
 1. Install `cmake` and `openjdk8-jdk`
 
-  ``` bash
-  $ sudo apt-get install cmake
-  $ sudo apt-get install openjdk8-jdk
-  ```
+    ``` bash
+    $ sudo apt-get install cmake
+    $ sudo apt-get install openjdk8-jdk
+    ```
 
 - Go to JD folder and make folders:
 
