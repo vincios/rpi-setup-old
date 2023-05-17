@@ -1879,7 +1879,7 @@ To compile from source (adapted from [here](https://www.ixsystems.com/community/
 4. Run CMake
 
     ``` bash
-    $ cmake . -DJAVA_JDK=/usr/lib/jvm/java-8-openjdk-armhf`
+    $ cmake . -DJAVA_JDK=/usr/lib/jvm/java-8-openjdk-armhf
     $ make
     $ make package
     ```
