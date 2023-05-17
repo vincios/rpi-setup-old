@@ -638,7 +638,7 @@ From these two guides: [guide 1](https://www.home-assistant.io/integrations/goog
         ```
 	    ⚠️ `project_id` and `service_account` are required fields. Write, respectively, the project id noted into step 1 and the "Service Account Key" file (downloaded in step 4) path-
 
-    - Include the 
+    - Include the `
 7. Create the Auto Discovery automation
 
     ⚠️ From 2023: add the automation via the user interface and configure it like below.
