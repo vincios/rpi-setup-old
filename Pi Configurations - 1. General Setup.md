@@ -1884,7 +1884,7 @@ To compile from source (adapted from [here](https://www.ixsystems.com/community/
     $ make package
     ```
 
-- Move jar library to JD lib folder
+5. Move jar library to JD lib folder
 
     ``` bash
     $ unzip sevenzipjbinding-16.02-2.01beta-Linux-arm.zip
