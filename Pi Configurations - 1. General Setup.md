@@ -1861,10 +1861,10 @@ To compile from source (adapted from [here](https://www.ixsystems.com/community/
 
 2. Go to JD folder and make folders:
 
-``` bash
-$ mkdir rar5
-$ cd rar5
-```
+    ``` bash
+    $ mkdir rar5
+    $ cd rar5
+    ```
 
 - Clone repository
 
