@@ -1845,7 +1845,7 @@ To open the GUI, we simple make a executable shortuct on the desktop.
 We neeď a SevenZipBindings jar 
 
 
-- Download a precompiled files from [here](https://board.jdownloader.org/showpost.php?p=455292&postcount=583) and copy them in *[JD_Install_dir]/libs*
+- Download a precompiled jar files from [here](https://board.jdownloader.org/showpost.php?p=455292&postcount=583) and copy them in *[JD_Install_dir]/libs*
  **OR** compile it manually (better):
 
 From [here](https://www.ixsystems.com/community/threads/guide-jdownloader2-in-11-1-release-iocage-with-rar5-working.74073/) (or [here](https://board.jdownloader.org/showpost.php?p=446708&postcount=465)):
