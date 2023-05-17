@@ -645,7 +645,7 @@ From these two guides: [guide 1](https://www.home-assistant.io/integrations/goog
         google_assistant: !include google.yaml
         ```
 
-7. Create the Auto Discovery automation
+7. Create the Auto Discovery automation [OPTIONAL]
 
     > 💡 If you manually expose your entities through the `google.yaml`, yo
 
