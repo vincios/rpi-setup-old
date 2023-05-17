@@ -1846,7 +1846,7 @@ We neeď a SevenZipBindings jar
 
 You can either:
 
-- Download a precompiled jar files from [here](https://board.jdownloader.org/showpost.php?p=455292&postcount=583) and copy it in *[JD_Install_dir]/libs*
+- Download a precompiled jar files from [here](https://board.jdownloader.org/showpost.php?p=455292&postcount=583) and copy it in `[JD_Install_dir]/libs*
  
 - Compile it manually (preferred)
 
