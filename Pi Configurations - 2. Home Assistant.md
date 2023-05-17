@@ -647,7 +647,7 @@ From these two guides: [guide 1](https://www.home-assistant.io/integrations/goog
 
 7. Create the Auto Discovery automation (OPTIONAL)
 
-    > 💡 If you manually expose your entities through the `google.yaml` file, you could also skip this part and manually start a device synchronization (through the `google_assistant.request_sync` service or the command  “Ok Google, sync my devices”)
+    > 💡 If you manually expose your entities through the `google.yaml` file, you could also skip this part and manually start a device synchronization (through the `google_assistant.request_sync` service or the command “Ok Google, sync my devices”)
 
     ⚠️ From 2023: add the automation via the user interface and configure it like below.
 
