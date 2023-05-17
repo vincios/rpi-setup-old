@@ -631,7 +631,7 @@ From these two guides: [guide 1](https://www.home-assistant.io/integrations/goog
         report_state: true
         expose_by_default: false
         entity_config:
-        switch.switch_cucina:
+            switch.switch_cucina:
             name: "Luce Cucina"
             expose: true
             room: Cucina
