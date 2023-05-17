@@ -626,15 +626,7 @@ From these two guides: [guide 1](https://www.home-assistant.io/integrations/goog
 	- Add the `google_assistant` integration configuration in this file, following the [documentation](https://www.home-assistant.io/integrations/google_assistant/#configuration-variables). This is an example:
 	
 	    ```yaml
-        project_id: home-assistant-367e3
-        service_account: !include home-assistant-367e3-5b1e0ab2d7a7.json
-        report_state: true
-        expose_by_default: false
-        entity_config:
-        switch.switch_cucina:
-            name: "Luce Cucina"
-            expose: true
-            room: Cucina
+
 		```
 	    ⚠️ `project_id` and `service_account` are required fields. Write, respectively, the project id noted into step 1 and the "Service Account Key" file (downloaded in step 4) path-
 
