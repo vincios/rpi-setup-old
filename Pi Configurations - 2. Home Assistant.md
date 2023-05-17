@@ -3,10 +3,6 @@
 - [Home Assistant](#home-assistant)
   - [Install HA](#install-ha)
   - [Service creation](#service-creation)
-  - [Install/Uninstall Rust](#installuninstall-rust)
-    - [Disclaimer](#disclaimer)
-    - [Install Rust](#install-rust)
-    - [Uninstall Rust](#uninstall-rust)
   - [Switch to homeassistant user](#switch-to-homeassistant-user)
   - [Update](#update)
     - [Application](#application)
@@ -19,6 +15,10 @@
   - [Mosquitto installation and configuration](#mosquitto-installation-and-configuration)
   - [Enable Alexa integration](#enable-alexa-integration)
   - [Enable Google Home integration](#enable-google-home-integration)
+  - [Install/Uninstall Rust](#installuninstall-rust)
+    - [Disclaimer](#disclaimer)
+    - [Install Rust](#install-rust)
+    - [Uninstall Rust](#uninstall-rust)
   - [Create a reload integration rest command](#create-a-reload-integration-rest-command)
   - [Other useful commands](#other-useful-commands)
   - [Troubleshooting](#troubleshooting)
@@ -504,7 +504,7 @@ Follow these two guides:
 From these two guides: [guide 1](https://www.home-assistant.io/integrations/google_assistant/), [guide 2](https://indomus.it/guide/integrare-gratuitamente-google-home-assistant-con-home-assistant-via-gcp/).
 1. Create Create a new project in the Actions on Google console
 
-    - Open the [Actions on Google console](https://console.actions.google.com/)
+    1. Open the [Actions on Google console](https://console.actions.google.com/)
 	
     - Name the project `Home Assistant` and select language and country
   
