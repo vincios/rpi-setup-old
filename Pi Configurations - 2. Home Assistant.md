@@ -704,6 +704,7 @@ From these two guides: [guide 1](https://www.home-assistant.io/integrations/goog
 	
 	- Login into your account
 	
+    
 	- Go back, you should see all your devices
 	
 	- Congratulations! Now configure them
