@@ -704,7 +704,7 @@ From these two guides: [guide 1](https://www.home-assistant.io/integrations/goog
 	
 	- Login into your account
 	
-        💡 If you see an error like "Unsupported devices", probably you have errors in the `google.yaml` file (like wrong entities id in the `entity_config` field)
+        💡 If you see an error like "Unsupported devices", probably you have errors in the `google.yaml` file (like  wrong entities id in the `entity_config` field)
 
 	- Go back, you should see all your devices
 	
