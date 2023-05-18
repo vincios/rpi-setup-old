@@ -704,7 +704,7 @@ From these two guides: [guide 1](https://www.home-assistant.io/integrations/goog
 	
 	- Login into your account
 	
-        💡 If you see an error like "Unsupported devices", probably you have some errors on the `
+        💡 If you see an error like "Unsupported devices", probably you have some errors in the `
 	- Go back, you should see all your devices
 	
 	- Congratulations! Now configure them
