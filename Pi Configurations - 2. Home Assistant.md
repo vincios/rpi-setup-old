@@ -187,6 +187,7 @@ Make also sure that the `.homeassistant` folder is writable by the group
 $ sudo chmod -R g+w /home/homeassistant/.homeassistant
 ```
 
+### With Visual Studio Code
 
 ## Traefik configuration
 1. Follow [Annex: Add custom dynamic configuration](#annex-add-custom-dynamic-configuration), use the following configuration:
