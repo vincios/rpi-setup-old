@@ -188,7 +188,8 @@ $ sudo chmod -R g+w /home/homeassistant/.homeassistant
 ```
 
 ### With Visual Studio Code
-Follow [this](https://indomus.it/progetti/modificare-i-file-di-configurazione-home-assistant-core-su-raspbian-con-visual-studio-code-vscode/)
+Follow [this](https://indomus.it/progetti/modificare-i-file-di-configurazione-home-assistant-core-su-raspbian-con-visual-studio-code-vscode/) guide.
+
 ## Traefik configuration
 1. Follow [Annex: Add custom dynamic configuration](#annex-add-custom-dynamic-configuration), use the following configuration:
 
