@@ -171,7 +171,7 @@ After a Python update, if you want to update the Home Assistant virtual environm
 You can activate Advanced Mode under user profile page (click on the user's name at the bottom of the left sidebar).
 
 ## Edit configuration.yaml file
-To edit the `configuration.yaml` file you have to [switch to homeassistant user](#switch-to-homeassistant-user)
+To edit the `configuration.yaml` file you have to [switch to homeassistant user](#switch-to-homeassistant-user).
 
 ## Traefik configuration
 1. Follow [Annex: Add custom dynamic configuration](#annex-add-custom-dynamic-configuration), use the following configuration:
