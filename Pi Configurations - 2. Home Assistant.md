@@ -181,7 +181,7 @@ $ sudo usermod -a -G homeassistant pi
 
 ⚠️ Change the `pi` user with your default one
 
-
+Make aslo 
 ## Traefik configuration
 1. Follow [Annex: Add custom dynamic configuration](#annex-add-custom-dynamic-configuration), use the following configuration:
 
