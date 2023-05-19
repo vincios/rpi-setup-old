@@ -184,7 +184,7 @@ $ sudo usermod -a -G homeassistant pi
 Make also sure that the `.homeassistant` folder is writable by the group
 
 ```bash
-$ 
+$ sudo chmod -R 774 /home/homeassistant/
 ```
 ## Traefik configuration
 1. Follow [Annex: Add custom dynamic configuration](#annex-add-custom-dynamic-configuration), use the following configuration:
