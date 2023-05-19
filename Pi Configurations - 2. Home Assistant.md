@@ -179,7 +179,7 @@ You can also allow your default user (e.g. `pi`, or the equivalent one) to edit,
 $ sudo usermod -a -G homeassistant pi
 ```
 
-⚠️ Change the `pi` user with your default user
+⚠️ Change the `pi` user with your default one
 ## Traefik configuration
 1. Follow [Annex: Add custom dynamic configuration](#annex-add-custom-dynamic-configuration), use the following configuration:
 
