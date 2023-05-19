@@ -176,7 +176,7 @@ To edit the `configuration.yaml` file you have to [switch to homeassistant user]
 You can also allow your default user (e.g. `pi`, or the equivalent one) to edit, adding it to the `homeassistant` group
 
 ```bash
-$ sudo usermod -a -G homeassistant pi
+$ sudo usermod -a -G homeassistant 
 ```
 
 ## Traefik configuration
