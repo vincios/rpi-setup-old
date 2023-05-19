@@ -173,7 +173,7 @@ You can activate Advanced Mode under user profile page (click on the user's name
 ## Edit configuration.yaml file
 To edit the `configuration.yaml` file you have to [switch to homeassistant user](#switch-to-homeassistant-user).
 
-You can also allow the `pi` user (or the equivalent one) to ed
+You can also allow the `pi` user (or the equivalent one) to edit
 
 ## Traefik configuration
 1. Follow [Annex: Add custom dynamic configuration](#annex-add-custom-dynamic-configuration), use the following configuration:
