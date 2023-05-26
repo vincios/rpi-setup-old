@@ -406,7 +406,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
               - "<YOUR_USER>:<YOUR_HASHED_PASSWORD>"
     ```
 
-    💡 The `middlewares.yml` defines your shared middlewares. By default, it defines two middlewares: `redirect-to-https` to redirect a `HTTP` route to the `HTTPS` one, and `authentication` to add a basic authenticatoion to the route.
+    💡 The `middlewares.yml` file defines your shared middlewares. By default, it defines two middlewares: `redirect-to-https` to redirect a `HTTP` route to the `HTTPS` one, and `authentication` to add a basic authenticatoion to the route.
 
     ⚠️ The `users` field is an array of authorized users. Each user must be declared using the `name:hashed-password` format. See the [BasicAuth (https://doc.traefik.io/traefik/middlewares/http/basicauth/#configuration-examples) documentation. 
     
@@ -417,20 +417,26 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
     ```yaml
     http:
       routers:
+        api-http:
+          rule: Host(`traefik.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org`)
+          entrypoints:
+            - web
+          service: api@internal
+          middlewares:
+            - redirect-to-https
         # Overrides the default 'api' router
         api:
           # The rule matches http://example.com/api/ or http://example.com/dashboard/
           # but does not match http://example.com/hello
           rule: Host(`traefik.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org`)
           entrypoints:
-            - web
             - websecure
             # - traefik  # uncomment to use the :8080 port
           service: api@internal
           middlewares:
             - authentication
           tls:
-            certResolver: "duckdnsResolver"
+            certResolver: duckdnsResolver
             domains:
               - main: "{{ env "DUCKDNS_DOMAIN"}}.duckdns.org"
                 sans:
