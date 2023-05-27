@@ -689,6 +689,7 @@ Update Traefik is simple as replace the binary file with the updated one
 
     ```bash
     $ sudo usermod -a -G www-data $USER
+    $ sudo chown www-data:www-data /var/www/html/
     $ sudo chmod -R g+w /var/www/html/
     ```
 
