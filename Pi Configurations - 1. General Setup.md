@@ -685,7 +685,16 @@ Update Traefik is simple as replace the binary file with the updated one
 
     💡 To enable php, nginx only needs the `php-fpm` module, but you may need to install other php modules according to each project requirements
 
-3. Change the `default` site configuration
+3. Give to the user the permission to edit the `/var/www/html` folder
+
+    ```bash
+    $ sudo usermod -a -G www-data $USER
+    $ sudo chmod -R g+w /var/www/html/
+    ```
+
+    >💡 We have added the user to the `www-data` group, and the group-write permission to the `html` folder (owned by `www-data`)
+
+4. Change the `default` site configuration
 
     - Edit the file `/etc/nginx/sites-available/default`
     - Replaces the following lines
@@ -726,19 +735,19 @@ Update Traefik is simple as replace the binary file with the updated one
       }
       ```
 
-4. Create the file `/var/www/html/index.php`
+5. Create the file `/var/www/html/index.php`
 
     ```php
     <?php phpinfo(); ?>
     ```
 
-5. Start the nginx service
+6. Start the nginx service
 
     ```
     $ sudo systemctl start nginx.service
     ```
 
-6. Test it
+7. Test it
 
     ```
     http://<YOUR PI's IP ADDRESS>:8080
@@ -757,7 +766,7 @@ Update Traefik is simple as replace the binary file with the updated one
 
     ```bash
     $ chown -R www-data:www-data /var/www/html/your.site
-    $ chmod -R 755 /var/www/html/your.site
+    $ chmod -R 775 /var/www/html/your.site
     ```
 2. Create the configuration file in the `/etc/nginx/sites-available/` 
   
@@ -774,7 +783,7 @@ Update Traefik is simple as replace the binary file with the updated one
 4. Enable the site linking the configuration file to the `/etc/nginx/sites-enabled/` folder
 
     ```bash
-    $ sudo ln -s /etc/nginx/sites-available/your.site /etc/nginx/sites-enabled/your.site 
+    $ ln -s /etc/nginx/sites-available/your.site /etc/nginx/sites-enabled/your.site 
     ```
 
 5. Test the configuration and restart the service
