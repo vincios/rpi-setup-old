@@ -762,6 +762,24 @@ Update Traefik is simple as replace the binary file with the updated one
 >
 > and just use the `/etc/nginx/sites-available/default` as template for your sites.
 
+
+### SMB Access
+Add the following configuration to the `/etc/samba/smb.conf` file
+
+```ini
+[html]
+   comment = Web Directory
+   path = /var/www/html
+   writable = yes
+   valid users = @www-data
+   force group = www-data
+   force user = www-data
+   create mask = 0664
+   directory mask = 0775
+```
+
+⚠️ The `/var/www/html` directory must be owned by `www-data:www-data`.
+
 ### Create a site
 1. Your site's web files must be placed in the `/var/www/html/your.site` folder, giving the ownership to the `www-data` user
 
