@@ -771,7 +771,7 @@ See [here](https://community.home-assistant.io/t/add-service-integration-reload/
 ## Tips
 ### Scripts / Plugins / Custom Components / Blueprints
 
-- [Blueprint] [Notify All Mobile Devices](https://community.home-assistant.io/t/notify-mobile-companion-app-devices/512487)
+- [Blueprint] [Notify Mobile Companion App Devices](https://community.home-assistant.io/t/notify-mobile-companion-app-devices/512487)
 
 
 ### Other useful commands
