@@ -776,49 +776,58 @@ See [here](https://community.home-assistant.io/t/add-service-integration-reload/
 
 ### Other useful commands
 - Verify Home Assistant service status
-``` bash
-$ sudo systemctl status home-assistant@homeassistant
-```
+
+    ``` bash
+    $ sudo systemctl status home-assistant@homeassistant
+    ```
 
 - Start Home Assistant service
-``` bash
-$ sudo systemctl start home-assistant@homeassistant
-````
+
+    ``` bash
+    $ sudo systemctl start home-assistant@homeassistant
+    ````
 
 - Stop Home Assistant service
-``` bash
-$ sudo systemctl stop home-assistant@homeassistant
-```
+
+    ``` bash
+    $ sudo systemctl stop home-assistant@homeassistant
+    ```
 
 - Restart Home Assistant service
-``` bash
-$ sudo systemctl restart home-assistant@homeassistant
-```
+
+    ``` bash
+    $ sudo systemctl restart home-assistant@homeassistant
+    ```
 
 - Disable Home Assistant service autostart
-``` bash
-$ sudo systemctl disable home-assistant@homeassistant
-```
+
+    ``` bash
+    $ sudo systemctl disable home-assistant@homeassistant
+    ```
 
 - Read real time Home Assistant `systemlog` rows
-``` bash
-$sudo tail -f /var/log/syslog | grep hass
-```
+
+    ``` bash
+    $sudo tail -f /var/log/syslog | grep hass
+    ```
 
 - Read Home Assistant log output
-``` bash
-$ sudo journalctl -f -u home-assistant@homeassistant
-```
+
+    ``` bash
+    $ sudo journalctl -f -u home-assistant@homeassistant
+    ```
 
 Because the log can scroll quite quickly, you can select to view only the error lines
-``` bash
-$ sudo journalctl -f -u home-assistant@homeassistant | grep -i ‘error’
-```
+
+    ``` bash
+    $ sudo journalctl -f -u home-assistant@homeassistant | grep -i ‘error’
+    ```
 
 - Verify configuration by manual launch
-``` bash
-$ hass --script check_config –h
-```
+
+    ``` bash
+    $ hass --script check_config –h
+    ```
 
 ## Troubleshooting
 Here you can find solution to some Home Assistant issues.
