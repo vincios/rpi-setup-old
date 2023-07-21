@@ -765,7 +765,13 @@ $ rustup self uninstall
 ## Create a reload integration rest command
 See [here](https://community.home-assistant.io/t/add-service-integration-reload/231940/52).
 
-## Other useful commands
+## Tips
+### Scripts / Plugins / Custom Components / Blueprints
+
+- [Blueprint] [Notify All Mobile Devices](https://community.home-assistant.io/t/notify-mobile-companion-app-devices/512487)
+
+
+### Other useful commands
 - Verify Home Assistant service status
 ``` bash
 $ sudo systemctl status home-assistant@homeassistant
