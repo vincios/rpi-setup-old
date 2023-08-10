@@ -862,6 +862,11 @@ We will follow the official Pi-hole guide for setup Wireguard. All the necessary
     $ exit
     ```
 
+5. Start the interface
+
+    ```bash
+    $ sudo systemctl start wg-quick@wg0.service
+    ```
 To check everything is running, you can run
 
 ```bash
