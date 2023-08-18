@@ -1621,6 +1621,8 @@ If doesn't work, rebuild the web inteface folder
 ```sh
 $ sudo rm /var/www/html/admin 
 $ sudo git clone https://github.com/pi-hole/AdminLTE.git /var/www/html/admin
+$ sudo chown -R www-data:www-data /var/www/html/admin/
+$ sudo chmod 755 /var/www/html/admin/
 $ pihole -r
 ```
 
