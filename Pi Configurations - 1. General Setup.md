@@ -41,6 +41,8 @@ Index
     - [Nginx as web server \[🦆\]](#nginx-as-web-server-)
     - [(lighttpd only) Change the lighttpd port](#lighttpd-only-change-the-lighttpd-port)
     - [Traefik configuration](#traefik-configuration)
+    - [Update](#update)
+      - [Web Admin repo is missing from system](#web-admin-repo-is-missing-from-system)
   - [Jellyfin](#jellyfin)
     - [Traefik configuration](#traefik-configuration-1)
   - [Install Python 3](#install-python-3)
