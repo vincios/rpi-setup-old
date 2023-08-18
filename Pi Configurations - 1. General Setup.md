@@ -1601,6 +1601,31 @@ $ sudo service lighttpd restart
     </details>
 
 
+### Update
+```sh
+$ sudo pihole -up
+```
+
+#### Web Admin repo is missing from system 
+If you use [nginx as web server](#nginx-as-web-server-🦆) you may encounter the error `Web Admin repo is missing from system` during the update. 
+
+In this case, try this fix
+
+```sh
+$ sudo git config --global --add safe.directory /var/www/html/admin
+$ sudo pihole -up
+```
+
+If doesn't work, rebuild the web inteface folder
+
+```sh
+$ sudo rm /var/www/html/admin 
+$ sudo git clone https://github.com/pi-hole/AdminLTE.git /var/www/html/admin
+$ pihole -r
+```
+
+Then, select `Repair`.
+
 ## Jellyfin
 Follow the [official guide](https://jellyfin.org/docs/general/installation/linux#debian)
 
