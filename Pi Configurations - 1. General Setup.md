@@ -1734,9 +1734,9 @@ $ python3.X --version
 ```
 
 ## Install Docker
-Just follow the [official guide](https://docs.docker.com/engine/install/raspbian/)
+Just follow the [official guide](https://docs.docker.com/engine/install/raspbian/).
 
-💡 According the official page, the recommended method to install docker in production should be [using the repository](https://docs.docker.com/engine/install/raspbian/#install-using-the-repository). If it doesn't work (packages not found error), use the [convenience script](https://docs.docker.com/engine/install/raspbian/#install-using-the-convenience-script).
+💡 According the official page, the recommended method to install docker in production should be [using the repository](https://docs.docker.com/engine/install/raspbian/#install-using-the-repository). If it doesn't work (packages not found error), just use the [convenience script](https://docs.docker.com/engine/install/raspbian/#install-using-the-convenience-script).
 
 💡 In case you got a `permission denied while trying to connect to the Docker daemon socket` error, make sure that your user is in the `docker` group
 
