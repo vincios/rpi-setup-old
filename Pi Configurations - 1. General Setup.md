@@ -46,6 +46,7 @@ Index
   - [Jellyfin](#jellyfin)
     - [Traefik configuration](#traefik-configuration-1)
   - [Install Python 3](#install-python-3)
+  - [Install Docker](#install-docker)
   - [Build TOR](#build-tor)
     - [obfs4proxy](#obfs4proxy)
     - [snowflake](#snowflake)
@@ -1731,6 +1732,18 @@ Now Python 3 is installed. To use it instead of the system default **you have to
 ```bash
 $ python3.X --version
 ```
+
+## Install Docker
+Just follow the [official guide](https://docs.docker.com/engine/install/raspbian/)
+
+💡 According the official page, the recommended method to install docker in production should be [using the repository](https://docs.docker.com/engine/install/raspbian/#install-using-the-repository). If it doesn't work (packages not found error), use the [convenience script](https://docs.docker.com/engine/install/raspbian/#install-using-the-convenience-script).
+
+💡 In case you got a `permission denied while trying to connect to the Docker daemon socket` error, make sure that your user is in the `docker` group
+
+```sh
+$ sudo usermod -aG docker ${USER}
+```
+
 
 ## Build TOR
 Adapted from [1](https://tor.stackexchange.com/questions/75/how-can-i-install-tor-from-the-source-code-in-the-git-repository) and [2](https://www.torbox.ch/?page_id=205), we will build the latest offical release. Instead, if you want to build from the repository (instable, but with the lastest features), see [3](https://tor.stackexchange.com/questions/75/how-can-i-install-tor-from-the-source-code-in-the-git-repository) and [4](https://tor.stackexchange.com/questions/22510/how-to-build-and-install-tor-from-the-source-code-from-git-repository).
