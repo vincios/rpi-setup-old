@@ -1616,7 +1616,7 @@ $ sudo git config --global --add safe.directory /var/www/html/admin
 $ sudo pihole -up
 ```
 
-If doesn't work, rebuild the web inteface folder
+If doesn't work, try to rebuild the web inteface folder
 
 ```sh
 $ sudo rm /var/www/html/admin 
