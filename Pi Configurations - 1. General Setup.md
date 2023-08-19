@@ -1917,6 +1917,27 @@ $ sudo usermod -aG docker ${USER}
     $ nano -L ./secrets/db_password.txt
     $ nano -L ./secrets/redis_password.txt
     ```
+
+    > 💡 We use the `-L` option to prevent nano adding a newline EOF character on save
+
+5. Check all the subservices works, starting from `redis` and `database`, and then adding all the other subservices
+
+     1. Run the containers without the `-d` option and check the logs
+
+         ```sh
+         $ docker compose up redis database
+         ```
+
+
+     2. If no errors occours, stop the containers with `Ctrl+C` and dispose the containers
+
+         ```sh
+         $ docker compose down
+         ``` 
+
+    3. Repeat steps 5.1 and 5.2 adding the 
+
+
 ## Build TOR
 Adapted from [1](https://tor.stackexchange.com/questions/75/how-can-i-install-tor-from-the-source-code-in-the-git-repository) and [2](https://www.torbox.ch/?page_id=205), we will build the latest offical release. Instead, if you want to build from the repository (instable, but with the lastest features), see [3](https://tor.stackexchange.com/questions/75/how-can-i-install-tor-from-the-source-code-in-the-git-repository) and [4](https://tor.stackexchange.com/questions/22510/how-to-build-and-install-tor-from-the-source-code-from-git-repository).
 
