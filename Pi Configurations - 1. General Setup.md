@@ -1746,17 +1746,187 @@ Just follow the [official guide](https://docs.docker.com/engine/install/raspbian
 $ sudo usermod -aG docker ${USER}
 ```
 
+## Install Immich
+> 💡 Immich requires you have installed [docker](#install-docker).
 
+1. Download [docker-compose.yml](https://github.com/immich-app/immich/releases/latest/download/docker-compose.yml) and [example.env](https://github.com/immich-app/immich/releases/latest/download/example.env)
+
+    ```sh
+    $ wget https://github.com/immich-app/immich/releases/latest/download/docker-compose.yml
+    $ wget -O .env https://github.com/immich-app/immich/releases/latest/download/example.env
+    ```
+
+2. Edit the `docker-compose.yml` like the snippet below. On the downloaded file, fon't touch the commented lines and add or modify the uncommented lines of the snippet below:
+
+    <details>
+    <summary>✨ Click to see the code</summary>
+
+    ```yml
+    # services:
+      # immich-server:
+        # container_name: immich_server
+        # image: ghcr.io/immich-app/immich-server:${IMMICH_VERSION:-release}
+        # command: [ "start.sh", "immich" ]
+        # volumes:
+          # - ${UPLOAD_LOCATION}:/usr/src/app/upload
+        # env_file:
+          # - .env
+        # depends_on:
+          # - redis
+          # - database
+          # - typesense
+        restart: unless-stopped
+        secrets:
+          - redis_password
+          - db_password
+
+      # immich-microservices:
+        # container_name: immich_microservices
+        # image: ghcr.io/immich-app/immich-server:${IMMICH_VERSION:-release}
+        # extends:
+        #   file: hwaccel.yml
+        #   service: hwaccel
+        # command: [ "start.sh", "microservices" ]
+        # volumes:
+          # - ${UPLOAD_LOCATION}:/usr/src/app/upload
+        # env_file:
+          # - .env
+        # depends_on:
+          # - redis
+          # - database
+          # - typesense
+        restart: unless-stopped
+        secrets:
+          - redis_password
+          - db_password
+
+      # immich-machine-learning:
+        # container_name: immich_machine_learning
+        # image: ghcr.io/immich-app/immich-machine-learning:${IMMICH_VERSION:-release}
+        # volumes:
+          # - model-cache:/cache
+        # env_file:
+          # - .env
+        restart: unless-stopped
+
+      # immich-web:
+        # container_name: immich_web
+        # image: ghcr.io/immich-app/immich-web:${IMMICH_VERSION:-release}
+        # env_file:
+          # - .env
+        restart: unless-stopped
+
+      # typesense:
+        # container_name: immich_typesense
+        # image: typesense/typesense:0.24.1@sha256:9bcff2b829f12074426ca044b56160ca9d777a0c488303469143dd9f8259d4dd
+        # environment:
+          # - TYPESENSE_API_KEY=${TYPESENSE_API_KEY}
+          # - TYPESENSE_DATA_DIR=/data
+        # volumes:
+          # - tsdata:/data
+        restart: unless-stopped
+
+      # redis:
+        # container_name: immich_redis
+        # image: redis:6.2-alpine@sha256:70a7a5b641117670beae0d80658430853896b5ef269ccf00d1827427e3263fa3
+        restart: unless-stopped
+        secrets:
+          - redis_password
+        # environment:
+          REDIS_PASS_FILE: /run/secrets/redis_password
+        command: bash -c '[ "$$REDIS_PASS_FILE" ] &&
+          ( cat "$$REDIS_PASS_FILE" | xargs -0 redis-server --requirepass ) || redis-server'
+
+      # database:
+        # container_name: immich_postgres
+        # image: postgres:14-alpine@sha256:28407a9961e76f2d285dc6991e8e48893503cc3836a4755bbc2d40bcc272a441
+        # env_file:
+          # - .env
+        # environment:
+          POSTGRES_PASSWORD_FILE: /run/secrets/db_password
+          # POSTGRES_USER: ${DB_USERNAME}
+          # POSTGRES_DB: ${DB_DATABASE_NAME}
+        # volumes:
+          # - pgdata:/var/lib/postgresql/data
+        restart: unless-stopped
+        secrets:
+          - db_password
+
+      # immich-proxy:
+        # container_name: immich_proxy
+        # image: ghcr.io/immich-app/immich-proxy:${IMMICH_VERSION:-release}
+        # environment:
+          # Make sure these values get passed through from the env file
+          # - IMMICH_SERVER_URL
+          # - IMMICH_WEB_URL
+        # ports:
+          # - 2283:8080
+        # depends_on:
+          # - immich-server
+          # - immich-web
+        restart: unless-stopped
+
+    # volumes:
+      # pgdata:
+      # model-cache:
+      # tsdata:
+
+    secrets:
+      db_password:
+        file: ./secrets/db_password.txt
+      redis_password:
+        file: ./secrets/redis_password.txt
+    ```
+
+    </summary>
+
+3. Edit the `.env` file
+
+    1. Populate `UPLOAD_LOCATION` with your host upload location
+    2. Change the `DB_PASSWORD` line
+
+        From
+
+        ```ini
+        DB_PASSWORD=postgres
+        ```
+
+        To
+
+        ```ini
+        DB_PASSWORD_FILE=/run/secrets/db_password
+        ```
+
+    3. Add the `REDIS_PASSWORD` line
+
+        ```ini
+        REDIS_PASSWORD_FILE=/run/secrets/redis_password
+        ```
+
+    4. Populate the `TYPESENSE_API_KEY` with a random string
+
+        > 💡 You can generate a random string from command line
+        > ```sh
+        > $ echo $RANDOM | md5sum | head -c 20; echo;
+        > ```
+
+4. Create and populate the secrets files
+
+    ```sh
+    $ mkdir ./secrets
+    $ nano -L ./secrets/db_password.txt
+    $ nano -L ./secrets/redis_password.txt
+    ```
 ## Build TOR
 Adapted from [1](https://tor.stackexchange.com/questions/75/how-can-i-install-tor-from-the-source-code-in-the-git-repository) and [2](https://www.torbox.ch/?page_id=205), we will build the latest offical release. Instead, if you want to build from the repository (instable, but with the lastest features), see [3](https://tor.stackexchange.com/questions/75/how-can-i-install-tor-from-the-source-code-in-the-git-repository) and [4](https://tor.stackexchange.com/questions/22510/how-to-build-and-install-tor-from-the-source-code-from-git-repository).
 
-0. Install the build prerequisites
+1. Install the build prerequisites
 
     ```bash
     $ sudo apt-get install git build-essential automake libevent-dev libssl-dev zlib1g-dev
     ```
 
-1. Download the latest release from the official [source](https://www.torproject.org/download/tor/)
+2. Download the latest release from the official [source](https://www.torproject.org/download/tor/)
 
 
     ```bash
