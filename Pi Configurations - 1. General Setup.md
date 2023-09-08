@@ -58,6 +58,9 @@ Index
     - [RAR5 support](#rar5-support)
   - [Update Node and npm](#update-node-and-npm)
   - [Install Deluge torrent client with web interface](#install-deluge-torrent-client-with-web-interface)
+- [Backups and restores](#backups-and-restores)
+  - [Home Assistant](#home-assistant)
+  - [Immich](#immich)
 - [Useful commands](#useful-commands)
   - [List active processes](#list-active-processes)
 - [.bash\_aliases](#bash_aliases)
@@ -1921,7 +1924,7 @@ $ sudo usermod -aG docker ${USER}
 
     > 💡 We use the `-L` option to prevent nano adding a newline EOF character on save
 
-5. Check all the subservices works, starting from `redis` and `database`, and then adding all the other subservices
+5. Check that `redis` and `database` services works
 
      1. Run the containers without the `-d` option and check the logs
 
@@ -1930,14 +1933,24 @@ $ sudo usermod -aG docker ${USER}
          ```
 
 
-     2. If no errors occours, stop the containers with `Ctrl+C` and then dispose the containers
+     2. If no errors occours, stop the containers with `Ctrl+C` and then dispose them
 
          ```sh
          $ docker compose down
          ``` 
 
-    3. Repeat steps 5.1 and 5.2 adding the other containers
+6. Perform a first complete run, check from the logs that there's no errors
 
+    ```bash
+    $ docker compose up
+    ```
+
+7. Follow the [post install](https://immich.app/docs/install/post-install) steps
+8. If everything works well, stop the containers with `Ctrl+C` and then dispose them
+
+    ```bash
+    $ docker compose down
+    ```
 
 ## Build TOR
 Adapted from [1](https://tor.stackexchange.com/questions/75/how-can-i-install-tor-from-the-source-code-in-the-git-repository) and [2](https://www.torbox.ch/?page_id=205), we will build the latest offical release. Instead, if you want to build from the repository (instable, but with the lastest features), see [3](https://tor.stackexchange.com/questions/75/how-can-i-install-tor-from-the-source-code-in-the-git-repository) and [4](https://tor.stackexchange.com/questions/22510/how-to-build-and-install-tor-from-the-source-code-from-git-repository).
@@ -2199,6 +2212,13 @@ See [here](https://pimylifeup.com/raspberry-pi-deluge).<br>
 Do not follow the last part ("Setting up Deluge as a service").<br>
 Don't forget to add the alias in the `.bash_aliases` file.
 
+# Backups and restores
+In case of factory reset, don't forget to backup this services. And then to restore them!
+
+## Home Assistant 
+
+## Immich
+To backup and restore the Immich database, follow the official ``
 # Useful commands
 ## List active processes
 Simple
