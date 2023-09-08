@@ -47,6 +47,7 @@ Index
     - [Traefik configuration](#traefik-configuration-1)
   - [Install Python 3](#install-python-3)
   - [Install Docker](#install-docker)
+  - [Install Immich](#install-immich)
   - [Build TOR](#build-tor)
     - [obfs4proxy](#obfs4proxy)
     - [snowflake](#snowflake)
