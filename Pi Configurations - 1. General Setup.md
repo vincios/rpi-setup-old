@@ -1757,7 +1757,7 @@ $ sudo usermod -aG docker ${USER}
     $ wget -O .env https://github.com/immich-app/immich/releases/latest/download/example.env
     ```
 
-2. Edit the `docker-compose.yml` like the snippet below. On the downloaded file, fon't touch the commented lines and add or modify the uncommented lines of the snippet below:
+2. Edit the `docker-compose.yml` like the snippet below. On the downloaded file, don't touch the commented lines and add or modify the uncommented lines of the snippet below:
 
     <details>
     <summary>✨ Click to see the code</summary>
@@ -1930,13 +1930,13 @@ $ sudo usermod -aG docker ${USER}
          ```
 
 
-     2. If no errors occours, stop the containers with `Ctrl+C` and dispose the containers
+     2. If no errors occours, stop the containers with `Ctrl+C` and then dispose the containers
 
          ```sh
          $ docker compose down
          ``` 
 
-    3. Repeat steps 5.1 and 5.2 adding the 
+    3. Repeat steps 5.1 and 5.2 adding the other containers
 
 
 ## Build TOR
