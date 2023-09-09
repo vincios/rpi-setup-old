@@ -33,7 +33,7 @@ To restore, Home Assistant core doesn't have a restore utility, so you have to m
 ## Immich
 To backup and restore the Immich database, follow the official [wiki](https://immich.app/docs/administration/backup-and-restore).
 
-If you have added the [postgres backup image](https://github.com/prodrigestivill/docker-postgres-backup-local) to your `docker-compose.yml` file (like stated in the wiki above), so the dump will be automatically stored in the directory
+If you have added the [postgres backup image](https://github.com/prodrigestivill/docker-postgres-backup-local) to your `docker-compose.yml` file (like stated in the wiki above), the dump will be automatically stored in the directory
 
 ```
 your-immich-docker-folder/db_dumps
