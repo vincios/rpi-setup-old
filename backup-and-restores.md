@@ -55,5 +55,34 @@ This `tasks.txt` file is a good starting point to backup the services listed in 
 ⚠️ Make sure to adjust it with your paths!
 
 ```
+# Backup Home Assistant
+-> /home/homeassistant/.homeassistant/
+@ /media/qnas/Vincenzo/Raspberry/Backups/homeassistant/
++backups/***
+-*
+<-
 
+# Backup all the docker configurations
+-> /home/raspi/dockers/
+@ /media/qnas/Vincenzo/Raspberry/Backups/dockers/
+<-
+
+# Backup the rest of the raspi folder
+-> /home/raspi/
+@ /media/qnas/Vincenzo/Raspberry/Backups/raspi/
++Apps/
++Apps/instaloader/***
++.backup/***
++.bash_aliases
++Bookshelf/***
++Desktop/***
++Documenti/***
++Immagini/***
++Modelli/***
++Musica/***
++Pubblici/***
++Scaricati/***
++Video/***
+-*
+<-
 ```
