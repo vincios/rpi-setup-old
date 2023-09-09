@@ -606,16 +606,24 @@ Update Traefik is simple as replace the binary file with the updated one
         ```yaml
         http:
           routers:
-            my-router:
-              rule: Host(`new-service.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org`)
+            # We split the http router (my-router-http) from the https router (my-router) to better handle the cases where we need a http connection
+            # But in most cases, the http router doesn't need to be touched, since it simply redirects to the https router (where all the router configuration must be set). Just set its 'rule' and 'service' parameters.
+            my-router-http:  # TODO: change the router name
+              rule: Host(`new-service.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org`)  # TODO: set the rule
               # OR rule: (Host(`{{ env "DUCKDNS_DOMAIN"}}.duckdns.org`) && PathPrefix(`/new-service`))
+              entrypoints:
+                - web
+              middlewares:
+                - redirect-to-https
+              service: "my-service"  # TODO: set the service name
 
-              # If no entryPoints specified, the router will accept requests from all defined entry points. 
-              # If you want to limit the router scope only to some entry points, uncomment these lines
-              # entryPoints:
-              #  - "websecure"
+            my-router:  # TODO: change the router name
+              rule: Host(`new-service.{{ env "DUCKDNS_DOMAIN"}}.duckdns.org`)  # TODO: set the rule
+              # OR rule: (Host(`{{ env "DUCKDNS_DOMAIN"}}.duckdns.org`) && PathPrefix(`/new-service`))
+              entrypoints:
+                - websecure
 
-              service: "my-service"
+              service: "my-service"  # TODO: set the service name
 
               # Middlewares to which the request will be forwarded when the route is activated
               # Optional
@@ -634,10 +642,10 @@ Update Traefik is simple as replace the binary file with the updated one
               
           # Service's urls where the request will be forwarded
           services:
-            my-service:
+            my-service:  # TODO: change the service name
               loadBalancer:
                 servers:
-                - url: "http://<private-ip-server-1>:<private-port-server-1>/"
+                - url: "http://<private-ip-server-1>:<private-port-server-1>/"  # TODO: set the server url
 
           # Local middlewares (i.e. middlewares that will be used only by my-router)
           # Optional
@@ -651,14 +659,14 @@ Update Traefik is simple as replace the binary file with the updated one
 
         💡 For an example, see the file `/etc/traefik/dynamic/dashboard.yml` 
 
-    3. Set file permissions
+    1. Set file permissions
 
         ```bash
         $ sudo chown traefik:traefik /etc/traefik/dynamic/service_name.yml
         $ sudo chmod 644 /etc/traefik/dynamic/service_name.yml
         ```
 
-    4. Restart the Traefik service
+    2. Restart the Traefik service
 
 ### Annex: tips and tricks
 - Redirect base or root path to a subpath
