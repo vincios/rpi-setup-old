@@ -1881,7 +1881,31 @@ $ sudo usermod -aG docker ${USER}
 
     </summary>
 
-3. Edit the `.env` file
+
+3. Add the database automated [backup service](https://immich.app/docs/administration/backup-and-restore) to the `docker-compose.yml` file
+
+    ```yml
+    backup:
+      container_name: immich_db_dumper
+      image: prodrigestivill/postgres-backup-local
+      env_file:
+        - .env
+      environment:
+        POSTGRES_HOST: database
+        POSTGRES_DB: ${DB_DATABASE_NAME}
+        POSTGRES_USER: ${DB_USERNAME}
+        POSTGRES_PASSWORD_FILE: /run/secrets/db_password
+        BACKUP_NUM_KEEP: 7
+        BACKUP_DIR: /db_dumps
+      volumes:
+        - ./db_dumps:/db_dumps
+      restart: unless-stopped
+      secrets:
+        - db_password
+      depends_on:
+        - database
+    ```
+4. Edit the `.env` file
 
     1. Populate `UPLOAD_LOCATION` with your host upload location
     2. Change the `DB_PASSWORD` line
@@ -1911,7 +1935,7 @@ $ sudo usermod -aG docker ${USER}
         > $ echo $RANDOM | md5sum | head -c 20; echo;
         > ```
 
-4. Create and populate the secrets files
+5. Create and populate the secrets files
 
     ```sh
     $ mkdir ./secrets
@@ -1921,7 +1945,7 @@ $ sudo usermod -aG docker ${USER}
 
     > 💡 We use the `-L` option to prevent nano adding a newline EOF character on save
 
-5. Check that `redis` and `database` services works
+6. Check that `redis` and `database` services works
 
      1. Run the containers without the `-d` option and check the logs
 
