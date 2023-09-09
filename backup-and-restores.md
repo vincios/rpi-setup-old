@@ -31,7 +31,15 @@ So, you only need to backup this folder.
 To restore, Home Assistant core doesn't have a restore utility, so you have to manually extract the backup tar and replace the file inside the `.homeassistant` folder.
 
 ## Immich
-To backup and restore the Immich database, follow the official 
+To backup and restore the Immich database, follow the official [wiki](https://immich.app/docs/administration/backup-and-restore).
+
+If you have added the [postgres backup image](https://github.com/prodrigestivill/docker-postgres-backup-local) to your `docker-compose.yml` file (like stated in the wiki above), so the dump will be automatically stored in the directory
+
+```
+your-immich-docker-folder/db_dumps
+```
+
+So, you only need to backup this folder (or better, the entire Immich docker folder).
 
 
 ## Backup utility
