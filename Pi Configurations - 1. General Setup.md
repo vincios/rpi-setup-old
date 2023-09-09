@@ -2212,13 +2212,6 @@ See [here](https://pimylifeup.com/raspberry-pi-deluge).<br>
 Do not follow the last part ("Setting up Deluge as a service").<br>
 Don't forget to add the alias in the `.bash_aliases` file.
 
-# Backups and restores
-In case of factory reset, don't forget to backup this services. And then to restore them!
-
-## Home Assistant 
-
-## Immich
-To backup and restore the Immich database, follow the official ``
 # Useful commands
 ## List active processes
 Simple
