@@ -26,7 +26,7 @@ The compressed backups will be stored in the directory
 /home/homeassistant/.homeassistant/backups
 ```
 
-So, you only need to backup this folder.
+So, you only have to backup this folder.
 
 To restore, Home Assistant core doesn't have a restore utility, so you have to manually extract the backup tar and replace the file inside the `.homeassistant` folder.
 
@@ -39,7 +39,7 @@ If you have added the [postgres backup image](https://github.com/prodrigestivill
 your-immich-docker-folder/db_dumps
 ```
 
-So, you only need to backup this folder (or better, the entire Immich docker folder).
+So, you only have to backup this folder (or better, the entire Immich docker folder).
 
 
 ## Backup utility
