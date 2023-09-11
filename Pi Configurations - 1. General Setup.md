@@ -111,13 +111,15 @@ From [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/)
     ```bash
     $ sudo mkdir /media/dnas
     $ sudo mkdir /media/qnas
+    $ sudo mkdir /media/snas
     $ sudo mkdir /media/qnas/Media
     $ sudo mkdir /media/qnas/Download
     $ sudo mkdir /media/qnas/Vincenzo
+    $ sudo mkdir /media/snas/Vincenzo
     ```
 
-- Create credentials files, in a `~/.credentials` folder (create if not exists)
-    One for each network share (if it have different credentials)
+- Create the credentials files, in a `~/.credentials` folder (create if not exists)
+    One for each network share (if they have different credentials)
 
     - `nano ~/.credentials/.qnascredentials`
 
