@@ -223,11 +223,11 @@ Adapted from [here](https://www.duckdns.org/install.jsp?tab=pi).
     ```
 
 
-    > [!WARNING]  
-    > Don't forget to edit the `<YOUR_DUCKDNS_DOMAINS>` and `<YOUR_DUCKDNS_TOKEN>` fields. No quotes needed. 
+  > [!WARNING]
+  > Don't forget to edit the `<YOUR_DUCKDNS_DOMAINS>` and `<YOUR_DUCKDNS_TOKEN>` fields. No quotes needed. 
     
-    > [!TIP]
-    > `<YOUR_DUCKDNS_DOMAINS>` can be a comma separated (**NO spaces**) list of domains
+  > [!TIP]
+  > `<YOUR_DUCKDNS_DOMAINS>` can be a comma separated (**NO spaces**) list of domains
 
 4. Make the script executable
 
@@ -240,11 +240,12 @@ Adapted from [here](https://www.duckdns.org/install.jsp?tab=pi).
     ```bash
     $ . $HOME/.duckdns/duck.conf.sh; $HOME/.duckdns/duck.sh
     ```
+  
     > [!WARNING]
     > Note the leading dot `.`
 
-    > [!TIP]
-    > 💡Check the result in the `log.log` file
+  > [!TIP]
+  > 💡Check the result in the `log.log` file
 
 6. Edit the cron configuration
 
