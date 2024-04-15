@@ -240,9 +240,9 @@ Adapted from [here](https://www.duckdns.org/install.jsp?tab=pi).
     ```bash
     $ . $HOME/.duckdns/duck.conf.sh; $HOME/.duckdns/duck.sh
     ```
-  
-    > [!WARNING]
-    > Note the leading dot `.`
+
+  > [!WARNING]
+  > Note the leading dot `.`
 
   > [!TIP]
   > 💡Check the result in the `log.log` file
