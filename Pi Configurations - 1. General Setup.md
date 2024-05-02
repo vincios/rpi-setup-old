@@ -109,19 +109,21 @@ From [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/)
 - Create mountpoints into the `/media` folder
 
     ```bash
-    $ sudo mkdir /media/dnas
+    # $ sudo mkdir /media/dnas
     $ sudo mkdir /media/qnas
     $ sudo mkdir /media/snas
-    $ sudo mkdir /media/qnas/Media
     $ sudo mkdir /media/qnas/Download
+    $ sudo mkdir /media/qnas/Media
     $ sudo mkdir /media/qnas/Vincenzo
+    $ sudo mkdir /media/qnas/Vincenzo-Home
+    $ sudo mkdir /media/snas/Immich-Library  # Only if Immich is installed
     $ sudo mkdir /media/snas/Vincenzo
     ```
 
 - Create the credentials files, in a `~/.credentials` folder (create if not exists)
-    One for each network share (if they have different credentials)
+    One for each network device (if they have different credentials)
 
-    - `nano ~/.credentials/.qnascredentials`
+    - `nano ~/.credentials/.qnas-<user>`
 
         ```bash
         user=<YOUR-USER>
@@ -132,7 +134,7 @@ From [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/)
     - Give access only to the user
 
         ```bash
-        $ chmod 600 ~/.credentials/.qnascredentials
+        $ chmod 600 ~/.credentials/.qnas-<user>
         ```
 
     - Repeat for each network share you want to login
@@ -140,11 +142,14 @@ From [here](http://timlehr.com/auto-mount-samba-cifs-shares-via-fstab-on-linux/)
 - Run `sudo nano /etc/fstab` and add these lines (changes paths as done in point 2)
 
     ``` 
-    //192.168.1.200/Volume_1    /media/dnas/            cifs    credentials=/home/raspi/.credentials/.dnascredentials,uid=raspi,gid=raspi,iocharset=utf8,file_mode=0755,dir_mode=0755,noperm,vers=1.0   0   0
-    //192.168.1.210/Multimedia        /media/qnas/Media/      cifs    credentials=/home/raspi/.credentials/.qnascredentials,uid=raspi,gid=raspi,iocharset=utf8,file_mode=0755,dir_mode=0755,noperm            0   0
-    //192.168.1.210/Download          /media/qnas/Download/   cifs    credentials=/home/raspi/.credentials/.qnascredentials,uid=raspi,gid=raspi,iocharset=utf8,file_mode=0755,dir_mode=0755,noperm            0   0
-    //192.168.1.210/homes/vincenzo    /media/qnas/Vincenzo/   cifs    credentials=/home/raspi/.credentials/.qnascredentials,uid=raspi,gid=raspi,iocharset=utf8,file_mode=0755,dir_mode=0755,noperm            0   0
-    //192.168.1.200/Vincenzo          /media/snas/Vincenzo/   cifs    credentials=/home/raspi/.credentials/.snascredentials,uid=raspi,gid=raspi,iocharset=utf8,file_mode=0755,dir_mode=0755,noperm            0   0
+    #//192.168.1.200/Volume_1         /media/dnas/                   cifs    credentials=/home/raspi/.credentials/.dnascredentials,uid=raspi,gid=raspi,iocharset=utf8,file_mode=0755,dir_mode=0755,noperm,vers=1.0   0   0
+    //192.168.1.210/Multimedia        /media/qnas/Media/             cifs    credentials=/home/raspi/.credentials/.qnas-vincenzo,uid=raspi,gid=raspi,iocharset=utf8,file_mode=0755,dir_mode=0755,noperm            0   0
+    //192.168.1.210/Download          /media/qnas/Download/          cifs    credentials=/home/raspi/.credentials/.qnas-vincenzo,uid=raspi,gid=raspi,iocharset=utf8,file_mode=0755,dir_mode=0755,noperm            0   0
+    //192.168.1.210/homes/vincenzo    /media/qnas/Vincenzo-Home/     cifs    credentials=/home/raspi/.credentials/.qnas-vincenzo,uid=raspi,gid=raspi,iocharset=utf8,file_mode=0755,dir_mode=0755,noperm            0   0
+    //192.168.1.210/Vincenzo          /media/qnas/Vincenzo/          cifs    credentials=/home/raspi/.credentials/.qnas-vincenzo,uid=raspi,gid=raspi,iocharset=utf8,file_mode=0755,dir_mode=0755,noperm            0   0
+    //192.168.1.200/Vincenzo          /media/snas/Vincenzo/          cifs    credentials=/home/raspi/.credentials/.snas-vincenzo,uid=raspi,gid=raspi,iocharset=utf8,file_mode=0755,dir_mode=0755,noperm            0   0
+    //192.168.1.200/Immich-Library    /media/snas/Immich-Library/    cifs    credentials=/home/raspi/.credentials/.snas-vincenzo,uid=raspi,gid=raspi,iocharset=utf8,file_mode=0755,dir_mode=0755,noperm            0   0
+
     ```
 
 - Run `raspi-config` and enable "Wait for Network at Boot" under "Boot options"
@@ -1763,13 +1768,21 @@ Just follow the [official guide](https://docs.docker.com/engine/install/raspbian
 $ sudo usermod -aG docker ${USER}
 ```
 
-## Install Immich
-> 💡 Immich requires you have installed [docker](#install-docker).
+## Immich
+
+### Install Immich
+> [!WARNING]
+> Immich requires you have installed [docker](#install-docker).
+
+Follow the official [documentation](https://immich.app/docs/install/docker-compose):
 
 1. Download [docker-compose.yml](https://github.com/immich-app/immich/releases/latest/download/docker-compose.yml) and [example.env](https://github.com/immich-app/immich/releases/latest/download/example.env)
 
     ```sh
-    $ wget https://github.com/immich-app/immich/releases/latest/download/docker-compose.yml
+    $ wget -O docker-compose.yml https://github.com/immich-app/immich/releases/latest/download/docker-compose.yml
+    ```
+
+    ```sh
     $ wget -O .env https://github.com/immich-app/immich/releases/latest/download/example.env
     ```
 
