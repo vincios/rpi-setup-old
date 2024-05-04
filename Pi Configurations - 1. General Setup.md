@@ -2062,6 +2062,35 @@ See [here](https://pimylifeup.com/raspberry-pi-deluge).<br>
 Do not follow the last part ("Setting up Deluge as a service").<br>
 Don't forget to add the alias in the `.bash_aliases` file.
 
+
+## Restic / Backrest
+Restic is a cli tool for automated backups. Backrest is a web GUI for Restic.
+
+## Install Backrest
+You only need to install Backrest, since in already includes Restic.
+
+1. Download the latest [release](https://github.com/garethgeorge/backrest/releases), and extract it
+
+    ```sh
+    $ wget https://github.com/garethgeorge/backrest/releases/latest/download/backrest_Linux_arm64.tar.gz
+    $ mkdir backrest && tar -xzvf backrest_Linux_arm64.tar.gz -C backrest && cd backrest
+    ```
+
+2. Update the `install.sh` script to enable remote access
+
+    ```sh
+    $ sed -i 's\BACKREST_PORT=127.0.0.1:9898\BACKREST_PORT=0.0.0.0:9898\g' install.sh
+    ```
+
+3. Launch `install.sh`
+
+    ```sh
+    $ ./install.sh
+    ```
+
+4. Restic will be available at `http://0.0.0.0:9898`
+
+
 # Useful commands
 ## List active processes
 Simple
