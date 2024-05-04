@@ -116,6 +116,42 @@ To restore, Home Assistant core doesn't have a restore utility, so you have to m
   ```
 </details>
 
+## Docker
+Backup the docker compose configuration under the `dockers` folder.
+
+<details>
+  <summary> Backrest configuration </summary>
+
+  - Backup made each Sunday and Wednesday at 02:00
+  - Retention policy:
+    - **Daily**: 6 - Keep a backup for the last 6 days with a backup. Since the backups are two per week, it keep the backups of the last 3 weeks.
+    - **Monthly**: 4 - Keep a backup for the last 4 months (the last one of each month)
+    
+  ```json
+  {
+    "id": "Dockers",
+    "repo": "Synlogy-NetBackup",
+    "paths": [
+      "/home/raspi/dockers"
+    ],
+    "excludes": [
+      "immich-app"
+    ],
+    "iexcludes": [],
+    "cron": "0 2 * * 0,3",
+    "retention": {
+      "policyTimeBucketed": {
+        "yearly": 0,
+        "monthly": 4,
+        "weekly": 0,
+        "daily": 6,
+        "hourly": 0
+      }
+    }
+  }
+  ```
+</details>
+
 ## Immich
 To backup and restore the Immich database, follow the official [wiki](https://immich.app/docs/administration/backup-and-restore).
 
