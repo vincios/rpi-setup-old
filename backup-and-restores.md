@@ -42,6 +42,7 @@ Don't forget to save user home directories
   }
   ```
 </details>
+
 ## Home Assistant 
 On Home Assistant, create an automation to backup your configuration. For example, this automation will make a backup each Monday at 3AM
 
