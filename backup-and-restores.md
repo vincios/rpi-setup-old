@@ -117,14 +117,14 @@ To restore, Home Assistant core doesn't have a restore utility, so you have to m
 </details>
 
 ## Docker
-Backup the docker compose configuration under the `dockers` folder.
+Backup the docker compose configuration under the `dockers` folder. Exclude the `immich-app` folder, since we will backup [separately](#immich).
 
 <details>
   <summary> Backrest configuration </summary>
 
-  - Backup made each Sunday and Wednesday at 02:00
+  - Backup made each Wednesday at 02:00
   - Retention policy:
-    - **Daily**: 6 - Keep a backup for the last 6 days with a backup. Since the backups are two per week, it keep the backups of the last 3 weeks.
+    - **Daily**: 3 - Keep a backup of the last 3 days with a snapshot. Since the backups are one per week, it keep the backups of the last 3 weeks.
     - **Monthly**: 4 - Keep a backup for the last 4 months (the last one of each month)
     
   ```json
@@ -138,13 +138,13 @@ Backup the docker compose configuration under the `dockers` folder.
       "immich-app"
     ],
     "iexcludes": [],
-    "cron": "0 2 * * 0,3",
+    "cron": "0 2 * * 3",
     "retention": {
       "policyTimeBucketed": {
         "yearly": 0,
         "monthly": 4,
         "weekly": 0,
-        "daily": 6,
+        "daily": 3,
         "hourly": 0
       }
     }
