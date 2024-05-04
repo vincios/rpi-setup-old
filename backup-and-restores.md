@@ -5,7 +5,20 @@ In case of factory reset, don't forget to backup this services. And then to rest
 Don't forget to save user home directories
 
 <details>
-  <summary> Home Backrest configuration </summary>
+  <summary> Backrest configuration </summary>
+
+  - Backup made each day at 01:00
+  - Retention policy:
+    - **Daily**: 7 - Keep a backup for the last 7 days
+    - **Weekly**: 2 - Keep a backup for the last 2 weeks (the last one of each week)
+      
+      **NB**: one of them will coincide with the 7th daily backup (only the daily will be kept)
+
+    - **Monthly**: 4 - Keep a backup for the last 3 months (the last one of each month)
+      
+      **NB**: one of them will coincide with the 7th daily or the 2nd weekly backup (only one will be kept)
+
+    - **Yearly**: 1 - Keep a backup for the last year (the last one of the year)
 
   ```json
   {
@@ -33,8 +46,8 @@ Don't forget to save user home directories
     "retention": {
       "policyTimeBucketed": {
         "yearly": 1,
-        "monthly": 3,
-        "weekly": 0,
+        "monthly": 4,
+        "weekly": 2,
         "daily": 7,
         "hourly": 0
       }
