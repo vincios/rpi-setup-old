@@ -1,6 +1,47 @@
 # Backup and Restores
 In case of factory reset, don't forget to backup this services. And then to restore them!
 
+# Home
+Don't forget to save user home directories
+
+<details>
+  <summary> Home Backrest configuration </summary>
+
+  ```json
+  {
+    "id": "Home",
+    "repo": "Synlogy-NetBackup",
+    "paths": [
+      "/home/raspi/Apps/instaloader",
+      "/home/raspi/.backup",
+      "/home/raspi/.bash_aliases",
+      "/home/raspi/Bookshelf",
+      "/home/raspi/Desktop",
+      "/home/raspi/Documenti",
+      "/home/raspi/Immagini",
+      "/home/raspi/Modelli",
+      "/home/raspi/Musica",
+      "/home/raspi/Pubblici",
+      "/home/raspi/Scaricati",
+      "/home/raspi/Video",
+      "/home/raspi/.config"
+    ],
+    "excludes": [],
+    "iexcludes": [],
+    "cron": "0 1 * * *",
+    "backup_flags": [],
+    "retention": {
+      "policyTimeBucketed": {
+        "yearly": 1,
+        "monthly": 3,
+        "weekly": 0,
+        "daily": 7,
+        "hourly": 0
+      }
+    }
+  }
+  ```
+</details>
 ## Home Assistant 
 On Home Assistant, create an automation to backup your configuration. For example, this automation will make a backup each Monday at 3AM
 
