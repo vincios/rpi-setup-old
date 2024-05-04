@@ -14,7 +14,7 @@ Don't forget to save user home directories
       
       **NB**: one of them will coincide with the 7th daily backup (only the daily will be kept)
 
-    - **Monthly**: 4 - Keep a backup for the last 3 months (the last one of each month)
+    - **Monthly**: 4 - Keep a backup for the last 4 months (the last one of each month)
       
       **NB**: one of them will coincide with the 7th daily or the 2nd weekly backup (only one will be kept)
 
@@ -84,6 +84,37 @@ The compressed backups will be stored in the directory
 So, you only have to backup this folder.
 
 To restore, Home Assistant core doesn't have a restore utility, so you have to manually extract the backup tar and replace the file inside the `.homeassistant` folder.
+
+
+<details>
+  <summary> Backrest configuration </summary>
+
+  - Backup made each Monday at 03:30
+  - Retention policy:
+    - **Monthly**: 4 - Since the backup folder always contains all the oldest backups (except if manually removed), we just keep a snapshot for the last 4 months (the last one of each month)
+
+  ```json
+  {
+    "id": "Home-Assistant",
+    "repo": "Synlogy-NetBackup",
+    "paths": [
+      "/home/homeassistant/.homeassistant/backups"
+    ],
+    "excludes": [],
+    "iexcludes": [],
+    "cron": "30 3 * * 1",
+    "retention": {
+      "policyTimeBucketed": {
+        "yearly": 0,
+        "monthly": 4,
+        "weekly": 0,
+        "daily": 0,
+        "hourly": 0
+      }
+    }
+  }
+  ```
+</details>
 
 ## Immich
 To backup and restore the Immich database, follow the official [wiki](https://immich.app/docs/administration/backup-and-restore).
