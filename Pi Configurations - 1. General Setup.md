@@ -1749,8 +1749,6 @@ Immich [uses](https://github.com/immich-app/immich/discussions/7925#discussionco
 
 > [!IMPORTANT]
 > Since the docker configuration must coincide between the server and microservices instances, you should fully configure your `docker-compose.yml`/`.env` files (including the definition of external library [volumes](https://immich.app/docs/features/libraries/#mount-docker-volumes)) on the host machine (server) and then clone them to the worker machine.
->
-> Also, remember that the configuration set on the frontend (`Administration` page) is sent to the microservices via redis when you click on a `Save` button. So, before to change any settings make sure that microservices/machine learning services are correctly running on the worker host.
 
 > [!IMPORTANT]
 > The UPLOAD library and (eventually) external libraries must be accessible on both the server and the worker hosts, so make sure to share them from a common source (e.g. a NAS).
@@ -1788,6 +1786,8 @@ On the **server host**:
 
 > [!TIP]
 > You can leave the `immich-microservices` service running if you want to make a computation cluster. Each instance will pick up some waiting jobs.
+> 
+> The same cannot be made for the `immich-machine-learning` because, on the frontend, you can set only one Machine Learning url. [But could be possible because, theoretically, also the ML Jobs queue is managed with redis, and the endpoint url is used only for the search - NEED TO INVESTIGATE THIS].
 
 On the **worker host**:
 
@@ -1851,6 +1851,33 @@ On the **worker host**:
 
 10. Start `immich-microservices` and `immich-machine-learning` services
 
+    ```bash
+    $ docker compose up
+    ```
+
+> [!TIP]
+> Run without `-d` so you can have some feedback from the logs
+
+> [!NOTE]
+> In some cases, the `immich_microservices` instance could several minutes to start, so **don't move to the next step** until you see the line
+> ```
+> LOG [ImmichServer] Immich Server is listening on http://[]:3002 
+> ```
+
+On the **frontend**:
+> [!IMPORTANT]
+> Note that also the frontend settings (**Administration** > **Settings** page) are sent to the microservices via redis when you click on a `Save` button. 
+>
+> So, before to change any settings make sure that microservices/machine learning services are running on the worker host.
+
+11. Make sure that server settings are applied also to the worker's microservices
+    1. Go to the **Administation** -> **Settings** page
+    2. Export settings as JSON and re-import them
+    3. Check on the worker's logs that settings was updated
+
+12. Update the Machine Learning URL in Settings
+
+Now you can start any Job / upload assets / import external libraries and the computation will be automatically picked up by the workers.
 
 ## Build TOR
 Adapted from [1](https://tor.stackexchange.com/questions/75/how-can-i-install-tor-from-the-source-code-in-the-git-repository) and [2](https://www.torbox.ch/?page_id=205), we will build the latest offical release. Instead, if you want to build from the repository (instable, but with the lastest features), see [3](https://tor.stackexchange.com/questions/75/how-can-i-install-tor-from-the-source-code-in-the-git-repository) and [4](https://tor.stackexchange.com/questions/22510/how-to-build-and-install-tor-from-the-source-code-from-git-repository).
