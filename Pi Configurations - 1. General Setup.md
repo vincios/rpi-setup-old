@@ -1743,6 +1743,10 @@ See this `.env` example as reference:
   ```
 </details>
 
+
+### Outsource microservices and machine learning
+
+
 ## Build TOR
 Adapted from [1](https://tor.stackexchange.com/questions/75/how-can-i-install-tor-from-the-source-code-in-the-git-repository) and [2](https://www.torbox.ch/?page_id=205), we will build the latest offical release. Instead, if you want to build from the repository (instable, but with the lastest features), see [3](https://tor.stackexchange.com/questions/75/how-can-i-install-tor-from-the-source-code-in-the-git-repository) and [4](https://tor.stackexchange.com/questions/22510/how-to-build-and-install-tor-from-the-source-code-from-git-repository).
 
@@ -2035,7 +2039,7 @@ You only need to install Backrest, since in already includes Restic.
 ## Bonus: SFTP repository
 As stated into the restic [documentation](https://restic.readthedocs.io/en/latest/030_preparing_a_new_repo.html#sftp), to use an SFTP repository, you must enable SSH Key Authentication between the client and the FTP server (you cannot perform an automatic backup if a password is required to login to the server).
 
-The process involves to enable SSH key authentication on the server and add the client's public key into the server's authorized_keus file.
+The process involves to enable SSH key authentication on the server and add the client's public key into the server's authorized_keys file.
 
 For example, for a Synology NAS, you can follow this [HOWTO](https://community.synology.com/enu/forum/1/post/136213).
 
