@@ -1794,7 +1794,7 @@ On the **worker host**:
 4. Copy the `docker-compose.yml` and `.env` files from the server to the worker host
 
 > [!TIP]
-> If you can SSH your server, you can use [SCP](https://www.freecodecamp.org/news/scp-linux-command-example-how-to-ssh-file-transfer-from-remote-to-local/) to transfer files from the server.
+> If you can SSH your server, you can use [SCP](https://www.freecodecamp.org/news/scp-linux-command-example-how-to-ssh-file-transfer-from-remote-to-local/) to transfer files.
 
 5. Remove `immich-server`, `redis`, and `database` services from `docker-compose.yml`
 
@@ -1839,8 +1839,8 @@ On the **worker host**:
 
       Make sure that
 
-        1. On the host, the UPLOAD library is correctly mounted into the `/media/nas/immich` folder and the external library is correctly mounted into the `/media/nas/photo` folder
-        2. Into the docker container, the libraries are correctly visible 
+        1. on the host, the UPLOAD library is correctly mounted into the `/media/nas/immich` folder and the external library is correctly mounted into the `/media/nas/photo` folder
+        2. into the docker container, the libraries are correctly visible 
 
             i.e. connect to the docker container and check with `ls` that folder and files are correctly visible
             ```
