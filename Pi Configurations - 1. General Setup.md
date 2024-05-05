@@ -1745,7 +1745,10 @@ See this `.env` example as reference:
 
 
 ### Outsource microservices and machine learning
+Immich [uses](https://github.com/immich-app/immich/discussions/7925#discussioncomment-9280718) redis to issue jobs to the workers (microservices and machine learning), so you can setup multiple worker instances on different remote hosts and let the server outsource computation to them.
 
+> [!IMPORTANT]
+> Since the `docker-compose.yml`/`.env` configuration must coincide between server and microservices instances, you should fully configure your `docker-compose.yml`/`.env` files (including the definition of (external library)[https://immich.app/docs/features/libraries/#mount-docker-volumes] volumes) on the host machine (server) and then clone it to the worker machine.
 
 ## Build TOR
 Adapted from [1](https://tor.stackexchange.com/questions/75/how-can-i-install-tor-from-the-source-code-in-the-git-repository) and [2](https://www.torbox.ch/?page_id=205), we will build the latest offical release. Instead, if you want to build from the repository (instable, but with the lastest features), see [3](https://tor.stackexchange.com/questions/75/how-can-i-install-tor-from-the-source-code-in-the-git-repository) and [4](https://tor.stackexchange.com/questions/22510/how-to-build-and-install-tor-from-the-source-code-from-git-repository).
