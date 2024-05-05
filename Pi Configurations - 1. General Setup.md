@@ -1713,7 +1713,7 @@ $ sudo usermod -aG docker ${USER}
 
 ### Install Immich
 > [!WARNING]
-> Immich requires you have installed [docker](#install-docker).
+> Immich requires [docker](#install-docker).
 
 Follow the official [documentation](https://immich.app/docs/install/docker-compose).
 
@@ -1744,11 +1744,113 @@ See this `.env` example as reference:
 </details>
 
 
-### Outsource microservices and machine learning
+### Outsource microservices and machine learning computation
 Immich [uses](https://github.com/immich-app/immich/discussions/7925#discussioncomment-9280718) redis to issue jobs to the workers (microservices and machine learning), so you can setup multiple worker instances on different remote hosts and let the server outsource computation to them.
 
 > [!IMPORTANT]
-> Since the `docker-compose.yml`/`.env` configuration must coincide between server and microservices instances, you should fully configure your `docker-compose.yml`/`.env` files (including the definition of external library [volumes](https://immich.app/docs/features/libraries/#mount-docker-volumes)) on the host machine (server) and then clone it to the worker machine.
+> Since the docker configuration must coincide between the server and microservices instances, you should fully configure your `docker-compose.yml`/`.env` files (including the definition of external library [volumes](https://immich.app/docs/features/libraries/#mount-docker-volumes)) on the host machine (server) and then clone them to the worker machine.
+>
+> Also, remember that the configuration set on the frontend (`Administration` page) is sent to the microservices via redis when you click on a `Save` button. So, before to change any settings make sure that microservices/machine learning services are correctly running on the worker host.
+
+> [!IMPORTANT]
+> The UPLOAD library and (eventually) external libraries must be accessible on both the server and the worker hosts, so make sure to share them from a common source (e.g. a NAS).
+
+On the **server host**:
+
+1. On the `docker-compose.yml` file, expose the ports on both the `database` and the `redis` services
+
+    Take the default ports form the official [documentation](https://immich.app/docs/install/environment-variables#ports).
+
+    Example:
+    ```yml
+    redis:
+      # ...
+      ports:
+        - 6379:6379
+
+    database:
+      # ...
+      ports:
+        - 5432:5432
+    ```
+
+2. Run **all** the services
+
+    ```bash
+    $ docker compose up -d
+    ```
+
+3. Stop the `immich-machine-learning` and (optional) the `immich-microservices` services 
+
+    ```bash
+    $ docker compose down immich-microservices immich-machine-learning
+    ```
+
+> [!TIP]
+> You can leave the `immich-microservices` service running if you want to make a computation cluster. Each instance will pick up some waiting jobs.
+
+On the **worker host**:
+
+4. Copy the `docker-compose.yml` and `.env` files from the server to the worker host
+
+> [!TIP]
+> If you can SSH your server, you can use [SCP](https://www.freecodecamp.org/news/scp-linux-command-example-how-to-ssh-file-transfer-from-remote-to-local/) to transfer files from the server.
+
+5. Remove `immich-server`, `redis`, and `database` services from `docker-compose.yml`
+
+6. On the `docker-compose.yml` expose the port on the `immich-machine-learning` service
+
+    Take the default port form the official [documentation](https://immich.app/docs/install/environment-variables#ports).
+
+    Example:
+    ```yml
+    immich-machine-learning:
+      # ...
+      ports:
+        - 3003:3003
+    ```
+
+7. (Optional) Enable hardware acceleration ([transcoding](https://immich.app/docs/features/hardware-transcoding)/[machine learning](https://immich.app/docs/features/ml-hardware-acceleration)).
+
+
+8. On the `.env` file, add [`DB_HOSTNAME`](https://immich.app/docs/install/environment-variables#database) and [`REDIS_HOSTNAME`](https://immich.app/docs/install/environment-variables#redis) variables. Set them to the server's IP
+
+    ```ini
+    # Remote server configuration
+    DB_HOSTNAME=192.168.1.X
+    REDIS_HOSTNAME=192.168.1.X
+    ```
+
+
+9. **⚠️ Important!** Mount the UPLOAD LIBRARY and (eventually) EXTERNAL LIBRARIES ***exactly on the same paths*** as defined in the `volumes` section of the `docker-compose.yml` file
+
+    - For example, if you have defined your volumes like this
+
+        ```yml
+        # UPLOAD_LOCATION=/media/nas/immich
+        # LIBRARY_LOCATION=/media/nas/photo
+
+        immich-microservices:
+          # ...
+          volumes:
+            - ${UPLOAD_LOCATION}:/usr/src/app/upload
+            - ${LIBRARY_LOCATION}:/mnt/media/library:ro
+        ```
+
+      Make sure that
+
+        1. On the host, the UPLOAD library is correctly mounted into the `/media/nas/immich` folder and the external library is correctly mounted into the `/media/nas/photo` folder
+        2. Into the docker container, the libraries are correctly visible 
+
+            i.e. connect to the docker container and check with `ls` that folder and files are correctly visible
+            ```
+            $ docker exec -it immich_microservices /bin/bash
+            # ls /usr/src/app/upload
+            # ls /mnt/media/library
+            ```
+
+10. Start `immich-microservices` and `immich-machine-learning` services
+
 
 ## Build TOR
 Adapted from [1](https://tor.stackexchange.com/questions/75/how-can-i-install-tor-from-the-source-code-in-the-git-repository) and [2](https://www.torbox.ch/?page_id=205), we will build the latest offical release. Instead, if you want to build from the repository (instable, but with the lastest features), see [3](https://tor.stackexchange.com/questions/75/how-can-i-install-tor-from-the-source-code-in-the-git-repository) and [4](https://tor.stackexchange.com/questions/22510/how-to-build-and-install-tor-from-the-source-code-from-git-repository).
