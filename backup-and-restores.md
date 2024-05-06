@@ -238,6 +238,8 @@ Don't backup the `data` folder, because it cannot be read.
 ## BONUS: Complete backrest configuration
 Copy this into `~/.config/backrest/config.json`
 
+Don't forget to set your repository password!
+
 <details>
 <summary>Click to see</summary>
   
