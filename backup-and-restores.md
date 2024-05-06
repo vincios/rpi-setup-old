@@ -1,7 +1,7 @@
 # Backup and Restores
 In case of factory reset, don't forget to backup this services. And then to restore them!
 
-# Home
+## Home
 Don't forget to save user home directories
 
 <details>
@@ -203,6 +203,36 @@ Don't backup the `data` folder, because it cannot be read.
 </details>
 
 
+## Traefik
+Save the traefik static/dynamic configuration. 
+
+Don't backup the `data` folder, because it cannot be read.
+
+<details>
+  <summary> Backrest configuration </summary>
+
+  - Backup made two times per month, on 1st and 16th of the month, at 02:30
+  - Retention policy:
+    - **Count**: 5 - keep the last 5 snapshot
+    
+  ```json
+  {
+    "id": "Traefik",
+    "repo": "Synlogy-NetBackup",
+    "paths": [
+      "/etc/traefik"
+    ],
+    "excludes": [
+      "acme"
+    ],
+    "iexcludes": [],
+    "cron": "30 2 1,16 * *",
+    "retention": {
+      "policyKeepLastN": 5
+    }
+  }
+  ```
+</details>
 
 ## Backup utility
 You can use this utility to schedule the backup of your Raspberry folders.
