@@ -1879,6 +1879,16 @@ On the **frontend**:
 
 Now you can start any Job / upload assets / import external libraries and the computation will be automatically picked up by the workers.
 
+### Immich tools
+#### immich-go
+[immich-go](https://github.com/simulot/immich-go/) is an alternative to the immich-CLI command.
+
+To install/update simply download the latest release and extract.
+
+```bash
+$ wget https://github.com/simulot/immich-go/releases/latest/download/immich-go_Linux_arm64.tar.gz
+$ tar -zxvf immich-go_Linux_arm64.tar.gz 
+```
 ## Build TOR
 Adapted from [1](https://tor.stackexchange.com/questions/75/how-can-i-install-tor-from-the-source-code-in-the-git-repository) and [2](https://www.torbox.ch/?page_id=205), we will build the latest offical release. Instead, if you want to build from the repository (instable, but with the lastest features), see [3](https://tor.stackexchange.com/questions/75/how-can-i-install-tor-from-the-source-code-in-the-git-repository) and [4](https://tor.stackexchange.com/questions/22510/how-to-build-and-install-tor-from-the-source-code-from-git-repository).
 
@@ -2143,6 +2153,8 @@ Don't forget to add the alias in the `.bash_aliases` file.
 ## Restic / Backrest
 Restic is a cli tool for automated backups. Backrest is a web GUI for Restic.
 
+> [!NOTE]
+> TODO: Switch to [resticprofile](https://creativeprojects.github.io/resticprofile/)?
 
 ## Install Backrest
 You only need to install Backrest, since in already includes Restic.
