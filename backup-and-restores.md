@@ -155,13 +155,53 @@ Backup the docker compose configuration under the `dockers` folder. Exclude the 
 ## Immich
 To backup and restore the Immich database, follow the official [wiki](https://immich.app/docs/administration/backup-and-restore).
 
-If you have added the [postgres backup image](https://github.com/prodrigestivill/docker-postgres-backup-local) to your `docker-compose.yml` file (like stated in the wiki above), the dump will be automatically stored in the directory
+Don't backup the `data` folder, because it cannot be read.
 
-```
-your-immich-docker-folder/db_dumps
-```
+<details>
+  <summary> Backrest configuration </summary>
 
-So, you only have to backup this folder (or better, the entire Immich docker folder).
+  - Backup made each two days at 02:10
+  - Retention policy:
+    - **Daily**: 2 - Keep a backup of the last 2 days with a snapshot.
+    - **Weekly**: 4 - Keep a backup for the last 4 weeks (the last one of each week)
+    - **Monthly**: 3 - Keep a backup for the last 3 months (the last one of each month)
+    
+  ```json
+  {
+    "id": "Immich",
+    "repo": "Synlogy-NetBackup",
+    "paths": [
+      "/home/raspi/dockers/immich-app"
+    ],
+    "excludes": [
+      "data"
+    ],
+    "iexcludes": [],
+    "cron": "10 2 * * */2",
+    "retention": {
+      "policyTimeBucketed": {
+        "yearly": 0,
+        "monthly": 3,
+        "weekly": 4,
+        "daily": 2,
+        "hourly": 24
+      }
+    },
+    "hooks": [
+      {
+        "conditions": [
+          "CONDITION_SNAPSHOT_START"
+        ],
+        "onError": "ON_ERROR_CANCEL",
+        "actionCommand": {
+          "command": "#!/bin/bash\nif [ ! -d /home/raspi/dockers/immich-app/data-backups ]; then\n  mkdir /home/raspi/dockers/immich-app/data-backups \nfi\n\ndocker exec -t immich_postgres pg_dumpall --clean --if-exists --username=postgres > /home/raspi/dockers/immich-app/data-backups/immich-database.sql"
+        }
+      }
+    ]
+  }
+  ```
+</details>
+
 
 
 ## Backup utility
