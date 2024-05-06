@@ -234,6 +234,124 @@ Don't backup the `data` folder, because it cannot be read.
   ```
 </details>
 
+
+## BONUS: Complete backrest configuration
+Copy this into `~/.config/backrest/config.json`
+
+<details>
+<summary>Click to see</summary>
+  
+  ```json
+  {
+    "modno":  16,
+    "version":  1,
+    "host":  "raspberrypi",
+    "repos":  [
+      {
+        "id":  "Synlogy-NetBackup",
+        "uri":  "sftp://vincenzo@192.168.1.200:2222//NetBackup/raspberrypi",
+        "password":  <REDACTED>,
+        "prunePolicy":  {
+          "maxFrequencyDays":  7,
+          "maxUnusedPercent":  25
+        }
+      }
+    ],
+    "plans":  [
+      {
+        "id":  "Dockers",
+        "repo":  "Synlogy-NetBackup",
+        "paths":  [
+          "/home/raspi/dockers"
+        ],
+        "excludes":  [
+          "immich-app"
+        ],
+        "cron":  "0 2 * * 3",
+        "retention":  {
+          "policyTimeBucketed":  {
+            "daily":  3,
+            "monthly":  4
+          }
+        }
+      },
+      {
+        "id":  "Home",
+        "repo":  "Synlogy-NetBackup",
+        "paths":  [
+          "/home/raspi/.backup",
+          "/home/raspi/.bash_aliases",
+          "/home/raspi/.config",
+          "/home/raspi/Apps/instaloader",
+          "/home/raspi/Bookshelf",
+          "/home/raspi/Desktop",
+          "/home/raspi/Documenti",
+          "/home/raspi/Immagini",
+          "/home/raspi/Modelli",
+          "/home/raspi/Musica",
+          "/home/raspi/Pubblici",
+          "/home/raspi/Scaricati",
+          "/home/raspi/Video"
+        ],
+        "cron":  "0 1 * * *",
+        "retention":  {
+          "policyTimeBucketed":  {
+            "daily":  7,
+            "weekly":  2,
+            "monthly":  4
+          }
+        }
+      },
+      {
+        "id":  "Home-Assistant",
+        "repo":  "Synlogy-NetBackup",
+        "paths":  [
+          "/home/homeassistant/.homeassistant/backups"
+        ],
+        "cron":  "30 3 * * 1",
+        "retention":  {
+          "policyTimeBucketed":  {
+            "monthly":  4
+          }
+        }
+      },
+      {
+        "id":  "Immich",
+        "repo":  "Synlogy-NetBackup",
+        "paths":  [
+          "/home/raspi/dockers/immich-app"
+        ],
+        "excludes":  [
+          "data"
+        ],
+        "cron":  "0 2 * * */2",
+        "retention":  {
+          "policyTimeBucketed":  {
+            "daily":  2,
+            "weekly":  4,
+            "monthly":  3
+          }
+        },
+        "hooks":  [
+          {
+            "conditions":  [
+              "CONDITION_SNAPSHOT_START"
+            ],
+            "onError":  "ON_ERROR_CANCEL",
+            "actionCommand":  {
+              "command":  "#!/bin/bash\nif [ ! -d /home/raspi/dockers/immich-app/data-backups ]; then\n  mkdir /home/raspi/dockers/immich-app/data-backups \nfi\n\ndocker exec -t immich_postgres pg_dumpall --clean --if-exists --username=postgres > /home/raspi/dockers/immich-app/data-backups/immich-database.sql"
+            }
+          }
+        ]
+      }
+    ],
+    "auth":  {
+      "disabled":  true
+    }
+  }
+  ```
+</details>
+
 ## Backup utility
 You can use this utility to schedule the backup of your Raspberry folders.
 
