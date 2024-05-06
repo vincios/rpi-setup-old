@@ -1859,9 +1859,9 @@ On the **worker host**:
 > Run without `-d` so you can have some feedback from the logs
 
 > [!NOTE]
-> In some cases, the `immich_microservices` instance could several minutes to start, so **don't move to the next step** until you see the line
+> In some circumstances, the `immich_microservices` instance could several minutes to start, so **don't move to the next step** until you see the line
 > ```
-> LOG [ImmichServer] Immich Server is listening on http://[]:3002 
+> LOG [ImmichMicroservice] Immich Microservices is listening on http://[::1]:3002
 > ```
 
 On the **frontend**:
