@@ -1891,7 +1891,8 @@ $ tar -zxvf immich-go_Linux_arm64.tar.gz
 ```
 
 > [!TIP]
-> On the first run the tool 
+> On the first run the tool stores the Server URL and the API key into a configuration file (default `$HOME/.immich-go/immich-go.json` if not specified with the `-use-configuration` parameter). So, `-server` and `-key` can be omitted for the next runs.
+
 ## Build TOR
 Adapted from [1](https://tor.stackexchange.com/questions/75/how-can-i-install-tor-from-the-source-code-in-the-git-repository) and [2](https://www.torbox.ch/?page_id=205), we will build the latest offical release. Instead, if you want to build from the repository (instable, but with the lastest features), see [3](https://tor.stackexchange.com/questions/75/how-can-i-install-tor-from-the-source-code-in-the-git-repository) and [4](https://tor.stackexchange.com/questions/22510/how-to-build-and-install-tor-from-the-source-code-from-git-repository).
 
