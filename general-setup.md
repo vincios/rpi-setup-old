@@ -2241,6 +2241,12 @@ In the `docker-compose.yml` folder
     ```
 
 3. Paste the result into the `.env` file
+
+4. Start the container
+
+    ```bash
+    $ docker compose up -d
+    ```
 # Useful commands
 ## List active processes
 Simple
