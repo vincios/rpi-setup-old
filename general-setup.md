@@ -2167,7 +2167,7 @@ You only need to install Backrest, since in already includes Restic.
 
     ```sh
     $ wget https://github.com/garethgeorge/backrest/releases/latest/download/backrest_Linux_arm64.tar.gz
-    $ mkdir backrest && tar -xzvf backrest_Linux_arm64.tar.gz -C backrest && cd backrest
+    $ mkdir backrest && tar -xzvf backrest_Linux_arm64.tar.gz -C backrest && rm backrest_Linux_arm64.tar.gz && cd backrest
     ```
 
 2. Update the `install.sh` script to enable remote access
