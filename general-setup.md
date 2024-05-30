@@ -2222,6 +2222,25 @@ For example, for a Synology NAS, you can follow this [HOWTO](https://community.s
   > Unless changed with the `LOGS_LOCATION` env variable, the default logs location is `./vw-logs`
 
 
+### First run
+If you want to [enable the Admin page](https://github.com/dani-garcia/vaultwarden/wiki/Enabling-admin-page) and generate the `ADMIN_TOKEN` via a temporary container, follow the steps 1-3.
+
+Otherwise, skip to the step 4.
+
+In the `docker-compose.yml` folder
+1. Pull the container
+
+    ```bash
+    $ docker compose pull
+    ```
+
+2. Generate the `ADMIN_TOKEN`
+
+    ```bash
+    $ docker run --rm -it vaultwarden/server /vaultwarden hash --preset owasp
+    ```
+
+3. Paste the result into the `.env` file
 # Useful commands
 ## List active processes
 Simple
