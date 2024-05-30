@@ -2195,7 +2195,7 @@ For example, for a Synology NAS, you can follow this [HOWTO](https://community.s
 ## VaultWarden
 [VaultWarden]() is an unofficial Bitwarden compatible server written in Rust.
 
-### Install VaultWarden
+### Install VaultWarden [🦆]
 > [!WARNING]
 > Immich requires [docker](#install-docker).
 
@@ -2207,6 +2207,15 @@ For example, for a Synology NAS, you can follow this [HOWTO](https://community.s
 
     ```
 
+3. Download the default `.env` file
+
+    ```bash
+    $ wget -O .env https://raw.githubusercontent.com/dani-garcia/vaultwarden/main/.env.template
+    ```
+
+4. Edit the `.env` file
+    1. Uncomment a `DOMAIN` variable, edit it according to your domain
+    2. 
 # Useful commands
 ## List active processes
 Simple
