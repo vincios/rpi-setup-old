@@ -2184,6 +2184,10 @@ You only need to install Backrest, since in already includes Restic.
 
 4. Restic will be available at `http://0.0.0.0:9898`
 
+
+### Upgrade Backrest
+Simply run install [steps](#install-backrest) again.
+
 ### Bonus: SFTP repository
 As stated into the restic [documentation](https://restic.readthedocs.io/en/latest/030_preparing_a_new_repo.html#sftp), to use an SFTP repository, you must enable SSH Key Authentication between the client and the FTP server (you cannot perform an automatic backup if a password is required to login to the server).
 
