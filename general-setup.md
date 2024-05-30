@@ -2218,8 +2218,8 @@ For example, for a Synology NAS, you can follow this [HOWTO](https://community.s
 
 5. [Configure fail2ban](https://github.com/dani-garcia/vaultwarden/wiki/Fail2Ban-Setup)
 
-> [!TIP]
-> Unless changed with the `LOGS_LOCATION` env variable, the default logs location is `./vw-logs`
+    > [!TIP]
+    > Unless changed with the `LOGS_LOCATION` env variable, the default logs location is `./vw-logs`
 
 
 # Useful commands
