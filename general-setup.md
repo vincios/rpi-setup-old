@@ -2160,7 +2160,7 @@ Restic is a cli tool for automated backups. Backrest is a web GUI for Restic.
 > [!NOTE]
 > TODO: Switch to [resticprofile](https://creativeprojects.github.io/resticprofile/)?
 
-## Install Backrest
+### Install Backrest
 You only need to install Backrest, since in already includes Restic.
 
 1. Download the latest [release](https://github.com/garethgeorge/backrest/releases), and extract it
@@ -2184,13 +2184,28 @@ You only need to install Backrest, since in already includes Restic.
 
 4. Restic will be available at `http://0.0.0.0:9898`
 
-## Bonus: SFTP repository
+### Bonus: SFTP repository
 As stated into the restic [documentation](https://restic.readthedocs.io/en/latest/030_preparing_a_new_repo.html#sftp), to use an SFTP repository, you must enable SSH Key Authentication between the client and the FTP server (you cannot perform an automatic backup if a password is required to login to the server).
 
 The process [involves](https://www.redhat.com/sysadmin/passwordless-ssh) to enable SSH key authentication on the server and add the client's public key into the server's authorized_keys file.
 
 For example, for a Synology NAS, you can follow this [HOWTO](https://community.synology.com/enu/forum/1/post/136213).
 
+
+## VaultWarden
+[VaultWarden]() is an unofficial Bitwarden compatible server written in Rust.
+
+### Install VaultWarden
+> [!WARNING]
+> Immich requires [docker](#install-docker).
+
+1. Create a `vaultwarden` folder somewhere
+
+2. Create a `docker-compose.yml` file inside it, paste the following code
+
+    ```yml
+
+    ```
 
 # Useful commands
 ## List active processes
