@@ -2153,49 +2153,6 @@ See [here](https://pimylifeup.com/raspberry-pi-deluge).<br>
 Do not follow the last part ("Setting up Deluge as a service").<br>
 Don't forget to add the alias in the `.bash_aliases` file.
 
-
-## Restic / Backrest
-Restic is a cli tool for automated backups. Backrest is a web GUI for Restic.
-
-> [!NOTE]
-> TODO: Switch to [resticprofile](https://creativeprojects.github.io/resticprofile/)?
-
-### Install Backrest
-You only need to install Backrest, since in already includes Restic.
-
-1. Download the latest [release](https://github.com/garethgeorge/backrest/releases), and extract it
-
-    ```sh
-    $ wget https://github.com/garethgeorge/backrest/releases/latest/download/backrest_Linux_arm64.tar.gz
-    $ mkdir backrest && tar -xzvf backrest_Linux_arm64.tar.gz -C backrest && rm backrest_Linux_arm64.tar.gz && cd backrest
-    ```
-
-2. Update the `install.sh` script to enable remote access
-
-    ```sh
-    $ sed -i 's\BACKREST_PORT=127.0.0.1:9898\BACKREST_PORT=0.0.0.0:9898\g' install.sh
-    ```
-
-3. Launch `install.sh`
-
-    ```sh
-    $ ./install.sh
-    ```
-
-4. Restic will be available at `http://0.0.0.0:9898`
-
-
-### Upgrade Backrest
-Simply run install [steps](#install-backrest) again.
-
-### Bonus: SFTP repository
-As stated into the restic [documentation](https://restic.readthedocs.io/en/latest/030_preparing_a_new_repo.html#sftp), to use an SFTP repository, you must enable SSH Key Authentication between the client and the FTP server (you cannot perform an automatic backup if a password is required to login to the server).
-
-The process [involves](https://www.redhat.com/sysadmin/passwordless-ssh) to enable SSH key authentication on the server and add the client's public key into the server's authorized_keys file.
-
-For example, for a Synology NAS, you can follow this [HOWTO](https://community.synology.com/enu/forum/1/post/136213).
-
-
 ## VaultWarden
 [VaultWarden]() is an unofficial Bitwarden compatible server written in Rust.
 
