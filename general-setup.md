@@ -367,7 +367,7 @@ The dynamic configuration will be stored in the `/etc/traefik/dynamic` folder, s
               - "<YOUR_USER>:<YOUR_HASHED_PASSWORD>"
     ```
 
-    💡 The `middlewares.yml` file defines your shared middlewares. By default, it defines two middlewares: `redirect-to-https` to redirect a `HTTP` route to the `HTTPS` one, and `authentication` to add a basic authenticatoion to the route.
+    💡 The `middlewares.yml` file defines your shared middlewares. By default, it defines two middlewares: `redirect-to-https` to redirect a `HTTP` route to the `HTTPS` one, and `authentication` to add a basic authentication to the route.
 
     ⚠️ The `users` field is an array of authorized users. Each user must be declared using the `name:hashed-password` format. See the [BasicAuth (https://doc.traefik.io/traefik/middlewares/http/basicauth/#configuration-examples) documentation. 
     
